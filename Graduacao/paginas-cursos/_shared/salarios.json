@@ -1,0 +1,51 @@
+{
+  "educacao-fisica": {
+    "name": "Educação Física",
+    "title": "Quanto ganha um profissional de Educação Física?",
+    "copy": "A média salarial de Profissional de Educação Física na saúde é de R$ 3.183,12 por mês. A área oferece diferentes contextos de atuação, como docência e preparação esportiva. Os ganhos variam conforme especialização, jornada, região e modelo de contratação.",
+    "source": "Fonte: Portal Salário, dados do Novo CAGED/MTE (Brasil; ago/2025–jul./2026).",
+    "salaries": [["R$ 3.365,48", "Professor de Educação Física no Ensino Médio"], ["R$ 3.183,12", "Profissional de Educação Física na Saúde"], ["R$ 4.019,68", "Preparador de Atleta"]]
+  },
+  "administracao": {
+    "name": "Administração",
+    "title": "Quanto ganha um administrador?",
+    "copy": "A média salarial de um administrador no Brasil é de R$ 5.085,50 por mês. A remuneração varia conforme a área de atuação, a experiência, a região e o nível de responsabilidade. Com o desenvolvimento da carreira, o profissional pode buscar oportunidades em funções de gestão.",
+    "source": "Fonte: Portal Salário, dados do Novo CAGED/MTE (Brasil; últimos 12 meses disponíveis).",
+    "salaries": [["R$ 5.085,50", "Administrador"], ["R$ 5.599,18", "Gerente Administrativo"], ["R$ 19.766,40", "Superintendente Administrativo"]]
+  },
+  "marketing": {
+    "name": "Marketing",
+    "title": "Quanto ganha um profissional de Marketing?",
+    "copy": "A média salarial de Analista de Marketing no Brasil é de R$ 4.914,34 por mês. As possibilidades incluem atuação com campanhas, análise de mercado e gestão de marketing. A remuneração depende da experiência, do segmento e do nível de responsabilidade.",
+    "source": "Fonte: Portal Salário, dados do Novo CAGED/MTE (Brasil; ago/2025–jul/2026).",
+    "salaries": [["R$ 3.078,27", "Assistente de Marketing"], ["R$ 4.914,34", "Analista de Marketing"], ["R$ 10.957,11", "Gerente de Marketing"]]
+  },
+  "pedagogia": {
+    "name": "Pedagogia",
+    "title": "Quanto ganha um profissional de Pedagogia?",
+    "copy": "O salário médio de professor no Brasil é de R$ 3.673,54 por mês. A formação também pode levar à coordenação pedagógica e à gestão escolar, conforme os requisitos de cada função. A remuneração varia por região, jornada e experiência.",
+    "source": "Fonte: Portal Salário, dados do Novo CAGED/MTE (Brasil; ago/2025–jul/2026).",
+    "salaries": [["R$ 3.673,54", "Professor de Creche"], ["R$ 4.188,95", "Coordenador Pedagógico"], ["R$ 5.587,12", "Diretor de Escola Privada"]]
+  },
+  "processos-gerenciais": {
+    "name": "Processos Gerenciais",
+    "title": "Quanto ganha um profissional de gestão?",
+    "copy": "Não há uma média salarial única para o curso. Como referência, a média mensal de Analista de Processos de Produção é de R$ 4.809,42. A formação pode levar a possibilidades em processos e operações; remuneração e evolução dependem de experiência, setor e responsabilidade.",
+    "source": "Fonte: Portal Salário/Novo CAGED-MTE e Indeed (Brasil).",
+    "salaries": [["R$ 4.809,42", "Analista de Processos de Produção"], ["R$ 4.572,00", "Coordenador de Operações"], ["R$ 6.664,82", "Gerente de Processos"]]
+  },
+  "recursos-humanos": {
+    "name": "Recursos Humanos",
+    "title": "Quanto ganha um profissional de RH?",
+    "copy": "A média salarial de Analista de Recursos Humanos no Brasil é de R$ 4.416,46 por mês. A remuneração varia conforme experiência, região, setor e nível de responsabilidade. A área também reúne possibilidades em parceria com os negócios e gestão de equipes.",
+    "source": "Fonte: Portal Salário, dados do Novo CAGED/MTE (Brasil; ago/2025–jul/2026).",
+    "salaries": [["R$ 4.416,46", "Analista de Recursos Humanos"], ["R$ 5.760,03", "Business Partner (HRBP)"], ["R$ 10.029,54", "Gerente de Recursos Humanos"]]
+  },
+  "traducao-e-interpretacao": {
+    "name": "Tradução e Interpretação",
+    "title": "Quanto ganha um tradutor e intérprete?",
+    "copy": "A média salarial de Tradutor no Brasil é de R$ 6.924,60 por mês no regime CLT. A remuneração pode variar bastante entre contratos, projetos e atuação autônoma. As amostras de Tradutor e Intérprete são menores e pedem cautela na leitura.",
+    "source": "Fonte: Portal Salário, dados do Novo CAGED/MTE (Brasil; ago/2025–jul/2026).",
+    "salaries": [["R$ 6.924,60", "Tradutor"], ["R$ 4.367,62", "Intérprete"], ["R$ 3.104,88", "Revisor de Texto"]]
+  }
+}

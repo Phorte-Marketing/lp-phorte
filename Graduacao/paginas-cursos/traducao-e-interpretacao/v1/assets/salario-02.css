@@ -1,0 +1,21 @@
+/* Seção de salários — direção 02 "Destaque de mercado" (aprovada).
+   Tokens do Design System Phorte isolados no componente. */
+.phorte-salary{--ps-ink:#1A1A1A;--ps-muted:#595959;--ps-line:#E5E5E5;--ps-paper:#FFFFFF;--ps-primary-dark:#A81E1E;
+  --ps-shadow:0 4px 18px rgb(26 26 26 / 4%);font-family:Poppins,Inter,ui-sans-serif,system-ui,"Segoe UI",sans-serif;color:var(--ps-ink);
+  padding:48px 20px;background:#FAFAFA;box-sizing:border-box;line-height:1.6;text-align:left}
+.phorte-salary *{box-sizing:border-box}
+.phorte-salary__inner{width:min(1180px,100%);margin:0 auto}
+.phorte-salary__panel{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);grid-template-rows:auto auto;gap:20px 32px;align-items:center;
+  padding:24px;border:1px solid var(--ps-line);border-radius:12px;background:var(--ps-paper);overflow:hidden}
+.phorte-salary__copy h2{margin:0;color:var(--ps-primary-dark);font-size:clamp(25px,2.6vw,34px);font-weight:700;line-height:1.2;letter-spacing:-.025em}
+.phorte-salary__copy p{margin:12px 0 0;color:var(--ps-muted);font-size:14px;line-height:1.55}
+.phorte-salary__list{display:grid;grid-template-columns:1fr;overflow:hidden;border:1px solid var(--ps-line);border-radius:8px;background:var(--ps-paper);box-shadow:var(--ps-shadow)}
+.phorte-salary__list-title{margin:0;padding:16px;border-bottom:1px dashed var(--ps-line);color:var(--ps-primary-dark);font-size:15px;font-weight:600;line-height:1.4}
+.phorte-salary__item{min-height:72px;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"role value" "label value";align-items:center;gap:2px 12px;padding:12px 16px;border-bottom:1px dashed var(--ps-line)}
+.phorte-salary__item:last-child{border-bottom:0}
+.phorte-salary__value{grid-area:value;color:var(--ps-primary-dark);font-size:clamp(18px,1.8vw,22px);font-weight:700;line-height:1.1;letter-spacing:-.025em;white-space:nowrap}
+.phorte-salary__label{grid-area:label;color:var(--ps-muted);font-size:10px;font-weight:500}
+.phorte-salary__role{grid-area:role;color:var(--ps-ink);font-size:12px;line-height:1.4}
+.phorte-salary__source{grid-column:1;grid-row:2;margin:0;color:var(--ps-muted);font-size:10px;line-height:1.45}
+@media (max-width:800px){.phorte-salary__panel{grid-template-columns:1fr}.phorte-salary__source{grid-column:auto;grid-row:auto}}
+@media (max-width:560px){.phorte-salary{padding:32px 12px}.phorte-salary__panel{padding:16px;gap:16px}.phorte-salary__item{padding:12px}.phorte-salary__source{font-size:11px}}

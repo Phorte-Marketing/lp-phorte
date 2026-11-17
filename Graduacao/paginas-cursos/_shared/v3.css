@@ -1,0 +1,32 @@
+/* v3 — Impacto Phorte: hero vermelho profundo, painel de matrícula flutuante, seções em cards, salário logo após o hero. */
+.v3{background:#fff}
+.v3 .hero{padding:80px 0 120px;background:radial-gradient(1200px 500px at 85% -10%,#C32525 0%,transparent 60%),linear-gradient(135deg,var(--deep) 0%,var(--primary-dark) 100%);color:#fff}
+.v3 .hero__grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:40px;align-items:end}
+.v3 .hero h1{font-size:clamp(36px,5.6vw,68px);font-weight:900;letter-spacing:-.045em;line-height:1.02;margin:18px 0 20px}
+.v3 .hero__copy>p{font-size:17px;max-width:620px;color:#F6DCDC}
+.v3 .chip{background:rgb(255 255 255 / 14%);border:1px solid rgb(255 255 255 / 35%);color:#fff}
+.v3 .hero__panel{padding:28px;border-radius:var(--radius-xl);background:#fff;color:var(--ink);box-shadow:0 24px 60px rgb(0 0 0 / 30%);margin-bottom:-90px;position:relative}
+.v3 .hero__panel .price strong{color:var(--primary-dark)}
+.v3 .hero__panel .btn{margin-top:22px;width:100%}
+.v3 main>.phorte-salary{background:#fff;padding-top:120px}
+.v3 .sec{padding:80px 0}
+.v3 .sec:nth-of-type(odd){background:var(--canvas)}
+.v3 .sec h2{font-weight:900;letter-spacing:-.04em;color:var(--deep)}
+.v3 .items--grid{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.v3 .item{border:0;background:var(--paper);box-shadow:var(--shadow);border-radius:var(--radius-xl);border-bottom:4px solid var(--primary)}
+.v3 .item:hover{box-shadow:var(--shadow-hover)}
+.v3 .sec--cards{background:var(--deep)!important;color:#fff}
+.v3 .sec--cards h2{color:#fff}
+.v3 .sec--cards .card{background:rgb(255 255 255 / 7%);border:1px solid rgb(255 255 255 / 22%);box-shadow:none}
+.v3 .sec--cards .card p{color:#EBD3D3}
+.v3 .sec--cards .card__n{color:#FFB3B3}
+.v3 .person{border:0;box-shadow:var(--shadow)}
+.v3 .band{background:linear-gradient(90deg,var(--deep),var(--primary-dark));color:#fff}
+.v3 .cta{background:var(--deep);color:#fff}
+.v3 .cta .wrap{display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.v3 .cta h2{margin:0 0 6px;color:#fff}
+.v3 .cta p{color:#EBD3D3}
+.v3 .cta .btn{background:#fff;color:var(--primary-dark);border-color:#fff}
+.v3 .foot{background:#2A0C0C;color:#EBD3D3}
+.v3 .foot img{filter:brightness(0) invert(1)}
+@media (max-width:860px){.v3 .hero{padding:48px 0 100px}.v3 .hero__grid{grid-template-columns:1fr}.v3 .hero__panel{margin-bottom:-70px}}

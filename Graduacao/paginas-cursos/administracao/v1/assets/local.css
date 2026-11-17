@@ -1,0 +1,10 @@
+/* Ajustes da cópia local v1: substitui o que dependia do JS do WordPress/Elementor. */
+html{scroll-behavior:smooth}
+.elementor-widget-lottie,.elementor-lottie{display:none!important}
+.swiper{overflow:hidden}
+.swiper-wrapper{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;transform:none!important;gap:var(--phorte-swiper-gap,16px)}
+.swiper-wrapper::-webkit-scrollbar{display:none}
+.swiper-slide{flex:0 0 auto;scroll-snap-align:start;width:auto;max-width:100%}
+.swiper-slide[style*="width"]{width:auto!important}
+.swiper-pagination{display:none}
+.elementor-swiper-button{cursor:pointer;z-index:5}

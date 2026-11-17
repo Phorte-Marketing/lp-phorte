@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Páginas de curso · v1, v2 e v3 — Graduação Phorte</title>
+<link rel="stylesheet" href="_shared/base.css">
+<style>
+  body{background:var(--canvas)}
+  .top{padding:56px 0 32px}
+  .top h1{font-size:clamp(28px,4vw,44px);font-weight:900;letter-spacing:-.04em;color:var(--deep);margin:8px 0 14px}
+  .top p{max-width:760px;color:var(--muted)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;padding-bottom:56px}
+  .course{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;box-shadow:var(--shadow)}
+  .course h2{font-size:20px;font-weight:700;margin-bottom:14px}
+  .vers{display:grid;gap:8px}
+  .vers a{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:10px 14px;border:1px solid var(--line);border-radius:8px;text-decoration:none;font-size:14px;font-weight:600;transition:border-color .16s,background .16s}
+  .vers a:hover{border-color:var(--primary);background:var(--primary-subtle)}
+  .vers small{font-weight:500;color:var(--muted);font-size:12px}
+  .legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-bottom:28px;font-size:13px;color:var(--muted)}
+  .legend div{padding:14px 16px;border-left:4px solid var(--primary);background:#fff;border-radius:8px}
+  .legend b{display:block;color:var(--ink);margin-bottom:2px}
+  .note{padding:16px 0 48px;font-size:12px;color:var(--muted);border-top:1px solid var(--line)}
+  .note b{color:var(--ink)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <p class="eyebrow">Graduação · Faculdade Phorte</p>
+    <h1>Páginas de curso: v1, v2 e v3</h1>
+    <p>Sete páginas de graduação com a seção de salários na direção visual aprovada (02 · Destaque de mercado). Sem header e sem navbar. Abra cada versão para avaliar.</p>
+  </header>
+  <section class="legend" aria-label="Versões">
+    <div><b>v1 · Cópia do site</b>HTML do site atual, estático, com CSS, imagens e fontes locais.</div>
+    <div><b>v2 · Editorial claro</b>Fundo claro, hero em duas colunas, faixas alternadas.</div>
+    <div><b>v3 · Impacto Phorte</b>Hero vermelho profundo, painel de matrícula flutuante, salário logo após o hero.</div>
+  </section>
+  <main class="grid" id="grid"></main>
+  <p class="note"><b>Para validação:</b> conteúdo, preços e links de inscrição foram copiados do site atual; valores e fontes salariais ainda precisam de confirmação antes da publicação. Os formulários e integrações do site não foram incluídos.</p>
+</div>
+<script>
+  var cursos = [
+    ["educacao-fisica", "Educação Física"], ["administracao", "Administração"], ["marketing", "Marketing"],
+    ["pedagogia", "Pedagogia"], ["processos-gerenciais", "Processos Gerenciais"],
+    ["recursos-humanos", "Recursos Humanos"], ["traducao-e-interpretacao", "Tradução e Interpretação"]
+  ];
+  var vers = [["v1", "v1 · Cópia do site", "fiel ao site"], ["v2", "v2 · Editorial claro", "nova direção"], ["v3", "v3 · Impacto Phorte", "nova direção"]];
+  document.getElementById("grid").innerHTML = cursos.map(function (c) {
+    return '<article class="course"><h2>' + c[1] + '</h2><div class="vers">' + vers.map(function (v) {
+      return '<a href="' + c[0] + '/' + v[0] + '/index.html"><span>' + v[1] + '</span><small>' + v[2] + '</small></a>';
+    }).join("") + '</div></article>';
+  }).join("");
+</script>
+</body>
+</html>

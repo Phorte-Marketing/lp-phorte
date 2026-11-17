@@ -1,0 +1,464 @@
+{
+ "slug": "administracao",
+ "title": "Administração - Faculdade Phorte",
+ "sections": [
+  {
+   "heading": "Faculdade de Administração",
+   "level": 1,
+   "blocks": [
+    {
+     "t": "p",
+     "text": "O seu futuro começa com o curso de Administração ! Aprenda com professores experientes, aulas práticas e dinâmicas que vão impulsionar a sua carreira."
+    },
+    {
+     "t": "p",
+     "text": "Descubra o seu potencial com o curso de Administração. Com uma formação moderna e prática, você estará preparado para liderar e inovar no mercado de trabalho."
+    }
+   ]
+  },
+  {
+   "heading": "Administração",
+   "level": 2,
+   "blocks": []
+  },
+  {
+   "heading": "Turma 2027.1",
+   "level": 2,
+   "blocks": []
+  },
+  {
+   "heading": "EAD • Presencial",
+   "level": 2,
+   "blocks": [
+    {
+     "t": "li",
+     "text": "Nota máxima no MEC"
+    },
+    {
+     "t": "li",
+     "text": "Professores mestres e doutores"
+    },
+    {
+     "t": "li",
+     "text": "Atividades extracurriculares"
+    },
+    {
+     "t": "li",
+     "text": "Avaliação continuada"
+    },
+    {
+     "t": "p",
+     "text": "R$ 330,00 / mês"
+    },
+    {
+     "t": "p",
+     "text": "R$ 198,00/mês"
+    },
+    {
+     "t": "a",
+     "href": "https://typechat.phorte.org.br/phorte-administracao",
+     "text": "Quero me Inscrever Fazer Inscrição"
+    }
+   ]
+  },
+  {
+   "heading": "Por que estudar Administração?",
+   "level": 2,
+   "blocks": [
+    {
+     "t": "li",
+     "text": "Aulas práticas com professores renomados e especialistas no mercado;"
+    },
+    {
+     "t": "li",
+     "text": "Currículo completo: teoria, empreendedorismo e ética para torná-lo um líder completo."
+    },
+    {
+     "t": "li",
+     "text": "Infraestrutura moderna e completa, com bibliotecas física e digital, com mais de 6.000.000 de títulos disponíveis;"
+    },
+    {
+     "t": "li",
+     "text": "Jornada 3×2 para equilibrar os estudos e a vida pessoal."
+    },
+    {
+     "t": "h3",
+     "text": "Conheça o curso"
+    },
+    {
+     "t": "h3",
+     "text": "Formação"
+    },
+    {
+     "t": "p",
+     "text": "Bacharelado"
+    },
+    {
+     "t": "h3",
+     "text": "Duração"
+    },
+    {
+     "t": "p",
+     "text": "8 Semestres"
+    },
+    {
+     "t": "h3",
+     "text": "Turno"
+    },
+    {
+     "t": "p",
+     "text": "Noturno"
+    },
+    {
+     "t": "h3",
+     "text": "Campus"
+    },
+    {
+     "t": "p",
+     "text": "Bela Vista"
+    },
+    {
+     "t": "h3",
+     "text": "Aula"
+    },
+    {
+     "t": "p",
+     "text": "EAD"
+    },
+    {
+     "t": "p",
+     "text": "Veja só: Você deverá comparecer presencialmente uma vez por semestre, para realização de provas no Polo São Paulo (R. Rui Barbosa, 422 – Bela Vista – São Paulo – SP), obrigatoriamente."
+    },
+    {
+     "t": "h3",
+     "text": "O que você irá aprender:"
+    },
+    {
+     "t": "li",
+     "text": "Linguagem aplicada às novas mídias"
+    },
+    {
+     "t": "li",
+     "text": "Matemática aplicada à gestão"
+    },
+    {
+     "t": "li",
+     "text": "Fundamentos da Administração"
+    },
+    {
+     "t": "li",
+     "text": "Comportamento organizacional"
+    },
+    {
+     "t": "li",
+     "text": "Gestão em Ação"
+    },
+    {
+     "t": "li",
+     "text": "Ética, Gestão ambiental e Sustentabilidade empresarial"
+    },
+    {
+     "t": "li",
+     "text": "Gestão da Qualidade Total"
+    },
+    {
+     "t": "li",
+     "text": "Fundamentos Financeiros e Contábeis"
+    },
+    {
+     "t": "li",
+     "text": "Estratégia, Tecnologia e Inovação"
+    },
+    {
+     "t": "li",
+     "text": "Gestão em Ação"
+    },
+    {
+     "t": "li",
+     "text": "Análise de Custos e Orçamento Empresarial"
+    },
+    {
+     "t": "li",
+     "text": "Legislação Tributária, Empresarial e do Consumidor"
+    },
+    {
+     "t": "li",
+     "text": "Economia e Mercado"
+    },
+    {
+     "t": "li",
+     "text": "Matemática Financeira"
+    },
+    {
+     "t": "li",
+     "text": "Gestão em Ação"
+    },
+    {
+     "t": "li",
+     "text": "Gestão da Cadeia de Suprimentos"
+    },
+    {
+     "t": "li",
+     "text": "Marketing e Mercado"
+    },
+    {
+     "t": "li",
+     "text": "Gestão de Produção"
+    },
+    {
+     "t": "li",
+     "text": "Empreendedorismo"
+    },
+    {
+     "t": "li",
+     "text": "Gestão em Ação"
+    },
+    {
+     "t": "li",
+     "text": "Gestão de Pessoas"
+    },
+    {
+     "t": "li",
+     "text": "Gestão de Processos e Conhecimento"
+    },
+    {
+     "t": "li",
+     "text": "ESG - Environmental, Social and Governance"
+    },
+    {
+     "t": "li",
+     "text": "Gestão de Projetos"
+    },
+    {
+     "t": "li",
+     "text": "Gestão em Ação"
+    },
+    {
+     "t": "li",
+     "text": "Análise das Demonstrações Contábeis"
+    },
+    {
+     "t": "li",
+     "text": "Gestão Financeira e Mercado de Capitais"
+    },
+    {
+     "t": "li",
+     "text": "Transformação Digital e Inteligência do Negócio"
+    },
+    {
+     "t": "li",
+     "text": "Processos Decisórios e Indicadores de Desempenho"
+    },
+    {
+     "t": "li",
+     "text": "Gestão em Ação"
+    },
+    {
+     "t": "li",
+     "text": "Gestão de Vendas, Varejo e E-commerce"
+    },
+    {
+     "t": "li",
+     "text": "Comunicação Integrada e Marketing Digital"
+    },
+    {
+     "t": "li",
+     "text": "Negócios Internacionais"
+    },
+    {
+     "t": "li",
+     "text": "Gestão no Turismo, na Educação, no Esporte, no 3º setor"
+    },
+    {
+     "t": "li",
+     "text": "Gestão em Ação"
+    },
+    {
+     "t": "li",
+     "text": "Economia Criativa"
+    },
+    {
+     "t": "li",
+     "text": "Tópicos Contemporâneos em Administração"
+    },
+    {
+     "t": "li",
+     "text": "Liderança e Negociação"
+    },
+    {
+     "t": "li",
+     "text": "Economia Comportamental e Psicologia Financeira"
+    },
+    {
+     "t": "li",
+     "text": "Gestão em Ação"
+    }
+   ]
+  },
+  {
+   "heading": "MATRICULAS ABERTAS!",
+   "level": 2,
+   "blocks": []
+  },
+  {
+   "heading": "Qual o impacto da Graduação na Carreira",
+   "level": 2,
+   "blocks": []
+  },
+  {
+   "heading": "Remuneração",
+   "level": 2,
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Pode aumentar as chances de ter uma remuneração mais elevada."
+    }
+   ]
+  },
+  {
+   "heading": "Empregabilidade",
+   "level": 2,
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Aumenta a empregabilidade e as chances de conseguir um emprego melhor e mais estável."
+    }
+   ]
+  },
+  {
+   "heading": "Crescimento Profissional",
+   "level": 2,
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Prepara o estudante para enfrentar desafios e aproveitar oportunidades que surgirem."
+    }
+   ]
+  },
+  {
+   "heading": "Contatos Profissionais",
+   "level": 2,
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Proporciona o contato com docentes e outros profissionais da área, atuantes no mercado de trabalho."
+    }
+   ]
+  },
+  {
+   "heading": "Diferenciais PHORTE",
+   "level": 2,
+   "blocks": []
+  },
+  {
+   "heading": "Professores Renomados",
+   "level": 2,
+   "blocks": [
+    {
+     "t": "p",
+     "text": "O corpo docente é formado por especialistas, mestres e doutores com larga experiência prática em escolas e no ensino superior."
+    }
+   ]
+  },
+  {
+   "heading": "Programa Aluno Indica",
+   "level": 2,
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Indique um aluno e receba prêmios em dinheiro para cada matrícula efetivada, ou uma bolsa de 100% do valor do seu curso quando atingir 10 indicações com matrículas confirmadas."
+    }
+   ]
+  },
+  {
+   "heading": "Parcerias Exclusivas",
+   "level": 2,
+   "blocks": [
+    {
+     "t": "p",
+     "text": "O aluno realizará ações e projetos em instituições parceiras da faculdade, para desenvolvimento do ensino prático."
+    }
+   ]
+  },
+  {
+   "heading": "Turmas personalizadas",
+   "level": 2,
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Salas de aula com número reduzido de alunos para possibilitar um ensino dinâmico e focado."
+    }
+   ]
+  },
+  {
+   "heading": "Phorte Editora",
+   "level": 2,
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Permite que os livros publicados possam ser usados como instrumentos de ensino na sala de aula, incluindo lançamentos exclusivos."
+    }
+   ]
+  },
+  {
+   "heading": "Vamos iniciar o",
+   "level": 2,
+   "blocks": []
+  },
+  {
+   "heading": "Processo Seletivo?",
+   "level": 2,
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Nossa prova é 100% online, basta seguir as instruções do terminal inteligente a seguir"
+    },
+    {
+     "t": "a",
+     "href": "https://typechat.phorte.org.br/phorte-administracao",
+     "text": "Vestibular Simplificado"
+    },
+    {
+     "t": "a",
+     "href": "https://typechat.phorte.org.br/phorte-adm-segunda",
+     "text": "Segunda Gradução"
+    }
+   ]
+  },
+  {
+   "heading": "Conheça nosso corpo docente",
+   "level": 2,
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Advogado trabalhista e professor em cursos preparatórios para a OAB, graduação, pós-graduação e cursos tecnológicos (Fatec/Etec). Doutorando em Psicologia Social pela PUC-SP e mestre em Direito pela Universidade Mackenzie, com especializações em Direito Penal e Direito Processual Civil. Também é bacharel e licenciado em Física. Articulista, revisor jurídico e autor de livros nas áreas de Direito Processual Civil, Previdenciário, Desigualdade Social, Legislação Tributária e Trabalhista."
+    },
+    {
+     "t": "p",
+     "text": "Mestra em Administração (Gestão de Pessoas), MBA em Gestão de Pessoas (USP/ESALQ), Psicóloga, Psicodramatista e Especialista em Dinâmica de Grupos. Criadora do método Participativo Vivencial, com 39 anos de experiência em T&D, consultoria e liderança no setor público e privado. Gestora das Relações do Trabalho no TCMSP. Professora de Gestão de Pessoas na graduação e pós-graduação, com atuação também em EAD. Coautora de livros na área de aprendizagem e comportamento."
+    },
+    {
+     "t": "p",
+     "text": "Mestre em Administração pela PUC-SP e pós-graduado em Business Intelligence pela FIAP. Professor universitário nos cursos de Administração, Gestão de TI, Marketing Digital e Processos Gerenciais, com foco em Inovação, Tecnologias Exponenciais e AI Prompt Engineering. Possui mais de 20 anos de experiência em TI, liderando projetos na América Latina e nos EUA. Atua como consultor e mentor em programas de empreendedorismo e hackathons, apoiando startups e soluções tecnológicas. Coautor de livro sobre planejamento financeiro e tokenização de ativos digitais."
+    },
+    {
+     "t": "p",
+     "text": "Mestra e Doutora em Letras pela Universidade Presbiteriana Mackenzie, com especializações em ensino de Língua Portuguesa e Literatura, Psicopedagogia, Psicologia Organizacional e Gestão Escolar. Docente no SESI e Centro Paula Souza, atua na formação de professores, produção de conteúdo educacional e orientação acadêmica em diversos níveis de ensino."
+    },
+    {
+     "t": "p",
+     "text": "Profissional com sólida formação e vasta experiência acadêmica e de mercado. Técnico Industrial em Supervisão da Produção, Bacharel em Design Gráfico e do Produto, Pós-Graduado em Marketing, Mestre em Marketing e Comunicação de Marketing, com extensões universitárias em Processos Administrativos, Filosofia e História da Arte."
+    },
+    {
+     "t": "p",
+     "text": "Profissional com Mestrado em Ciências Contábeis e MBA em Gestão de Riscos e Compliance pela FECAP, além de Bacharelado em Ciências Contábeis e Administração. Possui dez anos de experiência como docente em cursos de graduação e pós-graduação em instituições como FECAP, Faculdade Phorte, Estácio e Ítalo Brasileiro. Atua também como professor conteudista e coordenador de cursos de gestão ambiental. Tem experiência em gestão contábil, com foco em tributação, controles internos e contabilidade. Atualmente, é Gerente de Controladoria na CETESB."
+    }
+   ]
+  },
+  {
+   "heading": "Mais de 30 anos transformando carreiras e histórias",
+   "level": 2,
+   "blocks": []
+  }
+ ]
+}

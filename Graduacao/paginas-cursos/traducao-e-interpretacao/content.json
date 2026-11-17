@@ -1,0 +1,569 @@
+{
+ "slug": "traducao-e-interpretacao",
+ "title": "Tradução e Interpretação Português / Inglês - Faculdade Phorte",
+ "sections": [
+  {
+   "heading": "",
+   "level": 0,
+   "blocks": [
+    {
+     "t": "a",
+     "href": "https://faculdadephorte.edu.br/graduacao/",
+     "text": "Quero me Inscrever Fazer Inscrição Fazer Inscrição Início Fazer Inscrição Fazer Inscrição Graduação"
+    },
+    {
+     "t": "img",
+     "src": "assets/img/logo-phorte-retangular-23f99d.webp",
+     "alt": "Faculdade Phorte logo graduação"
+    },
+    {
+     "t": "a",
+     "href": "https://typechat.phorte.org.br/vestibular-simplificado",
+     "text": "Inscreva-se agora"
+    },
+    {
+     "t": "a",
+     "href": "#conteudo",
+     "text": "Pular para o conteúdo"
+    }
+   ]
+  },
+  {
+   "heading": "Graduação em Tradução e Interpretação",
+   "level": 1,
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Por que este curso é diferente?"
+    }
+   ]
+  },
+  {
+   "heading": "Você traduz livros durante a graduação",
+   "level": 2,
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Experiência profissional desde a sala de aula"
+    },
+    {
+     "t": "p",
+     "text": "Por meio da parceria com a Editora Tacet, nossos alunos traduzem contos de grandes autores para publicação."
+    },
+    {
+     "t": "p",
+     "text": "Assim, você pratica a tradução em projetos reais, aprende com o acompanhamento dos professores e começa a construir seu currículo antes mesmo de concluir o curso."
+    },
+    {
+     "t": "p",
+     "text": "Aprenda traduzindo. Publique. Construa seu currículo."
+    },
+    {
+     "t": "a",
+     "href": "#impacte",
+     "text": "Descubra as experiências ↓"
+    },
+    {
+     "t": "img",
+     "src": "assets/img/Imagem-ChatGPT-5_10_2026-12_01_39-5e0518.png",
+     "alt": "Lançamento de livro traduzido por alunos da Faculdade Phorte, com exemplar sendo autografado"
+    },
+    {
+     "t": "p",
+     "text": "Projeto real: tradução e publicação de contos de Arthur Conan Doyle, em parceria com a Editora Tacet."
+    },
+    {
+     "t": "p",
+     "text": "Participantes: Catarina Mendes, Christian Mäder, Danielle Ferreira, Flávia Pontes, Gabriel \"Yarillo\" Oliveira, Gillize Araujo, Leonardo Queiroz, Matheus Araújo, Nicole Góes, Rafaela Franceschini, Raffael Azevedo, Sarah Cabral, Madalena Piñeiro, Taline Paiva, Cláudia Schittini, Lucas Calsavara, Lívia Pádua R. Fonseca, Mateus Prata, Maria Carolina de Jesus, Pedro Raphael Lopes Alencar"
+    }
+   ]
+  },
+  {
+   "heading": "Traduz projetos da Organização Mundial da Saúde",
+   "level": 2,
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Sua tradução pode gerar impacto real"
+    },
+    {
+     "t": "p",
+     "text": "Por meio da parceria com a Organização Mundial da Saúde (OMS), nossos alunos participam da tradução e revisão de publicações especializadas da área da saúde."
+    },
+    {
+     "t": "p",
+     "text": "São projetos reais, de grande extensão e complexidade, destinados a ampliar o acesso de profissionais e instituições de saúde a conteúdos especializados em língua portuguesa."
+    },
+    {
+     "t": "p",
+     "text": "Ao participar, o aluno adquire experiência em tradução técnica e científica, trabalha com terminologia especializada e acrescenta ao currículo a participação em um projeto internacional."
+    },
+    {
+     "t": "p",
+     "text": "Traduza. Ganhe experiência. Gere impacto."
+    },
+    {
+     "t": "p",
+     "text": "Tradução de inglês para português"
+    },
+    {
+     "t": "p",
+     "text": "A Organização Mundial da Saúde (OMS) agradece a generosa contribuição dos alunos da graduação em Tradução e Interpretação da Faculdade Phorte, que traduziram e revisaram este curso de forma voluntária com a supervisão do corpo docente:"
+    },
+    {
+     "t": "p",
+     "text": "Gestão do projeto: Leonardo da Silva Queiroz, Alvaro Ferreira Felippe"
+    },
+    {
+     "t": "p",
+     "text": "Tradução e revisão: Danielle Ferreira Corrêa da Silva, Lucas Calsavara, Carla Taline Farias Paiva, Catarina de Barros Mendes, Isabella de Souza Barbosa, Nicole Mendonça de Góes, Rafaela Franceschini, Guilherme Henrique Westphal, Gabriel Gomes Santa Rita Oliveira, Cláudia Schittini de Alcântara, Sarah Meire Cabral, Gillize Telles de Araújo, Raffael Rodrigo de Oliveira Gonçalves de Azevedo, Flávia Cristina Pontes. Christian Mäder, Davi Pereira Guimarães, Matheus Lima Araújo"
+    },
+    {
+     "t": "p",
+     "text": "Terminologia: Profa. Dra. Ana Julia Perrotti-Garcia"
+    },
+    {
+     "t": "p",
+     "text": "Supervisão e QA: Profa. Ma. Carolina Bisson de Souza"
+    },
+    {
+     "t": "p",
+     "text": "Equipe de suporte: Profa. Ma. Meritxell Almarza, Profa. Dra. Simone Resende, Profa. Monique D’Orazio e Prof. Dr. Jorge Davidson"
+    },
+    {
+     "t": "p",
+     "text": "Hanseníase: Treinamento em DTNs Cutâneas para Profissionais de Saúde"
+    },
+    {
+     "t": "p",
+     "text": "Capa"
+    },
+    {
+     "t": "p",
+     "text": "Página VI — Tradução de inglês para português"
+    }
+   ]
+  },
+  {
+   "heading": "Interpreta em eventos reais durante a graduação",
+   "level": 2,
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Da sala de aula para a cabine de interpretação"
+    },
+    {
+     "t": "p",
+     "text": "Durante o Bacharelado, nossos alunos têm a oportunidade de atuar como intérpretes em eventos reais, ao vivo, colocando em prática as competências desenvolvidas no curso."
+    },
+    {
+     "t": "p",
+     "text": "Os estudantes já participaram da interpretação de congressos, conferências e encontros profissionais, como:"
+    },
+    {
+     "t": "li",
+     "text": "Congresso da Associação Brasileira de Tradutores e Intérpretes (ABRATES), realizado na Faculdade Phorte em 2026;"
+    },
+    {
+     "t": "li",
+     "text": "Eventos e conferências da BLISS – associação de empresas do setor de tradução;"
+    },
+    {
+     "t": "li",
+     "text": "EAGx São Paulo;"
+    },
+    {
+     "t": "li",
+     "text": "TraduShow, realizado em 29 de agosto de 2026."
+    },
+    {
+     "t": "h3",
+     "text": "MOVE & TRANSLATE"
+    },
+    {
+     "t": "h3",
+     "text": "EAGx São Paulo"
+    },
+    {
+     "t": "h3",
+     "text": "TraduShow 2026"
+    },
+    {
+     "t": "h3",
+     "text": "ABRATES 2025"
+    },
+    {
+     "t": "p",
+     "text": "←"
+    },
+    {
+     "t": "p",
+     "text": "→"
+    },
+    {
+     "t": "p",
+     "text": "Assim, o aluno desenvolve experiência em interpretação simultânea e consecutiva em situações profissionais reais, aprende a trabalhar sob as condições de um evento ao vivo e começa a construir experiência profissional antes de concluir a graduação."
+    },
+    {
+     "t": "p",
+     "text": "Interprete ao vivo. Ganhe experiência. Prepare-se para o mercado."
+    }
+   ]
+  },
+  {
+   "heading": "Vivencia diferentes áreas da tradução na prática",
+   "level": 2,
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Projetos reais para descobrir onde você quer atuar"
+    },
+    {
+     "t": "p",
+     "text": "Ao longo da graduação, nossos alunos participam de projetos vinculados a situações reais de trabalho, experimentando diferentes áreas da profissão antes mesmo de concluir o curso."
+    },
+    {
+     "t": "p",
+     "text": "Entre as experiências desenvolvidas estão:"
+    },
+    {
+     "t": "h3",
+     "text": "Tradução audiovisual e legendagem"
+    },
+    {
+     "t": "p",
+     "text": "— alunos participam de projetos relacionados a importantes mostras de cinema de cidades como São Paulo e Rio de Janeiro, aprendendo na prática como é realizada a tradução e legendagem de filmes, sob a supervisão do Prof. César Alarcón, responsável pela tradução de filmes exibidos em importantes mostras de cinema no Brasil."
+    },
+    {
+     "t": "h3",
+     "text": "Localização de jogos e videogames"
+    },
+    {
+     "t": "p",
+     "text": "— desenvolvimento de projetos reais de tradução e localização, sob orientação da Profa. Luciana Galeani Boldorini."
+    },
+    {
+     "t": "h3",
+     "text": "Audiodescrição e acessibilidade"
+    },
+    {
+     "t": "p",
+     "text": "— participação na audiodescrição de uma exposição real, sob orientação da Profa. Ana Julia Perrotti-Garcia."
+    },
+    {
+     "t": "h3",
+     "text": "Tradução e revisão editorial"
+    },
+    {
+     "t": "p",
+     "text": "— alunos participam da revisão de projetos editoriais destinados à publicação, sob supervisão da Profa. Amanda Moura."
+    },
+    {
+     "t": "h3",
+     "text": "Tradução literária e comunicação"
+    },
+    {
+     "t": "p",
+     "text": "— produção de podcasts relacionados a experiências e projetos reais de tradução literária, sob orientação da Profa. Monique D'Oracio."
+    },
+    {
+     "t": "p",
+     "text": "← Deslize para ver as 5 áreas →"
+    },
+    {
+     "t": "p",
+     "text": "E essas são apenas algumas das experiências desenvolvidas ao longo do Bacharelado."
+    },
+    {
+     "t": "p",
+     "text": "O objetivo é que o aluno possa conhecer diferentes especialidades, experimentar situações reais de trabalho e descobrir as áreas com as quais mais se identifica profissionalmente."
+    },
+    {
+     "t": "p",
+     "text": "Conheça as possibilidades. Experimente na prática. Encontre sua área."
+    }
+   ]
+  },
+  {
+   "heading": "Corpo docente",
+   "level": 2,
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Professores que atuam no mercado de tradução e interpretação e trazem a experiência profissional para a sala de aula."
+    },
+    {
+     "t": "h3",
+     "text": "Dilma Machado"
+    },
+    {
+     "t": "p",
+     "text": "TRADUTORA PARA DUBLAGEM"
+    },
+    {
+     "t": "p",
+     "text": "370 filmes, dentre eles: Velozes e Furiosos, Liga da Justiça, A Era do Gelo (3 e 5), O Assassinato no Expresso Oriente, Clube da Luta, Gangs of New York, Blonde etc. 103 series, dentre elas: Game of Thrones, Desperate Housewives, The Closer, The last Kingdom, Dune etc."
+    },
+    {
+     "t": "p",
+     "text": "Ler apresentação completa"
+    },
+    {
+     "t": "h3",
+     "text": "Carolina Bisson"
+    },
+    {
+     "t": "p",
+     "text": "Tradutora Técnica"
+    },
+    {
+     "t": "p",
+     "text": "Carolina Bisson é tradutora técnica e gestora de projetos de tradução e localização, com 16 anos de experiência no mercado. Atua em tradução, revisão, pós-edição e localização, com experiência em coordenação de fluxos de trabalho, gestão de fornecedores e controle de qualidade. Trabalha com ferramentas como Trados Studio, memoQ, Smartling e Phrase e acompanha a aplicação da IA e da automação no setor. É professora na graduação e na pós-graduação, trazendo a prática profissional para a formação de tradutores e gestores de projetos."
+    },
+    {
+     "t": "p",
+     "text": "Ler apresentação completa"
+    },
+    {
+     "t": "h3",
+     "text": "Luciana Galeani Boldorini"
+    },
+    {
+     "t": "p",
+     "text": "Tradutora de Games"
+    },
+    {
+     "t": "p",
+     "text": "Com mais de 70 localizações em jogos de tabuleiro, RPGs e videogames. Dentre eles: Gloomhaven (Asmodee), Twilight Imperium (Asmodee), Terraforming Mars (MeepleBR), Unmatched (Buró de Jogos), Mausritter (Caramelo Jogos), Salty (Calamity), Oztopia (HoiHoi), O Headhunter (Sob Investigação) etc."
+    },
+    {
+     "t": "p",
+     "text": "Ler apresentação completa"
+    },
+    {
+     "t": "h3",
+     "text": "Jane Godwin Coury"
+    },
+    {
+     "t": "p",
+     "text": "Cambridge Assessment Specialist"
+    },
+    {
+     "t": "p",
+     "text": "Autora de Armadilhas na Tradução Português–Inglês (Phorte Editora), guia prático sobre os desafios linguísticos e culturais da tradução, além de Exercícios para Falar Melhor em Inglês – Speaking Activities (Disal) e Four Short Stories to Use in the ELT Classroom, e coautora de Help! Preciso de Atividades para Minhas Aulas. Cambridge Assessment Specialist desde 1996 e é coordenadora do Intercultural Language Education Special Interest Group (ILE SIG) da BRAZ-TESOL. Graduada em Modern Languages and European Studies, mestre em Applied Linguistics and TESOL pela University of Leicester, no Reino Unido."
+    },
+    {
+     "t": "p",
+     "text": "Ler apresentação completa"
+    },
+    {
+     "t": "h3",
+     "text": "Patrícia Matos"
+    },
+    {
+     "t": "p",
+     "text": "Intérprete de Conferências"
+    },
+    {
+     "t": "p",
+     "text": "Intérprete para organismos das Nações Unidas, organizações da sociedade civil, universidades e empresas: Fórum de Feminismos Negros do Black Feminist Fund, em Barbados; dos Diálogos no Caribe, na República Dominicana; de eventos da COP28 e do G20; de webinars da UNESCO sobre Cultura Oceânica; e de reuniões e eventos da Coalizão Antirracista da ONU etc. É especialista em Interpretação de Conferências pela Universidade do Porto, em programa com apoio pedagógico da Comissão Europeia e do Parlamento Europeu."
+    },
+    {
+     "t": "p",
+     "text": "Ler apresentação completa"
+    },
+    {
+     "t": "h3",
+     "text": "Stephan Hughes"
+    },
+    {
+     "t": "p",
+     "text": "Membro do Conselho Científico da Associação Brasileira de Tecnologia Educacional. Integrante do Grupo de Trabalho sobre IA e Educação - Associação Brasileira de Tecnologia Educacional e Escola Britânica do Rio de Janeiro. Membro do Comitê Científico do Congresso dos Movimentos Docentes. Grupo de autores - Projeto de Inclusão à Educação pela OAB - Niterói. Líder do Grupo de Estudos - Letramento racial no ensino de língua inglesa. Doutor em Linguística Aplicada pela PUC-SP."
+    },
+    {
+     "t": "p",
+     "text": "Ler apresentação completa"
+    },
+    {
+     "t": "h3",
+     "text": "Monique D'Orazio"
+    },
+    {
+     "t": "p",
+     "text": "Tradutora editorial de 190 livros de ficção e não ficção, além de mais de 400 livros infantis. É tradutora de Arthur Conan Doyle, Jane Austen, Katharine Mansfield, George Eliot, Robert Louis Stevenson, Jeffrey Archer, Anna Todd, Tahereh Mafi, Maggie Stiefvater, Mary Balogh, entre outros grandes nomes. Também já revisou e preparou várias centenas de livros."
+    },
+    {
+     "t": "p",
+     "text": "Ler apresentação completa"
+    },
+    {
+     "t": "p",
+     "text": "←"
+    },
+    {
+     "t": "p",
+     "text": "→"
+    }
+   ]
+  },
+  {
+   "heading": "Antes do diploma, já existe experiência.",
+   "level": 2,
+   "blocks": [
+    {
+     "t": "li",
+     "text": "Livro publicado."
+    },
+    {
+     "t": "li",
+     "text": "Projeto internacional."
+    },
+    {
+     "t": "li",
+     "text": "Eventos profissionais."
+    },
+    {
+     "t": "li",
+     "text": "Cinema."
+    },
+    {
+     "t": "li",
+     "text": "Games."
+    },
+    {
+     "t": "li",
+     "text": "Audiodescrição."
+    },
+    {
+     "t": "li",
+     "text": "Mercado editorial."
+    },
+    {
+     "t": "p",
+     "text": "É assim que a Faculdade Phorte prepara você para transformar conhecimento em profissão."
+    },
+    {
+     "t": "a",
+     "href": "#inscricao",
+     "text": "Quero começar minha graduação →"
+    }
+   ]
+  },
+  {
+   "heading": "Matriz Curricular",
+   "level": 2,
+   "blocks": [
+    {
+     "t": "p",
+     "text": "A matriz curricular do Bacharelado em Tradução e Interpretação Português / Inglês contempla língua portuguesa, língua inglesa, estudos da tradução, interpretação, tecnologias, práticas tradutórias, tradução especializada, estágio supervisionado, TCC e atividades complementares."
+    },
+    {
+     "t": "p",
+     "text": "Nível de tradução A (pré-profissional)"
+    },
+    {
+     "t": "p",
+     "text": "Nível de tradução B (profissional generalista)"
+    },
+    {
+     "t": "p",
+     "text": "Nível de tradução C (profissional especialista)"
+    },
+    {
+     "t": "p",
+     "text": "Atividades complementares"
+    },
+    {
+     "t": "p",
+     "text": "Itinerário de tradução literária:"
+    },
+    {
+     "t": "li",
+     "text": "Tradução de prosa"
+    },
+    {
+     "t": "li",
+     "text": "Tradução de poesia"
+    },
+    {
+     "t": "li",
+     "text": "Tradução de peças teatrais"
+    },
+    {
+     "t": "li",
+     "text": "Tradução de HQ"
+    },
+    {
+     "t": "li",
+     "text": "Tradução de não-ficção"
+    },
+    {
+     "t": "p",
+     "text": "Itinerário de tradução audiovisual:"
+    },
+    {
+     "t": "li",
+     "text": "Práticas avançadas de legendagem"
+    },
+    {
+     "t": "li",
+     "text": "Práticas avançadas de tradução para dublagem"
+    },
+    {
+     "t": "li",
+     "text": "Legendagem para surdos e ensurdecidos"
+    },
+    {
+     "t": "li",
+     "text": "Audiodescrição"
+    },
+    {
+     "t": "li",
+     "text": "Tradução de videogames"
+    },
+    {
+     "t": "p",
+     "text": "Itinerário de tradução técnica e científica:"
+    },
+    {
+     "t": "li",
+     "text": "Tradução de gêneros científicos (artigos originais de pesquisa, relatórios clínicos, conferências, livros especializados, artigos de divulgação científica, informações para pacientes)"
+    },
+    {
+     "t": "li",
+     "text": "Tradução de gêneros técnicos (patentes, relatórios técnicos, manuais de instruções especializadas, normas técnicas, projetos técnicos)"
+    },
+    {
+     "t": "p",
+     "text": "Itinerário de tradução jurídica e financeira:"
+    },
+    {
+     "t": "li",
+     "text": "Tradução jurídica (contratos, atas, certidões, procurações, petições, sentenças)"
+    },
+    {
+     "t": "li",
+     "text": "Tradução financeira (contratos sociais, documentos contábeis, demonstrações financeiras, relatórios macroeconômicos, relatórios bursáteis)"
+    }
+   ]
+  },
+  {
+   "heading": "Graduação em Tradução e Interpretação",
+   "level": 2,
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Confira as informações do curso e fale com a nossa equipe."
+    },
+    {
+     "t": "p",
+     "text": "de R$ 792,00"
+    },
+    {
+     "t": "p",
+     "text": "por R$ 529,00 por mês"
+    }
+   ]
+  }
+ ]
+}
