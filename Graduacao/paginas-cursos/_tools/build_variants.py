@@ -352,9 +352,132 @@ def render_v3(m):
     return page(m, 3, "<main>%s%s%s%s</main>%s" % (hero, salary_block(m["slug"]), "".join(secs), cta, footer_html()))
 
 
+# ----------------------------------------------------------------------------- v4 — Refinada
+EMOJI = re.compile("[\U0001F300-\U0001FAFF☀-➿️]")
+DROP_V4 = re.compile(r"^(VAGAS ABERTAS|Ainda ficou com|Oferta exclusiva$|Comece sua gradua|MATRICULAS)", re.I)
+NAV_KEYS = re.compile(r"por que|impacto|atuar|diferenciais|docente|professores|matriz|trajet|estrutura|oferta|kit|d[uú]vidas|escolher", re.I)
+
+
+def pretty_title(t):
+    t = EMOJI.sub("", t).strip()
+    t = re.sub(r"[A-ZÀ-Ú]{3,}(?: [A-ZÀ-Ú]{3,})*", lambda m: m.group(0).title(), t)
+    return re.sub(r"\s+", " ", t).strip()
+
+
+def v4_model(m):
+    """Refina o modelo comum: título/subtítulo, fatos do hero, seções limpas e sem duplicatas."""
+    slug, d = m["slug"], load(m["slug"])
+    h1, sub = pretty_title(m["h1"]), ""
+    mm = re.search(r"\s+(Forma[çc][ãa]o .+)$", h1)
+    if mm:
+        h1, sub = h1[:mm.start()], mm.group(1)
+    facts = []
+    if m["badges"]:
+        facts.append(("Turma", re.sub(r"^Turma\s*", "", m["badges"][0])))
+        if len(m["badges"]) > 1:
+            facts.append(("Modalidade", m["badges"][1]))
+    secs, seen = [], set()
+    for s in m["sections"]:
+        s = dict(s, title=pretty_title(s["title"]))
+        key = re.sub(r"\W+", "", s["title"].lower())
+        if DROP_V4.search(s["title"]) and not (slug == "educacao-fisica" and s["title"].startswith("Oferta exclusiva!")):
+            continue
+        if key in seen:
+            continue
+        seen.add(key)
+        if s.get("st"):
+            bs, sb = set(), []
+            for b in s["st"]["buttons"]:
+                if b["text"].strip().lower() not in bs:
+                    bs.add(b["text"].strip().lower())
+                    sb.append(b)
+            s["st"] = dict(s["st"], buttons=sb)
+        secs.append(s)
+    if slug == "educacao-fisica":
+        facts = [("Duração", "8 semestres (4 anos)"), ("Modalidade", "Presencial 3 dias + online 2 dias"),
+                 ("Certificado", "Bacharelado"), ("Período", "Noturno")]
+        flat = [b for s in d["sections"] for b in s["blocks"]]
+        for s in secs:  # restos de botões/rótulos do carrossel original
+            st = s.get("st")
+            if st:
+                st["items"] = [it for it in st["items"] if it["list"] or not it["paras"] or len(it["paras"][0]) > 40]
+                st["lead"] = [p for p in st["lead"] if not re.match(r"^(Quero ser avisado|APRENDA COM)", p, re.I)]
+                st["buttons"] = [b for b in st["buttons"] if not re.search(r"avisado", b["text"], re.I)]
+        for s in secs:
+            if s["title"].startswith("Oferta exclusiva"):
+                lead = s["st"]["lead"]
+                s.update(kind="cards", title="Kit de boas-vindas para os 20 primeiros matriculados",
+                         lead=[lead[0]] if lead else [],
+                         items=[{"title": lead[i], "text": lead[i + 1]} for i in range(1, 6, 2) if i + 1 < len(lead)])
+        mec = next((b["text"] for b in flat if b["t"] == "p" and b["text"].startswith("Sim, o curso de Educação Física")), "")
+        if mec:
+            secs.append({"kind": "faq", "title": "Dúvidas frequentes", "st": {
+                "lead": [], "buttons": [], "faq": [{"q": "O curso é autorizado pelo MEC?", "a": mec}]}})
+    if m["prices"]:
+        facts.append(("Mensalidade", "a partir de " + m["prices"][-1]))
+    return dict(m, h1=h1, sub=sub, facts=facts, sections=secs)
+
+
+def short_label(t):
+    t = re.sub(r"[?!.]+$", "", t)
+    t = re.sub(r"^(Conheça nosso |Por que estudar |Qual o |Uma |Como funciona a )", "", t, flags=re.I)
+    t = t[:1].upper() + t[1:]
+    return t if len(t) <= 26 else t[:25].rsplit(" ", 1)[0] + "…"
+
+
+def render_v4(m0):
+    m = v4_model(m0)
+    intro = "".join("<p>%s</p>" % E(p) for p in m["intro"][:2])
+    chips = hero_badges(m)
+    price = ""
+    if m["prices"]:
+        old = '<s>%s</s>' % E(m["prices"][0]) if len(m["prices"]) == 2 else ""
+        price = ('<div class="hero__price"><span>Mensalidade a partir de</span><p>%s<strong>%s</strong></p></div>'
+                 % (old, E(m["prices"][-1])))
+    fig = ('<figure class="hero__fig"><img src="%s" alt="%s">%s</figure>' % (E(m["hero_img"]), E(m["name"]), price)) \
+        if m["hero_img"] else ('<div class="hero__fig hero__fig--plain">%s</div>' % price)
+    hero = ('<header class="hero"><div class="wrap hero__grid"><div class="hero__copy"><p class="eyebrow">Graduação · Faculdade Phorte</p>'
+            '<h1>%s</h1>%s%s<div class="chips">%s</div>%s<div class="actions">%s%s</div></div>%s</div></header>'
+            % (E(m["h1"]), ('<p class="hero__sub">%s</p>' % E(m["sub"])) if m["sub"] else "", intro, chips, bullets(m),
+               button(m["cta"], "Quero me inscrever"), '<a class="btn btn--ghost" href="#salarios">Quanto ganha na área</a>', fig))
+    facts = ('<div class="wrap"><dl class="strip">%s</dl></div>' % "".join(
+        "<div><dt>%s</dt><dd>%s</dd></div>" % (E(k), E(v)) for k, v in m["facts"])) if m["facts"] else ""
+    target = next((i for i, s in enumerate(m["sections"]) if re.search(r"impacto|atuar", s["title"], re.I)), None)
+    if target is None:
+        target = min(1, len(m["sections"]) - 1)
+    body, nav, placed = [], [], False
+    for i, s in enumerate(m["sections"]):
+        if s["kind"] == "cards" and s.get("lead"):
+            html = render_section(dict(s, kind="cards"), m, 4).replace(
+                '<div class="cards">', "".join('<p class="lead">%s</p>' % E(p) for p in s["lead"]) + '<div class="cards">', 1)
+        else:
+            html = render_section(s, m, 4)
+        body.append(html)
+        if NAV_KEYS.search(s["title"]) and s["kind"] != "band" and len(nav) < 5:
+            nav.append((slugify(s["title"]), short_label(s["title"])))
+        if i == target:
+            body.append(salary_block(m["slug"]))
+            nav.append(("salarios", "Salários"))
+            placed = True
+    if not placed:
+        body.append(salary_block(m["slug"]))
+        nav.append(("salarios", "Salários"))
+    nav_html = '<nav class="subnav" aria-label="Nesta página"><div class="wrap">%s</div></nav>' % "".join(
+        '<a href="#%s">%s</a>' % (E(a), E(b)) for a, b in nav)
+    cta = ('<section class="cta"><div class="wrap cta__card"><div><h2>Sua vaga em %s está aberta</h2>'
+           '<p>Vestibular simplificado, 100%% online. Garanta sua vaga%s.</p></div>%s</div></section>'
+           % (E(m["name"]), (" a partir de " + E(m["prices"][-1]) + "/mês") if m["prices"] else "", button(m["cta"], "Fazer inscrição")))
+    sticky = ('<div class="stickybar"><div><small>%s</small><strong>%s</strong></div>%s</div>'
+              % (E(m["name"]), E(("a partir de " + m["prices"][-1]) if m["prices"] else "Vagas abertas"), button(m["cta"], "Inscrever-se")))
+    js = ('<script>(function(){var l=[].slice.call(document.querySelectorAll(".subnav a"));if(!("IntersectionObserver"in window))return;'
+          'var o=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){l.forEach(function(a){a.classList.toggle("is-on",a.getAttribute("href")==="#"+x.target.id)})}})},{rootMargin:"-40% 0px -55% 0px"});'
+          'l.forEach(function(a){var t=document.getElementById(a.getAttribute("href").slice(1));if(t)o.observe(t)})})();</script>')
+    return page(m, 4, "%s%s<main>%s%s</main>%s%s%s" % (hero, facts, nav_html, "".join(body), cta, footer_html(), sticky) + js)
+
+
 def run(slug):
     m = normalize(slug)
-    for v, fn in ((2, render_v2), (3, render_v3)):
+    for v, fn in ((2, render_v2), (3, render_v3), (4, render_v4)):
         d = os.path.join(ROOT, slug, "v%d" % v)
         os.makedirs(d, exist_ok=True)
         with open(os.path.join(d, "index.html"), "w", encoding="utf-8") as f:

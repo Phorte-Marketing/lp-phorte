@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Páginas de curso · v1, v2 e v3 — Graduação Phorte</title>
+<title>Páginas de curso · v1 a v4 — Graduação Phorte</title>
 <link rel="stylesheet" href="_shared/base.css">
 <style>
   body{background:var(--canvas)}
@@ -29,13 +29,14 @@
 <div class="wrap">
   <header class="top">
     <p class="eyebrow">Graduação · Faculdade Phorte</p>
-    <h1>Páginas de curso: v1, v2 e v3</h1>
+    <h1>Páginas de curso: v1 a v4</h1>
     <p>Sete páginas de graduação com a seção de salários na direção visual aprovada (02 · Destaque de mercado). Sem header e sem navbar. Abra cada versão para avaliar.</p>
   </header>
   <section class="legend" aria-label="Versões">
     <div><b>v1 · Cópia do site</b>HTML do site atual, estático, com CSS, imagens e fontes locais.</div>
     <div><b>v2 · Editorial claro</b>Fundo claro, hero em duas colunas, faixas alternadas.</div>
     <div><b>v3 · Impacto Phorte</b>Hero vermelho profundo, painel de matrícula flutuante, salário logo após o hero.</div>
+    <div><b>v4 · Refinada</b>Hero claro com preço, faixa de fatos, navegação fixa por seção, limpeza de duplicatas e barra de inscrição no mobile.</div>
   </section>
   <main class="grid" id="grid"></main>
   <p class="note"><b>Para validação:</b> conteúdo, preços e links de inscrição foram copiados do site atual; valores e fontes salariais ainda precisam de confirmação antes da publicação. Os formulários e integrações do site não foram incluídos.</p>
@@ -46,7 +47,7 @@
     ["pedagogia", "Pedagogia"], ["processos-gerenciais", "Processos Gerenciais"],
     ["recursos-humanos", "Recursos Humanos"], ["traducao-e-interpretacao", "Tradução e Interpretação"]
   ];
-  var vers = [["v1", "v1 · Cópia do site", "fiel ao site"], ["v2", "v2 · Editorial claro", "nova direção"], ["v3", "v3 · Impacto Phorte", "nova direção"]];
+  var vers = [["v1", "v1 · Cópia do site", "fiel ao site"], ["v2", "v2 · Editorial claro", "nova direção"], ["v3", "v3 · Impacto Phorte", "nova direção"], ["v4", "v4 · Refinada", "recomendada p/ avaliar"]];
   document.getElementById("grid").innerHTML = cursos.map(function (c) {
     return '<article class="course"><h2>' + c[1] + '</h2><div class="vers">' + vers.map(function (v) {
       return '<a href="' + c[0] + '/' + v[0] + '/index.html"><span>' + v[1] + '</span><small>' + v[2] + '</small></a>';

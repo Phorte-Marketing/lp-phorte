@@ -1,4 +1,4 @@
-# Páginas de curso — Graduação (v1, v2, v3)
+# Páginas de curso — Graduação (v1 a v4)
 
 Sete cursos: Educação Física, Administração, Marketing, Pedagogia, Processos Gerenciais, Recursos Humanos, Tradução e Interpretação.
 
@@ -7,6 +7,7 @@ Sete cursos: Educação Física, Administração, Marketing, Pedagogia, Processo
 | v1 | Cópia estática da página do site atual, sem header/navbar/popups/scripts, com CSS, imagens e fontes locais | `<curso>/v1/index.html` |
 | v2 | Editorial claro | `<curso>/v2/index.html` |
 | v3 | Impacto Phorte | `<curso>/v3/index.html` |
+| v4 | Refinada: hero claro com preço, faixa de fatos, navegação fixa, seções limpas (sem duplicatas/restos de formulário), barra de inscrição no mobile | `<curso>/v4/index.html` |
 
 A seção de salários (direção 02 · Destaque de mercado, aprovada) está nas três versões. Dados em `_shared/salarios.json`, estilo em `_shared/salario-02.css`, origem no [protótipo](../prototipo-salarios/index.html).
 
@@ -16,7 +17,7 @@ A seção de salários (direção 02 · Destaque de mercado, aprovada) está nas
 python -I _tools/snapshot.py        # baixa as 7 páginas do site -> v1 (sobrescreve v1)
 python -I _tools/inject_salary.py   # injeta a seção de salários na v1
 python -I _tools/extract.py         # extrai o conteúdo da v1 -> <curso>/content.json
-python -I _tools/build_variants.py  # gera v2 e v3
+python -I _tools/build_variants.py  # gera v2, v3 e v4
 ```
 
 ## Limites conhecidos
