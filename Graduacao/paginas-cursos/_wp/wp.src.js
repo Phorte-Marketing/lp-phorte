@@ -4,7 +4,7 @@
   var FACT = {"179b3cc5":"graduation-cap","1405263e":"calendar-clock","1aeabeb0":"moon","59778430":"map-pin","f5315d0":"monitor-play"};
   var MATRIX = {"Organização Empresarial":"building-2","Sustentabilidade Empresarial":"leaf","Finanças":"piggy-bank","Marketing e Cadeia de Suprimentos":"megaphone","Gestão de Pessoas e Processos":"users","Gestão de Negócio":"briefcase-business","Gestão de Mercado":"trending-up","Gestão Contemporânea":"lightbulb","Gestão de Marketing":"megaphone","Marketing e Empreendedorismo":"rocket","Administração do Capital Humano":"users","Desenvolvimento das Pessoas":"sprout"};
   var FALLBACK = ["building-2","leaf","piggy-bank","megaphone","users","briefcase-business","trending-up","lightbulb"];
-  var IMPACT = {"Group-233-":"banknote","Group-232-1-":"briefcase-business","Group-234-1-":"trending-up","Group-230-1-":"handshake"};
+  var IMPACT = {"Group-233.":"banknote","Group-232-1.":"briefcase-business","Group-234-1.":"trending-up","Group-230-1.":"handshake"};
   function svg(name, cls) { return '<svg aria-hidden="true" class="' + cls + '" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-lucide="' + name + '">' + ICONS[name] + '</svg>'; }
   function $(s, r) { return (r || document).querySelector(s); }
   function $$(s, r) { return [].slice.call((r || document).querySelectorAll(s)); }
@@ -91,12 +91,23 @@
     });
   }
 
+  /* a foto vem de um CSS dinâmico do Jet (por post); se o navegador não a aplicou, lê a URL direto das regras */
+  var CSS_TEXT = null;
+  function photoUrl(card) {
+    var m = getComputedStyle(card).backgroundImage.match(/url\(["']?([^"')]+)["']?\)/);
+    if (m) return m[1];
+    var item = card.closest('.jet-listing-grid__item'), id = item && (item.className.match(/jet-listing-dynamic-post-(\d+)/) || [])[1];
+    if (!id) return null;
+    if (CSS_TEXT === null) CSS_TEXT = [].slice.call(document.querySelectorAll('style')).map(function (x) { return x.textContent; }).join('\n');
+    var r = CSS_TEXT.match(new RegExp('jet-listing-dynamic-post-' + id + '[^{}]*elementor-element-d61b7e4[^{}]*\\{background-image:url\\("([^"]+)"\\)'));
+    return r ? r[1] : null;
+  }
   function photos() {
     $$('.elementor-element-d61b7e4').forEach(function (card) {
       if (card.classList.contains('ph-photo')) return;
-      var m = getComputedStyle(card).backgroundImage.match(/url\(["']?([^"')]+)["']?\)/), area = $('.elementor-element-f829ee6', card); if (!m || !area) return;
+      var u = photoUrl(card), area = $('.elementor-element-f829ee6', card); if (!u || !area) return;
       var n = $('.elementor-element-eff8e2a', card), img = document.createElement('img');
-      img.src = m[1]; img.loading = 'lazy'; img.className = 'ph-prof-photo'; img.alt = n ? 'Foto de ' + n.textContent.trim() : ''; area.appendChild(img); card.classList.add('ph-photo');
+      img.src = u; img.loading = 'lazy'; img.className = 'ph-prof-photo'; img.alt = n ? 'Foto de ' + n.textContent.trim() : ''; area.appendChild(img); card.classList.add('ph-photo');
     });
   }
 
