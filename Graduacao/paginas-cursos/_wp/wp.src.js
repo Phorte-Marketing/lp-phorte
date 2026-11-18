@@ -47,6 +47,7 @@
       sl.setAttribute('data-ph-car', '1');
       if (sw.autoplay && sw.autoplay.running) sw.autoplay.stop();
       sw.params.autoplay = false;
+      sw.params.speed = (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) ? 0 : 650;
       var label = $('.elementor-element-743a018', sl) ? 'Disciplinas do curso' : $('.elementor-element-d61b7e4', sl) ? 'Corpo docente' : 'Carrossel', split = label === 'Corpo docente';
       sl.setAttribute('role', 'region'); sl.setAttribute('aria-roledescription', 'carrossel'); sl.setAttribute('aria-label', label);
       sw.params.breakpoints = { 0: { slidesPerView: 1, slidesPerGroup: 1 }, 768: { slidesPerView: 2, slidesPerGroup: 2 }, 1025: { slidesPerView: 3, slidesPerGroup: 3 } };

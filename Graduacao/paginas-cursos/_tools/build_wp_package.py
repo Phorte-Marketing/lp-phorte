@@ -25,6 +25,8 @@ for d in drop:
 repl = (PAGES % slug) if pages else "IMG_"
 css = re.sub(r'(background-image:url\()"img/([^"]+)"', lambda m: '%s"%s%s"' % (m.group(1), repl, m.group(2)), css)
 css += "\n" + open(os.path.join(ROOT, "_shared", "salario-02.css"), encoding="utf-8").read()
+# troca dos carrosséis do Jet: desaceleração suave (a duração vem do JS; movimento reduzido zera)
+css += "\n.jet-listing-grid__slider .swiper-wrapper{transition-timing-function:cubic-bezier(.25,.8,.25,1)!important}\n@media (prefers-reduced-motion:reduce){.jet-listing-grid__slider .swiper-wrapper{transition-duration:0ms!important}}\n"
 # barra inferior "Faça sua inscrição" (popup 34612 "Rodapé Inscreva-se"): padrão antigo, não entra no layout novo
 css += "\n/* popup 34612 (barra inferior) fora do layout novo */\n#elementor-popup-modal-34612,.elementor-popup-modal:has(.elementor-element-5748245){display:none!important}\n"
 
