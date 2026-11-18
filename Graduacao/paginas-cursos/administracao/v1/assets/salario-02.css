@@ -1,21 +1,39 @@
-/* Seção de salários — direção 02 "Destaque de mercado" (aprovada).
+/* Seção de salários — direção 02 "Destaque de mercado" (aprovada). Revisão: texto maior e caixa de valores em destaque.
    Tokens do Design System Phorte isolados no componente. */
-.phorte-salary{--ps-ink:#1A1A1A;--ps-muted:#595959;--ps-line:#E5E5E5;--ps-paper:#FFFFFF;--ps-primary-dark:#A81E1E;
-  --ps-shadow:0 4px 18px rgb(26 26 26 / 4%);font-family:Poppins,Inter,ui-sans-serif,system-ui,"Segoe UI",sans-serif;color:var(--ps-ink);
-  padding:48px 20px;background:#FAFAFA;box-sizing:border-box;line-height:1.6;text-align:left}
+.phorte-salary{--ps-ink:#1A1A1A;--ps-muted:#4A4A4A;--ps-line:#E5E5E5;--ps-paper:#FFFFFF;--ps-primary:#D42B2B;--ps-primary-dark:#A81E1E;--ps-deep:#7D1B1B;
+  font-family:Poppins,Inter,ui-sans-serif,system-ui,"Segoe UI",sans-serif;color:var(--ps-ink);
+  padding:64px 20px;background:#FAFAFA;box-sizing:border-box;line-height:1.6;text-align:left}
 .phorte-salary *{box-sizing:border-box}
 .phorte-salary__inner{width:min(1180px,100%);margin:0 auto}
-.phorte-salary__panel{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);grid-template-rows:auto auto;gap:20px 32px;align-items:center;
-  padding:24px;border:1px solid var(--ps-line);border-radius:12px;background:var(--ps-paper);overflow:hidden}
-.phorte-salary__copy h2{margin:0;color:var(--ps-primary-dark);font-size:clamp(25px,2.6vw,34px);font-weight:700;line-height:1.2;letter-spacing:-.025em}
-.phorte-salary__copy p{margin:12px 0 0;color:var(--ps-muted);font-size:14px;line-height:1.55}
-.phorte-salary__list{display:grid;grid-template-columns:1fr;overflow:hidden;border:1px solid var(--ps-line);border-radius:8px;background:var(--ps-paper);box-shadow:var(--ps-shadow)}
-.phorte-salary__list-title{margin:0;padding:16px;border-bottom:1px dashed var(--ps-line);color:var(--ps-primary-dark);font-size:15px;font-weight:600;line-height:1.4}
-.phorte-salary__item{min-height:72px;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"role value" "label value";align-items:center;gap:2px 12px;padding:12px 16px;border-bottom:1px dashed var(--ps-line)}
-.phorte-salary__item:last-child{border-bottom:0}
-.phorte-salary__value{grid-area:value;color:var(--ps-primary-dark);font-size:clamp(18px,1.8vw,22px);font-weight:700;line-height:1.1;letter-spacing:-.025em;white-space:nowrap}
-.phorte-salary__label{grid-area:label;color:var(--ps-muted);font-size:10px;font-weight:500}
-.phorte-salary__role{grid-area:role;color:var(--ps-ink);font-size:12px;line-height:1.4}
-.phorte-salary__source{grid-column:1;grid-row:2;margin:0;color:var(--ps-muted);font-size:10px;line-height:1.45}
-@media (max-width:800px){.phorte-salary__panel{grid-template-columns:1fr}.phorte-salary__source{grid-column:auto;grid-row:auto}}
-@media (max-width:560px){.phorte-salary{padding:32px 12px}.phorte-salary__panel{padding:16px;gap:16px}.phorte-salary__item{padding:12px}.phorte-salary__source{font-size:11px}}
+.phorte-salary__panel{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);grid-template-rows:auto auto;gap:24px 48px;align-items:center;
+  padding:40px;border:1px solid var(--ps-line);border-radius:16px;background:var(--ps-paper);box-shadow:0 4px 18px rgb(26 26 26 / 5%);overflow:hidden}
+.phorte-salary__copy h2{margin:0;color:var(--ps-primary-dark);font-size:clamp(30px,3.4vw,44px);font-weight:700;line-height:1.12;letter-spacing:-.03em}
+.phorte-salary__prof{text-decoration:underline;text-decoration-thickness:.09em;text-underline-offset:.14em;text-decoration-skip-ink:auto}
+.phorte-salary__hl{font-weight:700;color:var(--ps-primary-dark);white-space:nowrap}
+.phorte-salary__copy p{margin:18px 0 0;color:var(--ps-muted);font-size:clamp(16px,1.4vw,18px);line-height:1.65}
+
+/* caixa de valores em destaque */
+.phorte-salary__list{display:grid;grid-template-columns:1fr;overflow:hidden;border-radius:16px;color:#fff;
+  background:radial-gradient(520px 220px at 100% 0%,rgb(255 255 255 / 14%) 0%,transparent 70%),linear-gradient(145deg,var(--ps-deep) 0%,var(--ps-primary-dark) 100%);
+  box-shadow:0 22px 48px rgb(125 27 27 / 30%)}
+.phorte-salary__list-title{margin:0;padding:22px 28px 16px;color:#FFD3D3;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;line-height:1.4}
+.phorte-salary__item{min-height:92px;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"role value" "label value";align-items:center;gap:4px 20px;padding:16px 28px;border-top:1px solid rgb(255 255 255 / 20%);position:relative;transition:background .2s}
+.phorte-salary__item:hover{background:rgb(255 255 255 / 7%)}
+.phorte-salary__value{grid-area:value;color:#fff;font-size:clamp(28px,3.2vw,40px);font-weight:700;line-height:1.05;letter-spacing:-.02em;white-space:nowrap;font-variant-numeric:tabular-nums}
+.phorte-salary__label{grid-area:label;justify-self:start;margin-top:4px;padding:2px 10px;border-radius:999px;background:rgb(255 255 255 / 14%);color:#FFE3E3;font-size:12px;font-weight:600;letter-spacing:.02em}
+.phorte-salary__role{grid-area:role;color:#fff;font-size:clamp(16px,1.5vw,19px);font-weight:600;line-height:1.35}
+.phorte-salary__source{grid-column:1/-1;grid-row:2;margin:0;color:var(--ps-muted);font-size:13px;line-height:1.5}
+
+@media (max-width:900px){.phorte-salary__panel{grid-template-columns:1fr;padding:28px;gap:24px}.phorte-salary__source{grid-column:auto;grid-row:auto}}
+@media (max-width:560px){
+  .phorte-salary{padding:40px 12px}
+  .phorte-salary__panel{padding:20px;gap:20px;border-radius:14px}
+  .phorte-salary__copy p{font-size:16px}
+  .phorte-salary__list{border-radius:14px}
+  .phorte-salary__list-title{padding:18px 20px 12px;font-size:12px}
+  .phorte-salary__item{grid-template-columns:1fr;grid-template-areas:"role" "value" "label";gap:2px;padding:18px 20px;min-height:0}
+  .phorte-salary__role{font-size:16px}
+  .phorte-salary__value{font-size:clamp(32px,10vw,40px);white-space:normal;margin-top:2px}
+  .phorte-salary__label{margin-top:6px}
+  .phorte-salary__source{font-size:12px}
+}
