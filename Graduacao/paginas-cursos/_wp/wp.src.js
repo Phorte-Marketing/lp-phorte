@@ -12,8 +12,9 @@
 
   function icons() {
     Object.keys(FACT).forEach(function (id) {
-      var w = el(id); if (!w) return;
-      $$('svg, i', w).forEach(function (s) { if (!s.classList.contains('ph-lucide') && s.closest('.elementor-icon')) s.outerHTML = svg(FACT[id], 'e-font-icon-svg ph-lucide'); });
+      $$('.elementor-element-' + id).forEach(function (w) {   /* inclui os clones que o Swiper cria para o loop */
+        $$('svg, i', w).forEach(function (s) { if (!s.classList.contains('ph-lucide') && s.closest('.elementor-icon')) s.outerHTML = svg(FACT[id], 'e-font-icon-svg ph-lucide'); });
+      });
     });
     $$('.elementor-element-743a018').forEach(function (card, i) {
       var old = $('svg.e-far-caret-square-right', card); if (!old) return;
