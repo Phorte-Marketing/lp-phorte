@@ -1,0 +1,547 @@
+/* Ajustes da cópia local v1: substitui o que dependia do JS do WordPress/Elementor. */
+html{scroll-behavior:smooth}
+.elementor-widget-lottie,.elementor-lottie{display:none!important}
+
+/* Hero (Administração, Marketing, Processos Gerenciais, RH): as duas colunas terminam na mesma altura.
+   A caixa de texto à esquerda e o cartão de preço à direita crescem juntos; no cartão o espaço extra vai entre os itens. */
+@media (min-width:768px){
+  .e-con-inner:has(> .elementor-element-182a6cdf):has(> .elementor-element-19adc996){align-items:stretch;flex:0 0 auto;height:auto;align-self:center}
+  .elementor-element-182a6cdf,.elementor-element-19adc996{align-self:stretch}
+  .elementor-element-182a6cdf > .elementor-element-4116f0bd{flex:1 1 auto}
+  .elementor-element-19adc996 > .elementor-element-1270428b{flex:1 1 auto;align-content:space-between}
+}
+
+/* ==== DS-PHORTE:INICIO — Design System Phorte na v1 (só CSS; fonte: _shared/phorte-tokens.css + _shared/v1-ds.css + _shared/v1-ds-ui.css) ==== */
+/* Tokens do Design System da Faculdade Phorte, extraídos de https://phorte-design-system.vercel.app (styleguide e contrato de tokens).
+   Prefixo --ph- para não colidir com variáveis do tema Hello Elementor / Elementor Kit ao publicar no WordPress.
+   Mapeamento: --ph-primary = --primary do DS, e assim por diante. Só entram os tokens usados nas páginas de curso. */
+:root{
+  /* tipografia: família única Poppins, cinco pesos (400 500 600 700 900), sem itálico */
+  --ph-font:"Poppins","Poppins Fallback",ui-sans-serif,system-ui,sans-serif;
+  --ph-tracking-pesado:-.01em;   /* pesos 700 e 900 */
+  --ph-leading-pesado:1.35;
+  --ph-text-corpo:1rem;  --ph-leading-corpo:1.625;
+  --ph-text-apoio:.875rem; --ph-leading-apoio:1.375;
+  --ph-text-rotulo:.75rem; /* mínimo do perfil Standard: 12px */
+  --ph-titulo-1:2.25rem; --ph-titulo-1-md:3rem;
+  --ph-titulo-2:1.875rem; --ph-titulo-2-md:2.25rem;
+  --ph-titulo-3:1.5rem; --ph-titulo-3-md:1.875rem; --ph-titulo-4:1.25rem;
+
+  /* cores (contrato): texto >= 4,5:1, limite de controle >= 3:1 */
+  --ph-background:#FAFAFA; --ph-foreground:#1A1A1A; --ph-card:#FFFFFF;
+  --ph-primary:#D42B2B;        /* 5,0:1 com branco */
+  --ph-primary-dark:#A81E1E;   /* 7,3:1 com branco */
+  --ph-primary-foreground:#FFFFFF;
+  --ph-primary-subtle:#FBEAEA;
+  --ph-footer-red:#7D1B1B;     /* anel de foco em fundo claro */
+  --ph-brand-red:#E64242;      /* marca: só decoração (4,0:1 com branco, não use sob texto) */
+  --ph-secondary:#0B8434; --ph-secondary-dark:#0D6B2E; --ph-secondary-subtle:#EAF4EE;
+  --ph-muted:#F4F6F9; --ph-muted-foreground:#595959; /* 7,0:1 sobre branco */
+  --ph-ink-inverse:#FAFAFA; --ph-ink-inverse-muted:#C7C7C7;
+  --ph-border:#E5E5E5; --ph-border-interactive:#8C8C8C; --ph-border-focus:#6B6B6B;
+  --ph-ring:var(--ph-footer-red); --ph-ring-inverse:var(--ph-ink-inverse);
+
+  /* forma, efeito, movimento */
+  --ph-radius:.5rem;
+  --ph-sombra-repouso:0 1px 3px 0 #0000001a,0 1px 2px -1px #0000001a;
+  --ph-sombra-hover:0 4px 6px -1px #0000001a,0 2px 4px -2px #0000001a;
+  --ph-sombra-flutuante:0 10px 15px -3px #0000001a,0 4px 6px -4px #0000001a;
+  --ph-largura-foco:2px; --ph-afastamento-foco:2px;
+  --ph-alvo-toque:2.75rem;     /* 44px: alvo mínimo de toque */
+  --ph-duracao-rapida:.15s; --ph-ease:cubic-bezier(.4,0,.2,1);
+}
+
+/* Design System Phorte aplicado à v1: somente CSS, sem alterar estrutura/HTML do Elementor.
+   Os tokens (:root) vêm de phorte-tokens.css e são colados na frente deste arquivo por _tools/apply_v1_ds.py. */
+
+/* 1) Cores globais do Elementor Kit: o vermelho de fundo (#E64242, 4,0:1 com branco) vira o primário do DS (#D42B2B, 5,0:1)
+      e o texto padrão (#7A7A7A, 4,3:1) vira o cinza do DS (#595959, 7,0:1).
+      No WordPress: Configurações do site > Cores globais (cor "E64242" e cor de Texto). */
+body[class*="elementor-kit-"]{--e-global-color-21f3494:var(--ph-primary);--e-global-color-text:var(--ph-muted-foreground)}
+
+/* 2) Poppins em tudo, só com os cinco pesos do contrato: 300 usa o arquivo 400 e 800 usa o 900.
+      As caixas de fato do curso (Roboto) voltam para Poppins. */
+.elementor-icon-box-description,.elementor-icon-box-title,.elementor-icon-box-title a{font-family:var(--ph-font)}
+
+/* 3) Texto corrido com a entrelinha de corpo do DS (1,625) */
+.elementor-widget-text-editor,.elementor-widget-text-editor p,.elementor-widget-text-editor li{line-height:var(--ph-leading-corpo)}
+
+/* 4) Hero (cartão de inscrição): fundo no primário do DS; chip da turma e botão sem texto branco sobre amarelo/laranja (1,4:1).
+      !important porque o CSS gerado pelo Elementor tem especificidade alta (:not(...) por elemento). */
+.elementor-element.elementor-element-1270428b{background-color:var(--ph-primary)!important}
+.elementor-element.elementor-element-10b58e26{background-image:none!important;background-color:var(--ph-primary-subtle)!important}
+.elementor-element.elementor-element-10b58e26 .elementor-heading-title{color:var(--ph-primary-dark)!important}
+.elementor-element.elementor-element-28a64d51 .elementor-button{background-image:none!important;background-color:#fff!important;color:var(--ph-primary-dark)!important;box-shadow:var(--ph-sombra-flutuante)!important;min-height:var(--ph-alvo-toque);transition:background-color var(--ph-duracao-rapida) var(--ph-ease)}
+.elementor-element.elementor-element-28a64d51 .elementor-button:hover{background-color:var(--ph-primary-subtle)!important}
+.elementor-element.elementor-element-28a64d51 .elementor-button *{color:inherit!important}
+
+/* 5) Legenda sobre fundo escuro (e-MEC): #7A7A7A sobre #571314 = 3,2:1 -> cinza de tinta inversa, 8,2:1 */
+figcaption.wp-caption-text,.wp-caption figcaption{color:var(--ph-ink-inverse-muted)!important}
+
+/* 5b) Cartões de professores: o véu escuro sobre a foto começava só em 40% da altura e deixava o nome sobre foto clara (< 4,5:1).
+       Agora o véu já está em 88% de opacidade quando o texto começa. */
+.elementor-element.elementor-element-d61b7e4::before{background-image:linear-gradient(rgba(30,6,7,0) 28%,rgba(30,6,7,.88) 52%,#1E0607 70%)!important;opacity:1!important}
+
+/* 6) Foco visível: contorno de 2px com recuo de 2px (continua visível nas cores forçadas do Windows); sobre fundo vermelho usa o anel inverso */
+:where(a,button,summary,input,select,textarea,[tabindex]:not([tabindex="-1"])):focus-visible{outline:var(--ph-largura-foco) solid var(--ph-ring)!important;outline-offset:var(--ph-afastamento-foco)!important;border-radius:var(--ph-radius)}
+.elementor-element-1270428b :focus-visible,.elementor-element-4116f0bd :focus-visible,.elementor-element-85ce69c :focus-visible,.elementor-element-26c43c4e :focus-visible,.elementor-element-d61b7e4 :focus-visible,.elementor-element-26c43c4e:focus-visible{outline-color:var(--ph-ring-inverse)!important}
+.skip-link:focus{background:var(--ph-footer-red);color:var(--ph-ink-inverse);padding:12px 20px;z-index:100000;outline:var(--ph-largura-foco) solid var(--ph-ring-inverse);outline-offset:-4px}
+
+/* 7) Alvos de toque de 44px nas listas de links e nos links do rodapé */
+.elementor-location-footer a{display:inline-flex;align-items:center;min-height:var(--ph-alvo-toque)}
+.elementor-icon-list-item>a{display:inline-flex;align-items:center;min-height:var(--ph-alvo-toque)}
+.elementor-widget-icon-list .elementor-icon-list-item>a{width:100%}
+
+/* 8) Rodapé do site (template 31347): nenhum texto abaixo de 12px (estava entre 8px e 11px) */
+.elementor-element-e3af136 .elementor-heading-title,.elementor-element-7bc724b a,.elementor-element-3a40700 a,.elementor-element-98ac666 a,.elementor-element-515e6c7 .elementor-heading-title,.elementor-element-d964ec2 a,.elementor-element-7acf4b5 .elementor-icon-list-text,.elementor-element-d236b09 .elementor-icon-list-text{font-size:12px}
+
+/* 9) Movimento reduzido */
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* v1 · menos ruído visual: cores chapadas no lugar de degradês, sombras do DS, escala tipográfica do DS e texto organizado.
+   Só CSS (e os ícones Lucide trocados dentro dos ícones que já existem). Seletores por data-id do Elementor; os 4 cursos de gestão compartilham os ids. */
+
+/* ---------- 1) Degradês viram cor chapada ---------- */
+/* os degradês que vêm do site.css são convertidos por _tools/apply_v1_ds.py (bloco "Degradês" no fim do arquivo) */
+/* painéis do hero e do "Por que estudar": vinho chapado do DS (#7D1B1B, 10,3:1 com branco) */
+.elementor-element.elementor-element-4116f0bd,.elementor-element.elementor-element-769fb2e3,.elementor-element.elementor-element-2ed96101{background-image:none!important;background-color:var(--ph-footer-red)!important}
+/* cartões de impacto na carreira: vermelho escuro do DS (#A81E1E, 7,3:1) */
+.elementor-element.elementor-element-498573b0,.elementor-element.elementor-element-360f1b0e,.elementor-element.elementor-element-3906c9aa,.elementor-element.elementor-element-78eea982{background-image:none!important;background-color:var(--ph-primary-dark)!important}
+/* diferenciais: faixa cinza clara do DS e cartões brancos (eram laranja sobre vinho) */
+.elementor-element.elementor-element-711740cd:not(#ph){background-image:none!important;background-color:var(--ph-muted)!important}
+/* professores: sem véu degradê; foto em cima e base escura chapada onde fica o texto */
+.elementor-element.elementor-element-d61b7e4::before{background-image:linear-gradient(rgba(30,6,7,0) 52%,#1E0607 52%)!important;opacity:1!important}
+
+/* ---------- 2) Sombras do DS ---------- */
+.elementor-element.elementor-element-4fc456d7{box-shadow:none!important;border-bottom:1px solid var(--ph-border)}
+.elementor-element.elementor-element-1270428b{box-shadow:var(--ph-sombra-flutuante)!important}
+.elementor-element.elementor-element-4116f0bd,.elementor-element.elementor-element-769fb2e3,.elementor-element.elementor-element-2ed96101,.elementor-element.elementor-element-15c2e1f4{box-shadow:var(--ph-sombra-repouso)!important}
+.elementor-widget-image img.attachment-large,.elementor-widget-image img.attachment-full{box-shadow:var(--ph-sombra-hover)!important}
+
+/* ---------- 3) Escala tipográfica do DS (Poppins; corpo 16/1,625; apoio 14; títulos com tracking -0,01em) ---------- */
+/* títulos de seção: um tamanho só (DS titulo-2: 30px no celular, 36px no desktop) */
+:is(.elementor-element-760bd4e,.elementor-element-525bcae2,.elementor-element-195fd289,.elementor-element-722e0ddc,.elementor-element-3740e25f,.elementor-element-77ff3ac6,.elementor-element-f3cd03f,.elementor-element-305610ac,.elementor-element-85ce69c)
+  :is(.premium-title-text,.premium-title-header,h1,h2,h3,.elementor-heading-title){font-size:clamp(1.875rem,1.4rem + 1.2vw,2.25rem)!important;line-height:var(--ph-leading-pesado)!important;letter-spacing:var(--ph-tracking-pesado)!important;font-weight:700!important}
+/* título principal (DS titulo-1: 36px a 48px) */
+.elementor-element-136d314b :is(.premium-title-text,.premium-title-header,h1){font-size:clamp(1.75rem,.9rem + 4.4vw,3rem)!important;line-height:var(--ph-leading-pesado)!important;letter-spacing:var(--ph-tracking-pesado)!important;font-weight:900!important}
+/* títulos gradiente viram cor chapada (texto com degradê varia o contraste ao longo da palavra) */
+:is(.elementor-element-136d314b,.elementor-element-760bd4e,.elementor-element-525bcae2,.elementor-element-195fd289,.elementor-element-722e0ddc,.elementor-element-3740e25f,.elementor-element-77ff3ac6,.elementor-element-305610ac) :is(.premium-title-text,.premium-title-header,.elementor-heading-title){background-image:none!important;-webkit-text-fill-color:var(--ph-footer-red)!important;color:var(--ph-footer-red)!important}
+/* títulos de cartão: 20px (DS titulo-4), peso 700 */
+:is(.elementor-element-85c1251,.elementor-element-2dfb46,.elementor-element-11e08b6b,.elementor-element-506643e6,.elementor-element-1fa888a0,.elementor-element-77603471,.elementor-element-48a0b3df,.elementor-element-3bcaaae7,.elementor-element-5d3b04f5,.elementor-element-8148694) :is(.elementor-heading-title,.jet-listing-dynamic-field__content){font-size:1.25rem!important;line-height:var(--ph-leading-pesado)!important;letter-spacing:var(--ph-tracking-pesado)!important;font-weight:700!important}
+/* corpo dos cartões: 16px / 1,5 a 1,625 */
+:is(.elementor-element-8b8c023,.elementor-element-5c1b084a,.elementor-element-694fcf0) :is(.jet-listing-dynamic-field__content,p,li,span,div){font-size:1rem!important;line-height:var(--ph-leading-corpo)!important}
+.elementor-element-769fb2e3 :is(li,p,span),.elementor-element-2ed96101 :is(li,p,span){font-size:1rem!important;line-height:var(--ph-leading-corpo)!important}
+/* apoio: legendas e números de destaque em 14px (mínimo confortável) */
+:is(.elementor-element-43218f9,.elementor-element-2db7e37) p,:is(.elementor-element-43218f9,.elementor-element-2db7e37) .elementor-heading-title{line-height:var(--ph-leading-apoio)}
+/* subtítulos de seção (lead): 18px */
+:is(.elementor-element-34dd4e05,.elementor-element-549c2c49) :is(p,.elementor-widget-container,div){font-size:1.125rem!important;line-height:var(--ph-leading-corpo)!important}
+.elementor-element-48bacbc0 :is(p,.elementor-widget-container,div){font-size:1.25rem!important;line-height:var(--ph-leading-corpo)!important}
+
+/* ---------- 4) "Conheça o curso": cartões de fato claros e texto em blocos legíveis ---------- */
+.elementor-widget-icon-box:is(.elementor-element-179b3cc5,.elementor-element-1405263e,.elementor-element-1aeabeb0,.elementor-element-59778430,.elementor-element-f5315d0){background-color:#fff!important;border:1px solid var(--ph-border);border-radius:12px;box-shadow:var(--ph-sombra-repouso)!important}
+.elementor-element-179b3cc5 .elementor-icon-box-wrapper,.elementor-element-1405263e .elementor-icon-box-wrapper,.elementor-element-1aeabeb0 .elementor-icon-box-wrapper,.elementor-element-59778430 .elementor-icon-box-wrapper,.elementor-element-f5315d0 .elementor-icon-box-wrapper{gap:4px}
+:is(.elementor-element-179b3cc5,.elementor-element-1405263e,.elementor-element-1aeabeb0,.elementor-element-59778430,.elementor-element-f5315d0) .elementor-icon-box-title{font-size:var(--ph-text-rotulo)!important;font-weight:600!important;letter-spacing:.08em;text-transform:uppercase;color:var(--ph-muted-foreground)!important;line-height:1.4!important}
+:is(.elementor-element-179b3cc5,.elementor-element-1405263e,.elementor-element-1aeabeb0,.elementor-element-59778430,.elementor-element-f5315d0) .elementor-icon-box-description{font-size:1.125rem!important;font-weight:600!important;line-height:1.4!important;color:var(--ph-foreground)!important}
+:is(.elementor-element-179b3cc5,.elementor-element-1405263e,.elementor-element-1aeabeb0,.elementor-element-59778430,.elementor-element-f5315d0) .elementor-icon{color:var(--ph-primary-dark)!important}
+:is(.elementor-element-179b3cc5,.elementor-element-1405263e,.elementor-element-1aeabeb0,.elementor-element-59778430,.elementor-element-f5315d0) .elementor-icon svg{width:1.75rem;height:1.75rem}
+
+/* texto da modalidade: coluna de leitura, com títulos, lista de pontos e avisos */
+.elementor-element-5fbe109e{max-width:46rem;margin-inline:auto;font-size:1rem;line-height:var(--ph-leading-corpo);color:var(--ph-foreground)}
+.elementor-element-5fbe109e .ql-block,.elementor-element-5fbe109e p{margin:0 0 .75rem;font-size:1rem!important;line-height:var(--ph-leading-corpo)!important;color:var(--ph-foreground)!important}
+.elementor-element-5fbe109e .ql-block:first-child{margin-top:.5rem;font-size:1.25rem!important;line-height:var(--ph-leading-pesado)!important;color:var(--ph-primary-dark)!important}
+.elementor-element-5fbe109e .ql-block:first-child strong{font-weight:700}
+.elementor-element-5fbe109e .ql-block:nth-child(2){color:var(--ph-muted-foreground)!important;margin-bottom:1.25rem}
+.elementor-element-5fbe109e .ql-block:nth-child(3){margin-bottom:.5rem;font-weight:700;font-size:var(--ph-text-rotulo)!important;letter-spacing:.08em;text-transform:uppercase;color:var(--ph-muted-foreground)!important}
+.elementor-element-5fbe109e .ql-block:is(:nth-child(4),:nth-child(5),:nth-child(6),:nth-child(7)){position:relative;margin-bottom:.5rem;padding-left:2rem}
+.elementor-element-5fbe109e .ql-block:is(:nth-child(4),:nth-child(5),:nth-child(6),:nth-child(7))::before{content:"";position:absolute;left:0;top:.35em;width:1.1rem;height:1.1rem;border-radius:50%;background:var(--ph-primary-subtle) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23A81E1E' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/70% no-repeat}
+.elementor-element-5fbe109e .ql-block:nth-child(7){margin-bottom:1.25rem}
+.elementor-element-5fbe109e .ql-block:is(:nth-child(8),:nth-child(9)){padding-left:1rem;border-left:3px solid var(--ph-border)}
+.elementor-element-5fbe109e div:not(.ql-block){display:none}   /* ponto solto "." do editor */
+.elementor-element-5fbe109e .ql-block:nth-child(11),.elementor-element-5fbe109e p{margin-top:1.25rem;padding:1rem 1.25rem;border-left:4px solid var(--ph-primary);border-radius:0 var(--ph-radius) var(--ph-radius) 0;background:var(--ph-primary-subtle)}
+.elementor-element-5fbe109e strong{font-weight:700}
+
+/* ---------- 5) "O que você irá aprender": cartões claros com ícone Lucide ---------- */
+.elementor-element.elementor-element-743a018:not(#ph){background-image:none!important;background-color:#fff!important;border:1px solid var(--ph-border);border-radius:12px;box-shadow:var(--ph-sombra-repouso)!important}
+.elementor-element-743a018 .elementor-icon{display:inline-flex;align-items:center;justify-content:center;width:3.5rem;height:3.5rem;border-radius:50%;background-color:var(--ph-primary-subtle)!important;color:var(--ph-primary-dark)!important;font-size:1.75rem}
+.elementor-element-743a018 .elementor-icon svg{width:1.75rem;height:1.75rem;fill:none!important}
+.elementor-element-743a018 .elementor-element-85c1251 :is(.jet-listing-dynamic-field__content){color:var(--ph-primary-dark)!important}
+.elementor-element-743a018 .elementor-element-8b8c023 :is(.jet-listing-dynamic-field__content,p,li,span,div){color:var(--ph-foreground)!important}
+/* ícones Lucide (trocados no HTML): traço, não preenchimento */
+svg.e-font-icon-svg.ph-lucide{fill:none!important;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---------- 6) Diferenciais, botões e professores ---------- */
+.elementor-element-807c9b9 .swiper-slide>.e-con:not(#ph){background-color:#fff!important;border:1px solid var(--ph-border);border-radius:12px;box-shadow:var(--ph-sombra-repouso)!important}
+.elementor-element-807c9b9 .swiper-slide .elementor-heading-title{color:var(--ph-primary-dark)!important}
+.elementor-element-807c9b9 .swiper-slide :is(p,li,.elementor-widget-container){color:var(--ph-foreground)}
+/* botões amarelo/laranja com degradê viram o botão primário do DS (vermelho, texto branco: 5,0:1) */
+:is(.elementor-element-785e32d4,.elementor-element-14c7216f,.elementor-element-7dfd37b6) .elementor-button{background-image:none!important;background-color:var(--ph-primary)!important;color:var(--ph-primary-foreground)!important;border-radius:var(--ph-radius);box-shadow:var(--ph-sombra-hover)!important;min-height:var(--ph-alvo-toque);font-size:1.125rem!important;font-weight:700!important;transition:background-color var(--ph-duracao-rapida) var(--ph-ease)}
+:is(.elementor-element-785e32d4,.elementor-element-14c7216f,.elementor-element-7dfd37b6) .elementor-button:hover{background-color:var(--ph-primary-dark)!important}
+:is(.elementor-element-785e32d4,.elementor-element-14c7216f,.elementor-element-7dfd37b6) .elementor-button *{color:inherit!important}
+/* professores: nome 24px/700, cargo 16px, minibio 14px / 1,625 */
+.elementor-element-eff8e2a :is(.elementor-heading-title,.jet-listing-dynamic-field__content,h2,h3){font-size:1.5rem!important;font-weight:700!important;line-height:var(--ph-leading-pesado)!important;letter-spacing:var(--ph-tracking-pesado)}
+.elementor-element-1dad61a :is(.jet-listing-dynamic-field__content,p,span,div){font-size:1rem!important;font-weight:500!important}
+.elementor-element-e3ca74d :is(.jet-listing-dynamic-field__content,p,span,div),.elementor-element-4654e90 :is(.jet-listing-dynamic-field__content,p,span,div){font-size:.875rem!important;font-weight:400!important;line-height:var(--ph-leading-corpo)!important}
+.elementor-counter-title{font-size:.875rem!important;line-height:var(--ph-leading-apoio)}
+
+/* cartões de disciplinas: altura pelo conteúdo (a linha da grade iguala os três cartões) */
+.elementor-element-743a018{min-height:0!important}
+
+/* o selo do MEC do hero ultrapassava a largura da tela no celular (rolagem lateral, WCAG 1.4.10 reflow): recorta só o excesso horizontal */
+.elementor-60941{overflow-x:clip}
+
+/* ---------- 7) Cartões de disciplinas e carrossel (Jet Engine) ---------- */
+/* o carrossel original mostrava 3 cartões e escondia o resto: agora rola com encaixe, setas e pontos (controles em local.js) */
+.jet-listing-grid__items:has(.elementor-element-743a018){counter-reset:ph-disc}
+.jet-listing-grid__item:has(.elementor-element-743a018){display:flex}
+.jet-listing-grid__item:has(.elementor-element-743a018)>.elementor{display:flex;flex:1;min-width:0}
+.elementor-element.elementor-element-743a018:not(#ph){flex:1;position:relative;counter-increment:ph-disc;--padding-top:0px;--padding-right:0px;--padding-bottom:0px;--padding-left:0px;padding:0!important;text-align:left;transition:box-shadow var(--ph-duracao-rapida) var(--ph-ease),border-color var(--ph-duracao-rapida) var(--ph-ease)}
+.elementor-element.elementor-element-743a018:not(#ph):hover{box-shadow:var(--ph-sombra-hover)!important;border-color:var(--ph-border-interactive)}
+.elementor-element-743a018::after{content:counter(ph-disc,decimal-leading-zero);position:absolute;top:28px;right:24px;font-size:.875rem;font-weight:600;letter-spacing:.06em;color:var(--ph-muted-foreground)}
+.elementor-element-743a018>.e-con-inner{padding:28px 24px 24px!important;gap:16px!important;align-items:stretch;flex:1}
+.elementor-element-743a018 .elementor-widget-icon-box{padding:0!important;margin:0!important}
+/* ícone: azulejo arredondado à esquerda (Lucide em traço) */
+.elementor-element-743a018 .elementor-widget{align-self:stretch;text-align:left!important}
+.elementor-element-743a018 .elementor-icon-box-wrapper{text-align:left!important}
+.elementor-element-743a018 .elementor-icon-box-icon{display:flex!important;justify-content:flex-start!important}
+.elementor-element-743a018 .elementor-icon-box-icon{margin:0!important}
+.elementor-element-743a018 .elementor-icon{width:3rem;height:3rem;border-radius:12px;margin:0!important}
+.elementor-element-743a018 .elementor-icon svg{width:1.5rem;height:1.5rem}
+.elementor-element-743a018 .elementor-element-85c1251,.elementor-element-743a018 .elementor-element-85c1251 .jet-listing-dynamic-field__content{text-align:left!important;justify-content:flex-start!important}
+/* lista: marcadores do DS; o último item (Gestão em Ação, repetido em todos os cartões) vira um selo no rodapé */
+.elementor-element-743a018 .elementor-element-8b8c023{flex:1;display:flex}
+.elementor-element-743a018 .elementor-element-8b8c023,.elementor-element-743a018 .elementor-element-8b8c023 .jet-listing-dynamic-field__content{justify-content:flex-start!important;align-items:stretch!important}
+.elementor-element-743a018 .elementor-element-8b8c023 .jet-listing-dynamic-field__content{display:flex;flex-direction:column;flex:1;text-align:left}
+.elementor-element-743a018 .elementor-element-8b8c023 ul{list-style:none;margin:0;padding:0}
+.elementor-element-743a018 .elementor-element-8b8c023 li{position:relative;margin:0 0 .5rem;padding-left:1.25rem}
+.elementor-element-743a018 .elementor-element-8b8c023 li::before{content:"";position:absolute;left:0;top:.6em;width:.5rem;height:.5rem;border-radius:50%;background:var(--ph-primary)}
+.elementor-element-743a018 .elementor-element-8b8c023 ul:last-child{display:flex;flex-direction:column;flex:1}
+
+/* controles do carrossel (criados por local.js): setas de 44px e pontos */
+.ph-car{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:20px}
+.ph-car__btn{display:grid;place-items:center;width:var(--ph-alvo-toque);height:var(--ph-alvo-toque);border:1.5px solid var(--ph-border-interactive);border-radius:50%;background:#fff;color:var(--ph-foreground);cursor:pointer;padding:0;transition:background-color var(--ph-duracao-rapida) var(--ph-ease),border-color var(--ph-duracao-rapida) var(--ph-ease)}
+.ph-car__btn svg{width:1.25rem;height:1.25rem;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ph-car__btn:hover:not(:disabled){border-color:var(--ph-primary);background:var(--ph-primary-subtle);color:var(--ph-primary-dark)}
+.ph-car__btn:disabled{opacity:.4;cursor:default}
+.ph-car__dots{display:flex;gap:0}
+.ph-car__dot{display:grid;place-items:center;width:1.5rem;height:1.5rem;padding:0;border:0;border-radius:0;background:transparent!important;box-shadow:none!important;cursor:pointer}
+.ph-car__dot::before{content:"";width:.625rem;height:.625rem;border-radius:999px;background:var(--ph-border-interactive);transition:width var(--ph-duracao-rapida) var(--ph-ease),background-color var(--ph-duracao-rapida) var(--ph-ease)}
+.ph-car__dot[aria-current]{width:2.25rem}
+.ph-car__dot[aria-current]::before{width:1.75rem;background:var(--ph-primary)}
+.ph-car__status{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.ph-car__btn:focus-visible,.ph-car__dot:focus-visible,.jet-listing-grid__slider .jet-listing-grid__items:focus-visible{outline:var(--ph-largura-foco) solid var(--ph-ring);outline-offset:var(--ph-afastamento-foco)}
+
+/* ---------- 8) Banner de matrículas: o bloco inteiro é clicável (o link do selo continua sendo o destino; local.js repassa o clique) ---------- */
+.elementor-element-26c43c4e{cursor:pointer;transition:filter var(--ph-duracao-rapida) var(--ph-ease)}
+.elementor-element-26c43c4e:hover{filter:brightness(1.06)}
+.elementor-element-26c43c4e:has(a:focus-visible){outline:var(--ph-largura-foco) solid var(--ph-ring-inverse);outline-offset:-6px}
+
+/* ---------- 9) Impacto na carreira: cartões à esquerda, notícia com o espaço dela à direita ---------- */
+.elementor-element-125a1970{flex:1 1 0;min-width:0}
+.elementor-element-24504791{flex:1 1 0;min-width:0;height:auto!important;min-height:0!important;align-self:center}
+.elementor-element-53d5c0d1{position:static!important;width:100%!important;max-width:100%!important;transform:none!important;inset:auto!important}
+.elementor-element-53d5c0d1 img{display:block;width:100%!important;height:auto!important;border-radius:var(--ph-radius);border:1px solid var(--ph-border);box-shadow:var(--ph-sombra-hover)!important;background:#fff}
+:is(.elementor-element-498573b0,.elementor-element-360f1b0e,.elementor-element-3906c9aa,.elementor-element-78eea982){align-items:flex-start;text-align:left;padding:24px!important;gap:12px}
+:is(.elementor-element-498573b0,.elementor-element-360f1b0e,.elementor-element-3906c9aa,.elementor-element-78eea982) :is(.elementor-widget,.elementor-heading-title,.elementor-widget-container,p){text-align:left!important}
+:is(.elementor-element-498573b0,.elementor-element-360f1b0e,.elementor-element-3906c9aa,.elementor-element-78eea982) .elementor-widget-image{width:auto!important}
+.ph-impact-ic{display:block;width:3rem;height:3rem;padding:.75rem;border-radius:12px;background:rgb(255 255 255 / 16%);color:#fff;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+:is(.elementor-element-4488d7d8,.elementor-element-2494f33c,.elementor-element-701ec15c,.elementor-element-2be4f47) img{display:none}
+
+/* ---------- 10) Botão do vestibular: faixa de chamada com botão grande e seta ---------- */
+.elementor-element.elementor-element-785e32d4{width:100%!important;max-width:none!important;margin:1.5rem 0 0!important;padding:1.5rem;border-radius:16px;background:var(--ph-primary-subtle);border:1px solid #F3CFCF;text-align:center}
+.elementor-element-785e32d4 .elementor-button{min-height:3.5rem;padding:0 2rem!important;font-size:1.25rem!important}
+:is(.elementor-element-785e32d4,.elementor-element-14c7216f) .elementor-button-text::after{content:"";display:inline-block;width:1.25rem;height:1.25rem;margin-left:.75rem;vertical-align:-.2rem;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14'/%3E%3Cpath d='m12 5 7 7-7 7'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14'/%3E%3Cpath d='m12 5 7 7-7 7'/%3E%3C/svg%3E") center/contain no-repeat}
+
+/* ---------- 11) Professores no padrão da v6: cartão branco, foto em cima, texto à esquerda, setas no canto ---------- */
+.elementor-element.elementor-element-d61b7e4{background-color:#fff;border:1px solid var(--ph-border);border-radius:12px;box-shadow:var(--ph-sombra-repouso)}
+.elementor-element.elementor-element-d61b7e4::before{background-image:linear-gradient(rgba(255,255,255,0) 54%,#fff 54%)!important;opacity:1!important}
+.elementor-element-d61b7e4 :is(.elementor-widget,.jet-listing-dynamic-field__content,.elementor-heading-title,p){text-align:left!important}
+.elementor-element-d61b7e4 .elementor-element-eff8e2a{font-size:1.125rem!important;font-weight:700!important;line-height:var(--ph-leading-pesado)!important;letter-spacing:var(--ph-tracking-pesado);color:var(--ph-foreground)!important;text-shadow:none!important;text-align:left!important}
+.elementor-element-d61b7e4 .elementor-element-1dad61a{font-size:.875rem!important;font-weight:600!important;color:var(--ph-primary-dark)!important;text-align:left!important}
+.elementor-element-d61b7e4 .professor-bio{max-height:5.75rem!important;overflow:hidden;color:var(--ph-muted-foreground)!important;font-size:.875rem!important;line-height:var(--ph-leading-corpo)!important;text-align:left!important}
+.elementor-element-d61b7e4 .professor-bio :is(p,span){color:var(--ph-muted-foreground)!important;font-size:.875rem!important;font-weight:400!important;text-align:left!important}
+.elementor-element-d61b7e4 .professor-bio.is-open{max-height:none!important}
+.elementor-element-d61b7e4 .professor-bio::after,.elementor-element-d61b7e4 .professor-bio::before{display:none!important}
+.ph-more{align-self:flex-start;margin-top:.5rem;padding:.5rem 0;min-height:var(--ph-alvo-toque);border:0;background:none!important;box-shadow:none!important;color:var(--ph-primary-dark);font:inherit;font-size:.875rem;font-weight:600;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.ph-more:hover{color:var(--ph-primary)}
+.ph-more:focus-visible{outline:var(--ph-largura-foco) solid var(--ph-ring);outline-offset:var(--ph-afastamento-foco)}
+.elementor-element-d61b7e4 a{color:var(--ph-primary-dark)!important;text-decoration:underline;text-underline-offset:3px;font-weight:600}
+.elementor-element-d61b7e4 :focus-visible{outline-color:var(--ph-ring)!important}
+.elementor-element-7898f686{position:relative}
+.ph-car--split{position:static;display:block;margin:0}
+.ph-car--split .ph-car__nav{position:absolute;top:-4.25rem;right:0;display:flex;gap:.625rem}
+.ph-car--split .ph-car__dots{justify-content:center;margin-top:1.25rem}
+.ph-car--split .ph-car__title{position:absolute;top:-3.75rem;left:0;font-size:1.125rem;font-weight:700;color:var(--ph-foreground)}
+.ph-car--split{padding-top:0}
+.elementor-element-7898f686:has(+ .ph-car--split),.elementor-widget-jet-listing-grid:has(.elementor-element-d61b7e4){margin-top:4.5rem}
+
+/* ---------- 12) "Mais de 30 anos": faixa clara, título vermelho, números em destaque (como na v6) ---------- */
+.elementor-element.elementor-element-902c915{background-color:var(--ph-muted)!important;padding-block:4rem}
+.elementor-element-902c915 .elementor-element-97dca84 img{border-radius:20px;box-shadow:var(--ph-sombra-flutuante)!important}
+.elementor-element-902c915 .elementor-element-f3cd03f .elementor-heading-title{font-size:clamp(1.875rem,1.4rem + 1.6vw,2.5rem)!important;font-weight:900!important;line-height:var(--ph-leading-pesado)!important;letter-spacing:var(--ph-tracking-pesado);color:var(--ph-primary)!important}
+.elementor-element-902c915 .elementor-element-5a28426,.elementor-element-902c915 .elementor-element-5a28426 p{color:var(--ph-muted-foreground)!important;font-size:1rem!important;line-height:var(--ph-leading-corpo)!important}
+.elementor-element-902c915 .elementor-counter-number-wrapper{font-size:2.5rem!important;font-weight:700!important;line-height:1.1!important;color:var(--ph-primary)!important}
+.elementor-element-902c915 .elementor-counter-title{font-size:.875rem!important;font-weight:600!important;color:var(--ph-foreground)!important;line-height:var(--ph-leading-apoio)}
+
+/* ---------- 13) "Vamos iniciar o Processo Seletivo?": cartão vinho com título, texto e os dois botões lado a lado ---------- */
+.elementor-element.elementor-element-45f0071b{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;width:100%;max-width:60rem;margin-inline:auto;padding:3rem 2rem!important;border-radius:20px;background-color:var(--ph-footer-red)!important;text-align:center;align-items:start}
+.elementor-element-45f0071b>:is(.elementor-element-85ce69c,.elementor-element-305610ac,.elementor-element-48bacbc0){grid-column:1/-1;width:100%!important}
+.elementor-element-45f0071b>.elementor-element-14c7216f{grid-column:1;justify-self:end;width:auto!important;margin-top:.75rem}
+.elementor-element-45f0071b>.elementor-element-7dfd37b6{grid-column:2;justify-self:start;width:auto!important;margin-top:.75rem}
+.elementor-element-45f0071b :is(.elementor-element-85ce69c,.elementor-element-305610ac) :is(.elementor-heading-title,.premium-title-text,.premium-title-header,h2):not(#ph){color:#fff!important;-webkit-text-fill-color:#fff!important;background-image:none!important;font-weight:700!important;text-align:center}
+.elementor-element-45f0071b .elementor-element-48bacbc0 :is(p,.elementor-widget-container){color:#F6DCDC!important;font-size:1.125rem!important;text-align:center}
+.elementor-element-45f0071b .elementor-element-14c7216f .elementor-button{background-color:#fff!important;color:var(--ph-primary-dark)!important;box-shadow:none!important}
+.elementor-element-45f0071b .elementor-element-14c7216f .elementor-button:hover{background-color:var(--ph-primary-subtle)!important}
+.elementor-element-45f0071b .elementor-element-7dfd37b6 .elementor-button{background-color:transparent!important;color:#fff!important;border:2px solid rgb(255 255 255 / 70%)!important;box-shadow:none!important}
+.elementor-element-45f0071b .elementor-element-7dfd37b6 .elementor-button:hover{background-color:rgb(255 255 255 / 12%)!important}
+.elementor-element-45f0071b :focus-visible{outline-color:var(--ph-ring-inverse)!important}
+@media (max-width:767px){.elementor-element.elementor-element-45f0071b{grid-template-columns:1fr;padding:2rem 1.25rem!important}.elementor-element-45f0071b>.elementor-element-14c7216f,.elementor-element-45f0071b>.elementor-element-7dfd37b6{grid-column:1;justify-self:stretch}}
+@media (max-width:1024px){.elementor-element-125a1970,.elementor-element-24504791{flex:1 1 100%}}
+.ph-car__nav{display:contents}
+.ph-car__nav .ph-car__btn[data-d="-1"]{order:1}
+.ph-car__dots{order:2}
+.ph-car__nav .ph-car__btn[data-d="1"]{order:3}
+.elementor-element-d61b7e4 .elementor-element-21b4c4d{padding-top:1rem!important;gap:.25rem}
+
+/* ---------- 14) Sombras só onde há elevação real ---------- */
+/* o tema aplica 0 0 10px a 38% em todo botão; aqui só o cartão de inscrição do hero flutua. Cartões e imagens usam borda; a sombra aparece no hover. */
+:is(.ph-car__btn,.ph-car__dot,.ph-more,.elementor-button):not(#ph){box-shadow:none!important}
+:is(.elementor-element-4116f0bd,.elementor-element-769fb2e3,.elementor-element-2ed96101,.elementor-element-15c2e1f4,
+    .elementor-element-179b3cc5,.elementor-element-1405263e,.elementor-element-1aeabeb0,.elementor-element-59778430,.elementor-element-f5315d0,
+    .elementor-element-498573b0,.elementor-element-360f1b0e,.elementor-element-3906c9aa,.elementor-element-78eea982,.elementor-element-711740cd,
+    .elementor-element-743a018,.elementor-element-d61b7e4,.elementor-element-45f0071b):not(#ph):not(:hover){box-shadow:none!important}
+.elementor-element-807c9b9 .swiper-slide>.e-con:not(#ph):not(:hover){box-shadow:none!important}
+:is(.elementor-element-743a018,.elementor-element-d61b7e4):not(#ph):hover,.elementor-element-807c9b9 .swiper-slide>.e-con:not(#ph):hover{box-shadow:var(--ph-sombra-hover)!important}
+.elementor-element.elementor-element-1270428b:not(#ph){box-shadow:var(--ph-sombra-hover)!important}
+.elementor-widget-image img:not(#ph){box-shadow:none!important}
+.elementor-element-902c915 .elementor-element-97dca84 img:not(#ph){box-shadow:var(--ph-sombra-repouso)!important}
+.elementor-element-53d5c0d1 img:not(#ph){box-shadow:none!important}
+.ph-car__btn:hover:not(:disabled){background:var(--ph-primary-subtle)}
+
+/* ---------- 15) Impacto na carreira: título centralizado, notícia em cima e os 4 cartões lado a lado ---------- */
+.e-con-inner:has(>.elementor-element-125a1970){display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.5rem 1.25rem;align-items:stretch;justify-items:stretch}
+.elementor-element-125a1970,.elementor-element-7eef28c3,.elementor-element-2173debd{display:contents!important}
+.e-con-inner:has(>.elementor-element-125a1970) .elementor-element-722e0ddc{grid-column:1/-1;order:1;text-align:center;justify-self:center;width:100%}
+.e-con-inner:has(>.elementor-element-125a1970) .elementor-element-722e0ddc :is(.premium-title-header,.premium-title-container,.premium-title-wrapper){justify-content:center;text-align:center}
+.elementor-element-24504791{grid-column:1/-1;order:2;justify-self:center;width:100%;max-width:46rem;margin:0 auto .5rem}
+:is(.elementor-element-498573b0,.elementor-element-360f1b0e,.elementor-element-3906c9aa,.elementor-element-78eea982){order:3;width:auto!important;max-width:none!important;height:auto!important}
+@media (max-width:1024px){.e-con-inner:has(>.elementor-element-125a1970){grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.e-con-inner:has(>.elementor-element-125a1970){grid-template-columns:1fr}}
+:is(.elementor-element-498573b0,.elementor-element-360f1b0e,.elementor-element-3906c9aa,.elementor-element-78eea982){align-self:stretch!important;margin:0!important;min-height:0!important}
+
+/* ---------- 16) "Vamos iniciar o Processo Seletivo?": título e texto juntos, botões iguais e centralizados ---------- */
+.elementor-element.elementor-element-45f0071b:not(#ph){display:flex!important;flex-direction:row!important;flex-wrap:wrap!important;justify-content:center!important;align-items:center!important;align-content:center;gap:.5rem 1rem;max-width:56rem;padding:3.5rem 2rem!important}
+.elementor-element-45f0071b>.elementor-element{margin:0!important}
+.elementor-element-45f0071b>:is(.elementor-element-85ce69c,.elementor-element-305610ac){flex:0 0 100%;width:100%!important}
+.elementor-element-45f0071b :is(.elementor-element-85ce69c,.elementor-element-305610ac) :is(.elementor-heading-title,.premium-title-text,.premium-title-header,h2):not(#ph){font-size:clamp(1.875rem,1.4rem + 1.6vw,2.5rem)!important;line-height:1.2!important;margin:0!important}
+.elementor-element-45f0071b>.elementor-element-48bacbc0{flex:0 0 100%;width:100%!important;max-width:38rem;margin:1rem auto 1.5rem!important}
+.elementor-element-45f0071b>:is(.elementor-element-14c7216f,.elementor-element-7dfd37b6){flex:0 0 auto;width:auto!important;grid-column:auto;justify-self:auto}
+.elementor-element-45f0071b>:is(.elementor-element-14c7216f,.elementor-element-7dfd37b6) .elementor-button{min-width:16rem;min-height:3.5rem;justify-content:center;font-size:1.125rem!important}
+@media (max-width:767px){.elementor-element-45f0071b>:is(.elementor-element-14c7216f,.elementor-element-7dfd37b6){flex:0 0 100%}.elementor-element-45f0071b>:is(.elementor-element-14c7216f,.elementor-element-7dfd37b6) .elementor-button{min-width:0;width:100%}}
+
+/* ---------- 17) Professores: todos os cartões com a mesma altura, minibio truncada em 4 linhas e "Ver mais" que abre todos ---------- */
+.jet-listing-grid__item:has(.elementor-element-d61b7e4){display:flex}
+.jet-listing-grid__item:has(.elementor-element-d61b7e4)>.elementor{display:flex;flex:1;min-width:0}
+.elementor-element.elementor-element-d61b7e4:not(#ph){flex:1;display:flex;flex-direction:column;height:auto!important;min-height:0!important;background-position:center top}
+.elementor-element-d61b7e4 .elementor-element-f829ee6{height:16rem!important;min-height:16rem!important;flex:none}
+.elementor-element.elementor-element-d61b7e4:not(#ph)::before{background-image:linear-gradient(rgba(255,255,255,0) 16rem,#fff 16rem)!important}
+.elementor-element-d61b7e4 .elementor-element-21b4c4d{flex:1;display:flex;flex-direction:column;align-items:stretch!important;padding:1rem 1.25rem 1.25rem!important;gap:.25rem}
+.elementor-element-d61b7e4 .elementor-element-eff8e2a{min-height:3.1rem}
+.elementor-element-d61b7e4 .elementor-element-e3ca74d.professor-bio{display:-webkit-box!important;-webkit-box-orient:vertical;-webkit-line-clamp:4;line-clamp:4;overflow:hidden!important;max-height:none!important;margin-top:.5rem}
+.ph-bios-open .elementor-element-e3ca74d.professor-bio{display:block!important;-webkit-line-clamp:unset;line-clamp:unset}
+.elementor-element-d61b7e4 .ph-more{margin-top:auto;align-self:flex-start}
+.elementor-element-d61b7e4 .elementor-element-4654e90{display:none!important}
+/* texto sempre centralizado na altura do botão; título do processo seletivo sem respiros extras entre as duas linhas */
+.elementor-button:not(#ph){display:inline-flex!important;align-items:center;justify-content:center}
+.elementor-element-45f0071b :is(.elementor-element-85ce69c,.elementor-element-305610ac),.elementor-element-45f0071b :is(.elementor-element-85ce69c,.elementor-element-305610ac) *{padding-top:0!important;padding-bottom:0!important;margin-top:0!important;margin-bottom:0!important}
+/* professores: o véu branco herdava um raio maior que o do cartão e deixava a foto escura aparecer nos cantos de baixo; agora o cartão recorta tudo no mesmo raio */
+.elementor-element.elementor-element-d61b7e4:not(#ph){overflow:hidden;border-radius:12px!important;background-clip:padding-box}
+.elementor-element.elementor-element-d61b7e4:not(#ph)::before{border-radius:0!important;inset:0!important}
+/* foto do professor como <img> (criado por local.js): sem foto escura por baixo do cartão */
+.elementor-element-d61b7e4.ph-photo:not(#ph){background-image:none!important;background-color:#fff!important}
+.elementor-element-d61b7e4.ph-photo:not(#ph)::before{display:none!important}
+.elementor-element-d61b7e4.ph-photo .elementor-element-f829ee6{position:relative;overflow:hidden}
+.ph-prof-photo{position:absolute!important;inset:0;width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;object-fit:cover;object-position:center top;display:block;border-radius:0!important;box-shadow:none!important}
+
+/* ---------- 18) Responsivo: tablet (até 1024px) e celular (até 767px) ---------- */
+/* setas dos carrosséis do Elementor: botões de 44px com contorno, sempre visíveis (estavam em cinza claro sobre o conteúdo) */
+.elementor-swiper-button:not(#ph){display:grid!important;place-items:center;width:var(--ph-alvo-toque);height:var(--ph-alvo-toque);border:1.5px solid var(--ph-border-interactive);border-radius:50%;background:#fff;color:var(--ph-foreground)!important;opacity:1!important;z-index:5}
+.elementor-swiper-button svg,.elementor-swiper-button i{width:1.25rem;height:1.25rem;font-size:1.25rem;color:inherit;fill:currentColor}
+.elementor-swiper-button:hover{background:var(--ph-primary-subtle);border-color:var(--ph-primary)}
+.elementor-swiper-button-prev{left:.25rem!important}
+.elementor-swiper-button-next{right:.25rem!important}
+
+/* contador "30 anos": números lado a lado e com respiro do texto */
+.elementor-element-d75d9af{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem 1.5rem;width:100%!important;max-width:30rem;margin-top:1.5rem!important}
+.elementor-element-d75d9af>.elementor-widget{width:auto!important}
+
+@media (max-width:1024px){
+  /* "Conheça o curso": os 5 dados ficam todos visíveis em grade (no desktop continua o carrossel) */
+  .elementor-element-28e351a6 .swiper-wrapper{display:grid!important;grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr));gap:.75rem;overflow:visible!important;transform:none!important;scroll-snap-type:none}
+  .elementor-element-28e351a6 .swiper-slide{flex:none!important;width:auto!important;margin:0!important;max-width:none}
+  .elementor-element-28e351a6 .swiper-slide :is(.elementor-widget,.e-con){width:100%!important;max-width:none!important}
+  .elementor-element-28e351a6 .elementor-swiper-button{display:none!important}
+  /* disciplinas e professores: 2 por vez no tablet */
+  /* diferenciais: respiro lateral para as setas */
+  .elementor-element-807c9b9{padding-inline:1rem}
+  /* impacto: margem lateral nos cartões */
+  .e-con-inner:has(>.elementor-element-125a1970){padding-inline:1.25rem!important}
+  /* textos de apoio centralizados em largura de leitura */
+  .elementor-element-549c2c49,.elementor-element-34dd4e05{width:100%!important;max-width:40rem;margin-inline:auto!important;text-align:center}
+}
+
+@media (max-width:767px){
+  /* hero: o selo do MEC fica dentro da tela */
+  .elementor-element-413693b3{right:.75rem!important;left:auto!important;max-width:5.5rem}
+  /* "Por que estudar": painéis na largura toda */
+  .elementor-element-769fb2e3,.elementor-element-2ed96101{width:100%!important;max-width:100%!important}
+  /* banner de matrículas: o selo entra no fluxo, abaixo do texto, sem invadir a seção seguinte */
+  .elementor-element-26c43c4e{height:auto!important;min-height:0!important;padding:2rem 1rem!important;align-items:flex-start}
+  .elementor-element-42a79f6f{position:relative!important;inset:auto!important;transform:none!important;margin:1.25rem auto 0!important;width:7rem!important;max-width:7rem}
+  .elementor-element-42a79f6f img{width:100%!important;height:auto!important}
+  /* faixa do vestibular e cartões de impacto */
+  .elementor-element.elementor-element-785e32d4{padding:1rem}
+  .elementor-element-785e32d4 .elementor-button{width:100%;padding:.75rem 1rem!important;font-size:1.0625rem!important;text-align:center}
+  .e-con-inner:has(>.elementor-element-125a1970){padding-inline:1rem!important}
+  /* professores: controles e título menores */
+  .ph-car--split .ph-car__title{font-size:1rem}
+  .elementor-element-902c915.elementor-element{padding-block:2.5rem}
+}
+
+/* ---------- 19) Ajustes finais do responsivo ---------- */
+@media (max-width:1024px){
+  .elementor-element-28e351a6 .elementor-swiper-button:not(#ph){display:none!important}
+  .elementor-element-28e351a6,.elementor-element-28e351a6 .e-n-carousel{min-height:0!important;height:auto!important}
+  :is(.elementor-element-549c2c49,.elementor-element-34dd4e05) :is(p,.elementor-widget-container,div){text-align:center!important}
+  /* diferenciais: cartão na largura da faixa e setas abaixo, centralizadas */
+  .elementor-element-807c9b9{padding-bottom:4.25rem;position:relative}
+  .elementor-element-807c9b9 .swiper-slide>.e-con:not(#ph){width:100%!important;max-width:none!important;height:100%}
+  .elementor-element-807c9b9 .elementor-swiper-button:not(#ph){top:auto!important;bottom:.5rem!important;transform:none!important}
+  .elementor-element-807c9b9 .elementor-swiper-button-prev{left:calc(50% - 3.25rem)!important;right:auto!important}
+  .elementor-element-807c9b9 .elementor-swiper-button-next{right:calc(50% - 3.25rem)!important;left:auto!important}
+}
+@media (max-width:1024px){
+  .elementor-element-807c9b9,.elementor-element-807c9b9 .e-n-carousel{width:100%!important;max-width:100%!important}
+  .elementor-element-807c9b9 .swiper-slide>.e-con:not(#ph){margin:0!important}
+}
+/* palavras longas quebram em vez de vazar quando o usuário aumenta o espaçamento de letras (WCAG 1.4.12) */
+.elementor-60941 :is(p,li,span,a,.elementor-button-text){overflow-wrap:break-word}
+/* títulos nunca são cortados no meio da palavra: o nome do curso diminui com a largura da tela em vez de quebrar */
+.elementor-60941 :is(h1,h2,h3,.premium-title-text){overflow-wrap:normal;word-break:normal;hyphens:manual}
+.elementor-element-690fbc01 .elementor-heading-title:not(#ph){font-size:clamp(1.625rem,.9rem + 3.6vw,2.9375rem)!important;line-height:1.15!important}
+
+/* ---------- 20) Setas dos carrosséis fora do conteúdo; dados do curso em grade até 1280px ---------- */
+.elementor-element-28e351a6 .elementor-swiper-button:not(#ph){display:none!important}
+@media (max-width:1280px){
+  .elementor-element-28e351a6 .swiper-wrapper{display:grid!important;grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr));gap:.75rem;overflow:visible!important;transform:none!important;scroll-snap-type:none}
+  .elementor-element-28e351a6 .swiper-slide{flex:none!important;width:auto!important;margin:0!important;max-width:none}
+  .elementor-element-28e351a6 .swiper-slide :is(.elementor-widget,.e-con){width:100%!important;max-width:none!important}
+}
+.elementor-element-807c9b9{padding-bottom:4.25rem;position:relative}
+.elementor-element-807c9b9 .elementor-swiper-button:not(#ph){top:auto!important;bottom:.5rem!important;transform:none!important}
+.elementor-element-807c9b9 .elementor-swiper-button-prev{left:calc(50% - 3.25rem)!important;right:auto!important}
+.elementor-element-807c9b9 .elementor-swiper-button-next{right:calc(50% - 3.25rem)!important;left:auto!important}
+/* Poppins também nos rótulos e valores das caixas de fato (o CSS do site as mantinha em Roboto) */
+.elementor-60941 :is(.elementor-icon-box-description,.elementor-icon-box-title,.elementor-icon-box-title a):not(#ph){font-family:var(--ph-font)!important}
+.elementor-element-2444cd85 .elementor-heading-title:not(#ph){font-size:clamp(1.625rem,.8rem + 4.2vw,2.8125rem)!important;line-height:1.1!important}
+
+/* ---------- 21) Correções de revisão: fundo do hero, "Por que estudar" centralizado, setas dos carrosséis ---------- */
+.elementor-element.elementor-element-4fc456d7:not(#ph){background-size:cover;background-position:center;background-repeat:no-repeat}
+.elementor-element.elementor-element-4fc456d7:not(#ph)::before{display:none!important}
+.elementor-swiper-button:not(#ph) :is(svg,svg path,i){fill:currentColor!important;color:currentColor!important;opacity:1!important}
+.elementor-swiper-button:not(#ph){color:var(--ph-foreground)!important}
+.e-con-inner:has(>.elementor-element-36126b01){align-items:center;justify-content:center;gap:2.5rem}
+.elementor-element-36126b01{align-items:center;text-align:center}
+.elementor-element-36126b01 .premium-title-container,.elementor-element-36126b01 .premium-title-header{justify-content:center;text-align:center}
+.elementor-element-36126b01>.elementor-element-760bd4e{width:100%!important}
+.elementor-element-760bd4e:not(#ph) :is(.premium-title-wrapper,.premium-title-container,.premium-title-header,.premium-title-text){display:flex;justify-content:center!important;text-align:center!important;width:100%}
+.elementor-element-760bd4e:not(#ph) .premium-title-header{margin-inline:auto}
+
+/* ---------- 22) Alinhamento: todas as seções seguem a mesma coluna (1140px, margens laterais fluidas) ---------- */
+:root{--ph-coluna:71.25rem;--ph-margem:clamp(1rem,4vw,2.5rem)}
+/* "Por que estudar": sem o recuo de 80px dos widgets; título centralizado sobre os painéis, que ocupam a coluna toda */
+.elementor-element-36126b01>.elementor-element:not(#ph){margin-inline:0!important;width:100%!important;max-width:100%!important}
+.elementor-element-36126b01{flex:1 1 0;min-width:0}
+.e-con-inner:has(>.elementor-element-36126b01)>.elementor-element-359b3020{flex:0 0 auto}
+/* banner de matrículas: o conteúdo parte da mesma margem esquerda da coluna (estava a 10px da borda) */
+.elementor-element.elementor-element-26c43c4e:not(#ph){padding-inline:max(var(--ph-margem),calc((100% - var(--ph-coluna))/2))!important}
+.elementor-element-26c43c4e .elementor-element-2444cd85{width:auto!important;max-width:42rem}
+/* salário: mesma largura da coluna (estava com 1180px) */
+.phorte-salary__inner:not(#ph){width:min(var(--ph-coluna),100%)!important}
+.phorte-salary:not(#ph){padding-inline:var(--ph-margem)}
+.elementor-element.elementor-element-36126b01:not(#ph){padding-left:0!important;padding-right:0!important}
+@media (max-width:1024px){.e-con-inner:has(>.elementor-element-36126b01){flex-direction:column;align-items:stretch}.e-con-inner:has(>.elementor-element-36126b01)>.elementor-element{width:100%!important;max-width:100%!important}}
+@media (max-width:1024px){.elementor-element-36126b01:not(#ph),.e-con-inner:has(>.elementor-element-36126b01)>.elementor-element-359b3020{flex:0 0 auto!important;height:auto!important}.e-con-inner:has(>.elementor-element-36126b01)>.elementor-element-359b3020{max-width:28rem!important;margin-inline:auto}}
+@media (max-width:1024px){.e-con-inner:has(>.elementor-element-36126b01):not(#ph){flex-direction:column!important;flex-wrap:nowrap!important;align-items:stretch!important}}
+@media (max-width:1024px){.e-con-inner:has(>.elementor-element-36126b01):not(#ph){padding-inline:var(--ph-margem)!important;gap:1.5rem}}
+
+/* ==== DS-PHORTE:FIM ==== */
+
+/* Degradês vinho do site.css convertidos em cor chapada (menos ruído, contraste estável).
+   Gerado por _tools/apply_v1_ds.py. No Elementor: tipo de fundo "Clássico" com a cor #7D1B1B ou #A81E1E. */
+.elementor-60941 .elementor-element.elementor-element-136d314b:not(.premium-title-clipped) .premium-title-header,.elementor-60941 .elementor-element.elementor-element-136d314b.premium-title-clipped .premium-title-text{background-image:none!important;-webkit-text-fill-color:var(--ph-footer-red)!important;color:var(--ph-footer-red)!important}
+.elementor-60941 .elementor-element.elementor-element-4116f0bd{background-image:none!important;background-color:var(--ph-footer-red)!important}
+.elementor-60941 .elementor-element.elementor-element-760bd4e:not(.premium-title-clipped) .premium-title-header,.elementor-60941 .elementor-element.elementor-element-760bd4e.premium-title-clipped .premium-title-text{background-image:none!important;-webkit-text-fill-color:var(--ph-footer-red)!important;color:var(--ph-footer-red)!important}
+.elementor-60941 .elementor-element.elementor-element-769fb2e3{background-image:none!important;background-color:var(--ph-footer-red)!important}
+.elementor-60941 .elementor-element.elementor-element-2ed96101{background-image:none!important;background-color:var(--ph-footer-red)!important}
+.elementor-60941 .elementor-element.elementor-element-525bcae2:not(.premium-title-clipped) .premium-title-header,.elementor-60941 .elementor-element.elementor-element-525bcae2.premium-title-clipped .premium-title-text{background-image:none!important;-webkit-text-fill-color:var(--ph-footer-red)!important;color:var(--ph-footer-red)!important}
+.elementor-60941 .elementor-element.elementor-element-195fd289:not(.premium-title-clipped) .premium-title-header,.elementor-60941 .elementor-element.elementor-element-195fd289.premium-title-clipped .premium-title-text{background-image:none!important;-webkit-text-fill-color:var(--ph-footer-red)!important;color:var(--ph-footer-red)!important}
+.elementor-60941 .elementor-element.elementor-element-722e0ddc:not(.premium-title-clipped) .premium-title-header,.elementor-60941 .elementor-element.elementor-element-722e0ddc.premium-title-clipped .premium-title-text{background-image:none!important;-webkit-text-fill-color:var(--ph-footer-red)!important;color:var(--ph-footer-red)!important}
+.elementor-60941 .elementor-element.elementor-element-498573b0:not(.elementor-motion-effects-element-type-background),.elementor-60941 .elementor-element.elementor-element-498573b0>.elementor-motion-effects-container>.elementor-motion-effects-layer{background-image:none!important;background-color:var(--ph-primary-dark)!important}
+.elementor-60941 .elementor-element.elementor-element-360f1b0e:not(.elementor-motion-effects-element-type-background),.elementor-60941 .elementor-element.elementor-element-360f1b0e>.elementor-motion-effects-container>.elementor-motion-effects-layer{background-image:none!important;background-color:var(--ph-primary-dark)!important}
+.elementor-60941 .elementor-element.elementor-element-3906c9aa:not(.elementor-motion-effects-element-type-background),.elementor-60941 .elementor-element.elementor-element-3906c9aa>.elementor-motion-effects-container>.elementor-motion-effects-layer{background-image:none!important;background-color:var(--ph-primary-dark)!important}
+.elementor-60941 .elementor-element.elementor-element-78eea982:not(.elementor-motion-effects-element-type-background),.elementor-60941 .elementor-element.elementor-element-78eea982>.elementor-motion-effects-container>.elementor-motion-effects-layer{background-image:none!important;background-color:var(--ph-primary-dark)!important}
+.elementor-60941 .elementor-element.elementor-element-3740e25f:not(.premium-title-clipped) .premium-title-header,.elementor-60941 .elementor-element.elementor-element-3740e25f.premium-title-clipped .premium-title-text{background-image:none!important;-webkit-text-fill-color:var(--ph-footer-red)!important;color:var(--ph-footer-red)!important}
+.elementor-60941 .elementor-element.elementor-element-711740cd:not(.elementor-motion-effects-element-type-background),.elementor-60941 .elementor-element.elementor-element-711740cd>.elementor-motion-effects-container>.elementor-motion-effects-layer{background-image:none!important;background-color:var(--ph-footer-red)!important}
+.elementor-60941 .elementor-element.elementor-element-305610ac:not(.premium-title-clipped) .premium-title-header,.elementor-60941 .elementor-element.elementor-element-305610ac.premium-title-clipped .premium-title-text{background-image:none!important;-webkit-text-fill-color:var(--ph-footer-red)!important;color:var(--ph-footer-red)!important}
+.elementor-60941 .elementor-element.elementor-element-77ff3ac6:not(.premium-title-clipped) .premium-title-header,.elementor-60941 .elementor-element.elementor-element-77ff3ac6.premium-title-clipped .premium-title-text{background-image:none!important;-webkit-text-fill-color:var(--ph-footer-red)!important;color:var(--ph-footer-red)!important}
+.elementor-31485 .elementor-element.elementor-element-743a018:not(.elementor-motion-effects-element-type-background),.elementor-31485 .elementor-element.elementor-element-743a018>.elementor-motion-effects-container>.elementor-motion-effects-layer{background-image:none!important;background-color:var(--ph-footer-red)!important}
+
+.elementor-element.elementor-element-4fc456d7:not(#ph){background-image:url("https://srbunnie.github.io/lp-phorte/Graduacao/paginas-cursos/processos-gerenciais/v1/assets/img/PROCESSOS-GERENCIAIS-BG-6067fc.webp")}
+
+/* Seção de salários — direção 02 "Destaque de mercado" (aprovada). Revisão: texto maior e caixa de valores em destaque.
+   Tokens do Design System Phorte isolados no componente. */
+.phorte-salary{--ps-ink:#1A1A1A;--ps-muted:#4A4A4A;--ps-line:#E5E5E5;--ps-paper:#FFFFFF;--ps-primary:#D42B2B;--ps-primary-dark:#A81E1E;--ps-deep:#7D1B1B;
+  font-family:Poppins,Inter,ui-sans-serif,system-ui,"Segoe UI",sans-serif;color:var(--ps-ink);
+  padding:64px 20px;background:#FAFAFA;box-sizing:border-box;line-height:1.6;text-align:left}
+.phorte-salary *{box-sizing:border-box}
+.phorte-salary__inner{width:min(1180px,100%);margin:0 auto}
+.phorte-salary__panel{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);grid-template-rows:auto auto;gap:24px 48px;align-items:center;
+  padding:40px;border:1px solid var(--ps-line);border-radius:16px;background:var(--ps-paper);overflow:hidden}
+.phorte-salary__copy h2{margin:0;color:var(--ps-primary-dark);font-size:clamp(30px,3.4vw,44px);font-weight:700;line-height:1.12;letter-spacing:-.03em}
+.phorte-salary__prof{text-decoration:underline;text-decoration-thickness:.09em;text-underline-offset:.14em;text-decoration-skip-ink:auto}
+.phorte-salary__hl{font-weight:700;color:var(--ps-primary-dark);white-space:nowrap}
+.phorte-salary__copy p{margin:18px 0 0;color:var(--ps-muted);font-size:clamp(16px,1.4vw,18px);line-height:1.65}
+
+/* caixa de valores em destaque */
+.phorte-salary__list{display:grid;grid-template-columns:1fr;overflow:hidden;border-radius:16px;color:#fff;background:var(--ps-deep);box-shadow:none}
+.phorte-salary__list-title{margin:0;padding:22px 28px 16px;color:#FFD3D3;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;line-height:1.4}
+.phorte-salary__item{min-height:92px;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"role value" "label value";align-items:center;gap:4px 20px;padding:16px 28px;border-top:1px solid rgb(255 255 255 / 20%);position:relative;transition:background .2s}
+.phorte-salary__item:hover{background:rgb(255 255 255 / 7%)}
+.phorte-salary__value{grid-area:value;color:#fff;font-size:clamp(28px,3.2vw,40px);font-weight:700;line-height:1.05;letter-spacing:-.02em;white-space:nowrap;font-variant-numeric:tabular-nums}
+.phorte-salary__label{grid-area:label;justify-self:start;margin-top:4px;padding:2px 10px;border-radius:999px;background:rgb(255 255 255 / 14%);color:#FFE3E3;font-size:12px;font-weight:600;letter-spacing:.02em}
+.phorte-salary__role{grid-area:role;color:#fff;font-size:clamp(16px,1.5vw,19px);font-weight:600;line-height:1.35}
+.phorte-salary__source{grid-column:1/-1;grid-row:2;margin:0;color:var(--ps-muted);font-size:13px;line-height:1.5}
+
+@media (max-width:900px){.phorte-salary__panel{grid-template-columns:minmax(0,1fr);padding:28px;gap:24px}.phorte-salary__source{grid-column:auto;grid-row:auto}}
+@media (max-width:560px){
+  .phorte-salary{padding:40px 12px}
+  .phorte-salary__panel{padding:20px;gap:20px;border-radius:14px}
+  .phorte-salary__copy p{font-size:16px}
+  .phorte-salary__list{border-radius:14px}
+  .phorte-salary__list-title{padding:18px 20px 12px;font-size:12px}
+  .phorte-salary__item{grid-template-columns:1fr;grid-template-areas:"role" "value" "label";gap:2px;padding:18px 20px;min-height:0}
+  .phorte-salary__role{font-size:16px}
+  .phorte-salary__value{font-size:clamp(32px,10vw,40px);white-space:normal;margin-top:2px}
+  .phorte-salary__label{margin-top:6px}
+  .phorte-salary__source{font-size:12px}
+}
+
+.phorte-salary__copy,.phorte-salary__list,.phorte-salary__item>*{min-width:0;overflow-wrap:break-word}
+
+@media (max-width:1280px){.elementor-element-28e351a6 .swiper-slide-duplicate{display:none!important}}
+
+.jet-listing-grid__slider .swiper-wrapper{transition-timing-function:cubic-bezier(.25,.8,.25,1)!important}
+@media (prefers-reduced-motion:reduce){.jet-listing-grid__slider .swiper-wrapper{transition-duration:0ms!important}}
+
+/* popup 34612 (barra inferior) fora do layout novo */
+#elementor-popup-modal-34612,.elementor-popup-modal:has(.elementor-element-5748245){display:none!important}
