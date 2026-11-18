@@ -1,13 +1,6 @@
 /* Ajustes da cópia local v1: substitui o que dependia do JS do WordPress/Elementor. */
 html{scroll-behavior:smooth}
 .elementor-widget-lottie,.elementor-lottie{display:none!important}
-.swiper{overflow:hidden}
-.swiper-wrapper{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;transform:none!important;gap:var(--phorte-swiper-gap,16px)}
-.swiper-wrapper::-webkit-scrollbar{display:none}
-.swiper-slide{flex:0 0 auto;scroll-snap-align:start;width:auto;max-width:100%}
-.swiper-slide[style*="width"]{width:auto!important}
-.swiper-pagination{display:none}
-.elementor-swiper-button{cursor:pointer;z-index:5}
 
 /* Hero (Administração, Marketing, Processos Gerenciais, RH): as duas colunas terminam na mesma altura.
    A caixa de texto à esquerda e o cartão de preço à direita crescem juntos; no cartão o espaço extra vai entre os itens. */
@@ -198,9 +191,6 @@ svg.e-font-icon-svg.ph-lucide{fill:none!important;stroke:currentColor;stroke-wid
 
 /* ---------- 7) Cartões de disciplinas e carrossel (Jet Engine) ---------- */
 /* o carrossel original mostrava 3 cartões e escondia o resto: agora rola com encaixe, setas e pontos (controles em local.js) */
-.jet-listing-grid__slider .jet-listing-grid__items{overflow-x:auto!important;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain}
-.jet-listing-grid__slider .jet-listing-grid__items::-webkit-scrollbar{display:none}
-.jet-listing-grid__slider .jet-listing-grid__item{scroll-snap-align:start}
 .jet-listing-grid__items:has(.elementor-element-743a018){counter-reset:ph-disc}
 .jet-listing-grid__item:has(.elementor-element-743a018){display:flex}
 .jet-listing-grid__item:has(.elementor-element-743a018)>.elementor{display:flex;flex:1;min-width:0}
@@ -391,7 +381,6 @@ svg.e-font-icon-svg.ph-lucide{fill:none!important;stroke:currentColor;stroke-wid
   .elementor-element-28e351a6 .swiper-slide :is(.elementor-widget,.e-con){width:100%!important;max-width:none!important}
   .elementor-element-28e351a6 .elementor-swiper-button{display:none!important}
   /* disciplinas e professores: 2 por vez no tablet */
-  .jet-listing-grid__slider .jet-listing-grid__items>.jet-listing-grid__item{flex:0 0 50%!important;max-width:50%!important;width:50%!important}
   /* diferenciais: respiro lateral para as setas */
   .elementor-element-807c9b9{padding-inline:1rem}
   /* impacto: margem lateral nos cartões */
@@ -401,7 +390,6 @@ svg.e-font-icon-svg.ph-lucide{fill:none!important;stroke:currentColor;stroke-wid
 }
 
 @media (max-width:767px){
-  .jet-listing-grid__slider .jet-listing-grid__items>.jet-listing-grid__item{flex:0 0 100%!important;max-width:100%!important;width:100%!important}
   /* hero: o selo do MEC fica dentro da tela */
   .elementor-element-413693b3{right:.75rem!important;left:auto!important;max-width:5.5rem}
   /* "Por que estudar": painéis na largura toda */
