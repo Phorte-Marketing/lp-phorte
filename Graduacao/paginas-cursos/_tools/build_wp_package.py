@@ -41,7 +41,7 @@ css += ("\n.jet-listing-grid__slider .jet-listing-grid__item.jet-equal-columns>.
 css += ("\n.jet-listing-grid__slider:not([data-ph-car]){opacity:0;animation:ph-car-reveal 0s linear 4s forwards}\n"
         "@keyframes ph-car-reveal{to{opacity:1}}\n"
         ".jet-listing-grid__slider:not([data-ph-car]):has(.elementor-element-743a018){margin-bottom:calc(20px + var(--ph-alvo-toque,2.75rem))}\n"
-        ".jet-listing-grid__slider:not([data-ph-car]):has(.elementor-element-d61b7e4){margin-bottom:calc(1.25rem + 1.5rem)}\n"
+        ".jet-listing-grid__slider:not([data-ph-car]):has(.elementor-element-d61b7e4){margin-bottom:calc(1.25rem + 1.5rem + 3rem)}\n"   # + o botão "Ver mais" (3rem) que o JS põe nos cartões
         "@media (prefers-reduced-motion:no-preference){.jet-listing-grid__slider[data-ph-car]{animation:ph-car-in .25s ease-out}@keyframes ph-car-in{from{opacity:0}}}\n"
         # foco do teclado: o foco fica no próprio carrossel (tabindex=0)
         ".jet-listing-grid__slider[data-ph-car]:focus-visible{outline:var(--ph-largura-foco,3px) solid var(--ph-ring,#1A1A1A);outline-offset:var(--ph-afastamento-foco,2px)}\n"
