@@ -48,27 +48,35 @@
       sl.setAttribute('data-ph-car', '1');
       if (sw.autoplay && sw.autoplay.running) sw.autoplay.stop();
       sw.params.autoplay = false;
-      sw.params.speed = (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) ? 0 : 650;
+      sw.params.speed = (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) ? 0 : 300;
+      /* rolagem finita: sem loop (o carrossel não volta do último ao primeiro; volta pelo caminho contrário) */
+      if (sw.params.loop && sw.loopDestroy) { sw.loopDestroy(); }
+      sw.params.loop = false; sw.params.rewind = false;
       var label = $('.elementor-element-743a018', sl) ? 'Disciplinas do curso' : $('.elementor-element-d61b7e4', sl) ? 'Corpo docente' : 'Carrossel', split = label === 'Corpo docente';
       sl.setAttribute('role', 'region'); sl.setAttribute('aria-roledescription', 'carrossel'); sl.setAttribute('aria-label', label);
       sw.params.slidesPerGroup = 1;   /* as setas andam 1 cartão por vez, não o grupo inteiro */
       sw.params.breakpoints = { 0: { slidesPerView: 1, slidesPerGroup: 1 }, 768: { slidesPerView: 2, slidesPerGroup: 1 }, 1025: { slidesPerView: 3, slidesPerGroup: 1 } };
-      sw.currentBreakpoint = false; if (sw.setBreakpoint) sw.setBreakpoint(); sw.update();
+      sw.currentBreakpoint = false; if (sw.setBreakpoint) sw.setBreakpoint(); sw.update(); sw.slideTo(0, 0);
       var bar = document.createElement('div'); bar.className = 'ph-car' + (split ? ' ph-car--split' : '');
       bar.innerHTML = (split ? '<span class="ph-car__title" aria-hidden="true">Professores</span>' : '') +
         '<div class="ph-car__nav"><button type="button" class="ph-car__btn" data-d="-1" aria-label="Anterior">' + Larr + '</button><button type="button" class="ph-car__btn" data-d="1" aria-label="Próximo">' + Rarr + '</button></div><div class="ph-car__dots"></div><span class="ph-car__status" role="status" aria-live="polite"></span>';
       sl.parentNode.insertBefore(bar, sl.nextSibling);
       var dots = $('.ph-car__dots', bar), st = $('.ph-car__status', bar);
-      function real() { return sw.slides.filter(function (s) { return !s.classList.contains('swiper-slide-duplicate'); }).length; }
+      var prevB = $('[data-d="-1"]', bar), nextB = $('[data-d="1"]', bar);
       function per() { return Math.max(1, +sw.params.slidesPerView || 1); }
-      function pages() { return Math.max(1, Math.ceil(real() / per())); }
-      function cur() { return Math.min(pages() - 1, Math.floor((sw.realIndex || 0) / per())); }
+      function pages() { return Math.max(1, sw.slides.length - per() + 1); }   /* uma posição por cartão */
+      function cur() { return Math.max(0, Math.min(pages() - 1, sw.activeIndex)); }
       function build() {
         var n = pages(); if (dots.children.length === n) return; dots.innerHTML = '';
-        for (var i = 0; i < n; i++) (function (i) { var b = document.createElement('button'); b.type = 'button'; b.className = 'ph-car__dot'; b.setAttribute('aria-label', 'Ir para a posição ' + (i + 1) + ' de ' + n); b.addEventListener('click', function () { sw.slideToLoop(i * per()); }); dots.appendChild(b); })(i);
+        for (var i = 0; i < n; i++) (function (i) { var b = document.createElement('button'); b.type = 'button'; b.className = 'ph-car__dot'; b.setAttribute('aria-label', 'Ir para a posição ' + (i + 1) + ' de ' + n); b.addEventListener('click', function () { sw.slideTo(i); }); dots.appendChild(b); })(i);
         dots.style.display = n > 1 ? 'flex' : 'none';
       }
-      function update() { build(); var i = cur(), n = pages(); [].forEach.call(dots.children, function (d, k) { if (k === i) d.setAttribute('aria-current', 'true'); else d.removeAttribute('aria-current'); }); st.textContent = 'Posição ' + (i + 1) + ' de ' + n; }
+      function update() {
+        build(); var i = cur(), n = pages();
+        [].forEach.call(dots.children, function (d, k) { if (k === i) d.setAttribute('aria-current', 'true'); else d.removeAttribute('aria-current'); });
+        prevB.disabled = i <= 0; nextB.disabled = i >= n - 1;   /* sem volta do último para o primeiro */
+        st.textContent = 'Posição ' + (i + 1) + ' de ' + n;
+      }
       $('[data-d="-1"]', bar).addEventListener('click', function () { sw.slidePrev(); });
       $('[data-d="1"]', bar).addEventListener('click', function () { sw.slideNext(); });
       sl.setAttribute('tabindex', '0');
@@ -119,7 +127,8 @@
   function numbering() {
     $$('.jet-listing-grid__slider .swiper-slide').forEach(function (s) {
       var c = $('.elementor-element-743a018', s), i = s.getAttribute('data-swiper-slide-index');
-      if (c && i !== null) { var n = +i + 1; c.setAttribute('data-ph-n', (n < 10 ? '0' : '') + n); }
+      if (i === null) i = [].indexOf.call(s.parentNode.children, s);   /* sem loop não há atributo: vale a ordem */
+      if (c) { var n = +i + 1; c.setAttribute('data-ph-n', (n < 10 ? '0' : '') + n); }
     });
   }
   function run() { icons(); attrs(); sliders(); numbering(); bios(); photos(); }
