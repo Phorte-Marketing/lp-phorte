@@ -537,3 +537,6 @@ svg.e-font-icon-svg.ph-lucide{fill:none!important;stroke:currentColor;stroke-wid
 }
 
 .phorte-salary__copy,.phorte-salary__list,.phorte-salary__item>*{min-width:0;overflow-wrap:break-word}
+
+/* popup 34612 (barra inferior) fora do layout novo */
+#elementor-popup-modal-34612,.elementor-popup-modal:has(.elementor-element-5748245){display:none!important}

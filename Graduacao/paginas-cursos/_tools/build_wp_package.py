@@ -25,6 +25,8 @@ for d in drop:
 repl = (PAGES % slug) if pages else "IMG_"
 css = re.sub(r'(background-image:url\()"img/([^"]+)"', lambda m: '%s"%s%s"' % (m.group(1), repl, m.group(2)), css)
 css += "\n" + open(os.path.join(ROOT, "_shared", "salario-02.css"), encoding="utf-8").read()
+# barra inferior "Faça sua inscrição" (popup 34612 "Rodapé Inscreva-se"): padrão antigo, não entra no layout novo
+css += "\n/* popup 34612 (barra inferior) fora do layout novo */\n#elementor-popup-modal-34612,.elementor-popup-modal:has(.elementor-element-5748245){display:none!important}\n"
 
 html = open(os.path.join(ROOT, slug, "v1", "index.html"), encoding="utf-8").read()
 a = html.index("<!-- phorte-salary:start -->") + len("<!-- phorte-salary:start -->")
