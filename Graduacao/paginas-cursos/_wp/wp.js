@@ -54,6 +54,8 @@
       sw.params.loop = false; sw.params.rewind = false;
       var label = $('.elementor-element-743a018', sl) ? 'Disciplinas do curso' : $('.elementor-element-d61b7e4', sl) ? 'Corpo docente' : 'Carrossel', split = label === 'Corpo docente';
       sl.setAttribute('role', 'region'); sl.setAttribute('aria-roledescription', 'carrossel'); sl.setAttribute('aria-label', label);
+      /* o Jet pode vir com centerMode: o 1º cartão fica no meio (vazio à esquerda) e as posições não batem com setas/pontos */
+      sw.params.centeredSlides = false; sw.params.centeredSlidesBounds = false; sw.params.centerInsufficientSlides = false;
       sw.params.roundLengths = true;   /* larguras inteiras: bordas de 1px não ficam borradas/mais escuras em posições fracionadas */
       sw.params.slidesPerGroup = 1;   /* as setas andam 1 cartão por vez, não o grupo inteiro */
       sw.params.breakpoints = { 0: { slidesPerView: 1, slidesPerGroup: 1 }, 768: { slidesPerView: 2, slidesPerGroup: 1 }, 1025: { slidesPerView: 3, slidesPerGroup: 1 } };
@@ -147,14 +149,26 @@
     });
   }
   function run() { icons(); attrs(); sliders(); numbering(); bios(); photos(); }
-  /* repete a cada 250ms até os carrosséis do Jet existirem e estarem montados (o Swiper do Jet pode iniciar depois do load); no máximo 12s */
-  function start() {
-    banner(); run(); var tries = 0;
-    var iv = setInterval(function () {
+  /* repete a cada 250ms até os carrosséis do Jet existirem e estarem montados (o Swiper do Jet pode iniciar depois do load).
+     O grid pode vir por lazy-load (AJAX, quando a seção entra na tela, a qualquer momento): um observador religa a busca quando o DOM muda. */
+  var iv = null, tries = 0;
+  function kick() {
+    tries = 0; if (iv) return;
+    iv = setInterval(function () {
       run(); tries++;
       var pend = $$('.jet-listing-grid__slider').some(function (s) { return !s.getAttribute('data-ph-car'); });
-      if ((!pend && tries > 12) || tries > 48) clearInterval(iv);
+      if ((!pend && tries > 12) || tries > 48) { clearInterval(iv); iv = null; }
     }, 250);
+  }
+  function start() {
+    banner(); run(); kick();
+    if (window.MutationObserver) new MutationObserver(function (ms) {
+      if (iv) return;
+      for (var i = 0; i < ms.length; i++) for (var j = 0; j < ms[i].addedNodes.length; j++) {
+        var n = ms[i].addedNodes[j];
+        if (n.nodeType === 1 && (n.matches('.jet-listing-grid__slider, .jet-listing-grid__items') || n.querySelector('.jet-listing-grid__slider'))) { kick(); return; }
+      }
+    }).observe(document.body, { childList: true, subtree: true });
   }
   if (document.readyState === 'complete') start(); else window.addEventListener('load', start);
 })();
