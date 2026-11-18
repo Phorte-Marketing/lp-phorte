@@ -266,6 +266,19 @@ def render_section(sec, model, variant):
             % (sid, E(sec["title"]), lead, strays, grid, imgs, ('<div class="actions">%s</div>' % btns) if btns else ""))
 
 
+def copy_html(t):
+    """Destaca em negrito os valores em reais do texto ("R$ 5.085,50")."""
+    return re.sub(r"(R\$\s?[\d.]+(?:,\d{2})?)", r'<strong class="phorte-salary__hl">\1</strong>', H.escape(t))
+
+
+def title_html(t):
+    """Sublinha o nome da profissão no título ("Quanto ganha um <u>administrador</u>?")."""
+    m = re.match(r"^(Quanto ganha uma? )(.+?)(\?)$", t)
+    if not m:
+        return H.escape(t)
+    return '%s<span class="phorte-salary__prof">%s</span>%s' % (H.escape(m.group(1)), H.escape(m.group(2)), m.group(3))
+
+
 def salary_block(slug):
     c = SALARY[slug]
     items = "".join(
@@ -274,9 +287,9 @@ def salary_block(slug):
         % (E(v), E(r)) for v, r in c["salaries"])
     return ('<section class="phorte-salary" id="salarios" data-phorte-salary-section><div class="phorte-salary__inner">'
             '<article class="phorte-salary__panel"><div class="phorte-salary__copy"><h2>%s</h2><p>%s</p></div>'
-            '<div class="phorte-salary__list" aria-label="Médias salariais por ocupação"><h3 class="phorte-salary__list-title">Salários médios no Brasil</h3>%s</div>'
+            '<div class="phorte-salary__list" role="group" aria-label="Médias salariais por ocupação"><h3 class="phorte-salary__list-title">Salários médios no Brasil</h3>%s</div>'
             '<p class="phorte-salary__source">%s</p></article></div></section>'
-            % (E(c["title"]), E(c["copy"]), items, E(c["source"])))
+            % (title_html(c["title"]), copy_html(c["copy"]), items, E(c["source"])))
 
 
 def price_html(model):

@@ -1,0 +1,38 @@
+/* Tokens do Design System da Faculdade Phorte, extraídos de https://phorte-design-system.vercel.app (styleguide e contrato de tokens).
+   Prefixo --ph- para não colidir com variáveis do tema Hello Elementor / Elementor Kit ao publicar no WordPress.
+   Mapeamento: --ph-primary = --primary do DS, e assim por diante. Só entram os tokens usados nas páginas de curso. */
+:root{
+  /* tipografia: família única Poppins, cinco pesos (400 500 600 700 900), sem itálico */
+  --ph-font:"Poppins","Poppins Fallback",ui-sans-serif,system-ui,sans-serif;
+  --ph-tracking-pesado:-.01em;   /* pesos 700 e 900 */
+  --ph-leading-pesado:1.35;
+  --ph-text-corpo:1rem;  --ph-leading-corpo:1.625;
+  --ph-text-apoio:.875rem; --ph-leading-apoio:1.375;
+  --ph-text-rotulo:.75rem; /* mínimo do perfil Standard: 12px */
+  --ph-titulo-1:2.25rem; --ph-titulo-1-md:3rem;
+  --ph-titulo-2:1.875rem; --ph-titulo-2-md:2.25rem;
+  --ph-titulo-3:1.5rem; --ph-titulo-3-md:1.875rem; --ph-titulo-4:1.25rem;
+
+  /* cores (contrato): texto >= 4,5:1, limite de controle >= 3:1 */
+  --ph-background:#FAFAFA; --ph-foreground:#1A1A1A; --ph-card:#FFFFFF;
+  --ph-primary:#D42B2B;        /* 5,0:1 com branco */
+  --ph-primary-dark:#A81E1E;   /* 7,3:1 com branco */
+  --ph-primary-foreground:#FFFFFF;
+  --ph-primary-subtle:#FBEAEA;
+  --ph-footer-red:#7D1B1B;     /* anel de foco em fundo claro */
+  --ph-brand-red:#E64242;      /* marca: só decoração (4,0:1 com branco, não use sob texto) */
+  --ph-secondary:#0B8434; --ph-secondary-dark:#0D6B2E; --ph-secondary-subtle:#EAF4EE;
+  --ph-muted:#F4F6F9; --ph-muted-foreground:#595959; /* 7,0:1 sobre branco */
+  --ph-ink-inverse:#FAFAFA; --ph-ink-inverse-muted:#C7C7C7;
+  --ph-border:#E5E5E5; --ph-border-interactive:#8C8C8C; --ph-border-focus:#6B6B6B;
+  --ph-ring:var(--ph-footer-red); --ph-ring-inverse:var(--ph-ink-inverse);
+
+  /* forma, efeito, movimento */
+  --ph-radius:.5rem;
+  --ph-sombra-repouso:0 1px 3px 0 #0000001a,0 1px 2px -1px #0000001a;
+  --ph-sombra-hover:0 4px 6px -1px #0000001a,0 2px 4px -2px #0000001a;
+  --ph-sombra-flutuante:0 10px 15px -3px #0000001a,0 4px 6px -4px #0000001a;
+  --ph-largura-foco:2px; --ph-afastamento-foco:2px;
+  --ph-alvo-toque:2.75rem;     /* 44px: alvo mínimo de toque */
+  --ph-duracao-rapida:.15s; --ph-ease:cubic-bezier(.4,0,.2,1);
+}

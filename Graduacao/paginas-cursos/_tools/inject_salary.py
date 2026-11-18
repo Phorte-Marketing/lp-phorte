@@ -11,6 +11,19 @@ DATA = json.load(open(os.path.join(ROOT, "_shared", "salarios.json"), encoding="
 START, END = "<!-- phorte-salary:start -->", "<!-- phorte-salary:end -->"
 
 
+def copy_html(t):
+    """Destaca em negrito os valores em reais do texto ("R$ 5.085,50")."""
+    return re.sub(r"(R\$\s?[\d.]+(?:,\d{2})?)", r'<strong class="phorte-salary__hl">\1</strong>', H.escape(t))
+
+
+def title_html(t):
+    """Sublinha o nome da profissão no título ("Quanto ganha um <u>administrador</u>?")."""
+    m = re.match(r"^(Quanto ganha uma? )(.+?)(\?)$", t)
+    if not m:
+        return H.escape(t)
+    return '%s<span class="phorte-salary__prof">%s</span>%s' % (H.escape(m.group(1)), H.escape(m.group(2)), m.group(3))
+
+
 def section(slug):
     c = DATA[slug]
     items = "".join(
@@ -22,10 +35,10 @@ def section(slug):
         '%s<section class="phorte-salary" id="%s-salarios" data-phorte-salary-section>'
         '<div class="phorte-salary__inner"><article class="phorte-salary__panel">'
         '<div class="phorte-salary__copy"><h2>%s</h2><p>%s</p></div>'
-        '<div class="phorte-salary__list" aria-label="Médias salariais por ocupação">'
+        '<div class="phorte-salary__list" role="group" aria-label="Médias salariais por ocupação">'
         '<h3 class="phorte-salary__list-title">Salários médios no Brasil</h3>%s</div>'
         '<p class="phorte-salary__source">%s</p></article></div></section>%s'
-        % (START, slug, H.escape(c["title"]), H.escape(c["copy"]), items, H.escape(c["source"]), END))
+        % (START, slug, title_html(c["title"]), copy_html(c["copy"]), items, H.escape(c["source"]), END))
 
 
 def top_level_blocks(doc, root_marker='data-elementor-type="single-page"'):
