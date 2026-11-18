@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Sumário · Páginas de curso — Graduação Phorte</title>
+<link rel="stylesheet" href="_shared/base.css">
+<style>
+  body{background:var(--canvas)}
+  .top{padding:48px 0 24px}
+  .top h1{font-size:clamp(28px,4vw,42px);font-weight:900;letter-spacing:-.04em;color:var(--deep);margin:8px 0 12px}
+  .top p{max-width:720px;color:var(--muted)}
+  .top a.back{font-size:13px;font-weight:600;color:var(--primary-dark)}
+  h2.s{font-size:22px;font-weight:700;margin:36px 0 14px;color:var(--deep)}
+  .toc{display:flex;flex-wrap:wrap;gap:8px}
+  .toc a{padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:#fff;text-decoration:none;font-size:14px;font-weight:600}
+  .toc a:hover{border-color:var(--primary);background:var(--primary-subtle)}
+  .tablewrap{overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow)}
+  table{width:100%;border-collapse:collapse;min-width:620px}
+  th,td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line);font-size:14px}
+  th{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--primary-dark);background:var(--primary-subtle)}
+  tr:last-child td{border-bottom:0}
+  td a{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid var(--line);text-decoration:none;font-weight:600}
+  td a:hover{border-color:var(--primary);background:var(--primary-subtle);color:var(--primary-dark)}
+  td.c{font-weight:600}
+  .course{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;margin-bottom:14px;box-shadow:var(--shadow);scroll-margin-top:16px}
+  .course h3{font-size:20px;font-weight:700;margin-bottom:4px}
+  .course small{color:var(--muted)}
+  .course ul{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:8px}
+  .course li{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline;padding:10px 14px;border:1px solid var(--line);border-radius:8px}
+  .course li a{font-weight:600;color:var(--primary-dark)}
+  .course li span{color:var(--muted);font-size:13px}
+  .course li code{font-size:12px;color:var(--muted);margin-left:auto;word-break:break-all}
+  .legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;font-size:13px;color:var(--muted)}
+  .legend div{padding:14px 16px;border-left:4px solid var(--primary);background:#fff;border-radius:8px}
+  .legend b{display:block;color:var(--ink);margin-bottom:2px}
+  footer{padding:32px 0 56px;font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="back" href="index.html">← Voltar ao hub</a>
+    <h1>Sumário das páginas de curso</h1>
+    <p>Sete cursos de graduação em quatro versões cada. Use a tabela para comparar versões lado a lado ou o índice para ir direto a um curso.</p>
+  </header>
+
+  <h2 class="s">Versões</h2>
+  <div class="legend">
+    <div><b>v1 · Cópia do site</b>HTML do site atual, estático, com CSS, imagens e fontes locais.</div>
+    <div><b>v2 · Editorial claro</b>Fundo claro, hero em duas colunas, faixas alternadas.</div>
+    <div><b>v3 · Impacto Phorte</b>Hero vermelho profundo, painel de matrícula, salário logo após o hero.</div>
+    <div><b>v4 · Refinada</b>Hero com preço, faixa de fatos, navegação fixa, seções limpas, barra de inscrição no mobile.</div>
+  </div>
+
+  <h2 class="s">Ir para o curso</h2>
+  <nav class="toc" id="toc" aria-label="Cursos"></nav>
+
+  <h2 class="s">Comparar versões</h2>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Curso</th><th>v1</th><th>v2</th><th>v3</th><th>v4</th></tr></thead>
+    <tbody id="rows"></tbody>
+  </table></div>
+
+  <h2 class="s">Todos os links</h2>
+  <div id="cards"></div>
+
+  <footer>Protótipo para avaliação · conteúdo copiado do site atual; preços, links de inscrição e valores salariais pendentes de validação.</footer>
+</div>
+<script>
+  var cursos = [
+    ["educacao-fisica", "Educação Física"], ["administracao", "Administração"], ["marketing", "Marketing"],
+    ["pedagogia", "Pedagogia"], ["processos-gerenciais", "Processos Gerenciais"],
+    ["recursos-humanos", "Recursos Humanos"], ["traducao-e-interpretacao", "Tradução e Interpretação"]
+  ];
+  var vers = [["v1", "v1 · Cópia do site"], ["v2", "v2 · Editorial claro"], ["v3", "v3 · Impacto Phorte"], ["v4", "v4 · Refinada"]];
+  var base = "https://srbunnie.github.io/lp-phorte/Graduacao/paginas-cursos/";
+  function href(c, v) { return c[0] + "/" + v[0] + "/index.html"; }
+  document.getElementById("toc").innerHTML = cursos.map(function (c) {
+    return '<a href="#' + c[0] + '">' + c[1] + '</a>';
+  }).join("");
+  document.getElementById("rows").innerHTML = cursos.map(function (c) {
+    return '<tr><td class="c">' + c[1] + '</td>' + vers.map(function (v) {
+      return '<td><a href="' + href(c, v) + '">Abrir ' + v[0] + '</a></td>';
+    }).join("") + '</tr>';
+  }).join("");
+  document.getElementById("cards").innerHTML = cursos.map(function (c) {
+    return '<article class="course" id="' + c[0] + '"><h3>' + c[1] + '</h3><small>/' + c[0] + '/</small><ul>' +
+      vers.map(function (v) {
+        return '<li><a href="' + href(c, v) + '">' + v[1] + '</a><code>' + base + href(c, v) + '</code></li>';
+      }).join("") + '</ul></article>';
+  }).join("");
+</script>
+</body>
+</html>
