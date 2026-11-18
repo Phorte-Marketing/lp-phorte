@@ -83,6 +83,20 @@
       sl.addEventListener('keydown', function (e) { if (e.key === 'ArrowRight') { e.preventDefault(); sw.slideNext(); } else if (e.key === 'ArrowLeft') { e.preventDefault(); sw.slidePrev(); } });
       sw.on('loopFix', function () { numbering(); }); sw.on('slideChangeTransitionEnd', function () { numbering(); });
       sw.on('slideChange', update); sw.on('breakpoint', function () { build(); update(); }); sw.on('resize', update); update();
+      /* o foco num botão de um cartão fora da vista faria o navegador rolar o overflow:hidden do carrossel (cartões cortados/deslocados): traz o cartão para a vista */
+      sl.addEventListener('scroll', function () { if (sl.scrollLeft) sl.scrollLeft = 0; });
+      sl.addEventListener('focusin', function (e) {
+        var s = e.target.closest && e.target.closest('.swiper-slide'); if (!s) return;
+        var k = sw.slides.indexOf(s); if (k < 0) return;
+        var a = sw.activeIndex; if (k < a || k >= a + per()) sw.slideTo(k < a ? k : Math.min(k - per() + 1, pages() - 1), 0);
+        if (sl.scrollLeft) sl.scrollLeft = 0;
+      });
+      /* o Swiper guarda tamanhos antes das fontes/imagens/layout final: recalcula quando eles chegam e quando o tamanho muda */
+      var refresh = function () { if (sl.swiper) { sw.update(); update(); } };
+      if (document.fonts && document.fonts.ready) document.fonts.ready.then(refresh);
+      $$('img', sl).forEach(function (im) { if (!im.complete) im.addEventListener('load', refresh); });
+      window.addEventListener('resize', function () { clearTimeout(sl._phT); sl._phT = setTimeout(refresh, 120); });
+      window.addEventListener('orientationchange', function () { setTimeout(refresh, 300); });
       /* as setas nativas do Jet saem: os controles acima as substituem */
       $$('.jet-listing-grid__slider-icon', sl.parentNode).forEach(function (a) { a.style.display = 'none'; });
     });
@@ -132,6 +146,14 @@
     });
   }
   function run() { icons(); attrs(); sliders(); numbering(); bios(); photos(); }
-  function start() { banner(); run(); [600, 1500, 3000].forEach(function (t) { setTimeout(run, t); }); }
+  /* repete a cada 250ms até os carrosséis do Jet existirem e estarem montados (o Swiper do Jet pode iniciar depois do load); no máximo 12s */
+  function start() {
+    banner(); run(); var tries = 0;
+    var iv = setInterval(function () {
+      run(); tries++;
+      var pend = $$('.jet-listing-grid__slider').some(function (s) { return !s.getAttribute('data-ph-car'); });
+      if ((!pend && tries > 12) || tries > 48) clearInterval(iv);
+    }, 250);
+  }
   if (document.readyState === 'complete') start(); else window.addEventListener('load', start);
 })();

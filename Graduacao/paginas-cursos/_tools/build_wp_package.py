@@ -32,6 +32,20 @@ css += ("\n.jet-listing-grid__slider .swiper-wrapper{align-items:stretch}\n"
         ".jet-listing-grid__slider .swiper-slide.jet-listing-grid__item{height:auto;display:flex}\n"
         ".jet-listing-grid__slider .swiper-slide.jet-listing-grid__item>.elementor{display:flex;flex:1;min-width:0}\n"
         ".jet-listing-grid__slider .swiper-slide.jet-listing-grid__item>.elementor>.elementor-element-743a018{flex:1}\n")
+# causa do corte na borda de baixo: o equal-columns do Jet põe height:100% no cartão, e o cartão de disciplinas tem margin-top:37px;
+# 100% + 37px estoura o slide e o overflow:hidden do Swiper corta o fim da caixa. Com height:auto o cartão estica (stretch) já descontando a margem.
+css += ("\n.jet-listing-grid__slider .jet-listing-grid__item.jet-equal-columns>.elementor>:is(.elementor-element-743a018,.elementor-element-d61b7e4):not(#ph){height:auto!important;align-self:stretch}\n"
+        ".jet-listing-grid__slider .swiper-slide.jet-listing-grid__item{box-sizing:border-box}\n")
+# sem salto no carregamento: o carrossel só aparece depois de o JS montar (fim do loop, 3/2/1 por vista, barra); se o JS falhar, aparece em 4s.
+# o espaço da barra (setas e pontos) já fica reservado, para o conteúdo de baixo não pular quando a barra entra.
+css += ("\n.jet-listing-grid__slider:not([data-ph-car]){opacity:0;animation:ph-car-reveal 0s linear 4s forwards}\n"
+        "@keyframes ph-car-reveal{to{opacity:1}}\n"
+        ".jet-listing-grid__slider:not([data-ph-car]):has(.elementor-element-743a018){margin-bottom:calc(20px + var(--ph-alvo-toque,2.75rem))}\n"
+        ".jet-listing-grid__slider:not([data-ph-car]):has(.elementor-element-d61b7e4){margin-bottom:calc(1.25rem + 1.5rem)}\n"
+        "@media (prefers-reduced-motion:no-preference){.jet-listing-grid__slider[data-ph-car]{animation:ph-car-in .25s ease-out}@keyframes ph-car-in{from{opacity:0}}}\n"
+        # foco do teclado: o foco fica no próprio carrossel (tabindex=0)
+        ".jet-listing-grid__slider[data-ph-car]:focus-visible{outline:var(--ph-largura-foco,3px) solid var(--ph-ring,#1A1A1A);outline-offset:var(--ph-afastamento-foco,2px)}\n"
+        ".jet-listing-grid__slider .swiper-wrapper{touch-action:pan-y pinch-zoom}\n")
 # número do cartão vindo do JS (posição real da disciplina), em vez do contador por posição no HTML
 css += "\n.elementor-element-743a018[data-ph-n]::after{content:attr(data-ph-n)}\n"
 # troca dos carrosséis do Jet: desaceleração suave (a duração vem do JS; movimento reduzido zera)
