@@ -545,6 +545,8 @@ svg.e-font-icon-svg.ph-lucide{fill:none!important;stroke:currentColor;stroke-wid
 .jet-listing-grid__slider .swiper-slide.jet-listing-grid__item>.elementor{display:flex;flex:1;min-width:0}
 .jet-listing-grid__slider .swiper-slide.jet-listing-grid__item>.elementor>.elementor-element-743a018{flex:1}
 
+.elementor-element-743a018[data-ph-n]::after{content:attr(data-ph-n)}
+
 .jet-listing-grid__slider .swiper-wrapper{transition-timing-function:cubic-bezier(.25,.8,.25,1)!important}
 @media (prefers-reduced-motion:reduce){.jet-listing-grid__slider .swiper-wrapper{transition-duration:0ms!important}}
 

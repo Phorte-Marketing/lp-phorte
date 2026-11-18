@@ -73,6 +73,7 @@
       $('[data-d="1"]', bar).addEventListener('click', function () { sw.slideNext(); });
       sl.setAttribute('tabindex', '0');
       sl.addEventListener('keydown', function (e) { if (e.key === 'ArrowRight') { e.preventDefault(); sw.slideNext(); } else if (e.key === 'ArrowLeft') { e.preventDefault(); sw.slidePrev(); } });
+      sw.on('loopFix', function () { numbering(); }); sw.on('slideChangeTransitionEnd', function () { numbering(); });
       sw.on('slideChange', update); sw.on('breakpoint', function () { build(); update(); }); sw.on('resize', update); update();
       /* as setas nativas do Jet saem: os controles acima as substituem */
       $$('.jet-listing-grid__slider-icon', sl.parentNode).forEach(function (a) { a.style.display = 'none'; });
@@ -114,7 +115,14 @@
     });
   }
 
-  function run() { icons(); attrs(); sliders(); bios(); photos(); }
+  /* número do cartão = posição real da disciplina (data-swiper-slide-index), não a posição no HTML: o Swiper cria cópias para o loop e as reordena */
+  function numbering() {
+    $$('.jet-listing-grid__slider .swiper-slide').forEach(function (s) {
+      var c = $('.elementor-element-743a018', s), i = s.getAttribute('data-swiper-slide-index');
+      if (c && i !== null) { var n = +i + 1; c.setAttribute('data-ph-n', (n < 10 ? '0' : '') + n); }
+    });
+  }
+  function run() { icons(); attrs(); sliders(); numbering(); bios(); photos(); }
   function start() { banner(); run(); [600, 1500, 3000].forEach(function (t) { setTimeout(run, t); }); }
   if (document.readyState === 'complete') start(); else window.addEventListener('load', start);
 })();

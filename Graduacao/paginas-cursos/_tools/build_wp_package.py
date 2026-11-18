@@ -32,6 +32,8 @@ css += ("\n.jet-listing-grid__slider .swiper-wrapper{align-items:stretch}\n"
         ".jet-listing-grid__slider .swiper-slide.jet-listing-grid__item{height:auto;display:flex}\n"
         ".jet-listing-grid__slider .swiper-slide.jet-listing-grid__item>.elementor{display:flex;flex:1;min-width:0}\n"
         ".jet-listing-grid__slider .swiper-slide.jet-listing-grid__item>.elementor>.elementor-element-743a018{flex:1}\n")
+# número do cartão vindo do JS (posição real da disciplina), em vez do contador por posição no HTML
+css += "\n.elementor-element-743a018[data-ph-n]::after{content:attr(data-ph-n)}\n"
 # troca dos carrosséis do Jet: desaceleração suave (a duração vem do JS; movimento reduzido zera)
 css += "\n.jet-listing-grid__slider .swiper-wrapper{transition-timing-function:cubic-bezier(.25,.8,.25,1)!important}\n@media (prefers-reduced-motion:reduce){.jet-listing-grid__slider .swiper-wrapper{transition-duration:0ms!important}}\n"
 # barra inferior "Faça sua inscrição" (popup 34612 "Rodapé Inscreva-se"): padrão antigo, não entra no layout novo
