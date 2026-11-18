@@ -45,7 +45,9 @@ css += ("\n.jet-listing-grid__slider:not([data-ph-car]){opacity:0;animation:ph-c
         "@media (prefers-reduced-motion:no-preference){.jet-listing-grid__slider[data-ph-car]{animation:ph-car-in .25s ease-out}@keyframes ph-car-in{from{opacity:0}}}\n"
         # foco do teclado: o foco fica no próprio carrossel (tabindex=0)
         ".jet-listing-grid__slider[data-ph-car]:focus-visible{outline:var(--ph-largura-foco,3px) solid var(--ph-ring,#1A1A1A);outline-offset:var(--ph-afastamento-foco,2px)}\n"
-        ".jet-listing-grid__slider .swiper-wrapper{touch-action:pan-y pinch-zoom}\n")
+        ".jet-listing-grid__slider .swiper-wrapper{touch-action:pan-y pinch-zoom}\n"
+        # o Swiper põe cada slide em camada própria (translateZ+backface-hidden): em posição fracionada a borda de 1px sai borrada/mais escura
+        ".jet-listing-grid__slider.swiper-backface-hidden .swiper-slide{transform:none;backface-visibility:visible}\n")
 # número do cartão vindo do JS (posição real da disciplina), em vez do contador por posição no HTML
 css += "\n.elementor-element-743a018[data-ph-n]::after{content:attr(data-ph-n)}\n"
 # troca dos carrosséis do Jet: desaceleração suave (a duração vem do JS; movimento reduzido zera)

@@ -555,6 +555,7 @@ svg.e-font-icon-svg.ph-lucide{fill:none!important;stroke:currentColor;stroke-wid
 @media (prefers-reduced-motion:no-preference){.jet-listing-grid__slider[data-ph-car]{animation:ph-car-in .25s ease-out}@keyframes ph-car-in{from{opacity:0}}}
 .jet-listing-grid__slider[data-ph-car]:focus-visible{outline:var(--ph-largura-foco,3px) solid var(--ph-ring,#1A1A1A);outline-offset:var(--ph-afastamento-foco,2px)}
 .jet-listing-grid__slider .swiper-wrapper{touch-action:pan-y pinch-zoom}
+.jet-listing-grid__slider.swiper-backface-hidden .swiper-slide{transform:none;backface-visibility:visible}
 
 .elementor-element-743a018[data-ph-n]::after{content:attr(data-ph-n)}
 
