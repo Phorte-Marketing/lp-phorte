@@ -27,6 +27,11 @@ css = re.sub(r'(background-image:url\()"img/([^"]+)"', lambda m: '%s"%s%s"' % (m
 css += "\n" + open(os.path.join(ROOT, "_shared", "salario-02.css"), encoding="utf-8").read()
 # "Conheça o curso" em grade (até 1280px): o Swiper duplica os slides para o loop; os clones ficam escondidos
 css += "\n@media (max-width:1280px){.elementor-element-28e351a6 .swiper-slide-duplicate{display:none!important}}\n"
+# cartões de disciplinas e professores com a mesma altura dentro do carrossel
+css += ("\n.jet-listing-grid__slider .swiper-wrapper{align-items:stretch}\n"
+        ".jet-listing-grid__slider .swiper-slide.jet-listing-grid__item{height:auto;display:flex}\n"
+        ".jet-listing-grid__slider .swiper-slide.jet-listing-grid__item>.elementor{display:flex;flex:1;min-width:0}\n"
+        ".jet-listing-grid__slider .swiper-slide.jet-listing-grid__item>.elementor>.elementor-element-743a018{flex:1}\n")
 # troca dos carrosséis do Jet: desaceleração suave (a duração vem do JS; movimento reduzido zera)
 css += "\n.jet-listing-grid__slider .swiper-wrapper{transition-timing-function:cubic-bezier(.25,.8,.25,1)!important}\n@media (prefers-reduced-motion:reduce){.jet-listing-grid__slider .swiper-wrapper{transition-duration:0ms!important}}\n"
 # barra inferior "Faça sua inscrição" (popup 34612 "Rodapé Inscreva-se"): padrão antigo, não entra no layout novo

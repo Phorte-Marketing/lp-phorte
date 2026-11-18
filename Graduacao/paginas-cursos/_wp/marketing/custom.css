@@ -540,6 +540,11 @@ svg.e-font-icon-svg.ph-lucide{fill:none!important;stroke:currentColor;stroke-wid
 
 @media (max-width:1280px){.elementor-element-28e351a6 .swiper-slide-duplicate{display:none!important}}
 
+.jet-listing-grid__slider .swiper-wrapper{align-items:stretch}
+.jet-listing-grid__slider .swiper-slide.jet-listing-grid__item{height:auto;display:flex}
+.jet-listing-grid__slider .swiper-slide.jet-listing-grid__item>.elementor{display:flex;flex:1;min-width:0}
+.jet-listing-grid__slider .swiper-slide.jet-listing-grid__item>.elementor>.elementor-element-743a018{flex:1}
+
 .jet-listing-grid__slider .swiper-wrapper{transition-timing-function:cubic-bezier(.25,.8,.25,1)!important}
 @media (prefers-reduced-motion:reduce){.jet-listing-grid__slider .swiper-wrapper{transition-duration:0ms!important}}
 
