@@ -17,7 +17,7 @@
   .toc a{padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:#fff;text-decoration:none;font-size:14px;font-weight:600}
   .toc a:hover{border-color:var(--primary);background:var(--primary-subtle)}
   .tablewrap{overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow)}
-  table{width:100%;border-collapse:collapse;min-width:620px}
+  table{width:100%;border-collapse:collapse;min-width:700px}
   th,td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line);font-size:14px}
   th{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--primary-dark);background:var(--primary-subtle)}
   tr:last-child td{border-bottom:0}
@@ -43,7 +43,7 @@
   <header class="top">
     <a class="back" href="index.html">← Voltar ao hub</a>
     <h1>Sumário das páginas de curso</h1>
-    <p>Sete cursos de graduação em quatro versões cada. Use a tabela para comparar versões lado a lado ou o índice para ir direto a um curso.</p>
+    <p>Sete cursos de graduação em cinco versões cada. Use a tabela para comparar versões lado a lado ou o índice para ir direto a um curso.</p>
   </header>
 
   <h2 class="s">Versões</h2>
@@ -52,6 +52,7 @@
     <div><b>v2 · Editorial claro</b>Fundo claro, hero em duas colunas, faixas alternadas.</div>
     <div><b>v3 · Impacto Phorte</b>Hero vermelho profundo, painel de matrícula, salário logo após o hero.</div>
     <div><b>v4 · Refinada</b>Hero com preço, faixa de fatos, navegação fixa, seções limpas, barra de inscrição no mobile.</div>
+    <div><b>v5 · Vercel</b>Versão hospedada no Vercel (app próprio), com rotina EAD/Presencial, matriz, docentes e FAQ. Abre em nova aba.</div>
   </div>
 
   <h2 class="s">Ir para o curso</h2>
@@ -59,7 +60,7 @@
 
   <h2 class="s">Comparar versões</h2>
   <div class="tablewrap"><table>
-    <thead><tr><th>Curso</th><th>v1</th><th>v2</th><th>v3</th><th>v4</th></tr></thead>
+    <thead><tr><th>Curso</th><th>v1</th><th>v2</th><th>v3</th><th>v4</th><th>v5</th></tr></thead>
     <tbody id="rows"></tbody>
   </table></div>
 
@@ -74,21 +75,24 @@
     ["pedagogia", "Pedagogia"], ["processos-gerenciais", "Processos Gerenciais"],
     ["recursos-humanos", "Recursos Humanos"], ["traducao-e-interpretacao", "Tradução e Interpretação"]
   ];
-  var vers = [["v1", "v1 · Cópia do site"], ["v2", "v2 · Editorial claro"], ["v3", "v3 · Impacto Phorte"], ["v4", "v4 · Refinada"]];
+  var vers = [["v1", "v1 · Cópia do site"], ["v2", "v2 · Editorial claro"], ["v3", "v3 · Impacto Phorte"], ["v4", "v4 · Refinada"], ["v5", "v5 · Vercel (externo)"]];
   var base = "https://srbunnie.github.io/lp-phorte/Graduacao/paginas-cursos/";
-  function href(c, v) { return c[0] + "/" + v[0] + "/index.html"; }
+  var VERCEL = "https://graduacao-phorte.vercel.app/graduacao/";
+  function href(c, v) { return v[0] === "v5" ? VERCEL + c[0] + "/" : c[0] + "/" + v[0] + "/index.html"; }
+  function full(c, v) { return v[0] === "v5" ? href(c, v) : base + href(c, v); }
+  function tgt(v) { return v[0] === "v5" ? ' target="_blank" rel="noopener"' : ""; }
   document.getElementById("toc").innerHTML = cursos.map(function (c) {
     return '<a href="#' + c[0] + '">' + c[1] + '</a>';
   }).join("");
   document.getElementById("rows").innerHTML = cursos.map(function (c) {
     return '<tr><td class="c">' + c[1] + '</td>' + vers.map(function (v) {
-      return '<td><a href="' + href(c, v) + '">Abrir ' + v[0] + '</a></td>';
+      return '<td><a href="' + href(c, v) + '"' + tgt(v) + '>Abrir ' + v[0] + '</a></td>';
     }).join("") + '</tr>';
   }).join("");
   document.getElementById("cards").innerHTML = cursos.map(function (c) {
     return '<article class="course" id="' + c[0] + '"><h3>' + c[1] + '</h3><small>/' + c[0] + '/</small><ul>' +
       vers.map(function (v) {
-        return '<li><a href="' + href(c, v) + '">' + v[1] + '</a><code>' + base + href(c, v) + '</code></li>';
+        return '<li><a href="' + href(c, v) + '"' + tgt(v) + '>' + v[1] + '</a><code>' + full(c, v) + '</code></li>';
       }).join("") + '</ul></article>';
   }).join("");
 </script>
