@@ -9,7 +9,7 @@ Referências: [página de Psicomotricidade indicada como direção visual](https
 ## Direção e conteúdo
 
 - Identidade aproximada do site Pós Phorte: Poppins, fundo quente, texto carvão e acentos terracota com CTA vermelho.
-- Usa a marca oficial e fotos de docentes disponíveis no repositório.
+- Usa a marca oficial e uma imagem ilustrativa gerada com IA, sem representar docentes ou uma turma real.
 - Copy, dados principais e oito módulos conferidos na página institucional do curso.
 - Inscrição: o CTA direciona para a página oficial; esta prévia não coleta dados.
 
