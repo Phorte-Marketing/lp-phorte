@@ -11,12 +11,12 @@ Referências: [página de Psicomotricidade indicada como direção visual](https
 - Identidade aproximada do site Pós Phorte: Poppins, fundo quente, texto carvão e acentos terracota com CTA vermelho.
 - Usa a marca oficial e fotos de docentes disponíveis no repositório.
 - Copy, dados principais e oito módulos conferidos na página institucional do curso.
-- Formulário demonstrativo: não envia, armazena nem coleta dados.
+- Inscrição: o CTA direciona para a página oficial; esta prévia não coleta dados.
 
 ## Pontos para a etapa de produção
 
 - Atualizar turma, calendário e condições comerciais conforme a oferta vigente.
 - Validar a lista final de docentes e os links de conteúdo com a equipe do curso.
-- Configurar o formulário e o destino do CTA no ambiente de produção.
+- Confirmar o destino de inscrição e os dados comerciais antes de qualquer publicação.
 
 Não publicar, enviar ou integrar esta prévia à produção.
