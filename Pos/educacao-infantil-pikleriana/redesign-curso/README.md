@@ -13,6 +13,12 @@ Referências: [página de Psicomotricidade indicada como direção visual](https
 - Copy, dados principais e oito módulos conferidos na página institucional do curso.
 - Inscrição: o CTA direciona para a página oficial; esta prévia não coleta dados.
 
+## Plano de imagem
+
+- `hero-pikleriana.webp`: imagem ilustrativa gerada com IA de uma educadora observando uma criança explorar um brinquedo de madeira.
+- Aplicação: somente no hero, ao lado do texto no desktop e abaixo do CTA no mobile; sem imagens adicionais nas demais seções para manter a página enxuta.
+- Texto alternativo: “Educadora observa uma criança explorando um objeto de madeira em sala de Educação Infantil”.
+
 ## Pontos para a etapa de produção
 
 - Atualizar turma, calendário e condições comerciais conforme a oferta vigente.

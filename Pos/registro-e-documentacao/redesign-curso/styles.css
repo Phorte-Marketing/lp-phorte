@@ -39,9 +39,9 @@ a { color: inherit; }
 .hero-facts strong { font-size: .88rem; font-weight: 600; }
 .hero-facts span { color: var(--muted); font-size: .65rem; }
 .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 18px; }
-.text-link { color: var(--ink); text-decoration: underline; text-decoration-color: #d7b0a8; text-underline-offset: 4px; }
+.text-link { min-height: 44px; display: inline-flex; align-items: center; color: var(--ink); text-decoration: underline; text-decoration-color: #d7b0a8; text-underline-offset: 4px; }
 .hero-visual { margin: 0; }
-.hero-visual img { width: 100%; height: 390px; object-fit: cover; object-position: center 28%; border-radius: 7px; }
+.hero-visual img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; object-position: center 28%; border-radius: 7px; }
 .section { padding: clamp(52px, 7vw, 82px) 0; }
 .intro-grid { display: grid; grid-template-columns: .85fr 1.15fr; align-items: start; gap: 56px; }
 .section h2 { max-width: 17ch; font-size: clamp(1.8rem, 3vw, 2.65rem); }
@@ -73,8 +73,7 @@ a { color: inherit; }
 .footer-inner p { margin: 0; color: #d3cec8; font-size: .65rem; }
 .footer-inner a { color: var(--white); }
 @media (max-width: 800px) {
-  .hero-grid { grid-template-columns: 1fr .8fr; gap: 28px; }
-  .hero-visual img { height: 330px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 28px; }
   .intro-grid, .program-inner, .format-inner { grid-template-columns: 1fr; gap: 18px; }
 }
 @media (max-width: 620px) {
@@ -82,7 +81,7 @@ a { color: inherit; }
   .header-inner { min-height: 68px; gap: 10px; }
   .brand img { width: 104px; }
   .brand-caption, .site-header nav { display: none; }
-  .button-small { min-height: 40px; margin-left: auto; padding-inline: 12px; font-size: .65rem; }
+  .button-small { min-height: 40px; margin-left: auto; padding-inline: 10px; font-size: .75rem; }
   .hero { padding: 38px 0 32px; }
   .hero-grid { grid-template-columns: 1fr; gap: 24px; }
   .hero h1 { max-width: 13ch; font-size: clamp(2.2rem, 10vw, 3.2rem); }
@@ -93,7 +92,7 @@ a { color: inherit; }
   .hero-actions { gap: 14px; }
   .hero-actions .button { min-height: 45px; padding-inline: 15px; font-size: .69rem; }
   .hero-visual { width: 100%; }
-  .hero-visual img { height: min(76vw, 340px); }
+  .hero-visual img { height: min(76vw, 340px); aspect-ratio: auto; }
   .section { padding: 50px 0; }
   .intro-grid, .program-inner, .format-inner { gap: 16px; }
   .section h2 { font-size: clamp(1.75rem, 8vw, 2.35rem); }
