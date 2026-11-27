@@ -1,23 +1,28 @@
-# Redesign — Educação Infantil numa Perspectiva Pikleriana
+# Redesign · Pós em Educação Infantil numa Perspectiva Pikleriana
 
-Protótipo estático para revisão local do card ClickUp `17tjca23vgv`.
+Prévia estática de redesign baseada na solicitação do ClickUp e na copy compartilhada pela equipe. Abra `index.html` para visualizar.
 
-## Visualização
+Solicitação: [Redesign da página Educação Infantil numa Perspectiva Pikleriana](https://app.clickup.com/t/17tjca23vgv).
 
-Abra `index.html` diretamente no navegador. A página não envia formulários, não armazena dados e não se conecta a integrações de produção. O formulário demonstra validação visual e informa que nada foi transmitido.
+Referências: [página de Psicomotricidade indicada como direção visual](https://posphorte.com.br/pos-graduacao/educacao-psicomotora/) e [página institucional da formação Pikleriana](https://posphorte.com.br/pos-graduacao/educacao-infantil-numa-perspectiva-pikleriana/).
 
-## Conteúdo e referências
+## Direção e conteúdo
 
-- Copy aprovada: Google Doc `REESTRUTURAÇÃO DE LP I EDUCAÇÃO INFANTIL NUMA PERSPECTIVA PIKLERIANA I COPY COMPLETA` (vinculado ao card).
-- Direção visual: [Psicomotricidade, Educação e Desenvolvimento Infantil](https://posphorte.com.br/pos-graduacao/educacao-psicomotora/).
-- Página do curso consultada: [Educação Infantil numa Perspectiva Pikleriana](https://posphorte.com.br/pos-graduacao/educacao-infantil-numa-perspectiva-pikleriana/).
-- Fotos do curso, docentes e artes de módulos vieram da pasta Drive de materiais do card. As artes dos módulos VI e VIII não estavam presentes no conjunto baixado e estão representadas sem imagem.
+- Identidade aproximada do site Pós Phorte: Poppins, fundo quente, texto carvão e acentos terracota com CTA vermelho.
+- Usa a marca oficial e uma imagem ilustrativa gerada com IA, sem representar docentes ou uma turma real.
+- Copy, dados principais e oito módulos conferidos na página institucional do curso.
+- Inscrição: o CTA direciona para a página oficial; esta prévia não coleta dados.
 
-## Pendências para aprovação/publicação
+## Plano de imagem
 
-- Confirmar se “últimas 10 vagas”, “início imediato” e o valor/parcelamento ainda estão vigentes. Esses dados foram mantidos conforme a copy aprovada. A página publicada consultada ainda mostrava inscrições até 19/09/2026, prazo já passado em 23/10/2026.
-- A copy contém uma frase de biografia truncada após “É coordenadora e professora da” e um CTA com “Garantir minha vagaq”; não completei essas ocorrências nem alterei o CTA no protótipo, que mantém a grafia da copy.
-- O link para “Como funciona a Pós...” aponta para uma tela de edição do YouTube Studio (`studio.youtube.com`), não para uma URL pública de reprodução. A seção depende da confirmação do link público.
-- Revisar manualmente no navegador em desktop e mobile e aprovar a proposta antes de qualquer implementação em produção.
+- `hero-pikleriana.webp`: imagem ilustrativa gerada com IA de uma educadora observando uma criança explorar um brinquedo de madeira.
+- Aplicação: somente no hero, ao lado do texto no desktop e abaixo do CTA no mobile; sem imagens adicionais nas demais seções para manter a página enxuta.
+- Texto alternativo: “Educadora observa uma criança explorando um objeto de madeira em sala de Educação Infantil”.
 
-Não houve publicação nem conexão com formulários/CRM.
+## Pontos para a etapa de produção
+
+- Atualizar turma, calendário e condições comerciais conforme a oferta vigente.
+- Validar a lista final de docentes e os links de conteúdo com a equipe do curso.
+- Confirmar o destino de inscrição e os dados comerciais antes de qualquer publicação.
+
+Não publicar, enviar ou integrar esta prévia à produção.
