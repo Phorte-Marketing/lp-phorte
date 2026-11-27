@@ -1,0 +1,2135 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MBA Internacional em Gestão, Liderança e Negócios Fitness e Wellness | Faculdade Phorte</title>
+<meta name="description" content="MBA Internacional em Gestão, Liderança e Negócios Fitness e Wellness — Faculdade Phorte. Estratégia, pessoas, tecnologia, vendas, finanças e operação para liderar negócios fitness. 360 horas, 12 meses, EAD.">
+<meta property="og:title" content="Estratégia, liderança e visão internacional para seu negócio | MBA Internacional Phorte">
+<meta name="theme-color" content="#0B0B0C">
+<script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1728486145245-d4cb0c9c3470?w=1600&q=65&auto=format&fit=crop" media="(min-width:900px)">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1728486145245-d4cb0c9c3470?w=900&q=62&auto=format&fit=crop" media="(max-width:899px)">
+
+
+<style>
+/* =====================================================================
+   GUIA RÁPIDO DE EDIÇÃO
+   (fica dentro do CSS de propósito: assim não aparece em prévias de link)
+   =====================================================================
+   • WordPress .......... cole o arquivo inteiro num bloco HTML. Todo o CSS é escopado em #mba,
+                          então o tema não altera cores/fontes da página (e vice-versa).
+   • Prévia do link ..... (WhatsApp, Discord, LinkedIn) defina a "Meta descrição" e a imagem de
+                          compartilhamento no plugin de SEO da página (Yoast / Rank Math).
+                          O WordPress ignora o <head> deste arquivo.
+   • Fotos .............. todas ficam neste CSS, seção "3. FOTOS" (provisórias, Unsplash).
+                          Não usamos <img> para o WordPress/plugins não removerem as imagens.
+   • Formulário/links ... objeto CONFIG no início do <script> (fim do arquivo):
+                          formEndpoint = URL do formulário oficial, ou cole o embed em <div id="form-embed">.
+                          inscricao = link dos botões de inscrição (elementos com data-inscricao).
+   • Sem header próprio . o menu é o do site. As marcas Phorte | FITNESS LINK e a legenda
+                          institucional ficam no topo do banner (.brandbar), rolando junto.
+   • Logos .............. CONFIG.logos. O da FITNESS LINK vem hoje do Google Drive (versão vermelho e
+                          laranja, que funciona no escuro). Antes de publicar, suba o PNG na Biblioteca
+                          de Mídia do WordPress e troque a URL. Se o arquivo novo vier recortado (sem a
+                          borda transparente), apague o recorte em "#mba .lg.fl img" (seção 5).
+   • Ementa (PDF) ....... botões "Baixar Ementa Executiva em PDF" abrem o modal. Configure
+                          CONFIG.ementa.endpoint e CONFIG.ementa.pdf, ou cole o embed oficial em
+                          <div id="form-embed-ementa">. Sem isso o modal só mostra aviso.
+   • Cores .............. seção "1. TOKENS" (--red = vermelho institucional Phorte).
+   • Pendências ......... elementos com data-pendente. CONFIG.revisao = true destaca todos.
+   • Investimento ....... seção #investimento (data de início, inscrição e mensalidades). A data de
+                          início também aparece no rodapé do banner (.hero-stats) e no bloco final.
+   • Grade curricular ... #grade-curricular (dentro de #dominar): 12 disciplinas e módulos, conforme o
+                          projeto pedagógico 2026. Professores e cargas horárias por disciplina só
+                          entram após validação da coordenação (a matriz e as ementas divergem).
+   • Não exibido ........ coordenação e corpo docente
+                          (não constam no briefing — inserir quando houver informação oficial).
+   ===================================================================== */
+
+/* =========================================================
+   1. TOKENS
+   ========================================================= */
+#mba{
+  --ink:#0B0B0C;
+  --ink-2:#111214;
+  --ink-3:#1A1B1E;
+  --graphite:#26272B;
+  --paper:#EEEDEA;
+  --warm:#F2EFE9;
+  --white:#FAFAF8;
+  --text:#121214;
+  --muted:#5F5F66;
+  --soft:#9A9AA1;
+  --on-dark:#F4F4F2;
+  --on-dark-muted:rgba(244,244,242,.64);
+  --red:#D7141A;
+  --red-deep:#B30F14;
+  --red-hi:#FF3B3F;
+  --line:rgba(18,18,20,.12);
+  --line-d:rgba(244,244,242,.12);
+  --wrap:1280px;
+  --g:clamp(16px,4vw,48px);
+  --hh:0px;
+  --display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --sans:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Consolas,monospace;
+  --ease:cubic-bezier(.2,.8,.2,1);
+  --ease-io:cubic-bezier(.7,0,.2,1);
+}
+
+/* =========================================================
+   2. BASE (+ neutralização do tema do WordPress)
+   ========================================================= */
+#mba *,#mba *::before,#mba *::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+#mba{margin:0}
+#mba{background:var(--white);color:var(--text);font-family:var(--sans);font-size:17px;line-height:1.6;font-weight:400;letter-spacing:normal;text-align:left;-webkit-font-smoothing:antialiased;overflow-x:clip;position:relative}
+#mba img,#mba svg{display:block;max-width:100%}
+#mba a{color:inherit;text-decoration:none}
+#mba h1,#mba h2,#mba h3,#mba h4{color:inherit;font-family:inherit;font-size:inherit;font-weight:700;line-height:1.08;letter-spacing:-.02em;text-transform:none;text-align:inherit;padding:0;border:0;background:none;margin:0}
+#mba p,#mba li,#mba dd,#mba dt,#mba blockquote,#mba figcaption,#mba label,#mba strong,#mba span,#mba em{color:inherit;font-family:inherit}
+#mba p,#mba li{font-size:inherit;line-height:inherit;padding:0;margin:0}
+#mba li{list-style:none}
+#mba li::marker{content:none}
+#mba ol,#mba ul,#mba dl,#mba dd,#mba figure,#mba blockquote{margin:0;padding:0;list-style:none}
+#mba em{font-style:normal}
+#mba button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer;text-transform:none;letter-spacing:inherit;box-shadow:none;border-radius:0}
+#mba [id]{scroll-margin-top:calc(var(--hh) + 16px)}
+#mba ::selection{background:var(--red);color:#fff}
+#mba :focus-visible{outline:2px solid var(--red);outline-offset:3px}
+#mba .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* =========================================================
+   3. FOTOS — troque as URLs aqui (todas provisórias, Unsplash)
+   ========================================================= */
+#mba .ph{background-color:var(--graphite);background-position:center;background-size:cover;background-repeat:no-repeat;display:block}
+#mba .ph-hero{background-image:url("https://images.unsplash.com/photo-1728486145245-d4cb0c9c3470?w=1600&q=65&auto=format&fit=crop")}
+#mba .ph-estrategia{background-image:url("https://images.unsplash.com/photo-1632835223280-8ef429ec3eba?w=1100&q=65&auto=format&fit=crop")}
+#mba .ph-pessoas{background-image:url("https://images.unsplash.com/photo-1750698544858-c139cc7a2885?w=1100&q=65&auto=format&fit=crop")}
+#mba .ph-tecnologia{background-image:url("https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1100&q=65&auto=format&fit=crop")}
+#mba .ph-resultados{background-image:url("https://images.unsplash.com/photo-1738523687231-dfe66743ab3d?w=1100&q=65&auto=format&fit=crop");background-position:50% 30%}
+#mba .ph-experiencia{background-image:url("https://images.unsplash.com/photo-1517130038641-a774d04afb3c?w=1400&q=68&auto=format&fit=crop")}
+#mba .ph-bcase{background-image:url("https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1600&q=65&auto=format&fit=crop")}
+#mba .ph-final{background-image:url("https://images.unsplash.com/photo-1431540015161-0bf868a2d407?w=1800&q=60&auto=format&fit=crop")}
+@media (max-width:899px){
+  #mba .ph-hero{background-image:url("https://images.unsplash.com/photo-1728486145245-d4cb0c9c3470?w=900&q=62&auto=format&fit=crop")}
+  #mba .ph-final{background-image:url("https://images.unsplash.com/photo-1431540015161-0bf868a2d407?w=900&q=60&auto=format&fit=crop")}
+}
+/* fotos nunca ficam escondidas por animação (o tema/JS não conseguem sumir com elas) */
+#mba .ph{opacity:1!important;visibility:visible!important}
+
+/* =========================================================
+   4. UTILITÁRIOS
+   ========================================================= */
+#mba .wrap{width:100%;max-width:calc(var(--wrap) + var(--g)*2);margin:0 auto;padding:0 var(--g)}
+#mba .sec{position:relative;padding:clamp(72px,9vw,128px) 0}
+#mba .mono{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+#mba .red{color:var(--red)}
+#mba .mut{color:var(--soft)}
+#mba .kicker{display:flex;align-items:center;gap:14px;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:clamp(20px,2.6vw,32px)}
+#mba .kicker span{color:var(--red);font-weight:500}
+#mba .kicker::after{content:"";flex:0 0 56px;height:1px;background:currentColor;opacity:.4}
+#mba .on-dark .kicker{color:var(--on-dark-muted)}
+#mba .on-dark .kicker span,#mba .on-dark .red{color:var(--red-hi)}
+#mba .on-dark .mut{color:rgba(244,244,242,.42)}
+#mba .on-dark{background:var(--ink);color:var(--on-dark)}
+
+/* títulos: Archivo em largura normal, caixa alta e baixa — linguagem executiva */
+#mba .h-l{font-family:var(--display);font-stretch:100%;font-weight:700;font-size:clamp(30px,4.1vw,60px);line-height:1.03;letter-spacing:-.032em}
+#mba .h-m{font-family:var(--display);font-stretch:100%;font-weight:700;font-size:clamp(24px,2.6vw,38px);line-height:1.08;letter-spacing:-.025em}
+#mba .ln{display:block;overflow:hidden;padding-top:.14em;margin-top:-.14em;padding-bottom:.08em;margin-bottom:-.08em}
+#mba .ln>span{display:block}
+#mba .lead{font-size:clamp(17px,1.4vw,20px);line-height:1.55;color:var(--muted)}
+#mba .on-dark .lead{color:var(--on-dark-muted)}
+#mba .sec-head{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(28px,5vw,80px);align-items:end}
+#mba .sec-head .lead{max-width:46ch}
+@media (max-width:899px){#mba .sec-head{grid-template-columns:1fr;gap:20px}}
+
+#mba .btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:58px;padding:0 28px;font-family:var(--sans);font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;border-radius:2px;overflow:hidden;isolation:isolate;transition:color .35s var(--ease);text-decoration:none}
+#mba .btn svg{width:18px;height:18px;flex:none;transition:transform .45s var(--ease)}
+#mba .btn::before{content:"";position:absolute;inset:0;z-index:-1;transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease)}
+#mba .btn:hover::before{transform:scaleX(1);transform-origin:left}
+#mba .btn:hover svg{transform:translateX(5px)}
+#mba .btn-red{background:var(--red);color:#fff}
+#mba .btn-red::before{background:var(--red-deep)}
+#mba .btn-ink{background:var(--ink);color:#fff}
+#mba .btn-ink::before{background:var(--red)}
+#mba .btn-sm{min-height:44px;padding:0 18px;font-size:12px;gap:10px}
+#mba .cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px;margin-top:clamp(36px,4vw,56px)}
+#mba .cta-row .mono{color:var(--muted)}
+#mba .on-dark .cta-row .mono{color:var(--on-dark-muted)}
+
+/* revelação no scroll (texto e diagramas — nunca fotos) */
+.js #mba [data-rv]{opacity:0;transform:translateY(24px);transition:opacity .9s var(--ease),transform 1.1s var(--ease)}
+.js #mba [data-rv].is-in{opacity:1;transform:none}
+.js #mba [data-rv="lines"]{opacity:1;transform:none}
+.js #mba [data-rv="lines"] .ln>span{transform:translateY(115%);transition:transform 1.1s var(--ease)}
+.js #mba [data-rv="lines"].is-in .ln>span{transform:none}
+.js #mba [data-rv="lines"] .ln:nth-child(2)>span{transition-delay:.09s}
+.js #mba [data-rv="lines"] .ln:nth-child(3)>span{transition-delay:.18s}
+.js #mba [data-rv][data-d="1"]{transition-delay:.12s}
+.js #mba [data-rv][data-d="2"]{transition-delay:.24s}
+.js #mba [data-stagger]>*{opacity:0;transform:translateY(20px);transition:opacity .7s var(--ease),transform .9s var(--ease),translate .5s var(--ease),border-color .3s,background .3s;transition-delay:calc(var(--i,0) * 70ms)}
+.js #mba [data-stagger].is-in>*{opacity:1;transform:none}
+
+/* link secundário (abre o modal da ementa) */
+#mba .btn-link{display:inline-flex;align-items:center;gap:10px;min-height:44px;font-family:var(--sans);font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;text-align:left;line-height:1.3;border-bottom:1px solid currentColor;transition:color .3s,border-color .3s}
+#mba .btn-link svg{width:18px;height:18px;flex:none;transition:transform .45s var(--ease)}
+#mba .btn-link:hover{color:var(--red)}
+#mba .on-dark .btn-link:hover,#mba .hero .btn-link:hover{color:var(--red-hi)}
+#mba .btn-link:hover svg{transform:translateY(3px)}
+
+/* =========================================================
+   5. MARCAS (Phorte | FITNESS LINK) + LINHA DE GESTÃO (trilho lateral)
+   Sem header fixo: o menu é o do site. As marcas ficam no topo do banner e rolam junto.
+   ========================================================= */
+#mba .lockup{display:flex;align-items:center;gap:clamp(14px,1.6vw,22px);--lh:44px;color:#fff}
+#mba .lockup>i{flex:none;width:1px;height:calc(var(--lh) * .8);background:rgba(255,255,255,.32)}
+#mba .lg{display:flex;align-items:center;height:var(--lh);flex:none}
+#mba .lg img{height:100%;width:auto;max-width:none}
+/* recorte da borda transparente do PNG da FITNESS LINK (arquivo do Drive, 570×438):
+   a marca ocupa a mesma altura óptica do logo da Phorte */
+#mba .lg.fl{--fh:calc(var(--lh) * 1.28);height:var(--fh)}
+
+#mba .brandbar{position:relative;z-index:4;padding-top:clamp(18px,2.4vw,28px)}
+#mba .brandbar-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 32px;padding-bottom:clamp(14px,1.6vw,20px);border-bottom:1px solid var(--line-d)}
+#mba .brandbar .lockup{animation:rise .9s var(--ease) .1s both}
+#mba .realiza{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;line-height:1.6;color:var(--on-dark-muted);animation:rise .9s var(--ease) .25s both}
+#mba .realiza b{color:#fff;font-weight:500}
+#mba .realiza i{font-style:normal;color:var(--red-hi);padding:0 .5em}
+@media (max-width:599px){
+  #mba .brandbar .lockup{--lh:34px}
+  #mba .realiza{font-size:10px;letter-spacing:.08em}
+}
+
+/* linha vermelha contínua: MERCADO → PESSOAS → TECNOLOGIA → CLIENTE → FINANÇAS → RESULTADOS */
+#mba .rail{position:fixed;left:18px;top:50%;z-index:70;transform:translateY(-50%);display:none;opacity:0;pointer-events:none;transition:opacity .5s}
+#mba .rail.is-show{opacity:1;pointer-events:auto}
+@media (min-width:1240px){#mba .rail{display:block}}
+#mba .rail-track{position:absolute;left:5px;top:6px;bottom:6px;width:1px;background:rgba(127,127,135,.35)}
+#mba .rail-fill{position:absolute;left:0;top:0;width:100%;height:100%;background:var(--red);transform-origin:top;transform:scaleY(0)}
+#mba .rail ol{position:relative;display:flex;flex-direction:column;gap:46px}
+#mba .rail a{position:relative;display:flex;align-items:center;gap:12px}
+#mba .rail a i{width:11px;height:11px;border-radius:50%;border:1.5px solid rgba(127,127,135,.7);background:var(--white);transition:background .3s,border-color .3s,transform .3s}
+#mba .rail a span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+#mba .rail-now{position:absolute;left:-1px;bottom:calc(100% + 18px);writing-mode:vertical-rl;transform:rotate(180deg);font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--red);white-space:nowrap}
+#mba .rail a.is-done i{background:var(--red);border-color:var(--red)}
+#mba .rail a.is-cur i{transform:scale(1.25);background:var(--red);border-color:var(--red);box-shadow:0 0 0 4px rgba(215,20,26,.18)}
+#mba .rail.on-dark-bg a i{background:var(--ink)}
+#mba .rail.on-dark-bg a.is-done i,#mba .rail.on-dark-bg a.is-cur i{background:var(--red)}
+
+/* =========================================================
+   6. HERO
+   ========================================================= */
+#mba .hero{position:relative;min-height:100vh;min-height:100svh;background:var(--ink);color:var(--on-dark);overflow:hidden;display:flex;flex-direction:column}
+#mba .hero-bg{position:absolute;inset:-4% 0 -4% 0;will-change:transform;animation:heroZoom 2.4s var(--ease) both}
+#mba .hero::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:
+  linear-gradient(90deg,rgba(11,11,12,.96) 0%,rgba(11,11,12,.82) 34%,rgba(11,11,12,.35) 70%,rgba(11,11,12,.55) 100%),
+  linear-gradient(0deg,var(--ink) 0%,rgba(11,11,12,0) 40%)}
+#mba .hero::after{content:none}
+@keyframes heroZoom{from{scale:1.1}to{scale:1}}
+#mba .hero-in{position:relative;z-index:3;flex:1;display:grid;grid-template-columns:minmax(0,900px);align-items:center;padding-top:calc(var(--hh) + clamp(28px,5vh,56px));padding-bottom:clamp(28px,4vh,44px)}
+/* H1 longo em dois níveis: nome do curso (assinatura) + promessa (destaque) */
+#mba .hero-title{font-family:var(--display);font-stretch:100%;font-weight:700;letter-spacing:-.03em;line-height:1.04;margin-bottom:22px}
+/* nome do curso = destaque principal; a promessa vem menor, como linha de apoio */
+#mba .ht-pre{display:block;font-size:clamp(31px,min(4vw,6.8vh),62px);line-height:1.03;letter-spacing:-.032em;color:#fff;max-width:22ch;margin-bottom:clamp(16px,2.2vw,26px)}
+#mba .ht-main{position:relative;display:block;padding-left:42px;font-weight:500;font-size:clamp(18px,1.55vw,23px);line-height:1.38;letter-spacing:-.01em;color:rgba(244,244,242,.88);max-width:48ch}
+#mba .ht-main::before{content:"";position:absolute;left:0;top:.68em;width:28px;height:2px;background:var(--red)}
+#mba .ht-main .red{color:var(--red-hi);font-weight:600}
+@media (max-width:599px){#mba .ht-main{padding-left:0}#mba .ht-main::before{position:static;display:block;margin-bottom:12px}}
+/* entrada do hero só com CSS (não depende de JavaScript) */
+#mba .hero-copy>*{animation:rise 1s var(--ease) both}
+#mba .hero-copy>*:nth-child(2){animation-delay:.08s}
+#mba .hero-copy>*:nth-child(3){animation-delay:.18s}
+#mba .hero-copy>*:nth-child(4){animation-delay:.26s}
+#mba .hero-copy>*:nth-child(5){animation-delay:.34s}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+#mba .hero-sub{max-width:60ch;color:var(--on-dark-muted);font-size:clamp(16px,1.25vw,18px);line-height:1.55;margin-bottom:clamp(22px,3vh,30px)}
+/* selos */
+#mba .seals{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line-d);border:1px solid var(--line-d);margin-bottom:clamp(24px,3.4vh,34px)}
+#mba .seals li{display:flex;align-items:flex-start;gap:12px;padding:14px 16px;background:rgba(11,11,12,.72);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+#mba .seals svg{flex:none;width:22px;height:22px;color:var(--red-hi);margin-top:1px}
+#mba .seals b{display:block;color:#fff;font-weight:700;font-size:14px;line-height:1.3}
+#mba .seals small{display:block;margin-top:3px;font-size:12.5px;line-height:1.35;color:var(--on-dark-muted)}
+#mba .hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:18px 28px}
+#mba .hero-actions .btn-link{color:#fff}
+
+/* painel de gestão (ilustrativo, sem números) */
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+#mba .hero-stats{position:relative;z-index:3;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line-d)}
+#mba .hero-stats li{padding:clamp(20px,2.6vh,28px) 0 clamp(24px,3vh,32px) clamp(20px,2.4vw,32px);display:flex;align-items:baseline;gap:14px;border-left:1px solid var(--line-d)}
+#mba .hero-stats li:first-child{border-left:0;padding-left:0}
+#mba .hero-stats b{font-family:var(--display);font-weight:700;font-size:clamp(34px,3.8vw,54px);line-height:1;letter-spacing:-.03em;color:#fff}
+#mba .hero-stats span{font-family:var(--mono);font-size:clamp(12px,1vw,14px);letter-spacing:.12em;text-transform:uppercase;color:rgba(244,244,242,.78)}
+
+@media (max-width:999px){
+  #mba .hero-in{grid-template-columns:1fr;padding-top:calc(var(--hh) + 28px)}
+  #mba .seals{grid-template-columns:1fr}
+  #mba .seals li{padding:12px 14px}
+}
+@media (max-width:599px){
+  #mba .hero::before{background:linear-gradient(180deg,rgba(11,11,12,.7) 0%,rgba(11,11,12,.88) 45%,var(--ink) 100%)}
+  #mba .hero-actions .btn{width:100%;padding:12px 18px;font-size:13px;letter-spacing:.06em;line-height:1.3;text-align:center}
+  #mba .hero-stats{grid-template-columns:repeat(2,1fr)}
+  #mba .hero-stats li{flex-direction:column;gap:6px;padding:18px 0 20px 14px}
+  #mba .hero-stats li:nth-child(odd){border-left:0;padding-left:0}
+  #mba .hero-stats li:nth-child(n+3){border-top:1px solid var(--line-d)}
+  #mba .hero-stats b{font-size:32px}
+  #mba .hero-stats span{font-size:11px}
+}
+
+/* =========================================================
+   6b. AUTORIDADE — Chancela de Mercado + Chancela Acadêmica
+   duas marcas com o mesmo peso, unidas pelo "+"
+   ========================================================= */
+#mba .partner{background:var(--paper)}
+#mba .partner-title .red{color:var(--red)}
+#mba .partner-grid{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:clamp(40px,5vw,64px)}
+#mba .pcard{position:relative;display:flex;flex-direction:column;gap:clamp(20px,2.4vw,28px);min-height:clamp(320px,30vw,380px);padding:clamp(28px,3.6vw,52px);background:var(--ink);color:var(--on-dark);overflow:hidden;isolation:isolate}
+#mba .pcard::before{content:"";position:absolute;left:0;top:0;height:3px;width:100%;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform 1s var(--ease) .2s}
+#mba .partner-grid.is-in .pcard::before,.no-js #mba .pcard::before{transform:scaleX(1)}
+#mba .pcard:nth-child(3)::before{transform-origin:right}
+#mba .pcard::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:linear-gradient(160deg,#000 0%,transparent 70%);mask-image:linear-gradient(160deg,#000 0%,transparent 70%)}
+#mba .p-role{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-hi)}
+#mba .p-logo{--lh:clamp(56px,5.6vw,76px);display:flex;align-items:center;height:calc(var(--lh) * 1.3)}
+#mba .pcard h3{font-family:var(--display);font-weight:700;font-size:clamp(22px,2vw,28px);letter-spacing:-.02em;line-height:1.1;margin-top:clamp(8px,1.6vw,20px)}
+#mba .pcard p{color:var(--on-dark-muted);font-size:clamp(16px,1.2vw,18px);line-height:1.55;max-width:44ch}
+#mba .p-plus{position:absolute;left:50%;top:50%;z-index:2;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;box-shadow:0 0 0 8px var(--paper);transform:scale(0) rotate(-90deg);transition:transform .8s var(--ease) .5s}
+#mba .p-plus svg{width:26px;height:26px}
+#mba .partner-grid.is-in .p-plus,.no-js #mba .p-plus{transform:none}
+@media (max-width:899px){
+  #mba .partner-grid{grid-template-columns:1fr;gap:10px}
+  #mba .pcard{min-height:0}
+  #mba .p-plus{position:relative;left:auto;top:auto;margin:-37px auto;width:56px;height:56px}
+  #mba .pcard:nth-child(1){padding-bottom:clamp(44px,10vw,60px)}
+  #mba .pcard:nth-child(3){padding-top:clamp(44px,10vw,60px)}
+}
+
+/* =========================================================
+   7. O FITNESS MUDOU — ecossistema em anéis
+   ========================================================= */
+#mba .market{background:var(--white)}
+#mba .market-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,96px);align-items:center}
+#mba .market-copy .lead{margin-top:24px}
+#mba .market-strong{margin-top:22px;font-size:clamp(18px,1.5vw,21px);font-weight:700;line-height:1.45;max-width:36ch;padding-left:18px;border-left:3px solid var(--red)}
+#mba .rings{position:relative;width:100%;max-width:600px;justify-self:center}
+#mba .rings svg{width:100%;height:auto;overflow:visible}
+#mba .ring{fill:none;stroke:rgba(18,18,20,.16);stroke-width:1.2;transform-box:fill-box;transform-origin:center;opacity:0;transform:scale(.7);transition:opacity .8s var(--ease),transform 1.1s var(--ease),stroke .6s}
+#mba .ring-core{fill:var(--ink)}
+#mba .ring-out{stroke:var(--red);stroke-width:2.2}
+#mba .ring-lbl{font-family:var(--mono);font-size:15px;letter-spacing:.16em;fill:var(--muted);opacity:0;transition:opacity .6s}
+#mba .ring-lbl-bg{fill:var(--white);opacity:0;transition:opacity .6s}
+#mba .ring-lbl.out{fill:var(--red);font-weight:500}
+#mba .ring-core-t{font-family:var(--display);font-weight:700;font-size:20px;letter-spacing:.04em;fill:#fff}
+#mba .rings.is-in .ring,#mba .rings.is-in .ring-lbl,#mba .rings.is-in .ring-lbl-bg{opacity:1;transform:none}
+.no-js #mba .ring,.no-js #mba .ring-lbl,.no-js #mba .ring-lbl-bg{opacity:1;transform:none}
+#mba .rings-cap{display:flex;justify-content:space-between;margin-top:10px;color:var(--soft)}
+@media (max-width:899px){#mba .market-grid{grid-template-columns:1fr}}
+@media (max-width:599px){#mba .ring-lbl{font-size:25px;letter-spacing:.1em}#mba .ring-core-t{font-size:30px}#mba .seg-lbl{font-size:24px;letter-spacing:.06em}#mba .d-core-t{font-size:38px}}
+
+/* =========================================================
+   8. QUATRO PILARES — painéis expansíveis
+   ========================================================= */
+#mba .pillars-sec{background:var(--ink-2)}
+#mba .pillars-title .mut{display:block}
+#mba .pillars{display:flex;gap:10px;height:clamp(440px,58vh,560px);margin-top:clamp(40px,5vw,64px)}
+#mba .pillar{position:relative;flex:1;min-width:0;overflow:hidden;text-align:left;color:#fff;transition:flex 0.8s var(--ease);background:var(--ink-3);isolation:isolate}
+#mba .pillar.is-active{flex:2.3}
+#mba .pillar .ph{position:absolute;inset:0;z-index:-2;filter:grayscale(1) brightness(.55);transform:scale(1.04);transition:filter .8s,transform 1.2s var(--ease)}
+#mba .pillar.is-active .ph{filter:grayscale(.15) brightness(.62);transform:none}
+#mba .pillar::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(11,11,12,.95) 0%,rgba(11,11,12,.25) 60%,rgba(11,11,12,.45) 100%)}
+#mba .pillar::before{content:"";position:absolute;left:0;top:0;height:3px;width:100%;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .7s var(--ease);z-index:2}
+#mba .pillar.is-active::before{transform:scaleX(1)}
+#mba .pillar-in{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(20px,2.2vw,32px)}
+#mba .pillar .mono{color:rgba(255,255,255,.7)}
+#mba .pillar-t{display:block;font-family:var(--display);font-stretch:100%;font-weight:700;font-size:clamp(20px,1.7vw,28px);letter-spacing:-.025em;line-height:1}
+#mba .pillar-d{display:block;max-width:36ch;margin-top:14px;color:rgba(244,244,242,.82);font-size:16px;line-height:1.5;opacity:0;transform:translateY(10px);transition:opacity .5s,transform .6s var(--ease);max-height:0}
+#mba .pillar.is-active .pillar-d{opacity:1;transform:none;transition-delay:.25s;max-height:200px}
+#mba .pillar-plus{position:absolute;right:clamp(20px,2.2vw,32px);top:clamp(20px,2.2vw,32px);width:28px;height:28px;border:1px solid rgba(255,255,255,.35);border-radius:50%;display:grid;place-items:center;transition:transform .5s var(--ease),background .3s}
+#mba .pillar-plus::before,#mba .pillar-plus::after{content:"";position:absolute;width:10px;height:1.5px;background:#fff}
+#mba .pillar-plus::after{transform:rotate(90deg)}
+#mba .pillar.is-active .pillar-plus{transform:rotate(45deg);background:var(--red);border-color:var(--red)}
+@media (max-width:899px){
+  #mba .pillars{height:auto;overflow-x:auto;scroll-snap-type:x mandatory;margin-left:calc(var(--g)*-1);margin-right:calc(var(--g)*-1);padding:0 var(--g);scroll-padding-inline:var(--g);scrollbar-width:none;gap:12px}
+  #mba .pillars::-webkit-scrollbar{display:none}
+  #mba .pillar,#mba .pillar.is-active{flex:0 0 82%;height:440px;scroll-snap-align:start}
+  #mba .pillar-d{opacity:1;transform:none;max-height:none}
+  #mba .pillar .ph{filter:grayscale(.15) brightness(.6)}
+  #mba .pillar::before{transform:scaleX(1)}
+  #mba .pillar-plus{display:none}
+}
+
+/* =========================================================
+   9. DESAFIOS REAIS — painel executivo
+   ========================================================= */
+#mba .challenges{background:var(--paper)}
+#mba .dash{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:clamp(40px,5vw,64px)}
+#mba .ticket{position:relative;background:var(--white);padding:24px 22px 22px;display:flex;flex-direction:column;gap:18px;min-height:220px;transition:background .3s}
+#mba .ticket::before{content:"";position:absolute;left:0;top:0;height:2px;width:100%;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .6s var(--ease)}
+#mba .ticket:hover::before{transform:scaleX(1)}
+#mba .ticket:hover{background:#fff}
+#mba .t-top{display:flex;justify-content:space-between;align-items:center}
+#mba .t-top .mono{color:var(--soft);font-size:11px}
+#mba .t-dot{width:8px;height:8px;border-radius:50%;background:var(--red);box-shadow:0 0 0 4px rgba(215,20,26,.12)}
+#mba .ticket h3{font-family:var(--display);font-weight:600;font-size:clamp(18px,1.5vw,22px);line-height:1.22;letter-spacing:-.015em;flex:1}
+#mba .t-area{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-top:14px;border-top:1px dashed var(--line)}
+#mba .t-area::before{content:"→";color:var(--red)}
+#mba .punch{margin-top:clamp(56px,7vw,96px);text-align:center;font-family:var(--display);font-weight:700;font-size:clamp(26px,3.4vw,50px);line-height:1.08;letter-spacing:-.03em;max-width:22ch;margin-left:auto;margin-right:auto}
+#mba .punch u{text-decoration:none;position:relative;display:inline-block;color:var(--red)}
+#mba .punch u::after{content:"";position:absolute;left:0;right:0;bottom:-.04em;height:.06em;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform 1.1s var(--ease) .5s}
+#mba .punch.is-in u::after,.no-js #mba .punch u::after{transform:scaleX(1)}
+@media (max-width:999px){#mba .dash{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:599px){
+  #mba .dash{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;background:none;border:0;margin-left:calc(var(--g)*-1);margin-right:calc(var(--g)*-1);padding:0 var(--g);scroll-padding-inline:var(--g);scrollbar-width:none}
+  #mba .dash::-webkit-scrollbar{display:none}
+  #mba .ticket{flex:0 0 78%;scroll-snap-align:start;border:1px solid var(--line)}
+}
+
+/* =========================================================
+   10. TERRITÓRIOS — carrossel
+   ========================================================= */
+#mba .territories{background:var(--white)}
+/* carrossel de territórios */
+#mba .car{margin-top:clamp(40px,5vw,64px)}
+#mba .car-track{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(280px,27vw,360px);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:4px var(--g) 8px;margin:0 calc(var(--g)*-1);scroll-padding-inline:var(--g);cursor:grab;outline:none}
+#mba .car-track::-webkit-scrollbar{display:none}
+#mba .car-track.is-drag{cursor:grabbing;scroll-snap-type:none}
+#mba .car-track.is-drag .car-card{pointer-events:none}
+#mba .car-card{scroll-snap-align:start;position:relative;display:flex;flex-direction:column;gap:18px;padding:28px 26px 26px;min-height:420px;background:var(--paper);border-top:3px solid transparent;transition:background .45s var(--ease),color .45s var(--ease),border-color .45s,translate .5s var(--ease)}
+#mba .car-card:hover{translate:0 -4px;border-color:var(--red)}
+#mba .car-card.is-cur{background:var(--ink);color:var(--on-dark);border-color:var(--red)}
+#mba .car-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+#mba .car-top .mono{font-family:var(--display);font-weight:700;font-size:44px;line-height:.9;letter-spacing:-.04em;color:var(--faint,#C9C9CD);text-transform:none;transition:color .45s}
+#mba .car-card.is-cur .car-top .mono{color:var(--red-hi)}
+#mba .car-count{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--red)}
+#mba .car-card.is-cur .car-count{color:var(--on-dark-muted)}
+#mba .car-card h3{font-family:var(--display);font-weight:700;font-size:clamp(22px,1.9vw,27px);letter-spacing:-.02em;line-height:1.08}
+#mba .car-card ul{display:flex;flex-direction:column;margin-top:auto}
+#mba .car-card li{font-size:15px;line-height:1.35;padding:9px 0;border-top:1px solid var(--line);color:var(--muted);transition:color .45s,border-color .45s}
+#mba .car-card.is-cur li{border-color:var(--line-d);color:var(--on-dark-muted)}
+#mba .car-ui{display:flex;align-items:center;gap:24px;margin-top:24px}
+#mba .car-n{color:var(--muted);white-space:nowrap}
+#mba .car-n b{color:var(--red);font-weight:500;font-variant-numeric:tabular-nums}
+#mba .car-bar{flex:1;height:2px;background:var(--line);position:relative;overflow:hidden}
+#mba .car-bar i{position:absolute;left:0;top:0;height:100%;background:var(--text);width:30%;transition:transform .25s,width .25s}
+#mba .car-nav{display:flex;gap:8px}
+#mba .car-nav button{width:52px;height:52px;border:1px solid var(--line);display:grid;place-items:center;background:var(--white);transition:background .3s,color .3s,border-color .3s,opacity .3s}
+#mba .car-nav button:hover:not(:disabled){background:var(--ink);color:#fff;border-color:var(--ink)}
+#mba .car-nav button:disabled{opacity:.35;cursor:default}
+#mba .car-nav svg{width:20px;height:20px}
+@media (max-width:599px){
+  #mba .car-track{grid-auto-columns:84%;gap:10px}
+  #mba .car-card{min-height:380px;padding:24px 22px}
+  #mba .car-nav{display:none}
+}
+#mba .swipe-hint{display:none;margin-top:14px;color:var(--soft)}
+@media (max-width:599px){#mba .swipe-hint{display:block}}
+
+/* grade curricular completa (expansível, <details> nativo: funciona sem JavaScript) */
+#mba .grade{margin-top:clamp(40px,5vw,64px)}
+#mba .grade summary{list-style:none;cursor:pointer}
+#mba .grade summary::-webkit-details-marker{display:none}
+#mba .grade-box{border:1px solid var(--line);border-top:3px solid var(--red);background:var(--paper)}
+#mba .grade-sum{display:grid;grid-template-columns:1fr auto;gap:6px 24px;align-items:center;padding:clamp(22px,2.6vw,32px)}
+#mba .grade-sum .mono{color:var(--red)}
+#mba .grade-t{grid-column:1;font-family:var(--display);font-weight:700;font-size:clamp(24px,2.4vw,34px);line-height:1.05;letter-spacing:-.025em}
+#mba .grade-btn{grid-column:2;grid-row:1/3;display:inline-flex;align-items:center;gap:12px;font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+#mba .grade-btn i{position:relative;width:44px;height:44px;border-radius:50%;background:var(--ink);transition:background .3s,transform .5s var(--ease)}
+#mba .grade-btn i::before,#mba .grade-btn i::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:2px;margin:-1px 0 0 -7px;background:#fff}
+#mba .grade-btn i::after{transform:rotate(90deg)}
+#mba .grade-sum:hover .grade-btn i{background:var(--red)}
+#mba .grade-box[open]>summary .grade-btn i{transform:rotate(45deg);background:var(--red)}
+#mba .grade-btn .g-close,#mba .grade-box[open]>summary .g-open{display:none}
+#mba .grade-box[open]>summary .g-close{display:inline}
+#mba .grade-list{border-top:1px solid var(--line);background:var(--white)}
+#mba .grade-box[open] .grade-list{animation:rise .6s var(--ease) both}
+#mba .grade-list>li+li{border-top:1px solid var(--line)}
+#mba .disc>summary{display:grid;grid-template-columns:48px 1fr auto 24px;gap:16px;align-items:center;padding:18px clamp(22px,2.6vw,32px);transition:background .3s}
+#mba .disc>summary:hover{background:#fff}
+#mba .disc>summary .mono{color:var(--soft)}
+#mba .disc-t{font-family:var(--display);font-weight:600;font-size:clamp(17px,1.4vw,20px);line-height:1.25;letter-spacing:-.012em;transition:color .3s}
+#mba .disc>summary:hover .disc-t,#mba .disc[open]>summary .disc-t{color:var(--red)}
+#mba .disc-n{color:var(--muted);font-size:11px;white-space:nowrap}
+#mba .disc>summary i{position:relative;width:24px;height:24px;border:1px solid var(--line);border-radius:50%;transition:transform .4s var(--ease),border-color .3s}
+#mba .disc>summary i::before{content:"";position:absolute;left:50%;top:50%;width:7px;height:7px;margin:-5px 0 0 -3.5px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg)}
+#mba .disc[open]>summary i{transform:rotate(180deg);border-color:var(--red);color:var(--red)}
+#mba .disc[open]>summary .mono{color:var(--red)}
+#mba .disc-mods{columns:2;column-gap:32px;padding:0 clamp(22px,2.6vw,32px) 24px calc(clamp(22px,2.6vw,32px) + 64px);counter-reset:m;animation:rise .5s var(--ease) both}
+#mba .disc-mods li{break-inside:avoid;position:relative;padding:9px 0 9px 30px;border-top:1px dashed var(--line);font-size:15px;line-height:1.4;color:var(--muted);counter-increment:m}
+#mba .disc-mods li::before{content:counter(m,decimal-leading-zero);position:absolute;left:0;top:11px;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;color:var(--red)}
+@media (max-width:899px){#mba .disc-mods{columns:1;padding-left:calc(clamp(22px,2.6vw,32px) + 52px)}}
+@media (max-width:599px){
+  #mba .grade-sum{grid-template-columns:1fr;gap:6px}
+  #mba .grade-btn{grid-column:1;grid-row:auto;margin-top:12px}
+  #mba .disc>summary{grid-template-columns:28px 1fr 22px;gap:4px 12px;padding:16px 18px;align-items:start}
+  #mba .disc>summary .mono:first-child{padding-top:3px}
+  #mba .disc-n{grid-column:2;grid-row:2}
+  #mba .disc>summary i{grid-column:3;grid-row:1}
+  #mba .disc-mods{padding:0 18px 20px 58px}
+}
+
+/* dinâmica do MBA: carga horária, duração, modalidade, interação */
+#mba .format{display:grid;grid-template-columns:.8fr .8fr 1.9fr 1.3fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:clamp(40px,5vw,64px)}
+#mba .fmt{position:relative;display:flex;flex-direction:column;gap:12px;padding:22px 22px 24px;background:var(--white)}
+#mba .fmt::before{content:"";position:absolute;left:0;top:0;height:2px;width:100%;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .8s var(--ease)}
+#mba .format.is-in .fmt::before{transform:scaleX(1)}
+#mba .format .fmt:nth-child(2)::before{transition-delay:.1s}
+#mba .format .fmt:nth-child(3)::before{transition-delay:.2s}
+#mba .format .fmt:nth-child(4)::before{transition-delay:.3s}
+#mba .fmt-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+#mba .fmt-top .mono{color:var(--muted);font-size:11px}
+#mba .fmt-top svg{width:20px;height:20px;color:var(--red);flex:none}
+#mba .fmt b{font-family:var(--display);font-weight:700;font-size:clamp(28px,2.6vw,38px);line-height:1;letter-spacing:-.03em}
+#mba .fmt strong{font-family:var(--display);font-weight:700;font-size:clamp(18px,1.45vw,21px);line-height:1.2;letter-spacing:-.015em}
+#mba .fmt small{display:block;margin-top:6px;font-family:var(--sans);font-weight:500;font-size:14.5px;line-height:1.45;letter-spacing:0;color:var(--muted)}
+@media (max-width:999px){#mba .format{grid-template-columns:1fr 1fr}}
+@media (max-width:499px){#mba .format .fmt:nth-child(n+3){grid-column:span 2}#mba .fmt{padding:18px 18px 20px}}
+
+/* =========================================================
+   10b. NEGÓCIOS FITNESS SEM FRONTEIRAS — rotas entre mercados
+   ========================================================= */
+#mba .global{background:#08090A;color:var(--on-dark);overflow:hidden}
+#mba .global .lead{max-width:52ch}
+#mba .routes{position:relative;margin-top:clamp(36px,5vw,64px)}
+#mba .routes svg{width:100%;height:auto;overflow:visible}
+#mba .routes .eq{stroke:rgba(255,255,255,.1);stroke-width:1;stroke-dasharray:2 7}
+#mba .routes .dots circle{fill:rgba(244,244,242,.17)}
+#mba .routes .dots{opacity:0;transition:opacity 1.4s ease}
+#mba .routes.is-in .dots{opacity:1}
+#mba .routes .arc{fill:none;stroke:rgba(255,59,63,.55);stroke-width:1.6;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.8s var(--ease-io),stroke .4s,stroke-width .4s}
+#mba .routes .arc[data-r="2"]{transition-delay:.25s}
+#mba .routes .arc[data-r="3"]{transition-delay:.5s}
+#mba .routes .flow{fill:none;stroke:#fff;stroke-width:2.4;stroke-linecap:round;stroke-dasharray:.035 .965;stroke-dashoffset:1;opacity:0;transition:opacity .6s 1.8s}
+#mba .routes.is-in .arc,.no-js #mba .routes .arc{stroke-dashoffset:0}
+#mba .routes.is-in .flow{opacity:.85;animation:routeFlow 3.6s linear infinite}
+#mba .routes .flow[data-r="2"]{animation-delay:-1.2s}
+#mba .routes .flow[data-r="3"]{animation-delay:-2.4s}
+#mba .routes.is-rev .flow{animation-direction:reverse}
+@keyframes routeFlow{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+#mba .routes .node{fill:var(--red);stroke:#08090A;stroke-width:4}
+#mba .routes .halo{fill:none;stroke:var(--red-hi);stroke-width:1.5;transform-box:fill-box;transform-origin:center;opacity:0}
+#mba .routes.is-in .halo{animation:halo 2.8s var(--ease) infinite}
+#mba .routes .halo.h2{animation-delay:.9s}
+#mba .routes .halo.h3{animation-delay:1.8s}
+@keyframes halo{0%{opacity:.8;transform:scale(.4)}100%{opacity:0;transform:scale(2.4)}}
+#mba .routes .lbl{font-family:var(--mono);font-size:15px;letter-spacing:.16em;fill:var(--on-dark-muted)}
+#mba .routes .lbl.home{fill:#fff}
+/* destaque das rotas conforme o card em foco */
+#mba .routes.hl .arc{stroke:rgba(255,59,63,.22)}
+#mba .routes.hl .arc.on{stroke:var(--red-hi);stroke-width:2.4}
+#mba .routes.hl .flow{opacity:.25}
+#mba .routes.hl .flow.on{opacity:1}
+#mba .gcards{position:relative;z-index:1;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:clamp(-56px,-4vw,-24px)}
+#mba .gcard{position:relative;display:flex;flex-direction:column;gap:16px;padding:clamp(24px,2.6vw,34px);background:rgba(22,23,26,.86);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border:1px solid var(--line-d);transition:border-color .4s,background .4s,translate .5s var(--ease)}
+#mba .gcard::before{content:"";position:absolute;left:-1px;right:-1px;top:-1px;height:3px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .7s var(--ease)}
+#mba .gcard:hover,#mba .gcard:focus-within{border-color:rgba(255,59,63,.45);background:rgba(28,29,33,.94);translate:0 -4px}
+#mba .gcard:hover::before,#mba .gcard:focus-within::before{transform:scaleX(1)}
+#mba .gcard-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+#mba .gcard-top .mono{color:var(--red-hi)}
+#mba .gcard-top svg{width:26px;height:26px;color:rgba(244,244,242,.55);flex:none}
+#mba .gcard h3{font-family:var(--display);font-weight:700;font-size:clamp(20px,1.7vw,24px);line-height:1.15;letter-spacing:-.02em;color:#fff}
+#mba .gcard p{color:var(--on-dark-muted);font-size:15.5px;line-height:1.55}
+@media (max-width:999px){
+  #mba .gcards{grid-template-columns:1fr;margin-top:20px}
+  #mba .routes .lbl{font-size:24px}
+}
+
+/* =========================================================
+   11. TECNOLOGIA — console
+   ========================================================= */
+#mba .tech{background:#0E0F11;color:var(--on-dark);overflow:hidden}
+#mba .tech::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(rgba(255,255,255,.07) 1px,transparent 1px);background-size:28px 28px;-webkit-mask-image:radial-gradient(ellipse at 70% 40%,#000 0%,transparent 70%);mask-image:radial-gradient(ellipse at 70% 40%,#000 0%,transparent 70%)}
+#mba .tech .wrap{position:relative}
+#mba .tech-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(32px,5vw,72px);margin-top:clamp(40px,5vw,64px);align-items:stretch}
+#mba .tech-grid>*{min-width:0}
+#mba .tech-tabs{display:flex;flex-direction:column;border-top:1px solid var(--line-d)}
+#mba .tech-tab{display:grid;grid-template-columns:40px 1fr;gap:4px 12px;padding:20px 0;border-bottom:1px solid var(--line-d);text-align:left;position:relative}
+#mba .tech-tab::after{content:"";position:absolute;left:0;bottom:-1px;height:2px;width:100%;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .6s var(--ease)}
+#mba .tech-tab .mono{grid-row:span 2;color:rgba(244,244,242,.4);padding-top:5px}
+#mba .tech-tab strong{font-family:var(--display);font-weight:700;font-size:clamp(19px,1.7vw,24px);letter-spacing:-.02em;color:rgba(244,244,242,.5);transition:color .3s}
+#mba .tech-tab span:last-child{font-size:15px;line-height:1.45;color:rgba(244,244,242,.42);transition:color .3s}
+#mba .tech-tab:hover strong{color:rgba(244,244,242,.8)}
+#mba .tech-tab[aria-selected="true"] strong{color:#fff}
+#mba .tech-tab[aria-selected="true"] span:last-child{color:var(--on-dark-muted)}
+#mba .tech-tab[aria-selected="true"] .mono{color:var(--red-hi)}
+#mba .tech-tab[aria-selected="true"]::after{transform:scaleX(1)}
+#mba .console{position:relative;border:1px solid rgba(255,255,255,.12);background:linear-gradient(180deg,#16171A,#111214);min-height:420px;display:flex;flex-direction:column}
+#mba .console-bar{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid rgba(255,255,255,.08);font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(244,244,242,.5)}
+#mba .console-bar b{color:#fff;font-weight:500}
+#mba .scene{flex:1;padding:clamp(20px,2.6vw,36px);display:flex;flex-direction:column;justify-content:center;gap:16px}
+#mba .scene[hidden]{display:none}
+.js #mba .scene:not([hidden])>*{animation:rise .7s var(--ease) both}
+.js #mba .scene:not([hidden])>*:nth-child(2){animation-delay:.12s}
+.js #mba .scene:not([hidden])>*:nth-child(3){animation-delay:.24s}
+.js #mba .scene:not([hidden])>*:nth-child(4){animation-delay:.36s}
+#mba .s-label{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(244,244,242,.45)}
+#mba .prompt{display:flex;gap:12px;align-items:flex-start;padding:16px 18px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.03);font-family:var(--mono);font-size:13.5px;line-height:1.5;color:#fff}
+#mba .prompt::before{content:"›";color:var(--red-hi)}
+#mba .typing{display:inline-block;overflow:hidden;white-space:nowrap;border-right:2px solid var(--red-hi);max-width:100%}
+.js #mba .scene:not([hidden]) .typing{width:0;animation:type 2.6s steps(var(--n,60)) .4s forwards,caret 1s step-end infinite}
+@keyframes type{to{width:calc(var(--n,60) * 1ch)}}
+@keyframes caret{50%{border-color:transparent}}
+#mba .skel{display:flex;flex-direction:column;gap:10px}
+#mba .skel i{display:block;height:9px;background:rgba(255,255,255,.1);width:var(--w,100%);transform-origin:left;animation:grow 1s var(--ease) both;animation-delay:calc(2.6s + var(--k,0) * .15s)}
+#mba .skel i.hl{background:rgba(255,59,63,.55)}
+#mba .flow{display:flex;flex-direction:column;gap:0}
+#mba .flow li{position:relative;display:flex;align-items:center;gap:14px;padding:11px 0 11px 30px;font-size:15px;color:var(--on-dark-muted)}
+#mba .flow li::before{content:"";position:absolute;left:5px;top:50%;width:11px;height:11px;margin-top:-5.5px;border-radius:50%;border:1.5px solid rgba(255,255,255,.45);background:#121316}
+#mba .flow li::after{content:"";position:absolute;left:10px;top:calc(50% + 6px);height:calc(100% - 12px);width:1px;background:rgba(255,255,255,.18)}
+#mba .flow li:last-child::after{display:none}
+#mba .flow li b{color:#fff;font-weight:600}
+#mba .flow li em{margin-left:auto;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:rgba(244,244,242,.4)}
+.js #mba .scene:not([hidden]) .flow li{animation:rise .6s var(--ease) both;animation-delay:calc(.2s + var(--k,0) * .22s)}
+#mba .flow li.hot::before{background:var(--red);border-color:var(--red)}
+#mba .chart{width:100%;height:auto;overflow:visible}
+#mba .chart .grid{stroke:rgba(255,255,255,.08)}
+#mba .chart .area{fill:url(#hrFill);opacity:0;animation:fade 1s ease 1.2s forwards}
+#mba .chart .curve{fill:none;stroke:var(--red-hi);stroke-width:2.2;stroke-dasharray:1;stroke-dashoffset:1}
+.js #mba .scene:not([hidden]) .chart .curve{animation:draw 2s var(--ease) .3s forwards}
+.no-js #mba .chart .curve{stroke-dashoffset:0}
+@keyframes fade{to{opacity:1}}
+#mba .chart text{font-family:var(--mono);font-size:10px;fill:rgba(244,244,242,.45);letter-spacing:.08em}
+#mba .chips{display:flex;flex-wrap:wrap;gap:8px}
+#mba .chips span{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:7px 10px;border:1px solid rgba(255,255,255,.14);color:var(--on-dark-muted)}
+#mba .curation{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center}
+#mba .cu-card{border:1px solid rgba(255,255,255,.14);padding:16px;display:flex;flex-direction:column;gap:12px;background:rgba(255,255,255,.02)}
+#mba .cu-card.ok{border-color:rgba(255,59,63,.55);background:rgba(215,20,26,.06)}
+#mba .cu-arrow{font-family:var(--mono);color:var(--red-hi);font-size:18px}
+#mba .cu-check{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#fff}
+#mba .cu-check::before{content:"✓";display:grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--red);font-size:11px}
+#mba .s-note{font-size:14px;color:rgba(244,244,242,.5);line-height:1.5}
+@media (max-width:899px){
+  #mba .tech-grid{grid-template-columns:1fr}
+  #mba .tech-tabs{flex-direction:row;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 calc(var(--g)*-1);padding:0 var(--g);scroll-padding-inline:var(--g);scrollbar-width:none;border-top:0}
+  #mba .tech-tabs::-webkit-scrollbar{display:none}
+  #mba .tech-tab{flex:0 0 auto;scroll-snap-align:start;grid-template-columns:auto;padding:12px 18px 12px 0;margin-right:16px}
+  #mba .tech-tab .mono{grid-row:auto;padding-top:0}
+  #mba .tech-tab span:last-child{display:none}
+  #mba .console{min-height:380px}
+  #mba .typing{white-space:normal;border-right:0}
+  .js #mba .scene:not([hidden]) .typing{width:auto;animation:none}
+  #mba .curation{grid-template-columns:1fr}
+  #mba .cu-arrow{transform:rotate(90deg);justify-self:center}
+}
+#mba .tech-desc{display:none;margin-top:16px;color:var(--on-dark-muted);font-size:15px}
+@media (max-width:899px){#mba .tech-desc{display:block}}
+
+/* =========================================================
+   12. MÁQUINA DE VENDAS (seção de assinatura — palco sticky)
+   ========================================================= */
+#mba .sales{background:#060607;color:var(--on-dark);position:relative}
+#mba .sales-stage{padding:clamp(72px,9vw,128px) 0;overflow:hidden}
+.sales-full #mba .sales-track{height:320vh}
+.sales-full #mba .sales-stage{position:sticky;top:0;height:100vh;display:flex;align-items:center;padding:calc(var(--hh) + 8px) 0 16px}
+#mba .sales-head{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(28px,5vw,80px);align-items:end}
+#mba .sales-msg{border-left:3px solid var(--red);padding-left:20px}
+#mba .sales-msg strong{display:block;font-family:var(--display);font-weight:700;font-size:clamp(20px,1.8vw,26px);letter-spacing:-.02em;line-height:1.2;color:#fff;margin-bottom:6px}
+#mba .sales-msg p{color:var(--on-dark-muted)}
+#mba .pipe{position:relative;margin-top:clamp(40px,7vh,80px)}
+#mba .pipe-steps{position:relative;display:grid;grid-template-columns:repeat(6,1fr)}
+#mba .pipe-line{position:absolute;left:calc(100% / 12);right:calc(100% / 12);top:9px;height:2px;background:rgba(255,255,255,.12)}
+#mba .pipe-line i{position:absolute;inset:0;background:var(--red);transform-origin:left;transform:scaleX(0)}
+#mba .pipe-step{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 6px}
+#mba .pipe-dot{position:relative;z-index:1;width:20px;height:20px;border-radius:50%;border:2px solid rgba(255,255,255,.3);background:#060607;transition:background .4s,border-color .4s,transform .4s var(--ease)}
+#mba .pipe-step .mono{margin-top:18px;color:rgba(244,244,242,.4);font-size:11px;transition:color .4s}
+#mba .pipe-step strong{margin-top:6px;font-family:var(--display);font-weight:700;font-size:clamp(17px,1.6vw,23px);letter-spacing:-.02em;color:rgba(244,244,242,.35);transition:color .4s}
+#mba .pipe-tags{margin-top:12px;display:flex;flex-direction:column;gap:6px;align-items:center;opacity:.25;transition:opacity .5s}
+#mba .pipe-tags em{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;padding:5px 8px;border:1px solid rgba(255,255,255,.16);color:var(--on-dark-muted);white-space:nowrap}
+#mba .pipe-step.is-on .pipe-dot{background:#fff;border-color:#fff}
+#mba .pipe-step.is-on strong{color:#fff}
+#mba .pipe-step.is-on .pipe-tags{opacity:1}
+#mba .pipe-step.is-cur .pipe-dot{background:var(--red);border-color:var(--red);transform:scale(1.2);box-shadow:0 0 0 6px rgba(215,20,26,.2)}
+#mba .pipe-step.is-cur .mono{color:var(--red-hi)}
+#mba .brackets{position:relative;height:118px;margin-top:28px}
+#mba .bk{position:absolute;left:calc((var(--a) + .5) / 6 * 100%);width:calc((var(--b) - var(--a)) / 6 * 100%);opacity:0;transform:translateY(8px);transition:opacity .6s,transform .6s var(--ease)}
+#mba .bk.r2{top:62px}
+#mba .bk-line{height:12px;border:1.5px solid rgba(255,255,255,.4);border-top:0;transform-origin:left;transform:scaleX(0);transition:transform .9s var(--ease)}
+#mba .bk.roi .bk-line{border-color:var(--red-hi)}
+#mba .bk-t{display:flex;align-items:baseline;justify-content:center;gap:10px;margin-top:8px}
+#mba .bk-t b{font-family:var(--display);font-weight:700;font-size:18px;letter-spacing:-.01em;color:#fff}
+#mba .bk.roi .bk-t b{color:var(--red-hi)}
+#mba .bk-t span{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--on-dark-muted)}
+#mba .bk.is-on{opacity:1;transform:none}
+#mba .bk.is-on .bk-line{transform:scaleX(1)}
+@media (max-width:999px){
+  #mba .sales-head{grid-template-columns:1fr}
+  #mba .pipe-steps{grid-template-columns:1fr;gap:0;padding-left:44px}
+  #mba .pipe-line{left:9px;right:auto;top:10px;bottom:10px;width:2px;height:auto}
+  #mba .pipe-line i{transform-origin:top;transform:scaleY(0)}
+  #mba .pipe-step{flex-direction:row;flex-wrap:wrap;align-items:center;text-align:left;padding:0 0 26px;gap:4px 12px}
+  #mba .pipe-dot{position:absolute;left:-44px;top:0}
+  #mba .pipe-step .mono{margin:0}
+  #mba .pipe-step strong{margin:0;font-size:22px}
+  #mba .pipe-tags{flex-direction:row;flex-wrap:wrap;width:100%;margin-top:6px;align-items:flex-start}
+  #mba .brackets{height:auto;display:flex;flex-direction:column;gap:12px;margin-top:8px}
+  #mba .bk,#mba .bk.r2{position:relative;left:auto;top:auto;width:auto;border:1px solid var(--line-d);padding:14px 16px}
+  #mba .bk-line{display:none}
+  #mba .bk-t{justify-content:flex-start;margin:0}
+}
+
+/* =========================================================
+   13. EXPERIÊNCIA
+   ========================================================= */
+#mba .xp{background:var(--warm)}
+#mba .xp-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(32px,6vw,96px);align-items:center}
+#mba .xp-fig{position:relative;aspect-ratio:4/5;overflow:hidden}
+#mba .xp-fig .ph{position:absolute;inset:0;filter:saturate(.85)}
+#mba .xp-badges{position:absolute;left:18px;right:18px;bottom:18px;display:flex;flex-wrap:wrap;gap:8px}
+#mba .xp-badges span{background:rgba(11,11,12,.82);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);color:#fff;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:9px 12px;display:flex;align-items:center;gap:8px}
+#mba .xp-badges span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--red-hi)}
+#mba .xp-title .red{display:block}
+#mba .xp-groups{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:clamp(28px,3.4vw,44px)}
+#mba .xp-groups h3{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);font-weight:500;margin-bottom:10px}
+#mba .xp-groups li{padding:10px 0;border-top:1px solid var(--line);font-weight:600;font-size:16px}
+#mba .chain{display:flex;align-items:center;flex-wrap:wrap;gap:10px 14px;margin-top:clamp(28px,3.4vw,44px);padding-top:24px;border-top:1px solid var(--text)}
+#mba .chain b{font-family:var(--display);font-weight:700;font-size:clamp(17px,1.5vw,21px);letter-spacing:-.015em}
+#mba .chain b:last-of-type{color:var(--red)}
+#mba .chain i{font-style:normal;color:var(--red);font-family:var(--mono)}
+#mba .chain p{flex-basis:100%;color:var(--muted);font-size:15px;margin-top:4px}
+@media (max-width:899px){#mba .xp-grid{grid-template-columns:1fr}#mba .xp-fig{aspect-ratio:4/3}}
+@media (max-width:499px){#mba .xp-groups{grid-template-columns:1fr}}
+
+/* =========================================================
+   14. NÚMEROS — dashboard
+   ========================================================= */
+#mba .nums{background:var(--ink);color:var(--on-dark)}
+#mba .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-d);border:1px solid var(--line-d);margin-top:clamp(40px,5vw,64px)}
+#mba .kpi{background:var(--ink);padding:24px 24px 22px;display:grid;grid-template-columns:1fr 112px;gap:6px 18px;align-items:end;min-height:170px;transition:background .3s}
+#mba .kpi:hover{background:var(--ink-3)}
+#mba .kpi .mono{grid-column:1/-1;align-self:start;color:rgba(244,244,242,.42);font-size:10.5px}
+#mba .kpi h3{font-family:var(--display);font-weight:700;font-size:clamp(24px,2.4vw,34px);letter-spacing:-.025em;line-height:1}
+#mba .kpi h3.sm{font-size:clamp(20px,1.8vw,26px)}
+#mba .kpi p{grid-column:1;font-size:14px;line-height:1.4;color:var(--on-dark-muted)}
+#mba .kpi svg{grid-column:2;grid-row:2/4;width:112px;height:64px;overflow:visible;align-self:end}
+#mba .kpi svg .s{fill:none;stroke:#fff;stroke-width:1.8;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.6s var(--ease)}
+#mba .kpi svg .s.r{stroke:var(--red-hi)}
+#mba .kpi svg .b{fill:rgba(255,255,255,.22);transform-box:fill-box;transform-origin:bottom;transform:scaleY(0);transition:transform 1s var(--ease)}
+#mba .kpi svg .b.r{fill:var(--red)}
+#mba .kpi svg .g{stroke:rgba(255,255,255,.1)}
+#mba .kpi svg .dot{fill:var(--red-hi);opacity:0;transition:opacity .4s 1.2s}
+#mba .kpis.is-in .s{stroke-dashoffset:0}
+#mba .kpis.is-in .b{transform:none}
+#mba .kpis.is-in .dot{opacity:1}
+.no-js #mba .kpi svg .s{stroke-dashoffset:0}.no-js #mba .kpi svg .b{transform:none}
+#mba .kpis .kpi:nth-child(3n+2) svg *{transition-delay:.15s}
+#mba .kpis .kpi:nth-child(3n) svg *{transition-delay:.3s}
+#mba .nums-note{margin-top:16px;color:rgba(244,244,242,.4);font-size:13px}
+@media (max-width:899px){#mba .kpis{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:559px){#mba .kpis{grid-template-columns:1fr}#mba .kpi{min-height:0}}
+
+/* =========================================================
+   15. BUSINESS CASE (convergência)
+   ========================================================= */
+#mba .bcase{background:var(--white)}
+#mba .bc{position:relative;margin-top:clamp(48px,6vw,80px)}
+#mba .bc-areas{position:relative;z-index:1;display:grid;grid-template-columns:repeat(7,1fr);gap:10px}
+#mba .bc-areas li{text-align:center;padding:14px 8px;border:1px solid var(--line);background:var(--white);font-family:var(--display);font-weight:700;font-size:clamp(14px,1.2vw,17px);letter-spacing:-.01em;transition:border-color .3s,color .3s}
+#mba .bc-areas li .mono{display:block;color:var(--soft);font-size:10px;margin-bottom:4px;font-weight:400}
+#mba .bc-areas li:hover{border-color:var(--red);color:var(--red)}
+#mba .bc-lines{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+#mba .bc-lines path{fill:none;stroke:rgba(18,18,20,.22);stroke-width:1.5;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.6s var(--ease-io)}
+#mba .bc-lines path.r{stroke:var(--red);stroke-width:2}
+#mba .bc.is-in .bc-lines path{stroke-dashoffset:0}
+#mba .bc-core{position:relative;z-index:1;margin:clamp(90px,10vw,140px) auto 0;max-width:880px;background:var(--ink);color:var(--on-dark);display:grid;grid-template-columns:1fr 1.1fr;overflow:hidden;}
+#mba .bc-core .ph{min-height:260px}
+#mba .bc-core-in{padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;justify-content:center;gap:12px;border-top:3px solid var(--red)}
+#mba .bc-core .mono{color:var(--red-hi)}
+#mba .bc-core h3{font-family:var(--display);font-weight:700;font-size:clamp(28px,3vw,42px);letter-spacing:-.03em;line-height:1}
+#mba .bc-core h4{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--on-dark-muted);font-weight:400;line-height:1.5}
+#mba .bc-core p{color:var(--on-dark-muted);font-size:16px}
+#mba .bc-msg{margin:clamp(40px,5vw,64px) auto 0;max-width:30ch;text-align:center;font-family:var(--display);font-weight:600;font-size:clamp(20px,2vw,28px);line-height:1.25;letter-spacing:-.02em}
+#mba .bc-msg + .cta-row{justify-content:center}
+@media (max-width:899px){
+  #mba .bc-areas{grid-template-columns:repeat(4,1fr)}
+  #mba .bc-core{grid-template-columns:1fr;margin-top:56px}
+  #mba .bc-core .ph{min-height:200px}
+}
+@media (max-width:559px){#mba .bc-areas{grid-template-columns:repeat(2,1fr)}#mba .bc-areas li:last-child{grid-column:span 2}}
+
+/* =========================================================
+   16. PARA QUEM É
+   ========================================================= */
+#mba .who{background:var(--paper)}
+#mba .who-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:clamp(40px,5vw,64px)}
+#mba .who-card{grid-column:span 2;background:var(--white);padding:28px 26px;display:flex;flex-direction:column;gap:14px;border:1px solid transparent;transition:translate .5s var(--ease),border-color .3s;position:relative}
+#mba .who-card:nth-child(4),#mba .who-card:nth-child(5){grid-column:span 3}
+#mba .who-card:hover{translate:0 -4px;border-color:var(--line)}
+#mba .who-card .mono{color:var(--red)}
+#mba .who-card h3{font-family:var(--display);font-weight:700;font-size:clamp(19px,1.6vw,23px);letter-spacing:-.02em;line-height:1.1}
+#mba .who-card p{color:var(--muted);font-size:15.5px;line-height:1.5}
+#mba .notice{display:flex;gap:16px;align-items:flex-start;margin-top:20px;padding:20px 22px;background:var(--ink);color:var(--on-dark)}
+#mba .notice b{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-hi);white-space:nowrap;padding-top:3px}
+#mba .notice p{font-size:15.5px;color:var(--on-dark-muted)}
+@media (max-width:899px){#mba .who-grid{grid-template-columns:1fr 1fr}#mba .who-card,#mba .who-card:nth-child(4),#mba .who-card:nth-child(5){grid-column:span 1}#mba .who-card:nth-child(5){grid-column:span 2}}
+@media (max-width:599px){
+  #mba .who-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin-left:calc(var(--g)*-1);margin-right:calc(var(--g)*-1);padding:0 var(--g) 6px;scroll-padding-inline:var(--g);scrollbar-width:none}
+  #mba .who-grid::-webkit-scrollbar{display:none}
+  #mba .who-card{flex:0 0 80%;scroll-snap-align:start}
+  #mba .notice{flex-direction:column;gap:8px}
+}
+
+/* =========================================================
+   17. CARREIRA — mapa de linhas
+   ========================================================= */
+#mba .career{background:var(--ink-2);color:var(--on-dark)}
+#mba .metro{position:relative;margin-top:clamp(48px,6vw,72px);display:grid;grid-template-columns:150px 1fr;gap:0 28px}
+#mba .hub{grid-row:1/4;position:relative;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:8px;padding-right:20px;border-right:3px solid var(--red)}
+#mba .hub b{font-family:var(--display);font-weight:700;font-size:20px;letter-spacing:-.02em;line-height:1.1}
+#mba .hub .mono{color:var(--on-dark-muted);font-size:10.5px}
+#mba .mline{position:relative;padding:28px 0 32px}
+#mba .mline+.mline{border-top:1px solid var(--line-d)}
+#mba .mline-name{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--on-dark-muted);margin-bottom:22px;display:flex;align-items:center;gap:10px}
+#mba .mline-name::before{content:"";width:18px;height:3px;background:var(--c)}
+#mba .stations{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+#mba .stations::before{content:"";position:absolute;left:-31px;right:0;top:7px;height:3px;background:var(--c);transform-origin:left;transform:scaleX(0);transition:transform 1.4s var(--ease-io)}
+#mba .metro.is-in .stations::before,.no-js #mba .stations::before{transform:scaleX(1)}
+#mba .mline:nth-of-type(2) .stations::before{transition-delay:.15s}
+#mba .mline:nth-of-type(3) .stations::before{transition-delay:.3s}
+#mba .station{position:relative;padding-top:30px;font-weight:600;font-size:15.5px;line-height:1.3;opacity:0;transform:translateY(8px);transition:opacity .5s,transform .6s var(--ease);transition-delay:calc(.6s + var(--k,0) * .12s)}
+#mba .station::before{content:"";position:absolute;left:0;top:0;width:17px;height:17px;border-radius:50%;background:var(--ink-2);border:3px solid var(--c)}
+#mba .metro.is-in .station,.no-js #mba .station{opacity:1;transform:none}
+#mba .station:hover::before{background:var(--c)}
+#mba .career-note{margin-top:28px;color:rgba(244,244,242,.42);font-size:13px}
+@media (max-width:899px){
+  #mba .metro{grid-template-columns:1fr}
+  #mba .hub{grid-row:auto;border-right:0;border-bottom:3px solid var(--red);padding:0 0 18px;margin-bottom:8px}
+  #mba .stations{grid-template-columns:1fr;gap:18px;padding-left:28px}
+  #mba .stations::before{left:7px;right:auto;top:0;bottom:0;width:3px;height:auto;transform-origin:top;transform:scaleY(0)}
+  #mba .metro.is-in .stations::before{transform:scaleY(1)}
+  #mba .station{padding:0 0 0 0}
+  #mba .station::before{left:-28px;top:2px}
+}
+
+/* =========================================================
+   18. CONECTA TODA A OPERAÇÃO — anel que se completa
+   ========================================================= */
+#mba .connect{background:var(--white)}
+#mba .connect-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,96px);align-items:center}
+#mba .connect-msg{margin-top:24px;font-size:clamp(18px,1.5vw,21px);font-weight:700;line-height:1.45;padding-left:18px;border-left:3px solid var(--red);max-width:32ch}
+#mba .donut{width:100%;max-width:560px;justify-self:center}
+#mba .donut svg{width:100%;height:auto;overflow:visible}
+#mba .seg{fill:none;stroke:var(--graphite);stroke-width:44;stroke-dasharray:var(--len) 9999;stroke-dashoffset:var(--len);transition:stroke-dashoffset .7s var(--ease),stroke .3s;transition-delay:calc(var(--k) * .22s)}
+#mba .seg:hover{stroke:var(--red)}
+#mba .donut.is-in .seg,.no-js #mba .seg{stroke-dashoffset:0}
+#mba .seg-lbl{font-family:var(--mono);font-size:13px;letter-spacing:.14em;fill:var(--text);opacity:0;transition:opacity .5s;transition-delay:calc(.3s + var(--k) * .22s)}
+#mba .donut.is-in .seg-lbl,.no-js #mba .seg-lbl{opacity:1}
+#mba .d-core{fill:var(--paper);transition:fill .6s 1.6s}
+#mba .donut.is-in .d-core{fill:var(--red)}
+#mba .d-core-t{font-family:var(--display);font-weight:700;font-size:26px;letter-spacing:-.02em;fill:var(--text);transition:fill .6s 1.6s}
+#mba .donut.is-in .d-core-t{fill:#fff}
+@media (max-width:899px){#mba .connect-grid{grid-template-columns:1fr}}
+
+/* =========================================================
+   18b. INVESTIMENTO — data de início, inscrição e mensalidades
+   ========================================================= */
+#mba .invest{background:var(--paper)}
+#mba .price{display:grid;grid-template-columns:1fr 1fr 1.35fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:clamp(40px,5vw,64px)}
+#mba .pr{position:relative;display:flex;flex-direction:column;justify-content:space-between;gap:32px;min-height:clamp(190px,17vw,230px);padding:clamp(22px,2.4vw,32px);background:var(--white)}
+#mba .pr::before{content:"";position:absolute;left:0;top:0;height:3px;width:100%;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .8s var(--ease) .2s}
+#mba .price.is-in .pr::before,.no-js #mba .pr::before{transform:scaleX(1)}
+#mba .pr-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+#mba .pr-top .mono{color:var(--muted);font-size:11px}
+#mba .pr-top svg{width:22px;height:22px;color:var(--red);flex:none}
+#mba .pr b{display:block;font-family:var(--display);font-weight:700;font-size:clamp(40px,4.4vw,64px);line-height:.95;letter-spacing:-.035em;font-variant-numeric:tabular-nums;white-space:nowrap}
+#mba .pr b small{font-size:.46em;letter-spacing:-.01em;margin-right:.18em;vertical-align:.08em}
+#mba .pr b em{display:block;margin-bottom:.22em;font-size:.4em;letter-spacing:-.01em;color:var(--red)}
+#mba .pr.hl{background:var(--ink);color:var(--on-dark)}
+#mba .pr.hl .pr-top .mono{color:var(--on-dark-muted)}
+#mba .pr.hl svg,#mba .pr.hl b em{color:var(--red-hi)}
+@media (max-width:899px){#mba .price{grid-template-columns:1fr 1fr}#mba .pr.hl{grid-column:span 2}}
+@media (max-width:499px){#mba .price{grid-template-columns:1fr}#mba .pr.hl{grid-column:auto}#mba .pr{min-height:0;gap:22px}}
+
+/* =========================================================
+   19. CTA FINAL + FORMULÁRIO
+   ========================================================= */
+#mba .final{position:relative;background:#060607;color:var(--on-dark);overflow:hidden}
+#mba .final>.ph{position:absolute;inset:0;opacity:.22!important;filter:grayscale(1)}
+#mba .final::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,6,7,.6) 0%,#060607 75%)}
+#mba .final .wrap{position:relative}
+#mba .final-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(40px,6vw,96px);align-items:start}
+#mba .final-title .ln:last-child{color:var(--red-hi)}
+#mba .final-text{margin-top:24px;max-width:46ch}
+#mba .final-facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:32px}
+#mba .final-facts li{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:8px 12px;border:1px solid var(--line-d);color:var(--on-dark-muted)}
+#mba .final-brand{margin-top:40px}
+#mba .form-card{background:var(--white);color:var(--text);padding:clamp(24px,3.4vw,44px);border-top:4px solid var(--red)}
+#mba .form-card h3{font-family:var(--display);font-weight:700;font-size:clamp(22px,2vw,28px);letter-spacing:-.02em;line-height:1.1}
+#mba .form-card>p{color:var(--muted);margin:10px 0 24px;font-size:15px}
+#mba .field-f{margin-bottom:16px}
+#mba .field-f label{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+#mba .field-f input,#mba .field-f select{width:100%;height:54px;border:1px solid rgba(18,18,20,.22);border-radius:2px;background:#fff;padding:0 16px;font:500 16px var(--sans);color:var(--text);transition:border-color .2s,box-shadow .2s;appearance:none;-webkit-appearance:none;margin:0;box-shadow:none}
+#mba .field-f select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23121214' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;background-size:18px;padding-right:44px}
+#mba .field-f input:focus,#mba .field-f select:focus{outline:none;border-color:var(--text);box-shadow:0 0 0 3px rgba(215,20,26,.18)}
+#mba .field-row{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+#mba .check{display:flex;gap:12px;align-items:flex-start;font-size:13px;line-height:1.5;color:var(--muted);margin:6px 0 22px}
+#mba .check a{text-decoration:underline}
+#mba .check input{width:18px;height:18px;margin:2px 0 0;accent-color:var(--red);flex:none}
+#mba .form-card .btn{width:100%}
+#mba .form-status{min-height:1.4em;margin-top:12px;font-size:14px;color:var(--muted)}
+#mba .form-status.err{color:var(--red)}
+#mba #form-embed:empty{display:none}
+@media (max-width:899px){#mba .final-grid{grid-template-columns:1fr}#mba .field-row{grid-template-columns:1fr}}
+
+/* =========================================================
+   20. RODAPÉ + CTA FIXO MOBILE
+   ========================================================= */
+#mba .foot{background:#060607;color:var(--on-dark-muted);border-top:1px solid var(--line-d);padding:32px 0 calc(32px + env(safe-area-inset-bottom))}
+#mba .foot .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;font-size:13px}
+#mba .foot .lockup{--lh:36px}
+#mba .foot nav{display:flex;gap:22px;flex-wrap:wrap}
+#mba .foot a:hover{color:#fff}
+#mba .mcta{position:fixed;left:0;right:0;bottom:0;z-index:80;padding:10px var(--g) calc(10px + env(safe-area-inset-bottom));background:rgba(11,11,12,.92);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-top:1px solid var(--line-d);transform:translateY(110%);transition:transform .5s var(--ease)}
+#mba .mcta .btn{width:100%;min-height:54px;padding:8px 16px;font-size:12px;letter-spacing:.06em;line-height:1.25;text-align:center}
+#mba .mcta.is-show{transform:none}
+@media (min-width:900px){#mba .mcta{display:none}}
+@media (max-width:899px){#mba .foot{padding-bottom:calc(96px + env(safe-area-inset-bottom))}}
+
+/* =========================================================
+   20b. MODAL — EMENTA EXECUTIVA (PDF)
+   ========================================================= */
+#mba .modal{position:fixed;inset:0;z-index:300;display:grid;place-items:center;padding:16px}
+#mba .modal[hidden]{display:none}
+#mba .modal-bg{position:absolute;inset:0;background:rgba(5,5,6,.74);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);animation:fadeIn .35s ease both}
+#mba .modal-box{position:relative;width:100%;max-width:580px;max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px);overflow:auto;overscroll-behavior:contain;animation:rise .5s var(--ease) both}
+#mba .modal-box:focus{outline:none}
+#mba .modal-x{position:absolute;right:14px;top:14px;width:40px;height:40px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;transition:background .3s,color .3s}
+#mba .modal-x:hover{background:var(--ink);color:#fff}
+#mba .modal-x svg{width:16px;height:16px}
+#mba .modal-box h3{padding-right:48px;margin-bottom:24px}
+#mba .modal-done[hidden]{display:none}
+#mba #form-embed-ementa:empty{display:none}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+/* =========================================================
+   21. MOVIMENTO REDUZIDO
+   ========================================================= */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  #mba *,#mba *::before,#mba *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;transition-delay:0s!important}
+  .js #mba [data-rv],.js #mba [data-rv] .ln>span,.js #mba [data-stagger]>*{opacity:1!important;transform:none!important}
+}
+
+/* =========================================================
+   22. MODO REVISÃO (CONFIG.revisao = true)
+   ========================================================= */
+.review #mba [data-pendente]{position:relative;outline:2px dashed #E0A800;outline-offset:4px}
+</style>
+
+<!-- Ajustes responsivos de conversao: CTA antes dos selos no mobile -->
+<style id="hero-mobile-update">
+@media (max-width: 899px) {
+  #mba .hero { min-height: 0; }
+  #mba .hero-in { padding-top: calc(var(--hh) + 18px); padding-bottom: 20px; }
+  #mba .hero-copy { display: flex; flex-direction: column; }
+  #mba .hero-title { order: 1; margin-bottom: 14px; }
+  #mba .hero-sub { order: 2; font-size: 15px; line-height: 1.45; margin-bottom: 16px; }
+  #mba .hero-actions { order: 3; margin-bottom: 12px; }
+  #mba .hero-actions .btn { min-height: 54px; }
+  #mba .hero .seals { order: 4; margin-top: 8px; }
+}
+</style>
+<style id="desktop-hero-copy">
+@media (min-width: 900px) {
+  #mba .ht-pre { font-size: clamp(34px, min(3.8vw, 6vh), 54px); max-width: 21ch; }
+  #mba .ht-main { max-width: 42ch; }
+  #mba .hero-sub { max-width: 58ch; }
+}
+</style>
+</head>
+
+<body>
+<div id="mba">
+<p class="sr-only">MBA Internacional em Gestão, Liderança e Negócios Fitness &amp; Wellness — Realização: Faculdade Phorte &amp; FITNESS LINK. 360 horas, 12 meses, EAD.</p>
+
+<nav class="rail" data-rail aria-label="Linha de gestão">
+  <span class="rail-now" data-rail-now aria-hidden="true">Mercado</span>
+  <div class="rail-track"><div class="rail-fill" data-rail-fill></div></div>
+  <ol>
+    <li><a href="#mercado" data-to="mercado"><i></i><span>Mercado</span></a></li>
+    <li><a href="#pilares" data-to="pilares"><i></i><span>Pessoas</span></a></li>
+    <li><a href="#tecnologia" data-to="tecnologia"><i></i><span>Tecnologia</span></a></li>
+    <li><a href="#vendas" data-to="vendas"><i></i><span>Cliente</span></a></li>
+    <li><a href="#numeros" data-to="numeros"><i></i><span>Finanças</span></a></li>
+    <li><a href="#business-case" data-to="business-case"><i></i><span>Resultados</span></a></li>
+  </ol>
+</nav>
+
+<main id="conteudo">
+
+<section class="hero" id="topo" aria-labelledby="h-hero">
+  <div class="hero-bg ph ph-hero" data-par aria-hidden="true"></div>
+  <div class="wrap brandbar">
+    <div class="brandbar-in">
+      <div class="lockup" role="img" aria-label="Faculdade Phorte e FITNESS LINK">
+        <span class="lg"><img data-logo="phorte" src="https://posphorte.com.br/wp-content/uploads/2024/08/logo-faculdade.webp" alt="" width="188" height="106"></span>
+        <i aria-hidden="true"></i>
+        <span class="lg fl"><img data-logo="fitnesslink" src="https://lh3.googleusercontent.com/d/1aWTS3wDKgoHFE1FD-AyJgIkcmsYedt9N=w600" alt="" width="570" height="438"></span>
+      </div>
+      <p class="realiza" data-pendente="Validar com o setor acadêmico: redação sobre o MEC">MBA Lato Sensu <i>|</i> Realização: <b>Faculdade Phorte &amp; FITNESS LINK</b></p>
+    </div>
+  </div>
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <h1 class="hero-title" id="h-hero">
+        <span class="ht-pre">MBA Internacional em Gestão, Liderança e Negócios Fitness &amp; Wellness</span>
+      </h1>
+      <p class="hero-sub">Formação em finanças, gestão de equipes, marketing e expansão para academias, estúdios e marcas de wellness.</p>
+      <ul class="seals" aria-label="Selos do MBA">
+        <li data-pendente="Validar com o setor acadêmico: redação sugerida sobre o MEC">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/><path d="M22 9v6"/></svg>
+          <span><b>MBA Lato Sensu oferecido pela Faculdade Phorte</b> <small>(instituição credenciada pelo MEC)</small></span>
+        </li>
+        <li data-pendente="Validar: mentores e cases da FITNESS LINK">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="1.5"/><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7"/><path d="M3 12.5h18"/><path d="M11 12.5v2h2v-2"/></svg>
+          <span><b>Chancela Estratégica FITNESS LINK</b> <small>(Mentores e Cases de Mercado)</small></span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9s1.3-6.4 3.8-9z"/></svg>
+          <span><b>Visão de Gestão Internacional</b> <small>(Benchmarking Global e Internacionalização)</small></span>
+        </li>
+      </ul>
+      <div class="hero-actions">
+        <a class="btn btn-red" href="https://inscricao.posphorte.com.br/inscricao/pre-cadastro/mba-internacional-em-gestao-lideranca-e-negocios-fitness-e-wellness/4876/5" target="_blank" rel="noopener" data-inscricao>Quero escalar meu neg&#243;cio
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <button class="btn-link" type="button" data-ementa-open aria-haspopup="dialog">Baixar Ementa Executiva em PDF
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"/></svg></button>
+      </div>
+    </div>
+  </div>
+  <ul class="wrap hero-stats" aria-label="Informações do curso">
+    <li><b data-count="360">360</b><span>horas</span></li>
+    <li><b data-count="12">12</b><span>meses</span></li>
+    <li><b>EAD</b><span>modalidade</span></li>
+    <li><b>13/03</b><span>início</span></li>
+  </ul>
+</section>
+
+<section class="sec partner" id="parceria" aria-labelledby="h-parceria">
+  <div class="wrap">
+    <p class="kicker"><span>02</span></p>
+    <h2 class="h-l partner-title" id="h-parceria" data-rv="lines">
+      <span class="ln"><span>Chancela de Mercado</span></span>
+      <span class="ln"><span><span class="red">+</span> Chancela Acadêmica</span></span>
+    </h2>
+    <div class="partner-grid" data-partner>
+      <article class="pcard">
+        <span class="p-role">Chancela Acadêmica</span>
+        <div class="p-logo"><span class="lg"><img data-logo="phorte" src="https://posphorte.com.br/wp-content/uploads/2024/08/logo-faculdade.webp" alt="Faculdade Phorte" width="188" height="106" loading="lazy"></span></div>
+        <h3>Faculdade Phorte</h3>
+        <p data-pendente="Validar: credenciamento MEC / diploma oficial">Instituição de Ensino Superior credenciada pelo MEC, responsável pela emissão do diploma oficial de MBA Lato Sensu.</p>
+      </article>
+      <span class="p-plus" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 4v16M4 12h16"/></svg></span>
+      <article class="pcard">
+        <span class="p-role">Chancela de Mercado</span>
+        <div class="p-logo"><span class="lg fl"><img data-logo="fitnesslink" src="https://lh3.googleusercontent.com/d/1aWTS3wDKgoHFE1FD-AyJgIkcmsYedt9N=w600" alt="FITNESS LINK" width="570" height="438" loading="lazy"></span></div>
+        <h3>FITNESS LINK</h3>
+        <p>Conecta profissionais e negócios fitness e wellness a cases de mercado, mentores e oportunidades de networking.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec market" id="mercado" aria-labelledby="h-mercado">
+  <div class="wrap market-grid">
+    <div class="market-copy">
+      <p class="kicker"><span>03</span>O fitness mudou. A gestão também.</p>
+      <h2 class="h-l" id="h-mercado" data-rv="lines">
+        <span class="ln"><span>O mercado fitness</span></span>
+        <span class="ln"><span>deixou de ser apenas</span></span>
+        <span class="ln"><span>sobre <span class="red">treino.</span></span></span>
+      </h2>
+      <p class="lead" data-rv data-d="1">Academias, studios e negócios wellness integram tecnologia, experiência do cliente, dados, vendas, finanças, liderança e saúde.</p>
+      <p class="market-strong" data-rv data-d="2">A gestão pede uma visão integrada dessas áreas.</p>
+    </div>
+    <figure class="rings" data-rings aria-label="Do fitness à gestão: fitness, wellness, experiência, dados, negócios e gestão">
+      <svg viewBox="0 0 680 680" aria-hidden="true" data-rings-svg></svg>
+      <figcaption class="rings-cap mono"><span>Fitness</span><span>→</span><span class="red">Gestão</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="sec pillars-sec on-dark" id="pilares" aria-labelledby="h-pilares">
+  <div class="wrap">
+    <p class="kicker"><span>04</span>Não é só sobre gerenciar uma academia</p>
+    <h2 class="h-l pillars-title" id="h-pilares" data-rv="lines">
+      <span class="ln"><span class="mut">Mais do que administrar,</span></span>
+      <span class="ln"><span>aprenda a pensar como <span class="red">gestor.</span></span></span>
+    </h2>
+    <div class="pillars" data-pillars>
+      <button class="pillar is-active" type="button" aria-expanded="true">
+        <span class="ph ph-estrategia" aria-hidden="true"></span>
+        <span class="pillar-plus" aria-hidden="true"></span>
+        <span class="pillar-in"><span class="mono">01</span><span><span class="pillar-t">Estratégia</span><span class="pillar-d">Entenda tendências, comportamento do consumidor e novos modelos de negócio.</span></span></span>
+      </button>
+      <button class="pillar" type="button" aria-expanded="false">
+        <span class="ph ph-pessoas" aria-hidden="true"></span>
+        <span class="pillar-plus" aria-hidden="true"></span>
+        <span class="pillar-in"><span class="mono">02</span><span><span class="pillar-t">Pessoas</span><span class="pillar-d">Desenvolva liderança, equipes e cultura organizacional.</span></span></span>
+      </button>
+      <button class="pillar" type="button" aria-expanded="false">
+        <span class="ph ph-tecnologia" aria-hidden="true"></span>
+        <span class="pillar-plus" aria-hidden="true"></span>
+        <span class="pillar-in"><span class="mono">03</span><span><span class="pillar-t">Tecnologia</span><span class="pillar-d">Utilize inteligência artificial, automação, CRM, dados e novas tecnologias aplicadas ao fitness.</span></span></span>
+      </button>
+      <button class="pillar" type="button" aria-expanded="false">
+        <span class="ph ph-resultados" aria-hidden="true"></span>
+        <span class="pillar-plus" aria-hidden="true"></span>
+        <span class="pillar-in"><span class="mono">04</span><span><span class="pillar-t">Resultados</span><span class="pillar-d">Aplique marketing, vendas, finanças, operação e indicadores à gestão do negócio.</span></span></span>
+      </button>
+    </div>
+    <p class="swipe-hint mono">Arraste para o lado →</p>
+  </div>
+</section>
+
+<section class="sec challenges" id="desafios" aria-labelledby="h-desafios">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="kicker"><span>05</span>Problemas reais, respostas de gestão</p>
+        <h2 class="h-l" id="h-desafios" data-rv="lines">
+          <span class="ln"><span>Uma formação para o</span></span>
+          <span class="ln"><span>novo mercado <span class="red">fitness.</span></span></span>
+        </h2>
+      </div>
+      <p class="lead" data-rv data-d="1">Veja desafios de gestão abordados nos territórios do MBA.</p>
+    </div>
+    <div class="dash" data-stagger>
+      <article class="ticket"><div class="t-top"><span class="mono">Desafio 01</span><span class="t-dot" aria-hidden="true"></span></div><h3>Como reduzir o turnover da equipe?</h3><span class="t-area">Liderança &amp; Pessoas</span></article>
+      <article class="ticket"><div class="t-top"><span class="mono">Desafio 02</span><span class="t-dot" aria-hidden="true"></span></div><h3>Como aumentar a retenção dos clientes?</h3><span class="t-area">Experiência do Cliente</span></article>
+      <article class="ticket"><div class="t-top"><span class="mono">Desafio 03</span><span class="t-dot" aria-hidden="true"></span></div><h3>Como saber se uma campanha realmente dá retorno?</h3><span class="t-area">Vendas &amp; Crescimento</span></article>
+      <article class="ticket"><div class="t-top"><span class="mono">Desafio 04</span><span class="t-dot" aria-hidden="true"></span></div><h3>Como transformar visitas em leads e vendas?</h3><span class="t-area">Vendas &amp; Crescimento</span></article>
+      <article class="ticket"><div class="t-top"><span class="mono">Desafio 05</span><span class="t-dot" aria-hidden="true"></span></div><h3>Como usar IA dentro de uma operação fitness?</h3><span class="t-area">Tecnologia &amp; IA</span></article>
+      <article class="ticket"><div class="t-top"><span class="mono">Desafio 06</span><span class="t-dot" aria-hidden="true"></span></div><h3>Como precificar corretamente um serviço?</h3><span class="t-area">Finanças &amp; Governança</span></article>
+      <article class="ticket"><div class="t-top"><span class="mono">Desafio 07</span><span class="t-dot" aria-hidden="true"></span></div><h3>Como escalar uma academia ou studio?</h3><span class="t-area">Mercado &amp; Estratégia</span></article>
+      <article class="ticket"><div class="t-top"><span class="mono">Desafio 08</span><span class="t-dot" aria-hidden="true"></span></div><h3>Como criar uma experiência que faça o cliente permanecer?</h3><span class="t-area">Experiência do Cliente</span></article>
+    </div>
+    <p class="punch" data-rv>Gestão fitness acontece quando estratégia encontra <u>execução.</u></p>
+  </div>
+</section>
+
+<section class="sec territories" id="dominar" aria-labelledby="h-dominar">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="kicker"><span>06</span>O que você vai dominar</p>
+        <h2 class="h-l" id="h-dominar" data-rv="lines">
+          <span class="ln"><span>Oito territórios.</span></span>
+          <span class="ln"><span>Um negócio <span class="red">inteiro.</span></span></span>
+        </h2>
+      </div>
+      <p class="lead" data-rv data-d="1">Oito territórios de conhecimento, da estratégia de mercado à operação.</p>
+    </div>
+    <div class="car" data-car>
+      <div class="car-track" data-car-track tabindex="0" aria-label="Territórios de conhecimento — role para o lado">
+      <article class="car-card"><div class="car-top"><span class="mono">01</span><span class="car-count">05 temas</span></div><h3>Mercado &amp; Estratégia</h3><ul><li>Panorama global do fitness e wellness</li><li>Comportamento do consumidor</li><li>Benchmarking internacional</li><li>Modelos de negócio disruptivos</li><li>High End, Low Cost e Studios</li></ul></article>
+      <article class="car-card"><div class="car-top"><span class="mono">02</span><span class="car-count">06 temas</span></div><h3>Liderança &amp; Pessoas</h3><ul><li>Liderança adaptativa</li><li>Inteligência emocional</li><li>Gestão de equipes</li><li>Cultura organizacional</li><li>Onboarding</li><li>Retenção de talentos</li></ul></article>
+      <article class="car-card"><div class="car-top"><span class="mono">03</span><span class="car-count">06 temas</span></div><h3>Tecnologia &amp; IA</h3><ul><li>Inteligência Artificial aplicada</li><li>IA generativa</li><li>Automação de CRM</li><li>WhatsApp</li><li>Wearables</li><li>Ecossistemas de dados</li></ul></article>
+      <article class="car-card"><div class="car-top"><span class="mono">04</span><span class="car-count">05 temas</span></div><h3>Marca &amp; Marketing</h3><ul><li>Branding</li><li>Posicionamento</li><li>Marketing de conteúdo</li><li>Influenciadores e parcerias</li><li>Employer Branding</li></ul></article>
+      <article class="car-card"><div class="car-top"><span class="mono">05</span><span class="car-count">06 temas</span></div><h3>Vendas &amp; Crescimento</h3><ul><li>Máquinas de vendas</li><li>Funis digitais</li><li>Tráfego pago</li><li>High Ticket</li><li>Gamificação</li><li>CAC, ROI e LTV</li></ul></article>
+      <article class="car-card"><div class="car-top"><span class="mono">06</span><span class="car-count">06 temas</span></div><h3>Experiência do Cliente</h3><ul><li>Customer Experience</li><li>Design de serviços</li><li>Jornada do cliente</li><li>Atendimento humanizado</li><li>Comunidades</li><li>Retenção</li></ul></article>
+      <article class="car-card"><div class="car-top"><span class="mono">07</span><span class="car-count">06 temas</span></div><h3>Finanças &amp; Governança</h3><ul><li>Gestão financeira</li><li>Indicadores</li><li>Planejamento</li><li>Modelagem de negócios</li><li>Segurança jurídica</li><li>Gestão trabalhista</li></ul></article>
+      <article class="car-card"><div class="car-top"><span class="mono">08</span><span class="car-count">07 temas</span></div><h3>Operação Fitness</h3><ul><li>Engenharia de grade</li><li>Headcount</li><li>Capacidade operacional</li><li>Musculação</li><li>Modalidades coletivas</li><li>Microgyms</li><li>Gestão aquática</li></ul></article>
+    </div>
+      <div class="car-ui">
+        <span class="car-n mono"><b data-car-n>01</b> / 08</span>
+        <div class="car-bar" aria-hidden="true"><i data-car-bar></i></div>
+        <div class="car-nav">
+          <button type="button" data-car-dir="-1" aria-label="Territórios anteriores"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+          <button type="button" data-car-dir="1" aria-label="Próximos territórios"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <div class="grade" id="grade-curricular" data-pendente="Professores e cargas horárias por disciplina: incluir só após validação da coordenação (matriz × ementas divergem)">
+      <details class="grade-box">
+        <summary class="grade-sum">
+          <span class="mono">Grade curricular completa</span>
+          <h3 class="grade-t">12 disciplinas do MBA</h3>
+          <span class="grade-btn" aria-hidden="true"><span class="g-open">Ver as disciplinas</span><span class="g-close">Fechar</span><i></i></span>
+        </summary>
+        <ol class="grade-list">
+          <li><details class="disc"><summary><span class="mono">01</span><span class="disc-t">O novo ecossistema Fitness e Wellness: Panorama Global e Tendências</span><span class="disc-n mono">05 módulos</span><i aria-hidden="true"></i></summary>
+            <ol class="disc-mods"><li>Como Construir Histórias de Sucesso</li><li>Evolução do Mercado e Comportamento do Consumidor</li><li>Modelos de Negócios Disruptivos e Nichos de Alta Rentabilidade</li><li>Internacionalização e Benchmarking Global</li><li>Wellness, Saúde Integrativa e Preventiva e o Novo Mercado Fitness</li></ol></details></li>
+          <li><details class="disc"><summary><span class="mono">02</span><span class="disc-t">Liderança Estratégica e Soft Skills para Empreendedores e Empresários</span><span class="disc-n mono">05 módulos</span><i aria-hidden="true"></i></summary>
+            <ol class="disc-mods"><li>Inteligência Emocional Aplicada aos Negócios Fitness e Wellness</li><li>Gestão de Tempo e Produtividade</li><li>Liderança Adaptativa e Gestão de Equipes</li><li>Comunicação Assertiva e Resolução de Conflitos</li><li>Indicadores e Tecnologia</li></ol></details></li>
+          <li><details class="disc"><summary><span class="mono">03</span><span class="disc-t">Gestão Estratégica de Recursos Humanos</span><span class="disc-n mono">07 módulos</span><i aria-hidden="true"></i></summary>
+            <ol class="disc-mods"><li>Recrutamento &amp; Seleção: O Que Não Pode Faltar para uma Contratação de Sucesso</li><li>Engajamento 360°: Pessoas Não São Recursos!</li><li>3 C's: Cultura Organizacional Forte, Bom Clima Organizacional e Comunicação Eficaz</li><li>Onboarding e Treinamento de Colaboradores</li><li>Estratégias Avançadas para Aumentar o Reconhecimento e Valorização do Profissional de Educação Física</li><li>Gestão de Pessoas e Cultura Organizacional Eficaz para Transformar o Seu Ambiente</li><li>Jornada do Colaborador: Como Reter Talentos no Seu Negócio</li></ol></details></li>
+          <li><details class="disc"><summary><span class="mono">04</span><span class="disc-t">Marketing Estratégico e Construção de Marca de Alto Valor</span><span class="disc-n mono">09 módulos</span><i aria-hidden="true"></i></summary>
+            <ol class="disc-mods"><li>Marketing &amp; Branding: Como Construir uma Marca Forte e Desejada</li><li>Branding e Diferenciação de Marca</li><li>Força Competitiva: Estratégia de Posicionamento e Branding para Gerar Diferenciação</li><li>Como Agregar Valor à Sua Oferta e Fidelizar Clientes</li><li>Práticas Poderosas de Atendimento: Treinamento para Recepcionistas e Consultores</li><li>Employer Branding para Academias</li><li>Gestão de Influenciadores e Parcerias</li><li>Produção de Conteúdo de Alto Valor</li><li>Marketing de Conteúdo e Calendário Editorial</li></ol></details></li>
+          <li><details class="disc"><summary><span class="mono">05</span><span class="disc-t">Inteligência Artificial, Inovação e Automação de Processos</span><span class="disc-n mono">05 módulos</span><i aria-hidden="true"></i></summary>
+            <ol class="disc-mods"><li>Fundamentos de IA e Aplicações Práticas</li><li>Otimização de Rotinas com IA Generativa</li><li>Automação de CRM e Comunicação via WhatsApp</li><li>Tecnologias Vestíveis e Ecossistema de Dados</li><li>Prescrição de Treinos por Inteligência Artificial</li></ol></details></li>
+          <li><details class="disc"><summary><span class="mono">06</span><span class="disc-t">Máquina de Vendas e Aquisição Digital e Física de Clientes</span><span class="disc-n mono">10 módulos</span><i aria-hidden="true"></i></summary>
+            <ol class="disc-mods"><li>De Visitas a Leads: A Tecnologia Mudou o Comercial</li><li>Prospecção e Vendas</li><li>Estruturação de Funis de Vendas</li><li>Marketing Digital: Implante um Funil de Vendas Instantâneo</li><li>Tráfego Pago Focado em Performance</li><li>Marketing de Aceleração: Acelere suas Vendas</li><li>Gamificação: Como Maximizar suas Vendas com esta Estratégia</li><li>Técnicas de Negociação High Ticket</li><li>Comportamento e Negócios: Ações de Crescimento no Setor de Vendas</li><li>Definição e Otimização de Métricas (CAC e ROI)</li></ol></details></li>
+          <li><details class="disc"><summary><span class="mono">07</span><span class="disc-t">Experiência do Cliente e Atendimento Humanizado</span><span class="disc-n mono">09 módulos</span><i aria-hidden="true"></i></summary>
+            <ol class="disc-mods"><li>Gestão da Experiência do Consumidor como Diferenciação do Seu Negócio</li><li>Design de Serviços e Jornada do Cliente</li><li>Qualidade de Atendimento para Professores</li><li>Gestão do Atendimento da Musculação</li><li>Atendimento Humanizado e Fidelização</li><li>Arquitetura Combinada ao Branding e ao Marketing Digital</li><li>Construção de Comunidades</li><li>Gestão de Crise, SAC e SLAs de Atendimento</li><li>Gestão da Experiência dos Clientes: O Impacto da Experiência dos Clientes na Retenção da Sua Academia</li></ol></details></li>
+          <li><details class="disc"><summary><span class="mono">08</span><span class="disc-t">Gestão Financeira e Escalabilidade Sustentável de Negócios</span><span class="disc-n mono">04 módulos</span><i aria-hidden="true"></i></summary>
+            <ol class="disc-mods"><li>Gestão Financeira e Indicadores</li><li>Modelagem de Negócios e Planejamento</li><li>Modelos de Gestão Financeira Aplicados ao Mercado Fitness</li><li>Construção e Expansão Sustentável de Negócios Fitness e Wellness (Estratégias Financeiras)</li></ol></details></li>
+          <li><details class="disc"><summary><span class="mono">09</span><span class="disc-t">Governança e Estratégia Corporativa</span><span class="disc-n mono">04 módulos</span><i aria-hidden="true"></i></summary>
+            <ol class="disc-mods"><li>Lições de Gestão com Segurança Jurídica</li><li>Gestão Trabalhista para Academias</li><li>Governança, Prospecção e Relatórios Executivos</li><li>Mercado Fitness, Riscos Jurídicos e Soluções Aplicadas</li></ol></details></li>
+          <li><details class="disc"><summary><span class="mono">10</span><span class="disc-t">Inovação Estratégica e Gestão de Projetos e Metodologias no Mercado Fitness</span><span class="disc-n mono">04 módulos</span><i aria-hidden="true"></i></summary>
+            <ol class="disc-mods"><li>Inovação Estratégica: Metodologias Ágeis para Potencializar Propostas, Produtos, Processos e Pessoas</li><li>Como Construir um Produto para Mercado Fitness e Wellness (High-End)</li><li>Como Construir um Produto para Mercado Fitness e Wellness (Low-Cost)</li><li>Como Construir um Produto para Mercado Fitness e Wellness (Studios)</li></ol></details></li>
+          <li><details class="disc"><summary><span class="mono">11</span><span class="disc-t">Gestão de Resultados: Musculação, Modalidades Coletivas e Ecossistema Wellness</span><span class="disc-n mono">08 módulos</span><i aria-hidden="true"></i></summary>
+            <ol class="disc-mods"><li>Gestão de Equipes: Os 5 Desafios do Líder pra Construir uma Equipe de Alto Desempenho</li><li>Engenharia de Grade, Headcount e Capacidade: Como Maximizar a Operação Fitness</li><li>Gestão de Equipes Multidisciplinares: Em Academias e Estúdios</li><li>Gestão Estratégica e Rentabilidade de Produtos (Coletivas e Microgyms)</li><li>Gestão Estratégica e Rentabilidade de Produtos (Musculação)</li><li>SOS Coordenador: Os 10 Pilares da Profissionalização do Coordenador</li><li>Gestão de Mix de Produtos: Fitness e Wellness</li><li>Gestão Aquática</li></ol></details></li>
+          <li><details class="disc"><summary><span class="mono">12</span><span class="disc-t">Projeto Final: Transformação Estratégica de um Negócio Fitness</span><span class="disc-n mono">01 módulo</span><i aria-hidden="true"></i></summary>
+            <ol class="disc-mods"><li>Business Case Fitness: Como Estruturar, Transformar e Escalar um Negócio</li></ol></details></li>
+        </ol>
+      </details>
+    </div>
+
+    <ul class="format" data-format aria-label="Dinâmica do MBA">
+      <li class="fmt">
+        <div class="fmt-top"><span class="mono">Carga horária</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <b>360h</b>
+      </li>
+      <li class="fmt">
+        <div class="fmt-top"><span class="mono">Duração</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="1.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></div>
+        <b>12 meses</b>
+      </li>
+      <li class="fmt" data-pendente="Confirmar com a coordenação a periodicidade das aulas ao vivo (antes: 1 final de semana por mês, com gravações)">
+        <div class="fmt-top"><span class="mono">Modalidade</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16.5V20"/><path d="M10.5 8.2v4.6l4-2.3z"/></svg></div>
+        <strong>EAD com aulas síncronas e assíncronas <small>(aulas ao vivo para interação e aprofundamento dos conteúdos, e Rota de Aprendizagem na plataforma com textos, vídeos e simuladores)</small></strong>
+      </li>
+      <li class="fmt" data-pendente="Validar com a coordenação e a FITNESS LINK: encontros de mentoria em grupo (antes: Fóruns executivos e encontros de mentoria em grupo)">
+        <div class="fmt-top"><span class="mono">Interação</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="5.5" r="2.5"/><circle cx="5" cy="18" r="2.5"/><circle cx="19" cy="18" r="2.5"/><path d="M10.8 7.7 6.2 15.8M13.2 7.7l4.6 8.1M7.5 18h9"/></svg></div>
+        <strong>Fóruns temáticos e atividades interativas no ambiente virtual</strong>
+      </li>
+    </ul>
+    <div class="cta-row" data-rv>
+      <a class="btn btn-ink" href="https://inscricao.posphorte.com.br/inscricao/pre-cadastro/mba-internacional-em-gestao-lideranca-e-negocios-fitness-e-wellness/4876/5" target="_blank" rel="noopener" data-inscricao>Quero transformar minha carreira
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <button class="btn-link" type="button" data-ementa-open aria-haspopup="dialog">Baixar Ementa Executiva em PDF
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<section class="sec global on-dark" id="sem-fronteiras" aria-labelledby="h-global">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="kicker"><span>07</span></p>
+        <h2 class="h-l" id="h-global" data-rv="lines">
+          <span class="ln"><span>Negócios Fitness Sem Fronteiras:</span></span>
+          <span class="ln"><span class="red">Gestão com Visão Global</span></span>
+        </h2>
+      </div>
+      <p class="lead" data-rv data-d="1">Conheça mercados e práticas internacionais do fitness e wellness. A formação aborda benchmarking, serviços digitais e estratégias de expansão para redes, studios e marcas.</p>
+    </div>
+
+    <figure class="routes" data-routes aria-hidden="true">
+      <svg viewBox="0 0 1200 550">
+        <g class="dots" data-dots></g>
+        <line class="gr eq" x1="0" y1="350" x2="1200" y2="350"/>
+        <path class="arc" data-r="1" pathLength="1" d="M540 410Q360 230 270 160"/>
+        <path class="arc" data-r="2" pathLength="1" d="M540 410Q760 170 888 105"/>
+        <path class="arc" data-r="3" pathLength="1" d="M270 160Q580 0 888 105"/>
+        <path class="flow" data-r="1" pathLength="1" d="M540 410Q360 230 270 160"/>
+        <path class="flow" data-r="2" pathLength="1" d="M540 410Q760 170 888 105"/>
+        <path class="flow" data-r="3" pathLength="1" d="M270 160Q580 0 888 105"/>
+        <circle class="halo" cx="540" cy="410" r="14"/><circle class="halo h2" cx="270" cy="160" r="14"/><circle class="halo h3" cx="888" cy="105" r="14"/>
+        <circle class="node" cx="540" cy="410" r="10"/><circle class="node" cx="270" cy="160" r="8"/><circle class="node" cx="888" cy="105" r="8"/>
+        <text class="lbl home" x="540" y="456" text-anchor="middle">BRASIL</text>
+        <text class="lbl" x="270" y="128" text-anchor="middle">EUA</text>
+        <text class="lbl" x="888" y="73" text-anchor="middle">EUROPA</text>
+      </svg>
+    </figure>
+
+    <div class="gcards" data-stagger>
+      <article class="gcard"data-route="1 2" data-rev>
+        <div class="gcard-top"><span class="mono">01</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
+        <h3>Benchmarking Global</h3>
+        <p>Compare mercados da América do Norte, Europa, Ásia e América Latina e avalie como adaptar práticas à realidade nacional.</p>
+      </article>
+      <article class="gcard"data-route="1 2 3">
+        <div class="gcard-top"><span class="mono">02</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+        <h3>Internacionalização de Serviços Digitais</h3>
+        <p>Estratégias para atuação transfronteiriça em consultorias online, produtos digitais e infoprodutos.</p>
+      </article>
+      <article class="gcard"data-route="1 2">
+        <div class="gcard-top"><span class="mono">03</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 20 20 4M11 4h9v9"/></svg></div>
+        <h3>Expansão e Internacionalização de Marcas</h3>
+        <p>Planejamento de expansão internacional para marcas e serviços fitness e wellness.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec tech on-dark" id="tecnologia" aria-labelledby="h-tech">
+  <div class="wrap">
+    <p class="kicker"><span>08</span>Tecnologia que já faz parte da gestão</p>
+    <h2 class="h-l" id="h-tech" data-rv="lines">
+          <span class="ln"><span>Inteligência Artificial no fitness:</span></span>
+      <span class="ln"><span class="mut">aplicações e limites.</span></span>
+    </h2>
+
+    <div class="tech-grid" data-tech>
+      <div>
+        <div class="tech-tabs" role="tablist" aria-label="Conteúdos de tecnologia e inteligência artificial">
+          <button class="tech-tab" role="tab" id="tt-1" aria-label="IA generativa" aria-controls="ts-1" aria-selected="true"><span class="mono" aria-hidden="true">01</span><strong>IA Generativa</strong><span id="tt-desc-1">Usos em gestão, marketing e processos.</span></button>
+          <button class="tech-tab" role="tab" id="tt-2" aria-label="CRM e WhatsApp" aria-controls="ts-2" aria-selected="false" tabindex="-1"><span class="mono" aria-hidden="true">02</span><strong>CRM + WhatsApp</strong><span id="tt-desc-2">Automação da jornada comercial e do relacionamento com clientes.</span></button>
+          <button class="tech-tab" role="tab" id="tt-3" aria-label="Wearables e dados" aria-controls="ts-3" aria-selected="false" tabindex="-1"><span class="mono" aria-hidden="true">03</span><strong>Wearables &amp; Dados</strong><span id="tt-desc-3">Tecnologias vestíveis e utilização estratégica de informações.</span></button>
+          <button class="tech-tab" role="tab" id="tt-4" aria-label="IA aplicada ao treinamento" aria-controls="ts-4" aria-selected="false" tabindex="-1"><span class="mono" aria-hidden="true">04</span><strong>IA aplicada ao treinamento</strong><span id="tt-desc-4">Compreensão das possibilidades tecnológicas e da importância da curadoria humana.</span></button>
+        </div>
+        <p class="tech-desc" id="tech-desc" data-tech-desc>Usos em gestão, marketing e processos.</p>
+      </div>
+
+      <div class="console">
+        <div class="console-bar"><span>Gestão fitness · <b data-console-name aria-live="polite">IA Generativa</b></span><span data-console-n aria-hidden="true">01 / 04</span></div>
+        <div class="scene" role="tabpanel" id="ts-1" aria-labelledby="tt-1" aria-describedby="tech-desc" tabindex="0">
+          <span class="s-label">Assistente de gestão</span>
+          <div class="prompt"><span class="typing" data-typing>Analise as visitas do mês e sugira ações de conversão</span></div>
+          <div class="skel"><i style="--w:92%;--k:0"></i><i style="--w:78%;--k:1"></i><i class="hl" style="--w:64%;--k:2"></i><i style="--w:84%;--k:3"></i></div>
+          <p class="s-note">A IA apoia tarefas; as decisões continuam com o gestor.</p>
+        </div>
+        <div class="scene" role="tabpanel" id="ts-2" aria-labelledby="tt-2" aria-describedby="tech-desc" tabindex="0" hidden>
+          <span class="s-label">Jornada comercial automatizada</span>
+          <ol class="flow">
+            <li style="--k:0" class="hot"><b>Novo lead</b><em>Formulário / anúncio</em></li>
+            <li style="--k:1"><b>Mensagem de boas-vindas</b><em>WhatsApp</em></li>
+            <li style="--k:2"><b>Agendamento da visita</b><em>CRM</em></li>
+            <li style="--k:3"><b>Follow-up</b><em>WhatsApp</em></li>
+            <li style="--k:4" class="hot"><b>Relacionamento contínuo</b><em>CRM</em></li>
+          </ol>
+        </div>
+        <div class="scene" role="tabpanel" id="ts-3" aria-labelledby="tt-3" aria-describedby="tech-desc" tabindex="0" hidden>
+          <span class="s-label">Dados de wearables · visão ilustrativa</span>
+          <svg class="chart" viewBox="0 0 520 180" aria-hidden="true">
+            <defs><linearGradient id="hrFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF3B3F" stop-opacity=".28"/><stop offset="1" stop-color="#FF3B3F" stop-opacity="0"/></linearGradient></defs>
+            <line class="grid" x1="0" y1="40" x2="520" y2="40"/><line class="grid" x1="0" y1="90" x2="520" y2="90"/><line class="grid" x1="0" y1="140" x2="520" y2="140"/>
+            <path class="area" d="M0 130 C40 128 60 110 90 112 S140 70 170 76 S220 40 250 52 S300 96 330 88 S380 50 410 58 S470 100 520 92 V180 H0Z"/>
+            <path class="curve" pathLength="1" d="M0 130 C40 128 60 110 90 112 S140 70 170 76 S220 40 250 52 S300 96 330 88 S380 50 410 58 S470 100 520 92"/>
+            <text x="0" y="172">INÍCIO</text><text x="470" y="172">FIM</text>
+          </svg>
+          <div class="chips"><span>Frequência cardíaca</span><span>Sono</span><span>Atividade</span><span>Ecossistemas de dados</span></div>
+        </div>
+        <div class="scene" role="tabpanel" id="ts-4" aria-labelledby="tt-4" aria-describedby="tech-desc" tabindex="0" hidden>
+          <span class="s-label">Tecnologia + curadoria humana</span>
+          <div class="curation">
+            <div class="cu-card"><span class="s-label">Sugestão gerada por IA</span><div class="skel"><i style="--w:90%;--k:0"></i><i style="--w:70%;--k:1"></i><i style="--w:80%;--k:2"></i></div></div>
+            <span class="cu-arrow" aria-hidden="true">→</span>
+            <div class="cu-card ok"><span class="s-label">Revisão do profissional</span><span class="cu-check">Curadoria humana</span></div>
+          </div>
+          <p class="s-note">A decisão técnica continua sendo do profissional.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sales" id="vendas" aria-labelledby="h-sales" data-sales>
+  <div class="sales-track">
+    <div class="sales-stage">
+      <div class="wrap">
+        <div class="sales-head on-dark" style="background:none">
+          <div>
+            <p class="kicker"><span>09</span>Da visita ao cliente</p>
+            <h2 class="h-l" id="h-sales">Entenda o <span class="red">processo de vendas.</span></h2>
+          </div>
+          <div class="sales-msg"><strong>Acompanhe cada etapa.</strong><p>Analise os custos de aquisição, atendimento e retenção de clientes.</p></div>
+        </div>
+
+        <div class="pipe" data-pipe>
+          <div class="pipe-line" aria-hidden="true"><i data-pipe-fill></i></div>
+          <ol class="pipe-steps">
+            <li class="pipe-step"><span class="pipe-dot" aria-hidden="true"></span><span class="mono">01</span><strong>Atração</strong><span class="pipe-tags"><em>Tráfego pago</em></span></li>
+            <li class="pipe-step"><span class="pipe-dot" aria-hidden="true"></span><span class="mono">02</span><strong>Lead</strong><span class="pipe-tags"><em>Funis de vendas</em></span></li>
+            <li class="pipe-step"><span class="pipe-dot" aria-hidden="true"></span><span class="mono">03</span><strong>Relacionamento</strong><span class="pipe-tags"><em>CRM</em><em>WhatsApp</em></span></li>
+            <li class="pipe-step"><span class="pipe-dot" aria-hidden="true"></span><span class="mono">04</span><strong>Venda</strong><span class="pipe-tags"><em>Negociação High Ticket</em></span></li>
+            <li class="pipe-step"><span class="pipe-dot" aria-hidden="true"></span><span class="mono">05</span><strong>Experiência</strong><span class="pipe-tags"><em>Jornada do cliente</em></span></li>
+            <li class="pipe-step"><span class="pipe-dot" aria-hidden="true"></span><span class="mono">06</span><strong>Retenção</strong><span class="pipe-tags"><em>Retenção</em></span></li>
+          </ol>
+          <div class="brackets">
+            <div class="bk" style="--a:0;--b:3" data-at="4"><div class="bk-line"></div><div class="bk-t"><b>CAC</b><span>quanto custa conquistar</span></div></div>
+            <div class="bk" style="--a:3;--b:5" data-at="6"><div class="bk-line"></div><div class="bk-t"><b>LTV</b><span>valor ao longo da relação</span></div></div>
+            <div class="bk r2 roi" style="--a:0;--b:5" data-at="7"><div class="bk-line"></div><div class="bk-t"><b>ROI</b><span>retorno de todo o investimento</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec xp" id="experiencia" aria-labelledby="h-xp">
+  <div class="wrap xp-grid">
+    <div class="xp-fig">
+      <div class="ph ph-experiencia" role="img" aria-label="Alunos animados durante uma aula coletiva"></div>
+      <div class="xp-badges" aria-hidden="true"><span>NPS</span><span>CSAT</span><span>Churn</span></div>
+    </div>
+    <div>
+      <p class="kicker"><span>10</span>Experiência também é estratégia</p>
+      <h2 class="h-l xp-title" id="h-xp" data-rv="lines">
+        <span class="ln"><span>A experiência também</span></span>
+        <span class="ln"><span class="red">faz parte da retenção.</span></span>
+      </h2>
+      <div class="xp-groups" data-rv data-d="1">
+        <div><h3>Desenho da experiência</h3><ul><li>Customer Experience</li><li>Service Design</li><li>Jornada do cliente</li><li>Atendimento humanizado</li><li>Comunidades</li></ul></div>
+        <div><h3>Medição e qualidade</h3><ul><li>SAC</li><li>SLAs</li><li>NPS</li><li>CSAT</li><li>Churn</li></ul></div>
+      </div>
+      <div class="chain" data-rv data-d="2"><b>Experiência</b><i>→</i><b>Retenção</b><i>→</i><b>Resultado financeiro</b><p>Acompanhe como experiência e retenção se relacionam com os resultados do negócio.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec nums" id="numeros" aria-labelledby="h-nums">
+  <div class="wrap on-dark" style="background:none">
+    <div class="sec-head">
+      <div>
+        <p class="kicker"><span>11</span>Entenda os números por trás do negócio</p>
+        <h2 class="h-l" id="h-nums" data-rv="lines">
+          <span class="ln"><span>Gestão sem números</span></span>
+          <span class="ln"><span>é apenas <span class="red">percepção.</span></span></span>
+        </h2>
+      </div>
+      <p class="lead" data-rv data-d="1">Conheça indicadores usados para orientar decisões de gestão.</p>
+    </div>
+    <div class="kpis" data-kpis>
+      <article class="kpi"><span class="mono">Aquisição</span><h3>CAC</h3><p>Custo de aquisição de cliente</p><svg viewBox="0 0 112 64" aria-hidden="true"><rect class="b" x="4" y="14" width="16" height="50"/><rect class="b" x="28" y="24" width="16" height="40"/><rect class="b" x="52" y="32" width="16" height="32"/><rect class="b r" x="76" y="40" width="16" height="24"/></svg></article>
+      <article class="kpi"><span class="mono">Retorno</span><h3>ROI</h3><p>Retorno sobre o investimento</p><svg viewBox="0 0 112 64" aria-hidden="true"><line class="g" x1="0" y1="63" x2="112" y2="63"/><path class="s r" pathLength="1" d="M2 58 24 50 44 52 64 34 84 28 108 8"/><circle class="dot" cx="108" cy="8" r="4"/></svg></article>
+      <article class="kpi"><span class="mono">Relacionamento</span><h3>LTV</h3><p>Valor do cliente ao longo da relação</p><svg viewBox="0 0 112 64" aria-hidden="true"><line class="g" x1="0" y1="63" x2="112" y2="63"/><path class="s" pathLength="1" d="M2 60 C30 58 40 44 60 38 S90 18 110 14"/></svg></article>
+      <article class="kpi"><span class="mono">Resultado</span><h3>DRE</h3><p>Demonstração do resultado do exercício</p><svg viewBox="0 0 112 64" aria-hidden="true"><path class="s" pathLength="1" d="M4 8H108M4 22H86M4 36H96M4 50H70"/><path class="s r" pathLength="1" d="M4 62H108"/></svg></article>
+      <article class="kpi"><span class="mono">Margem</span><h3 class="sm">Margem de contribuição</h3><p>O que cada venda deixa para cobrir os custos fixos</p><svg viewBox="0 0 112 64" aria-hidden="true"><rect class="b" x="10" y="8" width="38" height="56"/><rect class="b r" x="64" y="30" width="38" height="34"/></svg></article>
+      <article class="kpi"><span class="mono">Equilíbrio</span><h3 class="sm">Ponto de equilíbrio</h3><p>Onde receitas e custos se igualam</p><svg viewBox="0 0 112 64" aria-hidden="true"><path class="s" pathLength="1" d="M2 30 110 44"/><path class="s r" pathLength="1" d="M2 62 110 10"/><circle class="dot" cx="60.5" cy="37.6" r="4"/></svg></article>
+      <article class="kpi"><span class="mono">Operacional</span><h3>EBITDA</h3><p>Resultado operacional do negócio</p><svg viewBox="0 0 112 64" aria-hidden="true"><rect class="b" x="4" y="36" width="18" height="28"/><rect class="b" x="30" y="28" width="18" height="36"/><rect class="b" x="56" y="20" width="18" height="44"/><rect class="b r" x="82" y="10" width="18" height="54"/></svg></article>
+      <article class="kpi"><span class="mono">Capacidade</span><h3 class="sm">Capacidade operacional</h3><p>Quanto a estrutura comporta</p><svg viewBox="0 0 112 64" aria-hidden="true"><path class="s" pathLength="1" d="M14 60 A42 42 0 0 1 98 60"/><path class="s r" pathLength="1" d="M14 60 A42 42 0 0 1 82 30"/></svg></article>
+      <article class="kpi"><span class="mono">Rentabilidade</span><h3 class="sm">Rentabilidade</h3><p>Quanto o negócio retorna sobre o que investe</p><svg viewBox="0 0 112 64" aria-hidden="true"><circle class="s" pathLength="1" cx="56" cy="32" r="26"/><path class="s r" pathLength="1" d="M56 6 A26 26 0 0 1 80 42"/></svg></article>
+    </div>
+    <p class="nums-note">Os gráficos são ilustrativos e não representam valores reais.</p>
+  </div>
+</section>
+
+<section class="sec bcase" id="business-case" aria-labelledby="h-bc">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="kicker"><span>12</span>Projeto final</p>
+        <h2 class="h-l" id="h-bc" data-rv="lines">
+          <span class="ln"><span>Da estratégia para</span></span>
+          <span class="ln"><span>um negócio <span class="red">real.</span></span></span>
+        </h2>
+      </div>
+      <p class="lead" data-rv data-d="1">No projeto final, aplique os conhecimentos do MBA a um caso de negócio.</p>
+    </div>
+
+    <div class="bc" data-bc>
+      <ol class="bc-areas" data-bc-areas>
+        <li><span class="mono">01</span>Estratégia</li>
+        <li><span class="mono">02</span>Pessoas</li>
+        <li><span class="mono">03</span>Marketing</li>
+        <li><span class="mono">04</span>Tecnologia</li>
+        <li><span class="mono">05</span>Vendas</li>
+        <li><span class="mono">06</span>Finanças</li>
+        <li><span class="mono">07</span>Operação</li>
+      </ol>
+      <svg class="bc-lines" aria-hidden="true" data-bc-lines></svg>
+      <div class="bc-core" data-bc-core>
+        <div class="ph ph-bcase" role="img" aria-label="Profissional apresenta um projeto para a equipe em uma sala de reunião"></div>
+        <div class="bc-core-in">
+          <span class="mono">Projeto final</span>
+          <h3>Business Case Fitness</h3>
+          <h4>Transformação estratégica de um negócio fitness</h4>
+          <p>Estratégias para estruturar e transformar um negócio.</p>
+        </div>
+      </div>
+    </div>
+    <p class="bc-msg" data-rv>Integre estratégia, pessoas, marketing, tecnologia, vendas, finanças e operação.</p>
+    <div class="cta-row" data-rv>
+      <a class="btn btn-red" href="https://inscricao.posphorte.com.br/inscricao/pre-cadastro/mba-internacional-em-gestao-lideranca-e-negocios-fitness-e-wellness/4876/5" target="_blank" rel="noopener" data-inscricao>Quero transformar minha carreira
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec who" id="para-quem" aria-labelledby="h-who">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="kicker"><span>13</span>Perfis</p>
+        <h2 class="h-l" id="h-who" data-rv="lines">
+          <span class="ln"><span>Para quem é</span></span>
+          <span class="ln"><span>este <span class="red">MBA?</span></span></span>
+        </h2>
+      </div>
+      <p class="lead" data-rv data-d="1">Para graduados que atuam ou querem atuar na gestão de negócios fitness e wellness.</p>
+    </div>
+    <div class="who-grid" data-stagger>
+      <article class="who-card"><span class="mono">01</span><h3>Profissionais de Educação Física</h3><p>Que desejam sair de uma atuação exclusivamente técnica e avançar para coordenação, gestão e direção.</p></article>
+      <article class="who-card"><span class="mono">02</span><h3>Empresários e proprietários</h3><p>De academias, studios, boxes, centros esportivos e negócios de wellness que desejam profissionalizar a gestão.</p></article>
+      <article class="who-card"><span class="mono">03</span><h3>Gestores e coordenadores</h3><p>Que precisam atualizar sua visão sobre tecnologia, vendas, pessoas e operação.</p></article>
+      <article class="who-card"><span class="mono">04</span><h3>Profissionais de negócios</h3><p>Graduados em Administração, Marketing, Gestão Comercial e Economia interessados no mercado fitness.</p></article>
+      <article class="who-card"><span class="mono">05</span><h3>Profissionais da saúde</h3><p>Fisioterapeutas, nutricionistas, médicos e profissionais correlatos interessados em estruturar ou administrar negócios de saúde e wellness.</p></article>
+    </div>
+    <p class="swipe-hint mono">Arraste para ver os perfis →</p>
+    <div class="notice" data-rv><b>Importante</b><p>Este MBA é um curso de pós-graduação: para se inscrever, é necessário ter concluído uma graduação.</p></div>
+  </div>
+</section>
+
+<section class="sec career on-dark" id="carreira" aria-labelledby="h-career">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="kicker"><span>14</span>Ecossistema de oportunidades</p>
+        <h2 class="h-l" id="h-career" data-rv="lines">
+          <span class="ln"><span>Onde essa formação</span></span>
+          <span class="ln"><span>pode levar <span class="red">você.</span></span></span>
+        </h2>
+      </div>
+      <p class="lead" data-rv data-d="1">Conheça áreas de atuação em gestão no ecossistema fitness e wellness.</p>
+    </div>
+    <div class="metro" data-metro>
+      <div class="hub"><span class="mono">Ponto de partida</span><b>MBA em Gestão Fitness e Wellness</b></div>
+      <div class="mline" style="--c:#FF3B3F">
+        <p class="mline-name">Gestão de operações</p>
+        <ul class="stations"><li class="station" style="--k:0">Direção e Gestão de Academias</li><li class="station" style="--k:1">Coordenação de Operações</li><li class="station" style="--k:2">Gestão de Studios e Microgyms</li><li class="station" style="--k:3">Centros Aquáticos e Complexos Esportivos</li></ul>
+      </div>
+      <div class="mline" style="--c:#F4F4F2">
+        <p class="mline-name">Negócios</p>
+        <ul class="stations"><li class="station" style="--k:1">Consultoria Empresarial Fitness</li><li class="station" style="--k:2">Empreendedorismo</li><li class="station" style="--k:3">Franchising</li></ul>
+      </div>
+      <div class="mline" style="--c:#7D7E86">
+        <p class="mline-name">Corporativo, saúde &amp; wellness</p>
+        <ul class="stations"><li class="station" style="--k:2">Gestão de espaços fitness corporativos</li><li class="station" style="--k:3">Negócios de saúde e wellness</li></ul>
+      </div>
+    </div>
+    <p class="career-note">Possibilidades de atuação. Não constituem promessa de contratação ou de resultados financeiros.</p>
+  </div>
+</section>
+
+<section class="sec connect" id="conecta" aria-labelledby="h-connect">
+  <div class="wrap connect-grid">
+    <div>
+      <p class="kicker"><span>15</span>Visão integrada</p>
+      <h2 class="h-l" id="h-connect" data-rv="lines">
+        <span class="ln"><span>Formação que conecta</span></span>
+        <span class="ln"><span>toda a <span class="red">operação.</span></span></span>
+      </h2>
+      <p class="connect-msg" data-rv data-d="1">Gestão integrada conecta as áreas do negócio.</p>
+    </div>
+    <figure class="donut" data-donut aria-label="Cliente, equipe, marca, tecnologia, finanças e operação convergindo para a gestão fitness">
+      <svg viewBox="0 0 640 640" aria-hidden="true" data-donut-svg></svg>
+    </figure>
+  </div>
+</section>
+
+<section class="sec invest" id="investimento" aria-labelledby="h-invest">
+  <div class="wrap">
+    <p class="kicker"><span>16</span>Investimento</p>
+    <h2 class="h-l" id="h-invest" data-rv="lines">
+      <span class="ln"><span>Condições do <span class="red">MBA.</span></span></span>
+    </h2>
+    <ul class="price" data-stagger aria-label="Investimento e data de início">
+      <li class="pr">
+        <div class="pr-top"><span class="mono">Data de início</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="1.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></div>
+        <b>13/03</b>
+      </li>
+      <li class="pr">
+        <div class="pr-top"><span class="mono">Inscrição</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6.5A1.5 1.5 0 0 0 5 4.5v15A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5V8z"/><path d="M14 3v5h5M8.5 13h7M8.5 16.5h5"/></svg></div>
+        <b><small>R$</small>150,00</b>
+      </li>
+      <li class="pr hl">
+        <div class="pr-top"><span class="mono">Mensalidades</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="1.5"/><path d="M2.5 10h19M6 14.5h4"/></svg></div>
+        <b><em>18 x</em><small>R$</small>450,00</b>
+      </li>
+    </ul>
+    <div class="cta-row" data-rv>
+      <a class="btn btn-red" href="https://inscricao.posphorte.com.br/inscricao/pre-cadastro/mba-internacional-em-gestao-lideranca-e-negocios-fitness-e-wellness/4876/5" target="_blank" rel="noopener" data-inscricao>Quero transformar minha carreira
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <button class="btn-link" type="button" data-ementa-open aria-haspopup="dialog">Baixar Ementa Executiva em PDF
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<section class="sec final" id="proximo-passo" aria-labelledby="h-final">
+  <div class="ph ph-final" aria-hidden="true"></div>
+  <div class="wrap final-grid on-dark" style="background:none">
+    <div>
+      <p class="kicker"><span>17</span>Próximo passo</p>
+      <h2 class="h-l final-title" id="h-final" data-rv="lines">
+        <span class="ln"><span>O mercado fitness evoluiu.</span></span>
+        <span class="ln"><span>Atualize sua gestão.</span></span>
+      </h2>
+      <p class="lead final-text" data-rv data-d="1">Amplie sua visão sobre pessoas, dados e decisões de gestão no mercado fitness e wellness.</p>
+      <ul class="final-facts"><li>Início 13/03</li><li>360 horas</li><li>12 meses</li><li>EAD</li><li>Business Case Fitness</li></ul>
+      <div class="final-brand">
+        <div class="lockup" role="img" aria-label="Faculdade Phorte e FITNESS LINK">
+          <span class="lg"><img data-logo="phorte" src="https://posphorte.com.br/wp-content/uploads/2024/08/logo-faculdade.webp" alt="" width="188" height="106" loading="lazy"></span>
+          <i aria-hidden="true"></i>
+          <span class="lg fl"><img data-logo="fitnesslink" src="https://lh3.googleusercontent.com/d/1aWTS3wDKgoHFE1FD-AyJgIkcmsYedt9N=w600" alt="" width="570" height="438" loading="lazy"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-card" id="inscricao">
+      <h3>Converse com a equipe Phorte e FITNESS LINK</h3>
+      <p>Preencha seus dados para receber informações sobre o MBA.</p>
+      <div id="form-embed"></div>
+      <form id="form-inscricao" method="post" action="#" novalidate>
+        <input type="hidden" name="curso" value="MBA Internacional em Gestão, Liderança e Negócios Fitness e Wellness">
+        <div class="field-f"><label for="f-nome">Nome completo</label><input id="f-nome" name="nome" type="text" autocomplete="name" required placeholder="Seu nome"></div>
+        <div class="field-row">
+          <div class="field-f"><label for="f-email">E-mail</label><input id="f-email" name="email" type="email" autocomplete="email" required placeholder="voce@email.com"></div>
+          <div class="field-f"><label for="f-tel">WhatsApp</label><input id="f-tel" name="whatsapp" type="tel" autocomplete="tel" inputmode="tel" required placeholder="(11) 90000-0000"></div>
+        </div>
+        <div class="field-f"><label for="f-perfil">Seu perfil</label>
+          <select id="f-perfil" name="perfil" required>
+            <option value="" selected disabled>Selecione</option>
+            <option>Profissional de Educação Física</option>
+            <option>Empresário(a) / proprietário(a)</option>
+            <option>Gestor(a) / coordenador(a)</option>
+            <option>Profissional de negócios</option>
+            <option>Profissional da saúde</option>
+            <option>Outro</option>
+          </select>
+        </div>
+        <label class="check"><input type="checkbox" name="consentimento" required><span>Concordo em receber contato da Faculdade Phorte sobre o MBA, conforme a <a id="link-privacidade" href="#" data-pendente="Link da política">Política de Privacidade</a>.</span></label>
+        <button class="btn btn-red" type="submit">Quero fazer parte
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <a class="lockup" href="#topo" aria-label="Faculdade Phorte e FITNESS LINK — voltar ao topo">
+      <span class="lg"><img data-logo="phorte" src="https://posphorte.com.br/wp-content/uploads/2024/08/logo-faculdade.webp" alt="" width="188" height="106" loading="lazy"></span>
+      <i aria-hidden="true"></i>
+      <span class="lg fl"><img data-logo="fitnesslink" src="https://lh3.googleusercontent.com/d/1aWTS3wDKgoHFE1FD-AyJgIkcmsYedt9N=w600" alt="" width="570" height="438" loading="lazy"></span>
+    </a>
+    <span>MBA Internacional em Gestão, Liderança e Negócios Fitness e Wellness · Realização: Faculdade Phorte &amp; FITNESS LINK</span>
+    <nav aria-label="Rodapé"><a href="#dominar">Formação</a><a href="https://inscricao.posphorte.com.br/inscricao/pre-cadastro/mba-internacional-em-gestao-lideranca-e-negocios-fitness-e-wellness/4876/5" target="_blank" rel="noopener" data-inscricao>Inscrição</a><a id="link-privacidade-rodape" href="#">Política de Privacidade</a></nav>
+  </div>
+</footer>
+
+<div class="mcta" data-mcta><a class="btn btn-red" href="https://inscricao.posphorte.com.br/inscricao/pre-cadastro/mba-internacional-em-gestao-lideranca-e-negocios-fitness-e-wellness/4876/5" target="_blank" rel="noopener" data-inscricao>Quero escalar meu neg&#243;cio
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+
+<div class="modal" id="modal-ementa" data-modal hidden>
+  <div class="modal-bg" data-modal-close></div>
+  <div class="modal-box form-card" role="dialog" aria-modal="true" aria-labelledby="h-modal" tabindex="-1">
+    <button class="modal-x" type="button" data-modal-close aria-label="Fechar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <h3 id="h-modal">Receba o plano de disciplinas do MBA</h3>
+    <div id="form-embed-ementa"></div>
+    <form id="form-ementa" method="post" action="#" novalidate>
+      <input type="hidden" name="curso" value="MBA Internacional em Gestão, Liderança e Negócios Fitness e Wellness">
+      <input type="hidden" name="interesse" value="Ementa Executiva (PDF)">
+      <div class="field-f"><label for="m-nome">Nome</label><input id="m-nome" name="nome" type="text" autocomplete="name" required placeholder="Seu nome"></div>
+      <div class="field-f"><label for="m-email">E-mail</label><input id="m-email" name="email" type="email" autocomplete="email" required placeholder="voce@email.com"></div>
+      <div class="field-row">
+        <div class="field-f"><label for="m-cargo">Cargo/Empresa</label><input id="m-cargo" name="cargo_empresa" type="text" autocomplete="organization-title" required placeholder="Cargo · Empresa"></div>
+        <div class="field-f"><label for="m-tel">WhatsApp</label><input id="m-tel" name="whatsapp" type="tel" autocomplete="tel" inputmode="tel" required placeholder="(11) 90000-0000"></div>
+      </div>
+      <label class="check"><input type="checkbox" name="consentimento" required><span>Concordo em receber contato da Faculdade Phorte sobre o MBA, conforme a <a id="link-privacidade-modal" href="#" data-pendente="Link da política">Política de Privacidade</a>.</span></label>
+      <button class="btn btn-red" type="submit">Baixar Ementa Executiva em PDF
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"/></svg></button>
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </form>
+    <div class="modal-done" data-ementa-done hidden>
+      <a class="btn btn-red" data-ementa-pdf href="#" target="_blank" rel="noopener">Baixar Ementa Executiva em PDF
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"/></svg></a>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+(function(){
+  'use strict';
+
+  /* =========================================================
+     CONFIG — edite aqui
+     ========================================================= */
+  var CONFIG = {
+    formEndpoint: "COLE_AQUI_URL_DO_FORMULARIO",
+    // link de todos os botões de inscrição (banner, meio da página, investimento, CTA fixo mobile e rodapé)
+    inscricao: "https://inscricao.posphorte.com.br/inscricao/pre-cadastro/mba-internacional-em-gestao-lideranca-e-negocios-fitness-e-wellness/4876/5",
+    // modal "Baixar Ementa Executiva em PDF": os dados vão para o endpoint da ferramenta de captação
+    // e, só depois do envio, aparece o botão de download com o link do PDF
+    ementa: {
+      endpoint: "COLE_AQUI_URL_DE_CAPTACAO_DA_EMENTA",
+      pdf: "COLE_AQUI_URL_DO_PDF_DA_EMENTA"
+    },
+    // logos sobre fundo escuro. FITNESS LINK: versão vermelho e laranja (Drive). Antes de publicar,
+    // suba o PNG na Biblioteca de Mídia do WordPress e cole a URL aqui.
+    // Versão preto e vermelho (só para fundo claro): https://lh3.googleusercontent.com/d/1Ena0wcsxWhHaTgErL8yaweiTJDKKy6yS=w600
+    logos: {
+      phorte: "https://posphorte.com.br/wp-content/uploads/2024/08/logo-faculdade.webp",
+      fitnessLink: "https://lh3.googleusercontent.com/d/1aWTS3wDKgoHFE1FD-AyJgIkcmsYedt9N=w600"
+    },
+    links: {
+      "link-privacidade": "COLE_AQUI_URL_DA_POLITICA",
+      "link-privacidade-rodape": "COLE_AQUI_URL_DA_POLITICA",
+      "link-privacidade-modal": "COLE_AQUI_URL_DA_POLITICA"
+    },
+    abrirEmNovaAba: true,
+    revisao: false
+  };
+
+  var doc = document.documentElement;
+  var $ = function(s,c){return (c||document).querySelector(s)};
+  var $$ = function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+  var clamp = function(v,a,b){return Math.min(b,Math.max(a,v))};
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  var mqWide = window.matchMedia('(min-width: 900px)');
+  var mqStage = window.matchMedia('(min-width: 1000px) and (min-height: 640px)');
+  var pending = function(v){return !v || /^COLE_AQUI/.test(v)};
+  var hasIO = 'IntersectionObserver' in window;
+  var NS = 'http://www.w3.org/2000/svg';
+  function svgEl(tag, attrs, parent){
+    var el = document.createElementNS(NS, tag);
+    for (var k in attrs) el.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(el);
+    return el;
+  }
+  function onceVisible(el, cb, opts){
+    if (!el) return;
+    if (!hasIO || reduce){ cb(); return; }
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if (e.isIntersecting || e.boundingClientRect.top < 0){ io.disconnect(); cb(); }
+      });
+    }, opts || {threshold:.25});
+    io.observe(el);
+  }
+
+  if (CONFIG.revisao) doc.classList.add('review');
+
+  /* ---------- links configuráveis ---------- */
+  Object.keys(CONFIG.links).forEach(function(id){
+    var el = document.getElementById(id), url = CONFIG.links[id];
+    if (!el || pending(url)) return;
+    el.href = url; el.removeAttribute('data-pendente');
+    if (CONFIG.abrirEmNovaAba && /^https?:/i.test(url)){ el.target = '_blank'; el.rel = 'noopener'; }
+  });
+
+  /* ---------- botões de inscrição ---------- */
+  if (!pending(CONFIG.inscricao)) $$('[data-inscricao]').forEach(function(a){
+    a.href = CONFIG.inscricao;
+    if (CONFIG.abrirEmNovaAba){ a.target = '_blank'; a.rel = 'noopener'; } else { a.removeAttribute('target'); }
+  });
+
+  /* ---------- logos (Phorte, FITNESS LINK) ---------- */
+  [['phorte', CONFIG.logos.phorte], ['fitnesslink', CONFIG.logos.fitnessLink]].forEach(function(l){
+    if (pending(l[1])) return;
+    $$('img[data-logo="' + l[0] + '"]').forEach(function(im){ if (im.getAttribute('src') !== l[1]) im.src = l[1]; });
+  });
+
+  /* ---------- revelação no scroll ---------- */
+  $$('[data-stagger]').forEach(function(g){ Array.prototype.forEach.call(g.children, function(c, i){ c.style.setProperty('--i', i); }); });
+  var revealIO = hasIO ? new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (!e.isIntersecting && e.boundingClientRect.top > 0) return;
+      e.target.classList.add('is-in'); revealIO.unobserve(e.target);
+    });
+  }, {rootMargin:'0px 0px -10% 0px', threshold:.12}) : null;
+  $$('[data-rv],[data-stagger],[data-kpis],[data-metro],[data-partner],[data-format],[data-routes]').forEach(function(el){
+    if (revealIO && !reduce) revealIO.observe(el); else el.classList.add('is-in');
+  });
+
+  /* ---------- contadores ---------- */
+  $$('[data-count]').forEach(function(el){
+    var end = +el.getAttribute('data-count');
+    if (reduce || !hasIO) return;
+    el.textContent = '0';
+    onceVisible(el, function(){
+      var t0 = performance.now(), dur = 1500;
+      (function step(t){
+        var p = clamp((t - t0) / dur, 0, 1);
+        el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3)));
+        if (p < 1) requestAnimationFrame(step);
+      })(t0);
+    }, {threshold:.5});
+  });
+
+  /* ---------- 03. anéis do ecossistema ---------- */
+  (function(){
+    var fig = $('[data-rings]'), svg = $('[data-rings-svg]');
+    if (!svg) return;
+    var words = ['Wellness','Experiência','Dados','Negócios','Gestão'], C = 340;
+    for (var i = words.length - 1; i >= 0; i--){
+      var r = 112 + i * 50, last = i === words.length - 1;
+      var ring = svgEl('circle', {'class':'ring' + (last ? ' ring-out' : ''), cx:C, cy:C, r:r}, svg);
+      ring.style.transitionDelay = (.25 + i * .28) + 's';
+    }
+    svgEl('circle', {'class':'ring ring-core', cx:C, cy:C, r:74}, svg).style.transitionDelay = '0s';
+    var core = svgEl('text', {'class':'ring-core-t', x:C, y:C + 7, 'text-anchor':'middle'}, svg); core.textContent = 'FITNESS';
+    var pairs = [];
+    words.forEach(function(w, i){
+      var r = 112 + i * 50, last = i === words.length - 1, d = (.45 + i * .28) + 's';
+      var bg = svgEl('rect', {'class':'ring-lbl-bg'}, svg); bg.style.transitionDelay = d;
+      var t = svgEl('text', {'class':'ring-lbl' + (last ? ' out' : ''), x:C, y:C - r, 'text-anchor':'middle', 'dominant-baseline':'central'}, svg);
+      t.textContent = w.toUpperCase(); t.style.transitionDelay = d;
+      pairs.push([t, bg]);
+    });
+    // fundo de cada rótulo acompanha o tamanho real do texto (que muda no mobile)
+    function fit(){
+      pairs.forEach(function(p){
+        try { var b = p[0].getBBox(); p[1].setAttribute('x', b.x - 10); p[1].setAttribute('y', b.y - 3); p[1].setAttribute('width', b.width + 20); p[1].setAttribute('height', b.height + 6); } catch(e){}
+      });
+    }
+    fit();
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+    window.addEventListener('resize', fit);
+    onceVisible(fig, function(){ fig.classList.add('is-in'); }, {threshold:.3});
+  })();
+
+  /* ---------- 04. pilares expansíveis ---------- */
+  (function(){
+    var items = $$('[data-pillars] .pillar');
+    function set(idx){
+      if (!mqWide.matches) return;
+      items.forEach(function(p, i){ p.classList.toggle('is-active', i === idx); p.setAttribute('aria-expanded', i === idx); });
+    }
+    items.forEach(function(p, i){
+      p.addEventListener('click', function(){ set(i); });
+      p.addEventListener('focus', function(){ set(i); });
+      if (finePointer) p.addEventListener('mouseenter', function(){ set(i); });
+    });
+  })();
+
+  /* ---------- 06. carrossel de territórios ---------- */
+  (function(){
+    var root = $('[data-car]');
+    if (!root) return;
+    var track = $('[data-car-track]', root), cards = $$('.car-card', track), bar = $('[data-car-bar]', root), num = $('[data-car-n]', root);
+    var prev = $('[data-car-dir="-1"]', root), next = $('[data-car-dir="1"]', root);
+    function step(){ return cards[0].getBoundingClientRect().width + parseFloat(getComputedStyle(track).columnGap || 14); }
+    function update(){
+      var max = track.scrollWidth - track.clientWidth, w = track.clientWidth / track.scrollWidth;
+      var p = max > 0 ? track.scrollLeft / max : 0;
+      bar.style.width = (w * 100) + '%';
+      bar.style.transform = 'translateX(' + (p * (1 / w - 1) * 100) + '%)';
+      var i = Math.min(cards.length - 1, Math.round(track.scrollLeft / step()));
+      if (track.scrollLeft >= max - 4) i = Math.max(i, cards.length - Math.max(1, Math.floor(track.clientWidth / step())));
+      cards.forEach(function(c, k){ c.classList.toggle('is-cur', k === i); });
+      num.textContent = ('0' + (i + 1)).slice(-2);
+      prev.disabled = track.scrollLeft < 4; next.disabled = track.scrollLeft > max - 4;
+    }
+    function go(dir){ track.scrollBy({left: step() * dir, behavior: reduce ? 'auto' : 'smooth'}); }
+    prev.addEventListener('click', function(){ go(-1); });
+    next.addEventListener('click', function(){ go(1); });
+    track.addEventListener('keydown', function(e){
+      if (e.key === 'ArrowRight'){ e.preventDefault(); go(1); }
+      if (e.key === 'ArrowLeft'){ e.preventDefault(); go(-1); }
+    });
+    // arrastar com o mouse (no toque, a rolagem nativa já funciona)
+    var down = false, sx = 0, sl = 0, moved = false;
+    track.addEventListener('pointerdown', function(e){ if (e.pointerType !== 'mouse') return; down = true; moved = false; sx = e.clientX; sl = track.scrollLeft; });
+    window.addEventListener('pointermove', function(e){ if (!down) return; var dx = e.clientX - sx; if (Math.abs(dx) > 4){ moved = true; track.classList.add('is-drag'); } track.scrollLeft = sl - dx; });
+    window.addEventListener('pointerup', function(){
+      if (!down) return; down = false;
+      if (moved){ track.classList.remove('is-drag'); var i = Math.round(track.scrollLeft / step()); track.scrollTo({left: i * step(), behavior: reduce ? 'auto' : 'smooth'}); }
+    });
+    track.addEventListener('scroll', function(){ requestAnimationFrame(update); }, {passive:true});
+    window.addEventListener('resize', update);
+    update();
+  })();
+
+  /* ---------- 07. sem fronteiras: o card em foco acende suas rotas no mapa ---------- */
+  (function(){
+    var map = $('[data-routes]');
+    if (!map) return;
+    // mapa em pontos (Américas, Europa e África), contornos simplificados em [longitude, latitude]
+    // projeção: x = (lon + 140) * 6, y = (70 - lat) * 5  (viewBox 1200 × 550)
+    var LAND = [
+      [[-130,56],[-120,60],[-105,68],[-95,72],[-80,66],[-62,58],[-55,50],[-66,44],[-76,35],[-81,25],[-90,29],[-97,26],[-105,20],[-92,15],[-83,9],[-78,8],[-87,13],[-106,23],[-115,31],[-124,40],[-125,49]],
+      [[-55,60],[-44,60],[-22,70],[-20,80],[-60,80],[-72,77],[-58,70]],
+      [[-78,8],[-60,10],[-50,2],[-35,-6],[-38,-15],[-41,-22],[-48,-27],[-58,-35],[-65,-42],[-68,-55],[-74,-50],[-72,-38],[-71,-18],[-77,-10],[-81,-4],[-78,2]],
+      [[-10,36],[-9,43],[-1,46],[-4,48],[2,51],[8,54],[8,57],[5,59],[5,62],[14,68],[25,71],[40,68],[60,69],[60,40],[36,36],[28,36],[26,40],[20,40],[16,38],[12,44],[8,44],[3,42],[-5,36]],
+      [[-6,50],[1,51],[2,53],[-2,56],[-3,59],[-6,58],[-5,54]],
+      [[-17,21],[-17,15],[-12,8],[-8,4],[5,5],[9,4],[10,-2],[13,-12],[12,-17],[15,-27],[18,-34],[26,-34],[33,-26],[40,-15],[40,-5],[51,12],[43,12],[37,20],[33,28],[32,31],[20,32],[10,37],[-6,36],[-10,30],[-16,26]]
+    ];
+    function inside(lon, lat, poly){
+      for (var c = false, i = 0, j = poly.length - 1; i < poly.length; j = i++){
+        var a = poly[i], b = poly[j];
+        if ((a[1] > lat) !== (b[1] > lat) && lon < (b[0] - a[0]) * (lat - a[1]) / (b[1] - a[1]) + a[0]) c = !c;
+      }
+      return c;
+    }
+    var dots = $('[data-dots]', map);
+    for (var lat = 68; lat >= -40; lat -= 2.4){
+      for (var lon = -138; lon <= 58; lon += 2.4){
+        if (LAND.some(function(p){ return inside(lon, lat, p); })) svgEl('circle', {cx:((lon + 140) * 6).toFixed(1), cy:((70 - lat) * 5).toFixed(1), r:2.6}, dots);
+      }
+    }
+    var arcs = $$('.arc, .flow', map);
+    $$('.gcard[data-route]').forEach(function(card){
+      var ids = card.getAttribute('data-route').split(' ');
+      function on(){
+        map.classList.add('hl'); map.classList.toggle('is-rev', card.hasAttribute('data-rev'));
+        arcs.forEach(function(a){ a.classList.toggle('on', ids.indexOf(a.getAttribute('data-r')) > -1); });
+      }
+      function off(){ map.classList.remove('hl', 'is-rev'); }
+      card.addEventListener('mouseenter', on);
+      card.addEventListener('mouseleave', off);
+    });
+  })();
+
+  /* ---------- 08. console de tecnologia ---------- */
+  (function(){
+    var root = $('[data-tech]');
+    if (!root) return;
+    var tabs = $$('[role="tab"]', root), tablist = $('[role="tablist"]', root), name = $('[data-console-name]'), num = $('[data-console-n]'), desc = $('[data-tech-desc]');
+    var typing = $('[data-typing]');
+    function syncOrientation(){ tablist.setAttribute('aria-orientation', mqWide.matches ? 'vertical' : 'horizontal'); }
+    syncOrientation();
+    if (mqWide.addEventListener) mqWide.addEventListener('change', syncOrientation);
+    else if (mqWide.addListener) mqWide.addListener(syncOrientation);
+    if (typing) typing.style.setProperty('--n', typing.textContent.length);
+    function select(i, focus){
+      tabs.forEach(function(t, k){
+        var on = k === i;
+        t.setAttribute('aria-selected', on); t.tabIndex = on ? 0 : -1;
+        document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+      });
+      name.textContent = $('strong', tabs[i]).textContent;
+      num.textContent = '0' + (i + 1) + ' / 0' + tabs.length;
+      desc.textContent = $('span:last-child', tabs[i]).textContent;
+      if (focus) tabs[i].focus();
+      if (!mqWide.matches) tabs[i].scrollIntoView({block:'nearest', inline:'nearest', behavior: reduce ? 'auto' : 'smooth'});
+    }
+    tabs.forEach(function(t, i){
+      t.addEventListener('click', function(){ select(i); });
+      t.addEventListener('keydown', function(e){
+        var vertical = tablist.getAttribute('aria-orientation') === 'vertical';
+        var n = vertical ? ({ArrowDown:1, ArrowUp:-1}[e.key]) : ({ArrowRight:1, ArrowLeft:-1}[e.key]);
+        if (n){ e.preventDefault(); select((i + n + tabs.length) % tabs.length, true); }
+        else if (e.key === 'Home'){ e.preventDefault(); select(0, true); }
+        else if (e.key === 'End'){ e.preventDefault(); select(tabs.length - 1, true); }
+      });
+    });
+  })();
+
+  /* ---------- 09. máquina de vendas (palco sticky) ---------- */
+  var sales = (function(){
+    var sec = $('[data-sales]');
+    if (!sec) return null;
+    var steps = $$('.pipe-step', sec), fill = $('[data-pipe-fill]', sec), bks = $$('.bk', sec), pipe = $('[data-pipe]', sec);
+    var full = false, cur = 0;
+    function set(p){
+      p = clamp(p, 0, 1);
+      // 6 etapas + 1 momento final para o ROI
+      var n = Math.min(7, Math.floor(p * 7.4));
+      steps.forEach(function(s, i){ s.classList.toggle('is-on', i < Math.max(n, 1)); s.classList.toggle('is-cur', i === Math.min(Math.max(n, 1), 6) - 1); });
+      var f = clamp((Math.max(n, 1) - 1) / 5, 0, 1);
+      fill.style.transform = window.innerWidth >= 1000 ? 'scaleX(' + f + ')' : 'scaleY(' + f + ')';
+      bks.forEach(function(b){ b.classList.toggle('is-on', n >= +b.getAttribute('data-at')); });
+    }
+    function mode(){
+      full = mqStage.matches && !reduce;
+      doc.classList.toggle('sales-full', full);
+      fill.style.transform = '';
+      set(full ? 0 : cur);
+    }
+    function onScroll(vh){
+      if (!full) return;
+      var r = sec.getBoundingClientRect();
+      if (r.bottom < 0 || r.top > vh) return;
+      set(-r.top / (r.height - vh));
+    }
+    // modo leve: a jornada se monta sozinha quando entra na tela
+    onceVisible(pipe, function(){
+      if (full) return;
+      if (reduce){ cur = 1; set(1); return; }
+      var t0 = performance.now(), dur = 3200;
+      (function step(t){
+        cur = clamp((t - t0) / dur, 0, 1); if (!full) set(cur);
+        if (cur < 1) requestAnimationFrame(step);
+      })(t0);
+    }, {threshold:.3});
+    mode();
+    return {mode:mode, onScroll:onScroll};
+  })();
+
+  /* ---------- 12. linhas convergindo para o Business Case ---------- */
+  var bc = (function(){
+    var root = $('[data-bc]'), svg = $('[data-bc-lines]'), areas = $$('[data-bc-areas] li'), core = $('[data-bc-core]');
+    if (!root) return null;
+    function draw(){
+      while (svg.firstChild) svg.removeChild(svg.firstChild);
+      var R = root.getBoundingClientRect(), C = core.getBoundingClientRect();
+      svg.setAttribute('viewBox', '0 0 ' + R.width + ' ' + R.height);
+      var tx = C.left - R.left + C.width / 2, ty = C.top - R.top;
+      areas.forEach(function(a, i){
+        var A = a.getBoundingClientRect();
+        var x = A.left - R.left + A.width / 2, y = A.bottom - R.top;
+        var my = y + (ty - y) * .55;
+        var p = svgEl('path', {pathLength:1, d:'M' + x + ' ' + y + ' C' + x + ' ' + my + ' ' + tx + ' ' + (ty - (ty - y) * .45) + ' ' + tx + ' ' + ty}, svg);
+        if (i === 3) p.setAttribute('class', 'r');
+        p.style.transitionDelay = (i * .08) + 's';
+      });
+    }
+    draw();
+    onceVisible(root, function(){ root.classList.add('is-in'); }, {threshold:.2});
+    return {draw:draw};
+  })();
+
+  /* ---------- 15. anel que se completa ---------- */
+  (function(){
+    var fig = $('[data-donut]'), svg = $('[data-donut-svg]');
+    if (!svg) return;
+    var labels = ['Cliente','Equipe','Marca','Tecnologia','Finanças','Operação'], C = 320, R = 200, gap = 3;
+    var circ = 2 * Math.PI * R, segLen = circ / 6 - gap * Math.PI / 180 * R;
+    labels.forEach(function(l, i){
+      var start = -90 + i * 60 + gap / 2;
+      var s = svgEl('circle', {'class':'seg', cx:C, cy:C, r:R, transform:'rotate(' + start + ' ' + C + ' ' + C + ')'}, svg);
+      s.style.setProperty('--len', segLen.toFixed(1)); s.style.setProperty('--k', i);
+      var mid = (start + 30 - gap / 2) * Math.PI / 180, lr = R + 62;
+      var t = svgEl('text', {'class':'seg-lbl', x:(C + lr * Math.cos(mid)).toFixed(1), y:(C + lr * Math.sin(mid) + 5).toFixed(1), 'text-anchor':'middle'}, svg);
+      t.textContent = l.toUpperCase(); t.style.setProperty('--k', i);
+    });
+    svgEl('circle', {'class':'d-core', cx:C, cy:C, r:140}, svg);
+    var t1 = svgEl('text', {'class':'d-core-t', x:C, y:C - 4, 'text-anchor':'middle'}, svg); t1.textContent = 'Gestão';
+    var t2 = svgEl('text', {'class':'d-core-t', x:C, y:C + 28, 'text-anchor':'middle'}, svg); t2.textContent = 'Fitness';
+    onceVisible(fig, function(){ fig.classList.add('is-in'); }, {threshold:.35});
+  })();
+
+  /* ---------- máscara de WhatsApp (formulário final e modal) ---------- */
+  $$('#f-tel, #m-tel').forEach(function(tel){
+    tel.addEventListener('input', function(){
+      var v = tel.value.replace(/\D/g, '').slice(0, 11), out = v;
+      if (v.length > 2) out = '(' + v.slice(0,2) + ') ' + v.slice(2);
+      if (v.length > 7) out = '(' + v.slice(0,2) + ') ' + v.slice(2, v.length - 4) + '-' + v.slice(-4);
+      tel.value = out;
+    });
+  });
+
+  /* ---------- modal: ementa executiva (PDF) ---------- */
+  (function(){
+    var modal = $('[data-modal]');
+    if (!modal) return;
+    var box = $('.modal-box', modal), last = null;
+    function focusables(){ return $$('a[href],button:not([disabled]),input:not([type="hidden"]),select,textarea', box).filter(function(el){ return el.offsetParent !== null; }); }
+    function openM(){
+      last = document.activeElement;
+      modal.hidden = false; doc.style.overflow = 'hidden';
+      setTimeout(function(){ box.focus(); }, 30);
+    }
+    function closeM(){
+      modal.hidden = true; doc.style.overflow = '';
+      if (last && last.focus) last.focus();
+    }
+    $$('[data-ementa-open]').forEach(function(b){ b.addEventListener('click', openM); });
+    $$('[data-modal-close]', modal).forEach(function(b){ b.addEventListener('click', closeM); });
+    modal.addEventListener('keydown', function(e){
+      if (e.key === 'Escape'){ e.preventDefault(); closeM(); return; }
+      if (e.key !== 'Tab') return;
+      var f = focusables(); if (!f.length) return;
+      var a = f[0], z = f[f.length - 1];
+      if (e.shiftKey && (document.activeElement === a || document.activeElement === box)){ e.preventDefault(); z.focus(); }
+      else if (!e.shiftKey && document.activeElement === z){ e.preventDefault(); a.focus(); }
+    });
+
+    var form = $('#form-ementa', modal), embed = $('#form-embed-ementa', modal);
+    var done = $('[data-ementa-done]', modal), pdf = $('[data-ementa-pdf]', modal);
+    if (!form) return;
+    if (embed && embed.children.length){ form.hidden = true; return; }
+    var status = $('.form-status', form), send = $('button[type="submit"]', form);
+    // sem endpoint real, nada é enviado nem baixado: só aparece o aviso de pré-visualização
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      status.className = 'form-status';
+      if (!form.checkValidity()){
+        var bad = form.querySelector(':invalid');
+        status.textContent = 'Confira os campos destacados para continuar.'; status.classList.add('err');
+        if (bad) bad.focus();
+        return;
+      }
+      if (pending(CONFIG.ementa.endpoint)){
+        status.textContent = 'Pré-visualização: configure CONFIG.ementa.endpoint (ou cole o embed oficial) para enviar.';
+        return;
+      }
+      send.disabled = true; status.textContent = 'Enviando…';
+      fetch(CONFIG.ementa.endpoint, {method:'POST', body:new FormData(form), mode:'no-cors'}).then(function(){
+        send.disabled = false;
+        if (pending(CONFIG.ementa.pdf)){ status.textContent = 'Dados enviados. Configure CONFIG.ementa.pdf para liberar o download.'; return; }
+        pdf.href = CONFIG.ementa.pdf;
+        form.hidden = true; done.hidden = false; pdf.focus();
+      }).catch(function(){
+        send.disabled = false;
+        status.textContent = 'Não foi possível enviar agora. Tente novamente.'; status.classList.add('err');
+      });
+    });
+  })();
+
+  /* ---------- formulário ---------- */
+  (function(){
+    var form = $('#form-inscricao'), embed = $('#form-embed');
+    if (!form) return;
+    if (embed && embed.children.length){ form.hidden = true; return; }
+    if (!pending(CONFIG.formEndpoint)) form.action = CONFIG.formEndpoint;
+    var status = $('.form-status', form);
+    form.addEventListener('submit', function(e){
+      status.className = 'form-status';
+      if (!form.checkValidity()){
+        e.preventDefault();
+        var bad = form.querySelector(':invalid');
+        status.textContent = 'Confira os campos destacados para continuar.'; status.classList.add('err');
+        if (bad) bad.focus();
+        return;
+      }
+      if (pending(CONFIG.formEndpoint)){
+        e.preventDefault();
+        status.textContent = 'Pré-visualização: configure CONFIG.formEndpoint (ou cole o embed oficial) para enviar.';
+      }
+    });
+  })();
+
+  /* ---------- loop de scroll: parallax, linha de gestão, vendas, CTA mobile ---------- */
+  var par = $('[data-par]'), hero = $('#topo'), mcta = $('[data-mcta]'), formCard = $('#inscricao');
+  var rail = $('[data-rail]'), railFill = $('[data-rail-fill]'), railNow = $('[data-rail-now]'), railLinks = $$('[data-rail] a');
+  var railSecs = railLinks.map(function(a){ return document.getElementById(a.getAttribute('data-to')); });
+  var railStart = $('#mercado'), railEnd = $('#conecta');
+  var darkSecs = $$('.on-dark, .sales, .nums, .tech').filter(function(s){ return s.tagName === 'SECTION'; });
+  var ticking = false;
+
+  function update(){
+    ticking = false;
+    var y = window.scrollY, vh = window.innerHeight;
+    if (par && !reduce && mqWide.matches && y < vh * 1.2) par.style.transform = 'translate3d(0,' + (y * .12).toFixed(1) + 'px,0)';
+
+    if (rail && railStart && railEnd){
+      var a = railStart.getBoundingClientRect().top, b = railEnd.getBoundingClientRect().bottom;
+      var show = a < vh * .5 && b > vh * .5;
+      rail.classList.toggle('is-show', show);
+      if (show){
+        var curI = 0;
+        railSecs.forEach(function(s, i){ if (s && s.getBoundingClientRect().top < vh * .5) curI = i; });
+        railLinks.forEach(function(l, i){ l.classList.toggle('is-done', i < curI); l.classList.toggle('is-cur', i === curI); });
+        railNow.textContent = ('0' + (curI + 1)) + ' · ' + railLinks[curI].textContent;
+        var total = b - a, done = clamp((vh * .5 - a) / total, 0, 1);
+        railFill.style.transform = 'scaleY(' + done.toFixed(3) + ')';
+        var onDark = darkSecs.some(function(s){ var r = s.getBoundingClientRect(); return r.top < vh * .5 && r.bottom > vh * .5; });
+        rail.classList.toggle('on-dark-bg', onDark);
+      }
+    }
+
+    if (sales) sales.onScroll(vh);
+
+    if (mcta){
+      var heroEnd = hero.offsetTop + hero.offsetHeight - vh * .3, fr = formCard.getBoundingClientRect();
+      mcta.classList.toggle('is-show', y > heroEnd && !(fr.top < vh && fr.bottom > 0));
+    }
+  }
+  function onScroll(){ if (!ticking){ ticking = true; requestAnimationFrame(update); } }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  var rT;
+  window.addEventListener('resize', function(){
+    clearTimeout(rT);
+    rT = setTimeout(function(){ if (sales) sales.mode(); if (bc) bc.draw(); if (!mqWide.matches && par) par.style.transform = ''; onScroll(); }, 120);
+  });
+  window.addEventListener('load', function(){ if (bc) bc.draw(); });
+  update();
+})();
+</script>
+</body>
+</html>

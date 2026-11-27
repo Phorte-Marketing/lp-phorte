@@ -1,0 +1,2634 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pós-Graduação em Personal Trainer Internacional | Faculdade Phorte, FITNESS LINK e NASM</title>
+<meta name="description" content="Pós-Graduação em Personal Trainer Internacional — Realização: FITNESS LINK &amp; Faculdade Phorte | Partner International: NASM. Biomecânica, prescrição baseada em evidências, Modelo OPT™, gestão de carreira e atuação presencial e digital. 360h, EAD, aulas ao vivo.">
+<meta property="og:title" content="Domine a ciência do movimento | Personal Trainer Internacional | Faculdade Phorte">
+<meta name="theme-color" content="#0B0B0C">
+<script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1648542036561-e1d66a5ae2b1?w=1600&q=65&auto=format&fit=crop" media="(min-width:900px)">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1648542036561-e1d66a5ae2b1?w=900&q=62&auto=format&fit=crop" media="(max-width:899px)">
+
+
+<style>
+/* =====================================================================
+   GUIA RÁPIDO DE EDIÇÃO
+   (fica dentro do CSS de propósito: assim não aparece em prévias de link)
+   =====================================================================
+   • WordPress .......... cole o arquivo inteiro num bloco HTML. Todo o CSS é escopado em #pti,
+                          então o tema não altera cores/fontes da página (e vice-versa).
+   • Prévia do link ..... (WhatsApp, Discord, LinkedIn) defina a "Meta descrição" e a imagem de
+                          compartilhamento no plugin de SEO da página (Yoast / Rank Math).
+                          O WordPress ignora o <head> deste arquivo.
+   • Foto do banner ..... procure "FOTO DO BANNER" neste CSS (é background, não <img>).
+                          Ao trocar, ajuste os pontos da camada técnica .hud (viewBox 1500x1000 = foto 3:2).
+   • Fotos dos blocos ... procure "FOTOS DAS SEÇÕES" neste CSS (.ph-apply = bloco 05; .ph-f1 a .ph-f4 = bloco 09).
+   • Professores ........ procure "FOTOS DOS PROFESSORES" neste CSS (.pf-rs, .pf-ae...). Também são
+                          background. Esp. Leticia Toledo ainda sem foto. Confirmar se "CPT NASM" é um
+                          docente à parte ou a certificação de um dos nomes.
+   • Logos .............. CONFIG.logos (Phorte, FITNESS LINK e NASM Partner International). Enquanto
+                          FITNESS LINK e NASM não tiverem URL, aparecem os nomes em texto (data-pendente).
+                          Use versões claras/negativas: todos os logos ficam sobre fundo escuro.
+   • Sem header próprio . o menu é o do site. As marcas ficam no topo do banner (.brandbar).
+   • Validação .......... o card NASM (#nasm), os selos do banner e o bloco de autoridade estão com
+                          data-pendente: afirmações sobre MEC, NASM e atuação internacional a validar.
+   • Duração do curso ... NÃO exibida de propósito (9 x 12 meses a confirmar).
+   • Inscrição .......... todos os botões "Garantir Minha Vaga" e o link "Inscrição" do rodapé têm
+                          data-inscricao e apontam para inscricao.posphorte.com.br (procure "data-inscricao").
+   • Início e valores ... 13/03 · Inscrição R$ 150,00 · 18 x R$ 450,00 — aparecem no banner (.hero-stats),
+                          no bloco 14 (.facts-inv) e nos selos do bloco 15 (.final-facts).
+   • Formulário/links ... objeto CONFIG no início do <script> (fim do arquivo):
+                          formEndpoint = URL do formulário oficial, ou cole o embed em <div id="form-embed">.
+   • Matriz (PDF) ....... o botão "Baixar Matriz Curricular Completa (PDF)" abre um modal de captação.
+                          Configure CONFIG.matriz.endpoint e CONFIG.matriz.pdf, ou cole o embed oficial
+                          em <div id="form-embed-matriz">. Sem isso o modal só mostra aviso.
+   • Cupom raspadinha ... bloco <section id="cupomRaspadinha"> logo depois do bloco 14 (valores). Edite só o
+                          CONFIG dentro dele (validade 30/11/2026, cupons 20/25/30%, taxa R$ 150,00).
+                          Depois da validade ele some sozinho. Ajuste visual: seção "22" deste CSS.
+   • Cores .............. seção "1. TOKENS" (--red = vermelho institucional Phorte).
+   • Pendências ......... elementos com data-pendente. CONFIG.revisao = true destaca todos.
+   ===================================================================== */
+
+/* =========================================================
+   1. TOKENS
+   ========================================================= */
+#pti{
+  --ink:#0B0B0C;
+  --ink-2:#121214;
+  --ink-3:#1B1B1E;
+  --graphite:#2A2A2E;
+  --paper:#EDECE8;
+  --warm:#F2EFE9;
+  --white:#FAFAF8;
+  --text:#121214;
+  --muted:#5F5F66;
+  --soft:#9A9AA1;
+  --on-dark:#F4F4F2;
+  --on-dark-muted:rgba(244,244,242,.62);
+  --red:#D7141A;
+  --red-deep:#B30F14;
+  --red-hi:#FF3B3F;           /* vermelho para texto pequeno sobre preto (contraste) */
+  --line:rgba(18,18,20,.12);
+  --line-d:rgba(244,244,242,.12);
+  --wrap:1320px;
+  --g:clamp(16px,4vw,48px);
+  --hh:0px;                   /* sem header fixo próprio: o menu do site não é fixo */
+  --display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --sans:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Consolas,monospace;
+  --ease:cubic-bezier(.2,.8,.2,1);
+  --ease-io:cubic-bezier(.7,0,.2,1);
+}
+
+/* =========================================================
+   2. BASE
+   ========================================================= */
+#pti *,#pti *::before,#pti *::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+#pti{margin:0}
+#pti{background:var(--white);color:var(--text);font-family:var(--sans);font-size:17px;line-height:1.6;font-weight:400;letter-spacing:normal;text-align:left;-webkit-font-smoothing:antialiased;overflow-x:clip;position:relative}
+#pti img,#pti svg{display:block;max-width:100%}
+#pti img{height:auto}
+#pti a{color:inherit;text-decoration:none}
+/* neutraliza estilos do tema do WordPress (cor, fonte e margens de títulos, parágrafos e listas) */
+#pti h1,#pti h2,#pti h3,#pti h4{color:inherit;font-family:inherit;font-size:inherit;font-weight:700;line-height:1.08;letter-spacing:-.02em;text-transform:none;text-align:inherit;padding:0;border:0;background:none}
+#pti p,#pti li,#pti dd,#pti blockquote,#pti figcaption,#pti label,#pti strong,#pti span{color:inherit;font-family:inherit}
+#pti p,#pti li{font-size:inherit;line-height:inherit;padding:0}
+#pti li{margin:0}
+#pti li::before,#pti li::marker{color:inherit}
+#pti h1,#pti h2,#pti h3,#pti p,#pti figure,#pti blockquote,#pti ol,#pti ul,#pti dl,#pti dd{margin:0}
+#pti ol,#pti ul{padding:0;list-style:none}
+#pti button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+#pti [id]{scroll-margin-top:calc(var(--hh) + 16px)}
+#pti ::selection{background:var(--red);color:#fff}
+#pti :focus-visible{outline:2px solid var(--red);outline-offset:3px}
+#pti .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* =========================================================
+   3. UTILITÁRIOS
+   ========================================================= */
+#pti .wrap{width:100%;max-width:calc(var(--wrap) + var(--g)*2);margin:0 auto;padding:0 var(--g)}
+#pti .sec{position:relative;padding:clamp(72px,9vw,128px) 0}
+#pti .dark{background:var(--ink);color:var(--on-dark)}
+#pti .mono{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+#pti .red{color:var(--red)}
+#pti .dark .red{color:var(--red-hi)}
+
+/* rótulo técnico de seção: [02] — Contexto */
+#pti .kicker{display:flex;align-items:center;gap:14px;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:clamp(24px,3vw,40px)}
+#pti .kicker span{color:var(--red);font-weight:500}
+#pti .kicker::after{content:"";flex:0 0 56px;height:1px;background:currentColor;opacity:.4}
+#pti .dark .kicker{color:var(--on-dark-muted)}
+#pti .dark .kicker span{color:var(--red-hi)}
+
+/* tipografia display */
+#pti .d-xl,#pti .d-l,#pti .d-m{font-family:var(--display);font-stretch:72%;font-weight:800;text-transform:uppercase;line-height:.9;letter-spacing:-.005em}
+#pti .d-l{font-size:clamp(34px,5vw,80px)}
+#pti .d-m{font-size:clamp(26px,3.2vw,50px);line-height:.94}
+#pti .ln{display:block;overflow:hidden;padding-top:.22em;margin-top:-.22em;padding-bottom:.04em;margin-bottom:-.04em}
+#pti .ln>span{display:block}
+#pti .lead{font-size:clamp(18px,1.5vw,21px);line-height:1.55}
+/* ™ menor nos títulos display (Modelo OPT™) */
+#pti .tm{font-size:.42em;vertical-align:.95em;margin-left:.03em;letter-spacing:0;line-height:0}
+
+/* botões */
+#pti .btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:58px;padding:0 28px;font-family:var(--sans);font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border-radius:2px;overflow:hidden;isolation:isolate;transition:color .35s var(--ease)}
+#pti .btn svg{width:18px;height:18px;flex:none;transition:transform .45s var(--ease)}
+#pti .btn::before{content:"";position:absolute;inset:0;z-index:-1;transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease)}
+#pti .btn:hover::before{transform:scaleX(1);transform-origin:left}
+#pti .btn:hover svg{transform:translateX(5px)}
+#pti .btn-red{background:var(--red);color:#fff}
+#pti .btn-red::before{background:var(--red-deep)}
+#pti .btn-ink{background:var(--ink);color:#fff}
+#pti .btn-ink::before{background:var(--red)}
+#pti .btn-line{border:1px solid currentColor}
+#pti .btn-line::before{background:currentColor}
+#pti .btn-sm{min-height:44px;padding:0 18px;font-size:12px;gap:10px}
+#pti .section-cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px;margin:0 auto clamp(48px,6vw,84px)}
+#pti .section-cta .mono{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--muted)}
+@media (max-width:899px){#pti .section-cta .btn{width:100%;justify-content:center;text-align:center}}
+
+/* botão secundário (texto sublinhado) */
+#pti .btn-link{display:inline-flex;align-items:center;gap:10px;min-height:44px;font-family:var(--sans);font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;text-align:left;line-height:1.3;border-bottom:1px solid currentColor;transition:color .3s,border-color .3s}
+#pti .btn-link svg{width:18px;height:18px;flex:none;transition:transform .45s var(--ease)}
+#pti .btn-link:hover{color:var(--red)}
+#pti .dark .btn-link:hover,#pti .hero .btn-link:hover{color:var(--red-hi)}
+#pti .btn-link:hover svg{transform:translateY(3px)}
+
+/* lockup das três marcas: Faculdade Phorte | FITNESS LINK | NASM (mesma altura óptica, separadas por fios) */
+#pti .lockup{display:flex;align-items:center;gap:clamp(12px,1.4vw,18px);--lh:40px;color:#fff}
+#pti .lockup>i{flex:none;width:1px;height:calc(var(--lh) * .8);background:rgba(255,255,255,.32)}
+#pti .lg{display:flex;align-items:center;height:var(--lh);flex:none}
+#pti .lg img{height:100%;width:auto;max-width:none}
+#pti .lg.fl img,#pti .lg.nasm img{height:calc(var(--lh) * .8);max-width:calc(var(--lh) * 4)}
+/* nomes em texto — reservas dos logos da FITNESS LINK e da NASM até os arquivos oficiais serem informados */
+#pti .lg-word{display:flex;flex-direction:column;justify-content:center;font-family:var(--display);font-stretch:118%;font-weight:800;font-size:calc(var(--lh) * .36);line-height:.92;letter-spacing:.02em;text-transform:uppercase;color:#fff;white-space:nowrap}
+#pti .lg-word.nasm>span:first-child{font-size:1.5em;letter-spacing:.12em;line-height:.9}
+#pti .lg-word.nasm>span+span{margin-top:.35em;font-family:var(--mono);font-stretch:100%;font-weight:500;font-size:.52em;letter-spacing:.16em}
+
+/* revelação no scroll (só com JS e sem redução de movimento) */
+.js #pti [data-rv]{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform 1.1s var(--ease)}
+.js #pti [data-rv].is-in{opacity:1;transform:none}
+.js #pti [data-rv="lines"]{opacity:1;transform:none}
+.js #pti [data-rv="lines"] .ln>span{transform:translateY(115%);transition:transform 1.1s var(--ease)}
+.js #pti [data-rv="lines"].is-in .ln>span{transform:none}
+.js #pti [data-rv="lines"] .ln:nth-child(2)>span{transition-delay:.09s}
+.js #pti [data-rv="lines"] .ln:nth-child(3)>span{transition-delay:.18s}
+.js #pti [data-rv="lines"] .ln:nth-child(4)>span{transition-delay:.27s}
+.js #pti [data-rv="mask"]{opacity:1;transform:none;clip-path:inset(100% 0 0 0);transition:clip-path 1.4s var(--ease-io)}
+.js #pti [data-rv="mask"].is-in{clip-path:inset(0 0 0 0)}
+.js #pti [data-rv="mask"] .ph{transform:scale(1.14);transition:transform 2s var(--ease)}
+.js #pti [data-rv="mask"].is-in .ph{transform:scale(1)}
+.js #pti [data-rv][data-d="1"]{transition-delay:.12s}
+.js #pti [data-rv][data-d="2"]{transition-delay:.24s}
+.js #pti [data-rv][data-d="3"]{transition-delay:.36s}
+
+/* =========================================================
+   4. CABEÇALHO INSTITUCIONAL (no topo do banner, rola junto — sem header fixo: o menu é o do site)
+   ========================================================= */
+#pti .brandbar{position:relative;z-index:4;padding-top:clamp(18px,2.4vw,28px);padding-bottom:clamp(14px,1.6vw,20px)}
+#pti .brandbar-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 32px;padding-bottom:clamp(14px,1.6vw,20px);border-bottom:1px solid var(--line-d)}
+#pti .brandbar .lockup{animation:rise .9s var(--ease) .2s both}
+#pti .realiza{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;line-height:1.6;color:var(--on-dark-muted);animation:rise .9s var(--ease) .35s both}
+#pti .realiza b{color:#fff;font-weight:500}
+#pti .realiza i{font-style:normal;color:var(--red-hi);padding:0 .5em}
+@media (max-width:599px){
+  #pti .brandbar .lockup{--lh:30px}
+  #pti .realiza{font-size:10px;letter-spacing:.08em}
+}
+
+/* =========================================================
+   5. HERO
+   ========================================================= */
+#pti .hero{position:relative;min-height:100vh;min-height:100svh;background:var(--ink);color:var(--on-dark);overflow:hidden;display:flex;flex-direction:column}
+#pti .hero-media{position:absolute;top:0;right:0;width:62%;height:100vh;height:100svh;max-height:100%;overflow:hidden;--ox:.3}
+#pti .hero-par{position:absolute;left:0;right:0;top:-6%;height:112%;will-change:transform;container-type:size}
+/* caixa 3:2 que "cobre" a área como object-fit:cover, mas permite alinhar a camada técnica com a foto em qualquer recorte */
+#pti .hero-frame{position:absolute;inset:0;left:calc((100cqw - max(100cqw,150cqh)) * var(--ox));top:calc((100cqh - max(100cqh,66.667cqw)) * .5);width:max(100cqw,150cqh);height:max(100cqh,66.667cqw)}
+/* FOTO DO BANNER: troque as URLs abaixo (desktop e mobile). Fica no CSS, e não em <img>, para o WordPress
+   e plugins de otimização/lazy-load não reescreverem a imagem. */
+#pti .hero-frame{background:var(--ink-3) url("https://images.unsplash.com/photo-1648542036561-e1d66a5ae2b1?w=1600&q=65&auto=format&fit=crop") center/cover no-repeat;animation:heroZoom 2.2s var(--ease) both}
+@media (max-width:899px){#pti .hero-frame{background-image:url("https://images.unsplash.com/photo-1648542036561-e1d66a5ae2b1?w=900&q=62&auto=format&fit=crop")}}
+#pti .hero-frame .hud{position:absolute;inset:0;width:100%;height:100%}
+/* entrada do banner só com CSS (não depende de JavaScript) */
+#pti .hero-media{animation:heroMask 1.4s var(--ease-io) both}
+@keyframes heroMask{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes heroZoom{from{transform:scale(1.12)}to{transform:none}}
+/* FOTOS DAS SEÇÕES: troque as URLs aqui. Também ficam no CSS (e não em <img>) para o WordPress não removê-las.
+   .ph-apply = bloco 05 (aplicação) · .ph-f1 a .ph-f4 = bloco 09 (campo de atuação, na ordem das abas) */
+#pti .ph{background:var(--graphite) center/cover no-repeat}
+#pti .ph-apply{background-image:url("https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1400&q=70&auto=format&fit=crop");background-position:50% 40%}
+#pti .ph-f1{background-image:url("https://images.unsplash.com/photo-1758875569256-f37c438cac65?w=1100&q=70&auto=format&fit=crop")}
+#pti .ph-f2{background-image:url("https://images.unsplash.com/photo-1758599879792-d6d5d4e3289c?w=1100&q=70&auto=format&fit=crop");background-position:58% 50%}
+#pti .ph-f3{background-image:url("https://images.unsplash.com/photo-1758875569414-120ebc62ada3?w=1100&q=70&auto=format&fit=crop")}
+#pti .ph-f4{background-image:url("https://images.unsplash.com/photo-1776710669732-177e69dd582d?w=1100&q=70&auto=format&fit=crop");background-position:40% 50%}
+#pti .hero-media::after{content:"";position:absolute;inset:0;pointer-events:none;background:
+  linear-gradient(90deg,var(--ink) 0%,rgba(11,11,12,.72) 22%,rgba(11,11,12,.1) 58%,rgba(11,11,12,.25) 100%),
+  linear-gradient(0deg,var(--ink) 0%,rgba(11,11,12,0) 34%)}
+/* camada técnica: análise biomecânica */
+#pti .hud{pointer-events:none}
+#pti .hud .bone{stroke:rgba(255,255,255,.78);stroke-width:2.2;fill:none;stroke-dasharray:1;stroke-dashoffset:1}
+#pti .hud .joint{fill:none;stroke:#fff;stroke-width:2.4;opacity:0;transform-box:fill-box;transform-origin:center}
+#pti .hud .joint-c{fill:var(--red);opacity:0}
+#pti .hud .arc{stroke:var(--red-hi);stroke-width:3;fill:rgba(215,20,26,.16);opacity:0}
+#pti .hud .frame{stroke:rgba(255,255,255,.55);stroke-width:2;fill:none;opacity:0}
+#pti .hud text{font-family:var(--mono);fill:#fff;font-size:20px;letter-spacing:.06em;opacity:0}
+#pti .hud .plumb{stroke:rgba(255,255,255,.35);stroke-width:1.5;stroke-dasharray:6 8;opacity:0}
+#pti .hero-media .bone{animation:draw 1.1s var(--ease) calc(1.3s + var(--bd,0s)) forwards}
+#pti .hero-media .joint,#pti .hero-media .joint-c{animation:pop .6s var(--ease) 1.9s forwards}
+#pti .hero-media .arc,#pti .hero-media .hud text{animation:fade .8s ease 2.2s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes pop{from{opacity:0;transform:scale(.3)}to{opacity:1;transform:scale(1)}}
+@keyframes fade{to{opacity:1}}
+#pti .hero-read{position:absolute;z-index:2;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.75);display:flex;align-items:center;gap:10px}
+#pti .hero-read i{width:7px;height:7px;border-radius:50%;background:var(--red-hi);animation:blink 1.6s infinite}
+#pti .hero-read--t{top:calc(var(--hh) + 128px);right:var(--g)}
+@keyframes blink{50%{opacity:.25}}
+
+#pti .hero-in{position:relative;z-index:3;flex:1;display:flex;flex-direction:column;justify-content:center;padding-top:clamp(20px,3vh,40px);padding-bottom:36px}
+/* título em dois níveis: nome do curso (impacto) + promessa (apoio), para o H1 longo não pesar no banner */
+#pti .hero-title{font-family:var(--display);text-transform:uppercase;font-weight:800;font-stretch:70%;font-size:clamp(48px,min(7vw,9.2vh),112px);line-height:.84;letter-spacing:-.01em;margin-bottom:0}
+#pti .hero-title .ht-pre{display:flex;align-items:center;gap:12px;font-family:var(--mono);font-stretch:100%;font-weight:400;font-size:12px;line-height:1.2;letter-spacing:.24em;color:var(--on-dark-muted);margin-bottom:max(.2em,16px)}
+#pti .hero-title .ht-pre::before{content:"";width:10px;height:10px;background:var(--red);flex:none}
+#pti .hero-sub-title{display:block;max-width:34ch;margin:16px 0 20px;font-family:var(--display);font-stretch:78%;font-weight:700;font-size:clamp(20px,min(2.1vw,3.4vh),32px);line-height:1.02;letter-spacing:0;color:#fff;text-transform:uppercase;animation:rise 1s var(--ease) .55s both}
+#pti .hero-lead{max-width:50ch;color:var(--on-dark-muted);font-size:clamp(16px,1.25vw,18px);line-height:1.5;margin-bottom:clamp(20px,3vh,28px)}
+/* selos */
+#pti .seals{display:grid;grid-template-columns:repeat(3,1fr);max-width:680px;border-top:1px solid var(--line-d);border-bottom:1px solid var(--line-d);margin-bottom:clamp(22px,3.2vh,30px)}
+#pti .seals li{display:flex;flex-direction:column;gap:8px;padding:12px 14px 13px;border-left:1px solid var(--line-d);font-size:12.5px;line-height:1.42;color:var(--on-dark-muted)}
+#pti .seals li:first-child{border-left:0;padding-left:0}
+#pti .seals svg{width:22px;height:22px;flex:none;fill:none;stroke:var(--red-hi);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+#pti .seals b{color:#fff;font-weight:600}
+@media (max-width:1099px) and (min-width:900px){#pti .seals{grid-template-columns:1fr;max-width:460px}#pti .seals li{flex-direction:row;align-items:center;border-left:0;border-top:1px solid var(--line-d);padding:10px 0}#pti .seals li:first-child{border-top:0}}
+#pti .hero-title .ln{padding-top:.2em;margin-top:-.2em}
+#pti .hero-title .int{display:flex;align-items:center;gap:.14em;margin-top:.16em}
+#pti .hero-title .int>span{font-stretch:125%;font-weight:300;font-size:max(.4em,20px);line-height:1;letter-spacing:.06em;color:#fff;transition:letter-spacing 1.8s var(--ease) .5s}
+#pti .hero-title .int::before{content:"";flex:none;width:.24em;height:2px;background:var(--red);transform-origin:left;transition:transform 1.2s var(--ease) .4s}
+.js #pti .hero-title:not(.is-in) .int>span{letter-spacing:.3em}
+.js #pti .hero-title:not(.is-in) .int::before{transform:scaleX(0)}
+#pti .hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:20px 32px}
+#pti .hero-actions .btn{text-align:center;line-height:1.25;padding-top:10px;padding-bottom:10px}
+#pti .hero-copy{max-width:none}
+
+#pti .hero-stats{position:relative;z-index:3;display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line-d);margin-bottom:0}
+#pti .hero-stats li{padding:22px 0 30px;display:flex;flex-direction:column;gap:6px;border-left:1px solid var(--line-d);padding-left:20px}
+#pti .hero-stats li:first-child{border-left:0;padding-left:0}
+#pti .hero-stats b{font-family:var(--display);font-stretch:80%;font-weight:700;font-size:clamp(20px,2vw,30px);line-height:1;letter-spacing:.01em}
+#pti .hero-stats span{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--on-dark-muted)}
+
+@media (max-width:899px){
+  #pti .hero{min-height:auto}
+  #pti .hero-media{position:relative;width:100%;height:62vh;min-height:380px;max-height:620px;--ox:.4}
+  #pti .hero-media::after{background:linear-gradient(0deg,var(--ink) 0%,rgba(11,11,12,.35) 40%,rgba(11,11,12,.15) 100%)}
+  #pti .hud text{display:none}
+  #pti .hero-in{padding-top:0;margin-top:-20vh;padding-bottom:28px}
+  #pti .hide-sm{display:none}
+  #pti .hero-actions{gap:14px}
+  #pti .hero-actions .btn{width:100%}
+  #pti .seals{grid-template-columns:1fr}
+  #pti .seals li{flex-direction:row;align-items:center;gap:14px;border-left:0;border-top:1px solid var(--line-d);padding:12px 0}
+  #pti .seals li:first-child{border-top:0}
+  #pti .hero-stats{grid-template-columns:repeat(2,1fr)}
+  #pti .hero-stats li{padding:18px 0 20px 16px}
+  #pti .hero-stats li:nth-child(odd){border-left:0;padding-left:0}
+  #pti .hero-stats li:nth-child(n+3){border-top:1px solid var(--line-d)}
+  #pti .hero-stats li:nth-child(5){grid-column:1/-1}
+}
+@media (max-width:899px) and (min-height:0){#pti .hero-read--t{top:calc(var(--hh) + 14px)}}
+@media (max-width:899px){#pti .hero-in{margin-top:-14vh}}
+
+/* =========================================================
+   6. O MERCADO MUDOU
+   ========================================================= */
+#pti .market{background:var(--white);padding-bottom:clamp(40px,6vw,80px)}
+#pti .market-title{font-size:clamp(42px,6.8vw,108px);line-height:.86}
+#pti .market-row{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(32px,6vw,96px);align-items:end;margin-top:clamp(24px,3vw,40px)}
+#pti .market-sub{color:var(--muted)}
+#pti .market-sub em{font-style:normal;color:var(--red)}
+#pti .market-copy{max-width:44ch}
+#pti .market-copy .lead{font-weight:700;color:var(--text);margin-bottom:12px}
+#pti .market-copy p:not(.lead){color:var(--muted)}
+
+#pti .verbs{position:relative;margin-top:clamp(64px,9vw,120px);counter-reset:v}
+#pti .verbs li{position:relative;display:grid;grid-template-columns:clamp(44px,6vw,96px) 1fr auto;align-items:center;border-top:1px solid var(--line);padding:clamp(6px,1vw,14px) 0}
+#pti .verbs li:last-child{border-bottom:1px solid var(--line)}
+#pti .verb-i{font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--soft);transition:color .4s}
+#pti .verb-w{font-family:var(--display);font-stretch:68%;font-weight:800;text-transform:uppercase;font-size:clamp(32px,5.4vw,84px);line-height:.92;color:transparent;-webkit-text-stroke:1.4px rgba(18,18,20,.26);transition:color .6s var(--ease),-webkit-text-stroke-color .6s}
+#pti .verb-a{width:clamp(22px,2.4vw,36px);height:clamp(22px,2.4vw,36px);color:var(--soft);transform:rotate(-45deg);transition:transform .6s var(--ease),color .4s}
+#pti .verbs li.is-on .verb-w{color:var(--text);-webkit-text-stroke-color:var(--text)}
+#pti .verbs li.is-cur .verb-i,#pti .verbs li.is-cur .verb-a{color:var(--red)}
+#pti .verbs li.is-cur .verb-a{transform:rotate(0)}
+.no-js #pti .verb-w{color:var(--text)}
+
+/* =========================================================
+   7. CAMADAS (6 pilares)
+   ========================================================= */
+#pti .layers{background:var(--paper)}
+#pti .layers-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(32px,6vw,100px);margin-top:clamp(48px,6vw,80px);align-items:start}
+#pti .layers-vis{position:sticky;top:calc(var(--hh) + 32px)}
+#pti .layers-vis svg{width:100%;height:auto;overflow:visible}
+#pti .stack-plane{transition:transform .8s var(--ease)}
+#pti .stack-plane polygon{fill:rgba(237,236,232,.62);stroke:rgba(18,18,20,.3);stroke-width:1.2;transition:fill .5s,stroke .5s}
+#pti .stack-plane .grid{stroke:rgba(215,20,26,.35);stroke-width:1;opacity:0;transition:opacity .5s}
+#pti .stack-plane text{font-family:var(--mono);font-size:15px;fill:var(--soft);transition:fill .4s}
+#pti .stack-plane.is-active polygon{fill:rgba(255,255,255,.9);stroke:var(--red);stroke-width:2}
+#pti .stack-plane.is-active .grid{opacity:1}
+#pti .stack-plane.is-active text{fill:var(--red)}
+#pti .layers-cap{display:flex;justify-content:space-between;gap:16px;margin-top:18px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted)}
+#pti .layers-cap b{color:var(--text);font-weight:500}
+
+#pti .layer{border-top:1px solid var(--line)}
+#pti .layer:last-child{border-bottom:1px solid var(--line)}
+#pti .layer-btn{width:100%;display:grid;grid-template-columns:56px 1fr 28px;align-items:center;gap:12px;padding:22px 0;text-align:left}
+#pti .layer-n{font-family:var(--mono);font-size:13px;color:var(--soft);transition:color .3s}
+#pti .layer-t{font-family:var(--display);font-stretch:74%;font-weight:800;text-transform:uppercase;font-size:clamp(22px,2.2vw,32px);line-height:.95;color:var(--soft);transition:color .35s,transform .5s var(--ease)}
+#pti .layer-ic{position:relative;width:20px;height:20px;justify-self:end}
+#pti .layer-ic::before,#pti .layer-ic::after{content:"";position:absolute;left:0;right:0;top:50%;height:1.5px;background:currentColor;transition:transform .4s var(--ease)}
+#pti .layer-ic::after{transform:rotate(90deg)}
+#pti .layer.is-open .layer-ic::after{transform:rotate(0)}
+#pti .layer.is-open .layer-n{color:var(--red)}
+#pti .layer.is-open .layer-t,#pti .layer-btn:hover .layer-t{color:var(--text)}
+#pti .layer-btn:hover .layer-t{transform:translateX(6px)}
+#pti .layer-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .55s var(--ease)}
+#pti .layer.is-open .layer-panel{grid-template-rows:1fr}
+#pti .layer-panel>div{overflow:hidden}
+#pti .layer-tags{display:flex;flex-wrap:wrap;gap:8px;padding:0 0 26px 68px}
+#pti .layer-tags li{font-size:14px;font-weight:600;padding:7px 12px;border:1px solid var(--line);background:var(--white);opacity:0;transform:translateY(8px);transition:opacity .4s,transform .5s var(--ease)}
+#pti .layer.is-open .layer-tags li{opacity:1;transform:none}
+#pti .layer.is-open .layer-tags li:nth-child(2){transition-delay:.04s}
+#pti .layer.is-open .layer-tags li:nth-child(3){transition-delay:.08s}
+#pti .layer.is-open .layer-tags li:nth-child(4){transition-delay:.12s}
+#pti .layer.is-open .layer-tags li:nth-child(5){transition-delay:.16s}
+#pti .layer.is-open .layer-tags li:nth-child(6){transition-delay:.2s}
+#pti .layer.is-open .layer-tags li:nth-child(7){transition-delay:.24s}
+@media (max-width:899px){
+  #pti .layers-grid{grid-template-columns:1fr}
+  #pti .layers-vis{position:relative;top:0;max-width:420px;width:100%;margin:0 auto}
+  #pti .layer-tags{padding-left:0}
+  #pti .layer-btn{grid-template-columns:44px 1fr 24px}
+}
+
+/* =========================================================
+   8. MODELO OPT (seção de assinatura — palco sticky)
+   ========================================================= */
+#pti .opt{background:#060607;color:var(--on-dark);position:relative}
+#pti .opt-track{position:relative}
+#pti .opt-stage{padding:clamp(88px,12vw,150px) 0;overflow:hidden}
+.opt-full #pti .opt-track{height:340vh}
+.opt-full #pti .opt-stage{position:sticky;top:0;height:100vh;display:flex;align-items:center;padding:calc(var(--hh) + 12px) 0 20px}
+#pti .opt-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(32px,5vw,80px);align-items:center}
+
+#pti .opt-text{margin-top:24px;max-width:44ch;color:var(--on-dark-muted)}
+#pti .opt-steps{margin-top:clamp(28px,4vh,48px);border-top:1px solid var(--line-d)}
+#pti .opt-steps li{border-bottom:1px solid var(--line-d)}
+#pti .opt-steps button{width:100%;display:grid;grid-template-columns:48px 1fr auto;align-items:center;gap:12px;padding:16px 0;text-align:left;position:relative}
+#pti .opt-steps .mono{color:var(--on-dark-muted);transition:color .3s}
+#pti .opt-step-t{font-family:var(--display);font-stretch:76%;font-weight:700;text-transform:uppercase;font-size:clamp(22px,2.2vw,32px);line-height:1;color:rgba(244,244,242,.38);transition:color .4s}
+#pti .opt-step-arrow{font-family:var(--mono);font-size:13px;color:rgba(244,244,242,.3)}
+#pti .opt-bar{position:absolute;left:0;bottom:-1px;height:2px;width:100%;background:var(--red);transform:scaleX(0);transform-origin:left}
+#pti .opt-steps li.is-done .opt-step-t{color:rgba(244,244,242,.7)}
+#pti .opt-steps li.is-active .opt-step-t{color:#fff}
+#pti .opt-steps li.is-active .mono{color:var(--red-hi)}
+
+#pti .opt-vis{position:relative;width:min(100%,calc(100vh - 150px));aspect-ratio:1;justify-self:center}
+#pti .opt-vis>svg{width:100%;height:100%;overflow:visible}
+#pti .opt-orbit{fill:none;stroke:rgba(244,244,242,.2);stroke-width:1.5;stroke-dasharray:2 10;transform-origin:400px 400px;animation:spin 140s linear infinite}
+#pti .opt-ring2{fill:none;stroke:rgba(244,244,242,.07)}
+#pti .opt-axis{stroke:rgba(244,244,242,.07);stroke-width:1}
+#pti .opt-glow{opacity:.55;transition:transform 1s var(--ease)}
+#pti .opt-base{fill:none;stroke:rgba(244,244,242,.16);stroke-width:2}
+#pti .opt-prog{fill:none;stroke:#fff;stroke-width:3;stroke-dasharray:1;stroke-dashoffset:1;stroke-linejoin:round}
+#pti .opt-node .ring{fill:#060607;stroke:rgba(244,244,242,.3);stroke-width:2;transition:stroke .4s,fill .4s}
+#pti .opt-node .halo{fill:none;stroke:var(--red);stroke-width:1.5;opacity:0;transform-box:fill-box;transform-origin:center}
+#pti .opt-node.is-on .ring{stroke:#fff;fill:#fff}
+#pti .opt-node.is-active .ring{fill:var(--red);stroke:var(--red)}
+#pti .opt-node.is-active .halo{opacity:1;animation:halo 2.2s var(--ease) infinite}
+#pti .opt-lbl{font-family:var(--display);font-stretch:74%;font-weight:800;font-size:30px;text-transform:uppercase;fill:rgba(244,244,242,.3);transition:fill .4s}
+#pti .opt-num{font-family:var(--mono);font-size:14px;letter-spacing:.1em;fill:rgba(244,244,242,.35);transition:fill .4s}
+#pti .opt-g.is-on .opt-lbl{fill:#fff}
+#pti .opt-g.is-active .opt-num{fill:var(--red-hi)}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes halo{0%{transform:scale(.6);opacity:.9}100%{transform:scale(2.2);opacity:0}}
+
+/* componentes ao redor da estrutura */
+#pti .opt-comps{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+#pti .opt-comps li{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:7px 11px;border:1px solid var(--line-d);background:#060607;color:var(--on-dark-muted);white-space:nowrap;transition:opacity .5s,transform .6s var(--ease),color .4s,border-color .4s}
+#pti .opt-ring .opt-comps{position:absolute;inset:0;margin:0;pointer-events:none}
+#pti .opt-ring .opt-comps li{position:absolute;transform:translate(-50%,-50%) scale(.85);opacity:0}
+#pti .opt-ring .opt-comps li.is-on{opacity:1;transform:translate(-50%,-50%) scale(1);color:#fff;border-color:rgba(244,244,242,.3)}
+#pti .opt-comps-title{margin-top:28px;color:var(--on-dark-muted)}
+#pti .opt-ring .opt-comps-title{display:none}
+
+@media (max-width:999px){
+  #pti .opt-grid{grid-template-columns:1fr}
+  #pti .opt-vis{width:100%;max-width:560px}
+}
+
+/* card de esclarecimento da parceria NASM (continua o fundo do bloco 04) */
+#pti .nasm-sec{background:#060607;color:var(--on-dark);padding:0 0 clamp(80px,10vw,140px)}
+#pti .nasm-card{position:relative;display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(32px,5vw,80px);padding:clamp(28px,4vw,56px);background:var(--ink-2);border:1px solid var(--line-d);overflow:hidden}
+#pti .nasm-card::before{content:"";position:absolute;left:0;top:0;height:3px;width:100%;background:var(--red);transform-origin:left;transform:scaleX(0);transition:transform 1.4s var(--ease-io) .2s}
+#pti .nasm-card.is-in::before{transform:none}
+.no-js #pti .nasm-card::before{transform:none}
+#pti .nasm-card::after{content:"";position:absolute;right:-12%;bottom:-40%;width:60%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(215,20,26,.16) 0%,rgba(215,20,26,0) 65%);pointer-events:none}
+#pti .nasm-card .lg-word{--lh:56px}
+#pti .nasm-card .lg{--lh:56px;margin-bottom:clamp(22px,2.6vw,32px)}
+#pti .nasm-card h2{font-size:clamp(28px,3.4vw,52px)}
+#pti .nasm-card .nasm-text{margin-top:20px;color:var(--on-dark-muted);max-width:42ch}
+#pti .nasm-points{position:relative;z-index:1;border-top:1px solid var(--line-d)}
+#pti .nasm-points li{display:grid;grid-template-columns:52px 1fr;gap:6px 16px;padding:clamp(20px,2.4vw,28px) 0;border-bottom:1px solid var(--line-d)}
+#pti .nasm-points .mono{grid-row:span 2;color:var(--red-hi);padding-top:5px}
+#pti .nasm-points h3{font-family:var(--display);font-stretch:76%;font-weight:800;text-transform:uppercase;font-size:clamp(22px,2vw,30px);line-height:1}
+#pti .nasm-points p{color:var(--on-dark-muted);max-width:52ch}
+.js #pti .nasm-points li{opacity:0;transform:translateY(18px);transition:opacity .8s var(--ease),transform 1s var(--ease)}
+.js #pti .nasm-card.is-in .nasm-points li{opacity:1;transform:none}
+.js #pti .nasm-card.is-in .nasm-points li:nth-child(2){transition-delay:.14s}
+.js #pti .nasm-card.is-in .nasm-points li:nth-child(3){transition-delay:.28s}
+@media (max-width:899px){#pti .nasm-card{grid-template-columns:1fr}}
+
+/* =========================================================
+   9. DA TEORIA PARA A APLICAÇÃO
+   ========================================================= */
+#pti .apply{background:var(--white)}
+#pti .apply-sub{margin-top:clamp(14px,1.6vw,24px)}
+#pti .apply-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:clamp(32px,5vw,80px);align-items:end;margin-top:clamp(36px,4vw,56px)}
+#pti .apply-fig{position:relative;display:block;width:100%;aspect-ratio:3/2;overflow:hidden;background:var(--graphite);margin:0}
+/* fotos sempre visíveis: sem máscara de entrada nem dependência de JavaScript (o tema do WordPress não consegue escondê-las) */
+#pti .apply-fig,#pti .field-imgs,#pti .ph{opacity:1!important;visibility:visible!important}
+#pti .apply-fig,#pti .field-imgs{clip-path:none!important}
+#pti .ph{display:block}
+#pti .apply-fig .ph{position:absolute;inset:0}
+#pti .live{position:absolute;left:0;bottom:0;display:flex;align-items:center;gap:10px;padding:14px 18px;background:var(--ink);color:#fff;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+#pti .live i{width:8px;height:8px;border-radius:50%;background:var(--red-hi);box-shadow:0 0 0 0 rgba(255,59,63,.6);animation:live 1.8s infinite}
+@keyframes live{70%{box-shadow:0 0 0 10px rgba(255,59,63,0)}100%{box-shadow:0 0 0 0 rgba(255,59,63,0)}}
+#pti .apply-copy p{font-size:clamp(19px,1.7vw,24px);line-height:1.45;color:var(--muted)}
+#pti .apply-copy strong{color:var(--text)}
+#pti .apply-copy .mono{display:block;margin-bottom:18px;color:var(--red)}
+
+#pti .journey{position:relative;display:grid;grid-template-columns:repeat(5,1fr);margin-top:clamp(44px,5vw,72px)}
+#pti .journey::before,#pti .journey::after{content:"";position:absolute;left:0;right:0;top:7px;height:1px;background:var(--line)}
+#pti .journey::after{height:2px;top:6.5px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform 2.6s var(--ease-io)}
+#pti .journey.is-in::after{transform:scaleX(1)}
+#pti .journey li{position:relative;padding:40px 16px 0 0}
+#pti .j-dot{position:absolute;left:0;top:0;width:16px;height:16px;border-radius:50%;border:1.5px solid var(--soft);background:var(--white);transition:background .4s,border-color .4s,transform .4s var(--ease)}
+#pti .journey li .mono{color:var(--soft);display:block;margin-bottom:10px}
+#pti .j-w{font-family:var(--display);font-stretch:72%;font-weight:800;text-transform:uppercase;font-size:clamp(22px,2.4vw,36px);line-height:.9;color:#C9C9CD;transition:color .5s}
+#pti .journey.is-in .j-dot{background:var(--red);border-color:var(--red)}
+#pti .journey.is-in .j-w{color:var(--text)}
+#pti .journey li:hover .j-dot{transform:scale(1.35)}
+#pti .journey li:nth-child(2) .j-dot,#pti .journey li:nth-child(2) .j-w{transition-delay:.52s}
+#pti .journey li:nth-child(3) .j-dot,#pti .journey li:nth-child(3) .j-w{transition-delay:1.04s}
+#pti .journey li:nth-child(4) .j-dot,#pti .journey li:nth-child(4) .j-w{transition-delay:1.56s}
+#pti .journey li:nth-child(5) .j-dot,#pti .journey li:nth-child(5) .j-w{transition-delay:2.08s}
+#pti .journey li:last-child .j-w{color:#C9C9CD}
+#pti .journey.is-in li:last-child .j-w{color:var(--red)}
+.no-js #pti .j-w{color:var(--text)}
+@media (max-width:899px){
+  #pti .apply-grid{grid-template-columns:1fr}
+  #pti .journey{grid-template-columns:1fr;gap:0;padding-left:36px}
+  #pti .journey::before,#pti .journey::after{left:7px;right:auto;top:0;bottom:0;width:1px;height:auto}
+  #pti .journey::after{width:2px;left:6.5px;transform:scaleY(0);transform-origin:top}
+  #pti .journey.is-in::after{transform:scaleY(1)}
+  #pti .journey li{padding:0 0 28px}
+  #pti .j-dot{left:-36px;top:4px}
+  #pti .journey li .mono{margin-bottom:4px}
+  #pti .j-w{font-size:30px}
+}
+
+/* =========================================================
+   10. PERSONAL DE NEGÓCIOS
+   ========================================================= */
+#pti .biz{background:var(--warm);overflow:hidden}
+#pti .biz::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(18,18,20,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(18,18,20,.045) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:linear-gradient(180deg,#000 0%,transparent 85%);mask-image:linear-gradient(180deg,#000 0%,transparent 85%)}
+#pti .biz .wrap{position:relative}
+#pti .biz-a{display:block;color:var(--soft)}
+#pti .biz-b{display:block;margin-top:.12em;padding-left:clamp(0px,14vw,220px)}
+#pti .biz-b u{text-decoration:none;position:relative;display:inline-block}
+#pti .biz-b u::after{content:"";position:absolute;left:0;right:0;bottom:.02em;height:.07em;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform 1.2s var(--ease) .6s}
+#pti .biz-b.is-in u::after{transform:scaleX(1)}
+.no-js #pti .biz-b u::after{transform:none}
+#pti .biz-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,96px);margin-top:clamp(56px,7vw,96px);align-items:center}
+#pti .biz-text{color:var(--muted);max-width:46ch;margin-bottom:36px}
+#pti .biz-list{border-top:1px solid var(--line);margin-bottom:40px}
+#pti .biz-list li{display:grid;grid-template-columns:48px 1fr 24px;align-items:center;gap:12px;padding:20px 0;border-bottom:1px solid var(--line);cursor:default;transition:padding .45s var(--ease)}
+#pti .biz-list .mono{color:var(--soft);transition:color .3s}
+#pti .biz-list h3{font-family:var(--display);font-stretch:78%;font-weight:700;text-transform:uppercase;font-size:clamp(20px,1.9vw,28px);line-height:1.05}
+#pti .biz-list svg{width:20px;height:20px;color:var(--soft);transition:transform .45s var(--ease),color .3s}
+#pti .biz-list li.is-hot{padding-left:10px}
+#pti .biz-list li.is-hot .mono,#pti .biz-list li.is-hot svg{color:var(--red)}
+#pti .biz-list li.is-hot svg{transform:translateX(4px)}
+#pti .biz-map{position:relative;background:var(--white);border:1px solid var(--line);padding:clamp(18px,2.4vw,32px)}
+#pti .biz-map svg{width:100%;height:auto;overflow:visible}
+#pti .route-axis{stroke:var(--text);stroke-width:1.5}
+#pti .route-grid{fill:rgba(18,18,20,.18)}
+#pti .route-base{fill:none;stroke:rgba(18,18,20,.12);stroke-width:2;stroke-dasharray:4 8}
+#pti .route-path{fill:none;stroke:var(--red);stroke-width:3;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.4s var(--ease-io)}
+#pti .biz-map.is-in .route-path{stroke-dashoffset:0}
+#pti .route-pt circle{fill:var(--white);stroke:var(--text);stroke-width:2;transition:fill .3s,stroke .3s,r .3s}
+#pti .route-pt text{font-family:var(--mono);font-size:13px;fill:var(--text)}
+#pti .route-pt.is-hot circle{fill:var(--red);stroke:var(--red)}
+#pti .route-lbl{font-family:var(--mono);font-size:12px;letter-spacing:.12em;fill:var(--muted)}
+#pti .biz-map figcaption{margin-top:14px;color:var(--muted)}
+#pti .biz-quote{margin-top:clamp(72px,9vw,128px);padding-top:clamp(32px,4vw,48px);border-top:1px solid var(--text);display:grid;grid-template-columns:auto 1fr;gap:clamp(16px,3vw,40px);align-items:start}
+#pti .biz-quote::before{content:"“";font-family:var(--display);font-weight:800;font-size:clamp(70px,7vw,112px);line-height:.7;color:var(--red)}
+#pti .biz-quote p{font-family:var(--display);font-stretch:76%;font-weight:700;text-transform:uppercase;font-size:clamp(24px,3vw,46px);line-height:.98;max-width:20ch}
+@media (max-width:899px){
+  #pti .biz-grid{grid-template-columns:1fr}
+  #pti .biz-b{padding-left:0}
+}
+
+/* =========================================================
+   11. SEM FRONTEIRAS
+   ========================================================= */
+#pti .world{background:var(--ink);color:var(--on-dark);overflow:hidden}
+#pti .world-head{display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(32px,5vw,80px);align-items:end}
+#pti .world-head h2{font-size:clamp(30px,4vw,62px)}
+#pti .world-head p{color:var(--on-dark-muted);max-width:44ch}
+#pti .world-ctrl{display:flex;align-items:center;flex-wrap:wrap;gap:6px 14px;margin-top:clamp(40px,5vw,64px)}
+#pti .world-ctrl button{font-family:var(--display);font-stretch:82%;font-weight:700;font-size:clamp(18px,2vw,26px);letter-spacing:.04em;text-transform:uppercase;color:rgba(244,244,242,.4);padding:8px 0;position:relative;transition:color .3s}
+#pti .world-ctrl button::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+#pti .world-ctrl button[aria-pressed="true"]{color:#fff}
+#pti .world-ctrl button[aria-pressed="true"]::after{transform:scaleX(1)}
+#pti .world-ctrl button:hover{color:#fff}
+#pti .world-ctrl .sep{font-family:var(--mono);color:rgba(244,244,242,.35)}
+#pti .world-map{position:relative;margin-top:clamp(24px,3vw,40px)}
+#pti .world-map svg{width:100%;height:auto}
+#pti .world-dots{fill:none;stroke:rgba(244,244,242,.2);stroke-width:4.2;stroke-linecap:round}
+#pti .wm-home circle{fill:var(--red)}
+#pti .wm-pulse{fill:none;stroke:var(--red-hi);stroke-width:1.5;transform-box:fill-box;transform-origin:center;animation:halo 2.6s var(--ease) infinite}
+#pti .wm-ring{fill:rgba(215,20,26,.08);stroke:rgba(255,59,63,.55);stroke-width:1.2;stroke-dasharray:3 5;transform-box:fill-box;transform-origin:center;transition:transform 1s var(--ease),opacity .6s}
+#pti .wm-city{fill:#fff;transition:opacity .5s,transform .6s var(--ease);transform-box:fill-box;transform-origin:center}
+#pti .wm-link{fill:none;stroke:rgba(255,255,255,.7);stroke-width:1.4;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.6s var(--ease-io)}
+#pti .wm-arc{fill:none;stroke:var(--red-hi);stroke-width:1.6;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.8s var(--ease-io)}
+#pti .wm-name{font-family:var(--mono);font-size:13px;letter-spacing:.08em;fill:rgba(244,244,242,.7);text-transform:uppercase;opacity:0;transition:opacity .6s}
+#pti .wm-lvl2 .wm-city,#pti .wm-lvl3 .wm-city{opacity:0;transform:scale(.2)}
+#pti .wm-ring.r2{transform:scale(.3);opacity:0}
+#pti [data-mode="regional"] .wm-lvl2 .wm-city,#pti [data-mode="global"] .wm-lvl2 .wm-city,#pti [data-mode="global"] .wm-lvl3 .wm-city{opacity:1;transform:none}
+#pti [data-mode="regional"] .wm-lvl2 .wm-link,#pti [data-mode="global"] .wm-lvl2 .wm-link{stroke-dashoffset:0}
+#pti [data-mode="global"] .wm-lvl3 .wm-arc{stroke-dashoffset:0}
+#pti [data-mode="global"] .wm-lvl3 .wm-name{opacity:1;transition-delay:1s}
+#pti [data-mode="regional"] .wm-ring.r2,#pti [data-mode="global"] .wm-ring.r2{transform:none;opacity:1}
+#pti .world-read{position:absolute;left:0;bottom:0;display:flex;flex-wrap:wrap;gap:8px 28px;color:var(--on-dark-muted)}
+#pti .world-read b{color:#fff;font-weight:500}
+#pti .world-note{margin-top:14px;font-size:12px;color:rgba(244,244,242,.4)}
+#pti .world-head .world-pre{display:block;font-size:.5em;line-height:1;color:var(--red-hi);margin-bottom:.3em}
+#pti .world-head .world-pre .ln{padding-top:.3em;margin-top:-.3em}
+#pti .world-head h2{font-size:clamp(30px,3.7vw,58px)}
+#pti .world-head>p{font-size:16px;line-height:1.6}
+/* três cards: alcance, método e precificação */
+#pti .w-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,1.4vw,20px);margin-top:clamp(40px,5vw,72px)}
+#pti .w-card{position:relative;display:flex;flex-direction:column;padding:clamp(24px,2.6vw,36px);background:rgba(244,244,242,.035);border:1px solid var(--line-d);overflow:hidden;transition:transform .6s var(--ease),border-color .4s,background .4s}
+#pti .w-card::before{content:"";position:absolute;left:0;top:0;height:2px;width:100%;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .7s var(--ease)}
+#pti .w-card:hover{transform:translateY(-6px);border-color:rgba(244,244,242,.24);background:rgba(244,244,242,.06)}
+#pti .w-card:hover::before{transform:scaleX(1)}
+#pti .w-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:clamp(28px,3.4vw,48px)}
+#pti .w-card-top .mono{color:var(--on-dark-muted)}
+#pti .w-card svg{width:44px;height:44px;fill:none;stroke:#fff;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round;transition:transform .7s var(--ease),stroke .4s}
+#pti .w-card svg .acc{stroke:var(--red-hi)}
+#pti .w-card:hover svg{transform:rotate(-8deg) scale(1.06)}
+#pti .w-card h3{font-family:var(--display);font-stretch:76%;font-weight:800;text-transform:uppercase;font-size:clamp(21px,1.8vw,27px);line-height:1;margin-bottom:14px}
+#pti .w-card p{color:var(--on-dark-muted);font-size:15.5px;line-height:1.55}
+.js #pti .w-cards .w-card{opacity:0;transform:translateY(32px);transition:opacity .9s var(--ease),transform 1.1s var(--ease),border-color .4s,background .4s}
+.js #pti .w-cards.is-in .w-card{opacity:1;transform:none}
+.js #pti .w-cards.is-in .w-card:nth-child(2){transition-delay:.12s,.12s,0s,0s}
+.js #pti .w-cards.is-in .w-card:nth-child(3){transition-delay:.24s,.24s,0s,0s}
+.js #pti .w-cards.is-in .w-card:hover{transform:translateY(-6px);transition-delay:0s}
+@media (max-width:999px){#pti .w-cards{grid-template-columns:1fr}}
+@media (max-width:899px){
+  #pti .world-head{grid-template-columns:1fr}
+  #pti .world-map{margin-left:calc(var(--g)*-1);margin-right:calc(var(--g)*-1);overflow:hidden}
+  #pti .world-map svg{width:180%;max-width:none;margin-left:-38%}
+  #pti .world-read{position:static;padding:16px var(--g) 0}
+}
+
+/* =========================================================
+   12. AO FINAL DA FORMAÇÃO
+   ========================================================= */
+#pti .ready{background:var(--white)}
+#pti .ready-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(40px,6vw,100px);align-items:start}
+#pti .ready-sticky{position:sticky;top:calc(var(--hh) + 40px)}
+#pti .ready-count{display:flex;align-items:baseline;gap:10px;margin-top:clamp(36px,5vw,64px)}
+#pti .ready-count b{font-family:var(--display);font-stretch:70%;font-weight:800;font-size:clamp(60px,6.6vw,104px);line-height:.8;color:var(--red);font-variant-numeric:tabular-nums}
+#pti .ready-count span{font-family:var(--mono);font-size:14px;color:var(--soft)}
+#pti .ready-bar{height:2px;background:var(--line);margin-top:20px;max-width:320px}
+#pti .ready-bar i{display:block;height:100%;background:var(--text);transform-origin:left;transform:scaleX(.111);transition:transform .5s var(--ease)}
+#pti .ready-list li{display:grid;grid-template-columns:52px 1fr;gap:4px 16px;padding:clamp(24px,3vw,36px) 0;border-top:1px solid var(--line)}
+#pti .ready-list li:last-child{border-bottom:1px solid var(--line)}
+#pti .ready-list .mono{grid-row:span 2;color:var(--soft);padding-top:6px;transition:color .4s}
+#pti .ready-tag{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+#pti .ready-list p{font-size:clamp(19px,1.8vw,26px);font-weight:600;line-height:1.25;letter-spacing:-.01em;color:var(--text);transition:color .5s}
+#pti .ready-focus .ready-list p{color:#B9B9BE}
+#pti .ready-focus .ready-list li.is-cur p{color:var(--text)}
+#pti .ready-focus .ready-list li.is-cur .mono{color:var(--red)}
+@media (max-width:899px){
+  #pti .ready-grid{grid-template-columns:1fr}
+  #pti .ready-sticky{position:static}
+  #pti .ready-count,#pti .ready-bar{display:none}
+}
+
+/* =========================================================
+   13. CAMPO DE ATUAÇÃO
+   ========================================================= */
+#pti .field{background:var(--ink-2);color:var(--on-dark)}
+#pti .field-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(32px,5vw,80px);margin-top:clamp(36px,4vw,56px);align-items:start}
+#pti .field-tabs{display:flex;flex-direction:column;border-top:1px solid var(--line-d)}
+#pti .field-tab{display:grid;grid-template-columns:48px 1fr;align-items:baseline;gap:12px;padding:20px 0;text-align:left;border-bottom:1px solid var(--line-d);position:relative}
+#pti .field-tab::after{content:"";position:absolute;left:0;bottom:-1px;height:2px;width:100%;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .6s var(--ease)}
+#pti .field-tab .mono{color:rgba(244,244,242,.4);transition:color .3s}
+#pti .field-t{font-family:var(--display);font-stretch:72%;font-weight:800;text-transform:uppercase;font-size:clamp(24px,2.6vw,40px);line-height:.92;color:rgba(244,244,242,.3);transition:color .4s,transform .5s var(--ease)}
+#pti .field-tab:hover .field-t{color:rgba(244,244,242,.7)}
+#pti .field-tab[aria-selected="true"] .field-t{color:#fff;transform:translateX(8px)}
+#pti .field-tab[aria-selected="true"] .mono{color:var(--red-hi)}
+#pti .field-tab[aria-selected="true"]::after{transform:scaleX(1)}
+#pti .field-stage{position:relative}
+#pti .field-imgs{position:relative;aspect-ratio:5/4;overflow:hidden;background:var(--graphite)}
+#pti .field-imgs .ph{position:absolute;inset:0;clip-path:inset(0 0 0 100%);transform:scale(1.08);transition:clip-path 1s var(--ease-io),transform 1.6s var(--ease)}
+#pti .field-imgs .ph.is-on{clip-path:inset(0 0 0 0);transform:scale(1);z-index:1}
+#pti .field-imgs .ph.was-on{clip-path:inset(0 0 0 0);z-index:0}
+#pti .field-imgs::after{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(0deg,rgba(11,11,12,.9) 0%,rgba(11,11,12,0) 50%)}
+#pti .field-panel{position:absolute;left:0;right:0;bottom:0;z-index:3;padding:clamp(20px,3vw,36px)}
+#pti .field-panel[hidden]{display:none}
+#pti .field-panel .mono{color:var(--red-hi);margin-bottom:12px;display:block}
+#pti .field-panel h3{font-family:var(--display);font-stretch:76%;font-weight:800;text-transform:uppercase;font-size:clamp(22px,2vw,30px);line-height:1;margin-bottom:10px}
+#pti .field-panel p{color:rgba(244,244,242,.82);max-width:40ch}
+.js #pti .field-panel:not([hidden]) > *{animation:rise .7s var(--ease) both}
+.js #pti .field-panel:not([hidden]) h3{animation-delay:.06s}
+.js #pti .field-panel:not([hidden]) p{animation-delay:.12s}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (max-width:899px){
+  #pti .field-grid{grid-template-columns:1fr}
+  #pti .field-stage{order:-1}
+  #pti .field-imgs{aspect-ratio:4/5;max-height:72vh}
+  #pti .field-tabs{flex-direction:row;overflow-x:auto;scroll-snap-type:x mandatory;gap:0;border-top:0;margin:0 calc(var(--g)*-1);padding:0 var(--g);scroll-padding-inline:var(--g);scrollbar-width:none}
+  #pti .field-tabs::-webkit-scrollbar{display:none}
+  #pti .field-tab{flex:none;scroll-snap-align:start;grid-template-columns:auto;gap:4px;padding:14px 18px 14px 0;margin-right:18px}
+  #pti .field-t{font-size:22px}
+  #pti .field-tab[aria-selected="true"] .field-t{transform:none}
+}
+
+/* =========================================================
+   14. MATRIZ CURRICULAR
+   ========================================================= */
+#pti .matrix{background:var(--paper)}
+#pti .matrix-head{display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(32px,5vw,80px);align-items:end}
+#pti .matrix-head p{color:var(--muted);max-width:42ch}
+#pti .acc{margin-top:clamp(48px,6vw,80px);border-top:1px solid var(--text)}
+#pti .acc-item{border-bottom:1px solid var(--line)}
+#pti .acc-btn{width:100%;display:grid;grid-template-columns:64px 1fr auto 32px;align-items:center;gap:16px;padding:clamp(20px,2.4vw,30px) 0;text-align:left}
+#pti .acc-n{font-family:var(--mono);font-size:13px;color:var(--soft)}
+#pti .acc-t{font-family:var(--display);font-stretch:74%;font-weight:800;text-transform:uppercase;font-size:clamp(22px,2.4vw,36px);line-height:.95;transition:transform .5s var(--ease)}
+#pti .acc-btn:hover .acc-t{transform:translateX(8px)}
+#pti .acc-meta{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+#pti .badge-live{display:inline-flex;align-items:center;gap:6px;padding:5px 9px;background:var(--ink);color:#fff;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
+#pti .badge-live::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--red-hi)}
+#pti .acc-ic{position:relative;width:32px;height:32px;border:1px solid var(--line);border-radius:50%;transition:background .3s,border-color .3s,transform .5s var(--ease)}
+#pti .acc-ic::before,#pti .acc-ic::after{content:"";position:absolute;left:9px;right:9px;top:50%;height:1.5px;margin-top:-.75px;background:currentColor;transition:transform .4s var(--ease)}
+#pti .acc-ic::after{transform:rotate(90deg)}
+#pti .acc-item.is-open .acc-ic{background:var(--red);border-color:var(--red);color:#fff}
+#pti .acc-item.is-open .acc-ic::after{transform:rotate(0)}
+#pti .acc-item.is-open .acc-n{color:var(--red)}
+#pti .acc-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .6s var(--ease)}
+#pti .acc-item.is-open .acc-panel{grid-template-rows:1fr}
+#pti .acc-panel>div{overflow:hidden}
+#pti .acc-body{padding:0 0 clamp(28px,3vw,40px) 80px}
+#pti .acc-intro{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:16px}
+#pti .acc-list{display:grid;grid-template-columns:repeat(2,1fr);gap:0 40px}
+#pti .acc-list.cols-3{grid-template-columns:repeat(3,1fr)}
+#pti .acc-list li{display:flex;gap:14px;align-items:baseline;padding:13px 0;border-top:1px solid var(--line);font-weight:600;font-size:16px;line-height:1.35}
+#pti .acc-list li::before{content:counter(item,decimal-leading-zero);counter-increment:item;font-family:var(--mono);font-size:11px;color:var(--soft);font-weight:400;flex:none}
+#pti .acc-list{counter-reset:item}
+#pti .acc-list .badge-live{margin-left:auto}
+/* módulos temáticos: título + eixo (Ciência, Performance, Internacional, FITNESS LINK, Escala) */
+#pti .acc-t small{display:inline-flex;align-items:center;gap:10px;vertical-align:middle;margin-left:14px;font-family:var(--mono);font-stretch:100%;font-weight:500;font-size:11px;letter-spacing:.14em;line-height:1;color:var(--red);transform:translateY(-.15em)}
+#pti .acc-t small::before{content:"";width:18px;height:1px;background:currentColor}
+#pti .acc-sub{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin:26px 0 12px;font-weight:700;font-size:17px;line-height:1.3}
+#pti .acc-sub:first-child{margin-top:0}
+#pti .acc-sub .mono{color:var(--red);font-size:11px}
+#pti .matrix-cta{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px;margin-top:clamp(28px,3.4vw,44px)}
+#pti .matrix-cta p{color:var(--muted);font-size:14px;max-width:56ch}
+@media (max-width:899px){
+  #pti .acc-t small{display:flex;margin:10px 0 0}
+  #pti .matrix-head{grid-template-columns:1fr}
+  #pti .acc-btn{grid-template-columns:40px 1fr 32px;gap:10px}
+  #pti .acc-meta{grid-column:2;grid-row:2;flex-wrap:wrap}
+  #pti .acc-ic{grid-column:3;grid-row:1}
+  #pti .acc-body{padding-left:0}
+  #pti .acc-list,#pti .acc-list.cols-3{grid-template-columns:1fr}
+}
+
+/* =========================================================
+   15. PARA QUEM É
+   ========================================================= */
+#pti .who{background:var(--white)}
+#pti .who-head{display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(32px,5vw,80px);align-items:end}
+#pti .who-head p{color:var(--muted);max-width:46ch;font-size:16px}
+#pti .who-list{position:relative;display:grid;grid-template-columns:repeat(3,1fr);margin-top:clamp(56px,7vw,96px)}
+#pti .who-list::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:var(--text);transform:scaleX(0);transform-origin:left;transition:transform 1.6s var(--ease-io)}
+#pti .who-list.is-in::before{transform:scaleX(1)}
+.no-js #pti .who-list::before{transform:none}
+#pti .who-list li{position:relative;padding:36px clamp(16px,2.6vw,40px) 8px 0;transition:transform .5s var(--ease)}
+#pti .who-list li+li{padding-left:clamp(16px,2.6vw,40px);border-left:1px solid var(--line)}
+#pti .who-bars{display:flex;align-items:flex-end;gap:5px;height:40px;margin-bottom:28px}
+#pti .who-bars i{width:8px;background:var(--line);transition:background .4s,height .6s var(--ease)}
+#pti .who-bars i:nth-child(1){height:14px}#pti .who-bars i:nth-child(2){height:26px}#pti .who-bars i:nth-child(3){height:40px}
+#pti .who-list li:nth-child(1) .who-bars i:nth-child(-n+1),#pti .who-list li:nth-child(2) .who-bars i:nth-child(-n+2),#pti .who-list li:nth-child(3) .who-bars i:nth-child(-n+3){background:var(--red)}
+#pti .who-list .mono{color:var(--soft);display:block;margin-bottom:14px}
+#pti .who-list h3{font-family:var(--display);font-stretch:76%;font-weight:800;text-transform:uppercase;font-size:clamp(22px,2vw,30px);line-height:.95;margin-bottom:16px;transition:color .3s}
+#pti .who-list p{color:var(--muted);max-width:32ch}
+#pti .who-list li:hover h3{color:var(--red)}
+@media (max-width:899px){
+  #pti .who-head{grid-template-columns:1fr}
+  #pti .who-list{grid-template-columns:1fr}
+  #pti .who-list li,#pti .who-list li+li{padding:32px 0;border-left:0;border-top:1px solid var(--line)}
+  #pti .who-list li:first-child{border-top:0}
+}
+
+/* =========================================================
+   16. PROFESSORES
+   ========================================================= */
+#pti .team{background:var(--ink);color:var(--on-dark)}
+#pti .team-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px 32px}
+#pti .team-head h2{flex:1 1 520px;min-width:0}
+#pti .team-nav{display:flex;gap:8px;flex:none}
+#pti .team-nav button{width:52px;height:52px;border:1px solid var(--line-d);display:grid;place-items:center;transition:background .3s,border-color .3s,opacity .3s}
+#pti .team-nav button:hover:not(:disabled){background:var(--red);border-color:var(--red)}
+#pti .team-nav button:disabled{opacity:.3;cursor:default}
+#pti .team-nav svg{width:20px;height:20px}
+#pti .team-rail{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(240px,23vw,310px);gap:clamp(14px,1.6vw,24px);overflow-x:auto;scroll-snap-type:x mandatory;margin-top:clamp(40px,5vw,64px);padding:0 var(--g) 8px;margin-left:calc(var(--g)*-1);margin-right:calc(var(--g)*-1);scrollbar-width:none;scroll-padding:0 var(--g)}
+#pti .team-rail::-webkit-scrollbar{display:none}
+#pti .prof{scroll-snap-align:start}
+#pti .prof-ph{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--ink-3)}
+#pti .prof-ph::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(244,244,242,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(244,244,242,.06) 1px,transparent 1px);background-size:28px 28px;transition:transform 1.2s var(--ease)}
+#pti .prof:hover .prof-ph::before{transform:translate(14px,14px)}
+#pti .prof-ph::after{content:"";position:absolute;left:0;top:0;height:2px;width:100%;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .6s var(--ease);z-index:2}
+#pti .prof:hover .prof-ph::after{transform:scaleX(1)}
+#pti .prof-ini{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--display);font-stretch:70%;font-weight:800;font-size:clamp(90px,9vw,130px);color:transparent;-webkit-text-stroke:1.2px rgba(244,244,242,.24)}
+#pti .prof-tag{position:absolute;left:14px;bottom:14px;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,244,242,.45)}
+#pti .prof-ph img,#pti .prof-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;filter:grayscale(1);transition:filter .6s,transform 1s var(--ease)}
+#pti .prof:hover .prof-ph img,#pti .prof:hover .prof-img{filter:grayscale(0);transform:scale(1.03)}
+/* FOTOS DOS PROFESSORES: troque as URLs aqui (background, e não <img>, para o WordPress não removê-las).
+   Fonte atual: banco de mídia do posphorte.com.br. Os enquadramentos (position/size) centralizam o rosto no card 4:5. */
+#pti .prof-img{background:var(--ink-3) center/cover no-repeat}
+#pti .pf-rs{background-image:url("https://posphorte.com.br/wp-content/uploads/2023/07/RAFAEL-SONCIN-RIBEIRO.jpg");background-position:50% 18%}
+#pti .pf-ae{background-image:url("https://posphorte.com.br/wp-content/uploads/2025/03/alexandre-evangelista-prof-edu-fisica-phorte-graduacao-scaled-1.webp");background-size:auto 140%;background-position:45% 4%}
+#pti .pf-cl{background-image:url("https://posphorte.com.br/wp-content/uploads/2023/07/CHARLES-RICARDO-LOPES.webp");background-size:200% auto;background-position:51% 45%}
+#pti .pf-bm{background-image:url("https://posphorte.com.br/wp-content/uploads/2026/08/bruna-massaroto-barros.webp");background-position:50% 12%}
+#pti .pf-lc{background-image:url("https://posphorte.com.br/wp-content/uploads/2025/02/Luiz-Carnevali.webp");background-position:62% 20%}
+#pti .prof figcaption{padding-top:18px}
+#pti .prof-role{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--on-dark-muted)}
+#pti .prof strong{display:block;margin-top:6px;font-size:20px;font-weight:700;line-height:1.2}
+#pti .prof--nasm .prof-ph{background:var(--red)}
+#pti .prof--nasm .prof-ini{-webkit-text-stroke-color:rgba(255,255,255,.55);font-stretch:110%;font-size:clamp(56px,5vw,76px)}
+#pti .prof--nasm .prof-ph::before{background-image:linear-gradient(rgba(255,255,255,.1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.1) 1px,transparent 1px)}
+#pti .prof--nasm .prof-tag{color:rgba(255,255,255,.7)}
+
+/* =========================================================
+   16b. AUTORIDADE INSTITUCIONAL (três pilares)
+   ========================================================= */
+#pti .auth{background:var(--warm);overflow:hidden}
+#pti .auth-head{display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(32px,5vw,80px);align-items:end}
+#pti .auth-list{position:relative;display:grid;grid-template-columns:repeat(3,1fr);margin-top:clamp(48px,6vw,88px);border-top:1px solid var(--text)}
+#pti .auth-list li{position:relative;display:flex;flex-direction:column;padding:clamp(28px,3vw,44px) clamp(18px,2.6vw,40px) clamp(8px,1vw,16px)}
+#pti .auth-list li:first-child{padding-left:0}
+#pti .auth-list li+li{border-left:1px solid var(--line)}
+#pti .auth-list li::before{content:"";position:absolute;left:0;top:-2px;width:100%;height:3px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .8s var(--ease)}
+#pti .auth-list li:hover::before{transform:scaleX(1)}
+#pti .auth-mark{display:flex;align-items:center;height:96px;margin-bottom:clamp(22px,2.6vw,32px);padding:0 22px;background:var(--ink);align-self:flex-start;transition:transform .6s var(--ease)}
+#pti .auth-list li:hover .auth-mark{transform:translateY(-4px)}
+#pti .auth-mark .lg{--lh:52px}
+#pti .auth-list .mono{color:var(--soft);margin-bottom:10px}
+#pti .auth-list h3{font-family:var(--display);font-stretch:76%;font-weight:800;text-transform:uppercase;font-size:clamp(24px,2.3vw,34px);line-height:.95;margin-bottom:14px}
+#pti .auth-list p{color:var(--muted);max-width:36ch}
+.js #pti .auth-list li{opacity:0;transform:translateY(24px);transition:opacity .9s var(--ease),transform 1.1s var(--ease)}
+.js #pti .auth-list.is-in li{opacity:1;transform:none}
+.js #pti .auth-list.is-in li:nth-child(2){transition-delay:.14s}
+.js #pti .auth-list.is-in li:nth-child(3){transition-delay:.28s}
+@media (max-width:899px){
+  #pti .auth-head{grid-template-columns:1fr}
+  #pti .auth-list{grid-template-columns:1fr}
+  #pti .auth-list li,#pti .auth-list li:first-child{padding:32px 0;border-left:0}
+  #pti .auth-list li+li{border-top:1px solid var(--line)}
+}
+
+/* =========================================================
+   17. INFORMAÇÕES
+   ========================================================= */
+#pti .facts{background:var(--white);padding:clamp(72px,9vw,128px) 0}
+#pti .facts-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--text);border-bottom:1px solid var(--line)}
+#pti .facts-grid li{position:relative;padding:clamp(28px,3.4vw,48px) clamp(16px,2vw,28px) clamp(28px,3vw,40px);border-left:1px solid var(--line);display:flex;flex-direction:column;gap:14px}
+#pti .facts-grid li:first-child{border-left:0;padding-left:0}
+#pti .facts-grid li::before{content:"";position:absolute;top:-1px;left:0;width:36px;height:3px;background:var(--red)}
+#pti .facts-grid li:first-child::before{left:0}
+#pti .facts-v{font-family:var(--display);font-stretch:70%;font-weight:800;text-transform:uppercase;font-size:clamp(38px,4.2vw,68px);line-height:.86;font-variant-numeric:tabular-nums}
+#pti .facts-v.sm{font-size:clamp(28px,3vw,48px)}
+#pti .facts-l{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--text)}
+#pti .facts-d{color:var(--muted);font-size:15px;line-height:1.45}
+@media (max-width:899px){
+  #pti .facts-grid{grid-template-columns:1fr 1fr}
+  #pti .facts-grid li:nth-child(odd){border-left:0;padding-left:0}
+  #pti .facts-grid li:nth-child(even){padding-right:0}
+  #pti .facts-grid li:nth-child(n+3){border-top:1px solid var(--line)}
+  #pti .facts-grid li:nth-child(odd)::before{left:0}
+}
+/* investimento: início, inscrição e mensalidades + botão de inscrição */
+#pti .facts-inv{grid-template-columns:repeat(3,1fr);border-top:0}
+#pti .facts-inv .facts-v{text-transform:none;white-space:nowrap}
+#pti .facts-inv .facts-v small{font-size:.6em;margin-right:.12em}
+#pti .facts-cta{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:16px 32px;margin-top:clamp(28px,3.4vw,44px)}
+@media (max-width:899px){
+  #pti .facts-inv li:nth-child(3){grid-column:1/-1;padding-left:0;border-left:0}
+  #pti .facts-cta .btn{width:100%;text-align:center;line-height:1.25;padding-top:10px;padding-bottom:10px}
+}
+
+/* =========================================================
+   18. CTA FINAL + FORMULÁRIO
+   ========================================================= */
+#pti .final{background:#060607;color:var(--on-dark);overflow:hidden}
+#pti .final-title{font-size:clamp(36px,5.4vw,88px)}
+#pti .final-words{margin-top:clamp(28px,4vw,48px);display:flex;flex-wrap:wrap;gap:0 .32em;font-family:var(--display);font-stretch:72%;font-weight:800;text-transform:uppercase;font-size:clamp(26px,3.8vw,60px);line-height:1}
+#pti .final-words li{color:#fff}
+#pti .final-words li:last-child{color:var(--red-hi)}
+.js #pti .final-words li{opacity:0;transform:translateY(40%);transition:opacity .7s var(--ease),transform .9s var(--ease)}
+.js #pti .final-words.is-in li{opacity:1;transform:none}
+#pti .final-words.is-in li:nth-child(2){transition-delay:.25s}
+#pti .final-words.is-in li:nth-child(3){transition-delay:.5s}
+#pti .final-words.is-in li:nth-child(4){transition-delay:.75s}
+#pti .final-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,100px);margin-top:clamp(72px,9vw,128px);padding-top:clamp(40px,5vw,64px);border-top:1px solid var(--line-d);align-items:start}
+#pti .final-course .mono{color:var(--on-dark-muted);display:block;margin-bottom:14px}
+#pti .final-name{font-family:var(--display);font-stretch:72%;font-weight:800;text-transform:uppercase;font-size:clamp(28px,2.8vw,44px);line-height:.92;margin-bottom:32px}
+#pti .final-name span{display:block;font-stretch:120%;font-weight:300;font-size:.5em;letter-spacing:.08em;margin-top:.3em}
+#pti .final-course .lockup{flex-wrap:wrap;--lh:44px}
+#pti .final-course .realiza{display:block;margin-top:18px;animation:none}
+#pti .final-facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:36px}
+#pti .final-facts li{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:8px 12px;border:1px solid var(--line-d);color:var(--on-dark-muted)}
+#pti .final-btn{margin-top:28px;text-align:center;line-height:1.25;padding-top:10px;padding-bottom:10px}
+@media (max-width:899px){#pti .final-btn{width:100%}}
+
+#pti .form-card{background:var(--white);color:var(--text);padding:clamp(24px,3.4vw,48px);position:relative;border-top:4px solid var(--red)}
+#pti .form-card h3{font-family:var(--display);font-stretch:76%;font-weight:800;text-transform:uppercase;font-size:clamp(22px,2vw,30px);line-height:1}
+#pti .form-card>p{color:var(--muted);margin:10px 0 26px;font-size:15px}
+#pti .field-f{margin-bottom:16px}
+#pti .field-f label{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+#pti .field-f input,#pti .field-f select{width:100%;height:54px;border:1px solid rgba(18,18,20,.22);border-radius:2px;background:#fff;padding:0 16px;font:500 16px var(--sans);color:var(--text);transition:border-color .2s,box-shadow .2s;appearance:none;-webkit-appearance:none}
+#pti .field-f select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23121214' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;background-size:18px;padding-right:44px}
+#pti .field-f input:focus,#pti .field-f select:focus{outline:none;border-color:var(--text);box-shadow:0 0 0 3px rgba(215,20,26,.18)}
+#pti .field-row{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+#pti .check a{text-decoration:underline}
+#pti .check{display:flex;gap:12px;align-items:flex-start;font-size:13px;line-height:1.5;color:var(--muted);margin:6px 0 22px}
+#pti .check input{width:18px;height:18px;margin:2px 0 0;accent-color:var(--red);flex:none}
+#pti .form-card .btn{width:100%}
+#pti .form-status{min-height:1.4em;margin-top:12px;font-size:14px;color:var(--muted)}
+#pti .form-status.ok{color:#137A3A}
+#pti .form-status.err{color:var(--red)}
+#pti #form-embed:empty{display:none}
+@media (max-width:899px){
+  #pti .final-grid{grid-template-columns:1fr}
+  #pti .field-row{grid-template-columns:1fr}
+}
+
+/* =========================================================
+   19. RODAPÉ + CTA FIXO MOBILE
+   ========================================================= */
+#pti .foot{background:#060607;color:var(--on-dark-muted);border-top:1px solid var(--line-d);padding:32px 0 calc(32px + env(safe-area-inset-bottom))}
+#pti .foot .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px 32px;font-size:13px}
+#pti .foot .lockup{--lh:34px}
+#pti .foot-txt{display:flex;flex-direction:column;gap:4px}
+#pti .foot .realiza{animation:none;font-size:10.5px}
+#pti .foot a{text-decoration:none}
+#pti .foot a:hover{color:#fff}
+#pti .foot nav{display:flex;gap:22px;flex-wrap:wrap}
+#pti .mcta{position:fixed;left:0;right:0;bottom:0;z-index:80;padding:10px var(--g) calc(10px + env(safe-area-inset-bottom));background:rgba(11,11,12,.92);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-top:1px solid var(--line-d);transform:translateY(110%);transition:transform .5s var(--ease)}
+#pti .mcta .btn{width:100%;min-height:54px;padding:8px 16px;font-size:12px;letter-spacing:.06em;line-height:1.25;text-align:center}
+
+/* =========================================================
+   19b. MODAL — MATRIZ CURRICULAR COMPLETA (PDF)
+   ========================================================= */
+#pti .modal{position:fixed;inset:0;z-index:300;display:grid;place-items:center;padding:16px}
+#pti .modal[hidden]{display:none}
+#pti .modal-bg{position:absolute;inset:0;background:rgba(5,5,6,.74);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);animation:fadeIn .35s ease both}
+#pti .modal-box{position:relative;width:100%;max-width:560px;max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px);overflow:auto;overscroll-behavior:contain;animation:rise .5s var(--ease) both}
+#pti .modal-box:focus{outline:none}
+#pti .modal-x{position:absolute;right:14px;top:14px;width:40px;height:40px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;transition:background .3s,color .3s}
+#pti .modal-x:hover{background:var(--ink);color:#fff}
+#pti .modal-x svg{width:16px;height:16px}
+#pti .modal-box h3{padding-right:48px;margin-bottom:24px}
+#pti .modal-done{padding-top:4px}
+#pti .modal-done[hidden]{display:none}
+#pti #form-embed-matriz:empty{display:none}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+#pti .mcta.is-show{transform:none}
+@media (min-width:900px){#pti .mcta{display:none}}
+@media (max-width:899px){#pti .foot{padding-bottom:calc(96px + env(safe-area-inset-bottom))}}
+
+/* =========================================================
+   20. MOVIMENTO REDUZIDO
+   ========================================================= */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  #pti *,#pti *::before,#pti *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;transition-delay:0s!important}
+  .js #pti [data-rv],.js #pti [data-rv] .ln>span,.js #pti .final-words li,.js #pti .nasm-points li,.js #pti .w-cards .w-card,.js #pti .auth-list li{opacity:1!important;transform:none!important;clip-path:none!important}
+  .js #pti [data-rv="mask"] .ph{transform:none!important}
+  #pti .hud .bone{stroke-dashoffset:0}
+  #pti .hud .joint,#pti .hud .joint-c,#pti .hud .arc,#pti .hud .frame,#pti .hud .plumb,#pti .hud text{opacity:1}
+  #pti .opt-orbit{animation:none}
+}
+
+/* =========================================================
+   21. MODO REVISÃO (CONFIG.revisao = true)
+   ========================================================= */
+.review #pti [data-pendente]{position:relative;outline:2px dashed #E0A800;outline-offset:4px}
+.review #pti [data-pendente]::after{content:attr(data-pendente);position:absolute;z-index:9;right:8px;top:8px;background:#E0A800;color:#111;font:600 10px/1.3 var(--mono);padding:4px 6px;max-width:220px;text-transform:none;letter-spacing:0;-webkit-text-stroke:0;transform:none;width:auto;height:auto}
+
+/* =========================================================
+   22. CUPOM RASPADINHA — fontes e cores desta página (o bloco em si fica depois do bloco 14)
+   ========================================================= */
+#pti #cupomRaspadinha{--cpr-ft:var(--display);--cpr-fb:var(--sans);--cpr-fm:var(--mono);--cpr-r:var(--red);--cpr-r2:var(--red-deep);--cpr-k:var(--ink)}
+#pti #cupomRaspadinha .cpr-h{font-stretch:72%;font-weight:800;font-size:clamp(36px,5vw,80px);line-height:.9;letter-spacing:-.005em}
+#pti #cupomRaspadinha .cpr-u b,#pti #cupomRaspadinha .cpr-val b{font-stretch:72%;font-weight:800;letter-spacing:0}
+#pti #cupomRaspadinha .cpr-win,#pti #cupomRaspadinha .cpr-steps li,#pti #cupomRaspadinha .cpr-use{font-stretch:85%;letter-spacing:-.01em}
+#pti #cupomRaspadinha .cpr-btn{font-family:var(--sans);font-weight:700;font-size:14px;letter-spacing:.1em;border-radius:2px}
+</style>
+
+<!-- Ajustes responsivos de conversao: texto e CTA antes da imagem no mobile -->
+<style id="hero-mobile-update">
+@media (max-width: 899px) {
+  #pti .hero { min-height: 0; }
+  #pti .hero-in { order: 1; margin-top: 0; padding-top: calc(var(--hh) + 18px); padding-bottom: 18px; }
+  #pti .hero-copy { display: flex; flex-direction: column; }
+  #pti .hero-title { order: 1; margin-bottom: 0; }
+  #pti .hero-sub-title { order: 2; margin: 12px 0; }
+  #pti .hero-lead { order: 3; font-size: 15px; line-height: 1.45; margin-bottom: 14px; }
+  #pti .hero-actions { order: 4; margin-bottom: 10px; }
+  #pti .hero-actions .btn { min-height: 54px; }
+  #pti .hero .seals { order: 5; margin-top: 8px; }
+  #pti .hero-media { order: 2; height: 30vh; min-height: 180px; max-height: 260px; }
+  #pti .hero-stats { order: 3; }
+}
+</style>
+<style id="desktop-hero-copy">
+@media (min-width: 900px) {
+  #pti .hero-sub-title { max-width: 35ch; font-size: clamp(20px, min(1.8vw, 3vh), 27px); line-height: 1.1; }
+  #pti .hero-lead { max-width: 48ch; }
+}
+</style>
+</head>
+
+<body>
+<div id="pti">
+<p class="sr-only">Pós-Graduação em Personal Trainer Internacional — Realização: FITNESS LINK &amp; Faculdade Phorte | Partner International: NASM. 360 horas, EAD, aulas ao vivo e Modelo OPT™.</p>
+
+<main id="conteudo">
+
+<section class="hero" id="topo" aria-labelledby="h-hero">
+  <div class="wrap brandbar">
+    <div class="brandbar-in">
+      <div class="lockup" role="img" aria-label="Faculdade Phorte, FITNESS LINK e NASM">
+        <span class="lg"><img data-logo="phorte" src="https://posphorte.com.br/wp-content/uploads/2024/08/logo-faculdade.webp" alt="" width="188" height="106"></span>
+        <i aria-hidden="true"></i>
+        <span class="lg fl" data-logo="fitnesslink" data-pendente="Logo oficial da FITNESS LINK"><span class="lg-word" aria-hidden="true"><span>Fitness</span><span>Link</span></span></span>
+        <i aria-hidden="true"></i>
+        <span class="lg nasm" data-logo="nasm" data-pendente="Logo NASM — versão Partner International"><span class="lg-word nasm" aria-hidden="true"><span>NASM</span><span>Partner International</span></span></span>
+      </div>
+      <p class="realiza">Realização: <b>FITNESS LINK &amp; Faculdade Phorte</b><i aria-hidden="true">|</i><span class="sr-only"> | </span>Partner International: <b>NASM</b></p>
+    </div>
+  </div>
+  <div class="hero-media" aria-hidden="true">
+    <div class="hero-par" data-par><div class="hero-frame">
+      <svg class="hud" viewBox="0 0 1500 1000" preserveAspectRatio="xMidYMid meet">
+        <path class="bone" pathLength="1" d="M560 262L390 342"/>
+        <path class="bone" pathLength="1" d="M390 342L448 582" style="--bd:.15s"/>
+        <path class="bone" pathLength="1" d="M448 582L492 818" style="--bd:.3s"/>
+        <path class="bone" pathLength="1" d="M560 262L592 628" style="--bd:.45s"/>
+        <path class="arc" d="M390 342L453.3 312.2A70 70 0 0 1 406.5 410Z"/>
+        <circle class="joint" cx="560" cy="262" r="11"/><circle class="joint-c" cx="560" cy="262" r="4"/>
+        <circle class="joint" cx="390" cy="342" r="13"/><circle class="joint-c" cx="390" cy="342" r="5"/>
+        <circle class="joint" cx="448" cy="582" r="11"/><circle class="joint-c" cx="448" cy="582" r="4"/>
+        <circle class="joint" cx="492" cy="818" r="11"/><circle class="joint-c" cx="492" cy="818" r="4"/>
+        <circle class="joint" cx="592" cy="628" r="9"/><circle class="joint-c" cx="592" cy="628" r="3.5"/>
+        <text x="420" y="452">θ 102°</text>
+      </svg>
+    </div></div>
+    <div class="hero-read hero-read--t"><i></i>Análise de movimento<span class="hide-sm"> · dobradiça de quadril</span></div>
+  </div>
+
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <h1 class="hero-title" id="h-hero" data-rv="lines">
+        <span class="ht-pre">Pós-Graduação em</span>
+        <span class="ln"><span>Personal</span></span>
+        <span class="ln"><span>Trainer</span></span>
+        <span class="ln int"><span>Internacional</span></span>
+      </h1>
+      <p class="hero-sub-title">Modelo OPT™ aplicado à prescrição.</p>
+      <p class="hero-lead" data-rv data-d="2">Aplique princípios baseados em evidências a atendimentos presenciais ou on-line.</p>
+      <ul class="seals" aria-label="Diferenciais da formação" data-rv data-d="3">
+        <li data-pendente="Validar redação regulatória (lato sensu: certificado / curso não é reconhecido individualmente pelo MEC)"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="13" r="8"/><circle cx="16" cy="13" r="4.2"/><path d="M11 19.5L9 29l7-3.5 7 3.5-2-9.5"/></svg><span><b>Diploma de Pós-Graduação Reconhecido pelo MEC</b> — Faculdade Phorte.</span></li>
+        <li data-pendente="Validar com a NASM o uso do nome e do OPT™"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 26h7v-6h7v-6h8"/><circle cx="8.5" cy="26" r="1.6" class="acc"/><circle cx="15.5" cy="20" r="1.6"/><circle cx="23" cy="14" r="1.6"/><path d="M23 5v5M20.5 7.5h5"/></svg><span><b>Metodologia Internacional NASM</b> — OPT™ Model.</span></li>
+        <li data-pendente="Confirmar papel da FITNESS LINK nos módulos"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 26h24"/><path d="M6 21l6-6 5 4 9-10"/><path d="M20 9h6v6"/></svg><span><b>Módulos de Negócios e Escala Digital</b> com a FITNESS LINK.</span></li>
+      </ul>
+      <div class="hero-actions" data-rv data-d="3">
+        <a class="btn btn-red" href="https://inscricao.posphorte.com.br/inscricao/pre-cadastro/personal-internacional-parceria-com-nasm/4881/6" target="_blank" rel="noopener" data-inscricao>Quero me inscrever na P&#243;s
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <button class="btn-link" type="button" data-matriz-open aria-haspopup="dialog">Baixar Matriz Curricular Completa (PDF)
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"/></svg></button>
+      </div>
+    </div>
+  </div>
+
+  <ul class="wrap hero-stats" aria-label="Destaques do curso">
+    <li><b>360H</b><span>Carga horária</span></li>
+    <li><b>EAD</b><span>Modalidade</span></li>
+    <li><b>Aulas ao vivo</b><span>Síncronas e práticas</span></li>
+    <li><b>Modelo OPT<span class="tm">™</span></b><span>Metodologia</span></li>
+    <li><b>13/03</b><span>Data de início</span></li>
+  </ul>
+</section>
+
+<section class="sec market" id="mercado" aria-labelledby="h-mercado">
+  <div class="wrap">
+    <p class="kicker"><span>02</span>Contexto</p>
+    <h2 class="d-l market-title" id="h-mercado" data-rv="lines">
+      <span class="ln"><span>O mercado</span></span>
+      <span class="ln"><span>mudou.</span></span>
+    </h2>
+    <div class="market-row">
+      <p class="d-m market-sub" data-rv="lines">
+        <span class="ln"><span>O personal trainer</span></span>
+        <span class="ln"><span>também precisa <em>mudar.</em></span></span>
+      </p>
+      <div class="market-copy" data-rv data-d="1">
+        <p class="lead">Hoje, dominar exercícios não basta.</p>
+        <p>Além de prescrever treinos, o profissional precisa avaliar, comunicar seu trabalho, conquistar clientes e acompanhar a evolução dos alunos dentro e fora da academia.</p>
+      </div>
+    </div>
+
+    <ol class="verbs" data-verbs aria-label="A nova atuação do personal trainer">
+      <li><span class="verb-i">01</span><span class="verb-w">Avaliar</span><svg class="verb-a" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 4v16M6 14l6 6 6-6"/></svg></li>
+      <li><span class="verb-i">02</span><span class="verb-w">Prescrever</span><svg class="verb-a" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 4v16M6 14l6 6 6-6"/></svg></li>
+      <li><span class="verb-i">03</span><span class="verb-w">Performance</span><svg class="verb-a" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 4v16M6 14l6 6 6-6"/></svg></li>
+      <li><span class="verb-i">04</span><span class="verb-w">Posicionar</span><svg class="verb-a" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 4v16M6 14l6 6 6-6"/></svg></li>
+      <li><span class="verb-i">05</span><span class="verb-w">Escalar</span><svg class="verb-a" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19L19 5M9 5h10v10"/></svg></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec layers" id="camadas" aria-labelledby="h-camadas">
+  <div class="wrap">
+    <p class="kicker"><span>03</span>Estrutura da formação</p>
+    <h2 class="d-l" id="h-camadas" data-rv="lines">
+      <span class="ln"><span>Uma pós.</span></span>
+      <span class="ln"><span>Várias camadas</span></span>
+      <span class="ln"><span>da sua <span class="red">carreira.</span></span></span>
+    </h2>
+
+    <div class="layers-grid">
+      <div class="layers-vis" aria-hidden="true">
+        <svg viewBox="0 0 620 620" data-stack></svg>
+        <p class="layers-cap mono"><span>Camada <b data-layer-num>01</b> / 06</span><b data-layer-name>Ciência do movimento</b></p>
+      </div>
+
+      <div class="layers-list" data-layers>
+        <div class="layer is-open">
+          <button class="layer-btn" type="button" aria-expanded="true" aria-controls="ly-1" id="lyb-1"><span class="layer-n">01</span><span class="layer-t">Ciência do movimento</span><span class="layer-ic" aria-hidden="true"></span></button>
+          <div class="layer-panel" id="ly-1" role="region" aria-labelledby="lyb-1"><div><ul class="layer-tags"><li>Biomecânica</li><li>Cinesiologia</li><li>Fisiologia</li><li>Bioenergética</li></ul></div></div>
+        </div>
+        <div class="layer">
+          <button class="layer-btn" type="button" aria-expanded="false" aria-controls="ly-2" id="lyb-2"><span class="layer-n">02</span><span class="layer-t">Performance</span><span class="layer-ic" aria-hidden="true"></span></button>
+          <div class="layer-panel" id="ly-2" role="region" aria-labelledby="lyb-2"><div><ul class="layer-tags"><li>Força</li><li>Hipertrofia</li><li>Emagrecimento</li><li>Mobilidade</li><li>Core</li><li>Pliometria</li><li>Agilidade</li></ul></div></div>
+        </div>
+        <div class="layer">
+          <button class="layer-btn" type="button" aria-expanded="false" aria-controls="ly-3" id="lyb-3"><span class="layer-n">03</span><span class="layer-t">Metodologia internacional</span><span class="layer-ic" aria-hidden="true"></span></button>
+          <div class="layer-panel" id="ly-3" role="region" aria-labelledby="lyb-3"><div><ul class="layer-tags"><li>Modelo OPT™</li><li>Avaliação</li><li>Progressão</li><li>Treinamento integrado</li></ul></div></div>
+        </div>
+        <div class="layer">
+          <button class="layer-btn" type="button" aria-expanded="false" aria-controls="ly-4" id="lyb-4"><span class="layer-n">04</span><span class="layer-t">Personal de negócios</span><span class="layer-ic" aria-hidden="true"></span></button>
+          <div class="layer-panel" id="ly-4" role="region" aria-labelledby="lyb-4"><div><ul class="layer-tags"><li>Precificação</li><li>Captação</li><li>Posicionamento</li><li>Gestão financeira</li></ul></div></div>
+        </div>
+        <div class="layer">
+          <button class="layer-btn" type="button" aria-expanded="false" aria-controls="ly-5" id="lyb-5"><span class="layer-n">05</span><span class="layer-t">Carreira digital</span><span class="layer-ic" aria-hidden="true"></span></button>
+          <div class="layer-panel" id="ly-5" role="region" aria-labelledby="lyb-5"><div><ul class="layer-tags"><li>Consultoria online</li><li>Marketing</li><li>Vendas</li><li>Personal Branding</li></ul></div></div>
+        </div>
+        <div class="layer">
+          <button class="layer-btn" type="button" aria-expanded="false" aria-controls="ly-6" id="lyb-6"><span class="layer-n">06</span><span class="layer-t">Comportamento</span><span class="layer-ic" aria-hidden="true"></span></button>
+          <div class="layer-panel" id="ly-6" role="region" aria-labelledby="lyb-6"><div><ul class="layer-tags"><li>Psicologia do exercício</li><li>Coaching</li><li>Adesão</li><li>Soft Skills</li></ul></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="opt" id="opt" aria-labelledby="h-opt" data-opt>
+  <div class="opt-track">
+    <div class="opt-stage">
+      <div class="wrap opt-grid">
+        <div class="opt-copy">
+          <p class="kicker"><span>04</span>Optimum Performance Training</p>
+          <h2 class="d-l" id="h-opt">Conheça o <br>Modelo <span class="red">OPT<span class="tm">™</span></span></h2>
+          <p class="opt-text">Uma metodologia de treinamento integrado trabalhada ao longo da formação para estruturar a evolução do aluno de maneira sistemática.</p>
+          <ol class="opt-steps" data-opt-steps>
+            <li class="is-active"><button type="button"><span class="mono">01</span><span class="opt-step-t">Estabilização</span><span class="opt-step-arrow" aria-hidden="true">→</span><span class="opt-bar" aria-hidden="true"></span></button></li>
+            <li><button type="button"><span class="mono">02</span><span class="opt-step-t">Força</span><span class="opt-step-arrow" aria-hidden="true">→</span><span class="opt-bar" aria-hidden="true"></span></button></li>
+            <li><button type="button"><span class="mono">03</span><span class="opt-step-t">Potência</span><span class="opt-step-arrow" aria-hidden="true"></span><span class="opt-bar" aria-hidden="true"></span></button></li>
+          </ol>
+        </div>
+
+        <div class="opt-vis" data-opt-vis>
+          <svg viewBox="0 0 800 800" aria-hidden="true">
+            <defs>
+              <radialGradient id="optGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0" stop-color="#D7141A" stop-opacity=".45"/>
+                <stop offset="1" stop-color="#D7141A" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <line class="opt-axis" x1="400" y1="40" x2="400" y2="760"/>
+            <line class="opt-axis" x1="40" y1="400" x2="760" y2="400"/>
+            <circle class="opt-ring2" cx="400" cy="400" r="250"/>
+            <circle class="opt-orbit" cx="400" cy="400" r="330"/>
+            <circle class="opt-glow" data-opt-glow cx="225" cy="560" r="150" fill="url(#optGlow)"/>
+            <path class="opt-base" d="M130 560H320V420H490V280H670"/>
+            <path class="opt-prog" data-opt-prog pathLength="1" d="M130 560H320V420H490V280H670"/>
+            <g class="opt-g is-on is-active" data-opt-g>
+              <text class="opt-num" x="140" y="500">01</text>
+              <text class="opt-lbl" x="140" y="536">Estabilização</text>
+              <g class="opt-node is-on is-active"><circle class="halo" cx="225" cy="560" r="14"/><circle class="ring" cx="225" cy="560" r="11"/></g>
+            </g>
+            <g class="opt-g" data-opt-g>
+              <text class="opt-num" x="330" y="360">02</text>
+              <text class="opt-lbl" x="330" y="396">Força</text>
+              <g class="opt-node"><circle class="halo" cx="405" cy="420" r="14"/><circle class="ring" cx="405" cy="420" r="11"/></g>
+            </g>
+            <g class="opt-g" data-opt-g>
+              <text class="opt-num" x="500" y="220">03</text>
+              <text class="opt-lbl" x="500" y="256">Potência</text>
+              <g class="opt-node"><circle class="halo" cx="580" cy="280" r="14"/><circle class="ring" cx="580" cy="280" r="11"/></g>
+            </g>
+          </svg>
+          <p class="opt-comps-title mono">Componentes trabalhados</p>
+          <ul class="opt-comps" data-opt-comps aria-label="Componentes trabalhados no Modelo OPT™">
+            <li>Avaliação</li><li>Flexibilidade</li><li>Cardiorrespiratório</li><li>Core</li><li>Equilíbrio</li><li>Pliometria</li><li>Velocidade</li><li>Agilidade</li><li>Resistência</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="nasm-sec" id="nasm" aria-labelledby="h-nasm">
+  <div class="wrap" data-pendente="VALIDAÇÃO INSTITUCIONAL antes da publicação (NASM / MEC / atuação no exterior)">
+    <div class="nasm-card" data-nasm-card>
+      <div>
+        <span class="lg nasm" data-logo="nasm" data-pendente="Logo NASM — versão Partner International"><span class="lg-word nasm" role="img" aria-label="NASM — Partner International"><span>NASM</span><span>Partner International</span></span></span>
+        <h2 class="d-l" id="h-nasm">Como a NASM impulsiona seu currículo global?</h2>
+        <p class="nasm-text">Esta Pós-Graduação integra formalmente o ecossistema e os conteúdos oficiais da NASM (National Academy of Sports Medicine).</p>
+      </div>
+      <ol class="nasm-points">
+        <li><span class="mono">01</span><h3>Diploma Oficial MEC</h3><p>Você conclui o curso com o título oficial de Pós-Graduação Lato Sensu emitido pela Faculdade Phorte.</p></li>
+        <li><span class="mono">02</span><h3>Metodologia OPT<span class="tm">™</span></h3><p>Você estuda a aplicação do Modelo OPT™ em programas de treinamento.</p></li>
+        <li><span class="mono">03</span><h3>Conteúdo internacional</h3><p>A formação aborda referências da NASM. Consulte a NASM para confirmar os requisitos de elegibilidade para exames de certificação e atuação no exterior.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="sec apply" id="aplicacao" aria-labelledby="h-aplicacao">
+  <div class="wrap">
+    <p class="kicker"><span>05</span>Aplicação</p>
+    <h2 class="d-l" id="h-aplicacao" data-rv="lines">
+      <span class="ln"><span>Não é só sobre</span></span>
+      <span class="ln"><span>estudar o método.</span></span>
+    </h2>
+    <p class="d-m apply-sub red" data-rv="lines"><span class="ln"><span>É sobre saber aplicá-lo.</span></span></p>
+
+    <div class="apply-grid">
+      <div class="apply-fig">
+        <div class="ph ph-apply" role="img" aria-label="Personal trainer orienta de perto a execução de uma flexão de braço"></div>
+        <div class="live"><i aria-hidden="true"></i>Aula prática do Método OPT™ · Ao vivo</div>
+      </div>
+      <div class="apply-copy" data-rv data-d="1">
+        <span class="mono">Da teoria à prática</span>
+        <p>A formação contempla <strong>aulas práticas do Método OPT™ ao vivo</strong> e aplicações práticas durante o processo de aprendizagem.</p>
+      </div>
+    </div>
+
+    <ol class="journey" data-journey aria-label="Jornada de aplicação">
+      <li><span class="j-dot" aria-hidden="true"></span><span class="mono">01</span><span class="j-w">Avalie</span></li>
+      <li><span class="j-dot" aria-hidden="true"></span><span class="mono">02</span><span class="j-w">Identifique</span></li>
+      <li><span class="j-dot" aria-hidden="true"></span><span class="mono">03</span><span class="j-w">Prescreva</span></li>
+      <li><span class="j-dot" aria-hidden="true"></span><span class="mono">04</span><span class="j-w">Aplique</span></li>
+      <li><span class="j-dot" aria-hidden="true"></span><span class="mono">05</span><span class="j-w">Evolua</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec biz" id="negocios" aria-labelledby="h-negocios">
+  <div class="wrap">
+    <p class="kicker"><span>06</span>Personal de negócios</p>
+    <h2 id="h-negocios">
+      <span class="d-l biz-a" data-rv="lines"><span class="ln"><span>Você aprende </span></span><span class="ln"><span>a treinar pessoas.</span></span></span>
+      <span class="d-l biz-b" data-rv="lines"><span class="ln"><span>E a construir </span></span><span class="ln"><span>um <u>negócio.</u></span></span></span>
+    </h2>
+
+    <div class="biz-grid">
+      <div data-rv>
+        <p class="biz-text">A formação inclui conteúdos de posicionamento, captação de clientes e gestão financeira para apoiar a organização da atuação profissional.</p>
+        <ol class="biz-list" data-biz-list>
+          <li data-i="0"><span class="mono">01</span><h3>O personal trainer como empresa</h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></li>
+          <li data-i="1"><span class="mono">02</span><h3>Captação inteligente de clientes</h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></li>
+          <li data-i="2"><span class="mono">03</span><h3>Posicionamento e autoridade profissional</h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></li>
+          <li data-i="3"><span class="mono">04</span><h3>Gestão financeira e crescimento</h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></li>
+        </ol>
+        <a class="btn btn-ink" href="https://inscricao.posphorte.com.br/inscricao/pre-cadastro/personal-internacional-parceria-com-nasm/4881/6" target="_blank" rel="noopener" data-inscricao>Garantir Minha Vaga com Chancela Internacional
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+
+      <figure class="biz-map" data-biz-map>
+        <svg viewBox="0 0 560 500" aria-hidden="true" data-route>
+          <g data-route-grid></g>
+          <line class="route-axis" x1="60" y1="440" x2="530" y2="440"/>
+          <line class="route-axis" x1="60" y1="440" x2="60" y2="30"/>
+          <path class="route-axis" d="M524 434l6 6-6 6M54 36l6-6 6 6" fill="none"/>
+          <text class="route-lbl" x="530" y="472" text-anchor="end">EXCELÊNCIA TÉCNICA</text>
+          <text class="route-lbl" x="-30" y="40" transform="rotate(-90 40 40)" text-anchor="end">VALOR DE MERCADO</text>
+          <path class="route-base" d="M80 420C190 414 220 330 270 300S370 190 420 170S500 90 515 60"/>
+          <path class="route-path" data-route-path pathLength="1" d="M80 420C190 414 220 330 270 300S370 190 420 170S500 90 515 60"/>
+          <g data-route-pts></g>
+        </svg>
+        <figcaption class="mono">Mapa de posicionamento · da técnica ao valor percebido</figcaption>
+      </figure>
+    </div>
+
+    <blockquote class="biz-quote" data-rv>
+      <p>Excelência técnica precisa encontrar valor de mercado.</p>
+    </blockquote>
+  </div>
+</section>
+
+<section class="sec world" id="sem-fronteiras" aria-labelledby="h-world">
+  <div class="wrap">
+    <p class="kicker"><span>07</span>Sem fronteiras</p>
+    <div class="world-head">
+      <h2 class="d-l" id="h-world" data-rv="lines">
+        <span class="world-pre"><span class="ln"><span>Sem fronteiras:</span></span></span>
+        <span class="ln"><span>Amplie os formatos</span></span>
+        <span class="ln"><span>do seu atendimento.</span></span>
+      </h2>
+      <p data-rv data-d="1">A formação reúne avaliação do movimento, Modelo OPT™ da NASM e conteúdos de posicionamento digital da FITNESS LINK para diferentes formatos de atendimento.</p>
+    </div>
+    <div class="world-ctrl" data-world-ctrl role="group" aria-label="Formatos de atuação">
+      <button type="button" data-mode="local" aria-pressed="true">Presencial</button>
+      <span class="sep" aria-hidden="true">↔</span>
+      <button type="button" data-mode="regional" aria-pressed="false">Híbrido</button>
+      <span class="sep" aria-hidden="true">↔</span>
+      <button type="button" data-mode="global" aria-pressed="false">Online</button>
+    </div>
+  </div>
+  <div class="wrap">
+    <figure class="world-map" data-map data-mode="local">
+      <svg viewBox="0 0 1440 540" aria-hidden="true">
+        <path class="world-dots" data-dots/>
+        <g data-map-layers></g>
+      </svg>
+      <figcaption class="world-read mono" aria-live="polite"><span>23.55° S · 46.63° W</span><span>Alcance · <b data-reach>Local</b></span></figcaption>
+    </figure>
+
+    <ul class="w-cards" data-w-cards>
+      <li class="w-card">
+        <div class="w-card-top"><span class="mono">01 / 03</span><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="17"/><path d="M7 24h34M24 7c-5 5-7 11-7 17s2 12 7 17M24 7c5 5 7 11 7 17s-2 12-7 17"/><circle class="acc" cx="38" cy="12" r="4"/></svg></div>
+        <h3>Atendimento híbrido e consultoria digital</h3>
+        <p>Conheça formatos presencial, híbrido e online para ampliar as possibilidades de atendimento.</p>
+      </li>
+      <li class="w-card" data-pendente="Validar alegação (metodologia mais respeitada nos EUA)">
+        <div class="w-card-top"><span class="mono">02 / 03</span><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 40h11v-9h11v-9h14"/><circle class="acc" cx="11.5" cy="40" r="2.2"/><circle cx="22.5" cy="31" r="2.2"/><circle cx="35" cy="22" r="2.2"/><path d="M35 6v9M30.5 10.5h9"/></svg></div>
+        <h3>Modelo OPT<span class="tm">™</span> da NASM</h3>
+        <p>Estude o Optimum Performance Training (OPT™), modelo de treinamento integrado da NASM.</p>
+      </li>
+      <li class="w-card" data-pendente="Validar promessa financeira (cobrança em moeda forte)">
+        <div class="w-card-top"><span class="mono">03 / 03</span><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 40h36"/><path d="M9 33l9-9 7 6 14-15"/><path d="M31 15h8v8" class="acc"/><circle cx="14" cy="12" r="6"/><path d="M14 9v6"/></svg></div>
+        <h3>Precificação e posicionamento profissional</h3>
+        <p>Aprenda conceitos de precificação, posicionamento e consultoria remota com conteúdos da FITNESS LINK.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec ready" id="resultados" aria-labelledby="h-ready">
+  <div class="wrap ready-grid">
+    <div class="ready-aside">
+      <div class="ready-sticky">
+        <p class="kicker"><span>08</span>O que muda na sua atuação</p>
+        <h2 class="d-m" id="h-ready" data-rv="lines">
+          <span class="ln"><span>Ao final da formação,</span></span>
+          <span class="ln"><span>você estará</span></span>
+          <span class="ln"><span>preparado para:</span></span>
+        </h2>
+        <div class="ready-count" aria-hidden="true"><b data-ready-n>01</b><span>/ 09 competências</span></div>
+        <div class="ready-bar" aria-hidden="true"><i data-ready-bar></i></div>
+      </div>
+    </div>
+    <ol class="ready-list" data-ready>
+      <li data-rv><span class="mono">01</span><span class="ready-tag">Avaliação</span><p>Realizar avaliações posturais, funcionais e de desempenho.</p></li>
+      <li data-rv><span class="mono">02</span><span class="ready-tag">Prescrição</span><p>Estruturar programas individualizados e periodizados.</p></li>
+      <li data-rv><span class="mono">03</span><span class="ready-tag">Método</span><p>Aplicar o Modelo OPT™.</p></li>
+      <li data-rv><span class="mono">04</span><span class="ready-tag">Treinamento</span><p>Trabalhar força, hipertrofia, emagrecimento, mobilidade e condicionamento.</p></li>
+      <li data-rv><span class="mono">05</span><span class="ready-tag">Populações</span><p>Adaptar treinamentos para diferentes perfis e populações.</p></li>
+      <li data-rv><span class="mono">06</span><span class="ready-tag">Consultoria</span><p>Estruturar consultorias presenciais e online.</p></li>
+      <li data-rv><span class="mono">07</span><span class="ready-tag">Marca pessoal</span><p>Desenvolver sua marca pessoal.</p></li>
+      <li data-rv><span class="mono">08</span><span class="ready-tag">Captação</span><p>Trabalhar estratégias de captação e retenção.</p></li>
+      <li data-rv><span class="mono">09</span><span class="ready-tag">Adesão</span><p>Utilizar comunicação, psicologia do exercício e coaching para melhorar a adesão dos clientes.</p></li>
+    </ol>
+  </div>
+</section>
+
+<div class="wrap section-cta" role="group" aria-label="Próximo passo">
+  <a class="btn btn-ink btn-sm" href="#inscricao">Quero conversar sobre minha carreira
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+  </a>
+  <span class="mono">Tire dúvidas com nossos consultores.</span>
+</div>
+
+<section class="sec field" id="atuacao" aria-labelledby="h-field">
+  <div class="wrap">
+    <p class="kicker"><span>09</span>Campo de atuação</p>
+    <h2 class="d-l" id="h-field" data-rv="lines">
+      <span class="ln"><span>Até onde essa</span></span>
+      <span class="ln"><span>formação pode <span class="red">te levar?</span></span></span>
+    </h2>
+
+    <div class="field-grid" data-field>
+      <div class="field-tabs" role="tablist" aria-label="Campos de atuação" aria-orientation="vertical">
+        <button class="field-tab" role="tab" id="ft-1" aria-controls="fp-1" aria-selected="true"><span class="mono">01</span><span class="field-t">Personal Trainer</span></button>
+        <button class="field-tab" role="tab" id="ft-2" aria-controls="fp-2" aria-selected="false" tabindex="-1"><span class="mono">02</span><span class="field-t">Consultoria digital</span></button>
+        <button class="field-tab" role="tab" id="ft-3" aria-controls="fp-3" aria-selected="false" tabindex="-1"><span class="mono">03</span><span class="field-t">Gestão &amp; empreendedorismo</span></button>
+        <button class="field-tab" role="tab" id="ft-4" aria-controls="fp-4" aria-selected="false" tabindex="-1"><span class="mono">04</span><span class="field-t">Avaliação &amp; movimento</span></button>
+      </div>
+
+      <div class="field-stage">
+        <div class="field-imgs">
+          <div class="ph ph-f1 is-on" role="img" aria-label="Personal trainer acompanha uma aluna durante o levantamento terra"></div>
+          <div class="ph ph-f2" role="img" aria-label="Profissional grava uma aula diante da câmera do celular"></div>
+          <div class="ph ph-f3" role="img" aria-label="Treinador e cliente discutem o plano de treino em um tablet"></div>
+          <div class="ph ph-f4" role="img" aria-label="Treinador avalia e corrige a posição de uma aluna na prancha"></div>
+        </div>
+        <div class="field-panel" role="tabpanel" id="fp-1" aria-labelledby="ft-1" tabindex="0"><span class="mono">01 / 04</span><h3>Personal Trainer</h3><p>Atuação em academias, studios, centros de treinamento e atendimento personalizado.</p></div>
+        <div class="field-panel" role="tabpanel" id="fp-2" aria-labelledby="ft-2" tabindex="0" hidden><span class="mono">02 / 04</span><h3>Consultoria digital</h3><p>Atendimento online para clientes em escala nacional e internacional.</p></div>
+        <div class="field-panel" role="tabpanel" id="fp-3" aria-labelledby="ft-3" tabindex="0" hidden><span class="mono">03 / 04</span><h3>Gestão &amp; empreendedorismo</h3><p>Desenvolvimento da própria marca, negócio e atuação no mercado fitness.</p></div>
+        <div class="field-panel" role="tabpanel" id="fp-4" aria-labelledby="ft-4" tabindex="0" hidden><span class="mono">04 / 04</span><h3>Avaliação &amp; movimento</h3><p>Avaliação funcional, prevenção de lesões e exercícios corretivos.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec matrix" id="matriz" aria-labelledby="h-matriz">
+  <div class="wrap">
+    <p class="kicker"><span>10</span>Matriz curricular</p>
+    <div class="matrix-head">
+      <h2 class="d-l" id="h-matriz" data-rv="lines">
+        <span class="ln"><span>Uma formação</span></span>
+        <span class="ln"><span>pensada por completo.</span></span>
+      </h2>
+      <p data-rv data-d="1">Cinco grandes áreas que conectam ciência, treinamento, método internacional, prática e carreira. Abra cada uma para ver os conteúdos.</p>
+    </div>
+
+    <div class="acc" data-acc data-pendente="Agrupamento em 5 módulos proposto a partir das disciplinas oficiais — aprovar">
+      <div class="acc-item is-open">
+        <button class="acc-btn" type="button" aria-expanded="true" aria-controls="ac-1" id="acb-1"><span class="acc-n">01</span><span class="acc-t">Biomecânica e Avaliação do Movimento<small>Ciência</small></span><span class="acc-meta">02 disciplinas</span><span class="acc-ic" aria-hidden="true"></span></button>
+        <div class="acc-panel" id="ac-1" role="region" aria-labelledby="acb-1"><div><div class="acc-body">
+          <ul class="acc-list"><li>Biomecânica e Cinesiologia para Personal Trainer</li><li>Biomecânica Aplicada a Testes, Lesões e Modalidades</li></ul>
+        </div></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-btn" type="button" aria-expanded="false" aria-controls="ac-2" id="acb-2"><span class="acc-n">02</span><span class="acc-t">Prescrição e Métodos de Treinamento<small>Performance</small></span><span class="acc-meta">02 disciplinas</span><span class="acc-ic" aria-hidden="true"></span></button>
+        <div class="acc-panel" id="ac-2" role="region" aria-labelledby="acb-2"><div><div class="acc-body">
+          <ul class="acc-list"><li>Princípios e Métodos de Treinamento Físico</li><li>Prescrição do Treino de Força e Musculação</li></ul>
+        </div></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-btn" type="button" aria-expanded="false" aria-controls="ac-3" id="acb-3"><span class="acc-n">03</span><span class="acc-t">O Método NASM OPT<span class="tm">™</span> na Prática<small>Internacional</small></span><span class="acc-meta"><span class="badge-live">Ao vivo</span>02 disciplinas</span><span class="acc-ic" aria-hidden="true"></span></button>
+        <div class="acc-panel" id="ac-3" role="region" aria-labelledby="acb-3"><div><div class="acc-body">
+          <ul class="acc-list"><li>Certified Personal Trainer / NASM</li><li>Aula Prática do Método OPT™<span class="badge-live">Ao vivo</span></li></ul>
+          <p class="acc-sub">Certified Personal Trainer / NASM<span class="mono">22 conteúdos</span></p>
+          <p class="acc-intro">Conteúdos relacionados a:</p>
+          <ul class="acc-list cols-3">
+            <li>Estado atual da Saúde e Fitness</li>
+            <li>Profissão de Personal Trainer</li>
+            <li>Psicologia do Exercício</li>
+            <li>Coaching Comportamental</li>
+            <li>Sistemas Nervoso, Esquelético e Muscular</li>
+            <li>Sistemas Cardiorrespiratório, Endócrino e Digestivo</li>
+            <li>Ciência do Movimento Humano</li>
+            <li>Metabolismo e Bioenergética</li>
+            <li>Nutrição</li>
+            <li>Suplementação</li>
+            <li>Avaliação de Saúde e Aptidão Física</li>
+            <li>Avaliação Postural e Movimento</li>
+            <li>Modelo OPT™</li>
+            <li>Flexibilidade</li>
+            <li>Cardiorrespiratório</li>
+            <li>Core</li>
+            <li>Equilíbrio</li>
+            <li>Pliometria</li>
+            <li>Velocidade, Agilidade e Rapidez</li>
+            <li>Treinamento de Resistência</li>
+            <li>Modalidades de Exercício</li>
+            <li>Condições Crônicas e Populações Especiais</li>
+          </ul>
+        </div></div></div>
+      </div>
+      <div class="acc-item" data-pendente="Confirmar participação da FITNESS LINK na disciplina">
+        <button class="acc-btn" type="button" aria-expanded="false" aria-controls="ac-4" id="acb-4"><span class="acc-n">04</span><span class="acc-t">Personal de Negócios e Vendas<small>FITNESS LINK</small></span><span class="acc-meta"><span class="badge-live">Ao vivo</span>01 disciplina</span><span class="acc-ic" aria-hidden="true"></span></button>
+        <div class="acc-panel" id="ac-4" role="region" aria-labelledby="acb-4"><div><div class="acc-body">
+          <ul class="acc-list"><li>Personal de Negócios – PDN<span class="badge-live">Ao vivo</span></li></ul>
+        </div></div></div>
+      </div>
+      <div class="acc-item" data-pendente="Módulo sem disciplina específica de consultoria — confirmar agrupamento">
+        <button class="acc-btn" type="button" aria-expanded="false" aria-controls="ac-5" id="acb-5"><span class="acc-n">05</span><span class="acc-t">Atuação Digital e Consultoria Sem Fronteiras<small>Escala</small></span><span class="acc-meta">01 disciplina</span><span class="acc-ic" aria-hidden="true"></span></button>
+        <div class="acc-panel" id="ac-5" role="region" aria-labelledby="acb-5"><div><div class="acc-body">
+          <ul class="acc-list"><li>Marketing Estratégico e Soft Skills para Personal Trainer</li></ul>
+        </div></div></div>
+      </div>
+    </div>
+
+    <div class="matrix-cta">
+      <button class="btn btn-ink" type="button" data-matriz-open aria-haspopup="dialog">Baixar Matriz Curricular Completa (PDF)
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<section class="sec who" id="para-quem" aria-labelledby="h-who">
+  <div class="wrap">
+    <p class="kicker"><span>11</span>Para quem é</p>
+    <div class="who-head">
+      <h2 class="d-l" id="h-who" data-rv="lines">
+        <span class="ln"><span>Para quem quer ir</span></span>
+        <span class="ln"><span>além do básico.</span></span>
+      </h2>
+      <p data-rv data-d="1">Formação destinada a profissionais graduados em Educação Física e graduados em áreas correlatas da Saúde e Ciências do Esporte, observadas as disposições legais e regulatórias aplicáveis.</p>
+    </div>
+    <ol class="who-list" data-rv>
+      <li><div class="who-bars" aria-hidden="true"><i></i><i></i><i></i></div><span class="mono">01</span><h3>Para quem está começando</h3><p>Quer construir uma atuação profissional com fundamentação científica.</p></li>
+      <li><div class="who-bars" aria-hidden="true"><i></i><i></i><i></i></div><span class="mono">02</span><h3>Para quem já atende</h3><p>Quer elevar seu nível técnico, profissional e o valor percebido do seu trabalho.</p></li>
+      <li><div class="who-bars" aria-hidden="true"><i></i><i></i><i></i></div><span class="mono">03</span><h3>Para quem quer expandir</h3><p>Quer desenvolver consultoria, presença digital, negócio e novas possibilidades de atuação.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec team" id="professores" aria-labelledby="h-team">
+  <div class="wrap">
+    <p class="kicker"><span>12</span>Corpo docente</p>
+    <div class="team-head">
+      <h2 class="d-l" id="h-team" data-rv="lines">
+        <span class="ln"><span>Aprenda com quem vive</span></span>
+        <span class="ln"><span>performance, ciência</span></span>
+        <span class="ln"><span>e <span class="red">mercado.</span></span></span>
+      </h2>
+      <div class="team-nav" data-rail-nav>
+        <button type="button" data-dir="-1" aria-label="Professores anteriores"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+        <button type="button" data-dir="1" aria-label="Próximos professores"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+
+    <ul class="team-rail" data-rail>
+      <li><figure class="prof"><div class="prof-ph"><span class="prof-ini" aria-hidden="true">RS</span><div class="prof-img pf-rs" role="img" aria-label="Dr. Rafael Soncin"></div></div><figcaption data-pendente="Minibio a preencher"><span class="prof-role">Docente</span><strong>Dr. Rafael Soncin</strong></figcaption></figure></li>
+      <li><figure class="prof"><div class="prof-ph"><span class="prof-ini" aria-hidden="true">AE</span><div class="prof-img pf-ae" role="img" aria-label="Dr. Alexandre Evangelista"></div></div><figcaption data-pendente="Minibio a preencher"><span class="prof-role">Docente</span><strong>Dr. Alexandre Evangelista</strong></figcaption></figure></li>
+      <li><figure class="prof"><div class="prof-ph"><span class="prof-ini" aria-hidden="true">CL</span><div class="prof-img pf-cl" role="img" aria-label="Dr. Charles Lopes"></div></div><figcaption data-pendente="Minibio a preencher"><span class="prof-role">Docente</span><strong>Dr. Charles Lopes</strong></figcaption></figure></li>
+      <li><figure class="prof" data-pendente="Foto oficial a enviar"><div class="prof-ph"><span class="prof-ini" aria-hidden="true">LT</span><span class="prof-tag">Foto · em breve</span></div><figcaption><span class="prof-role">Docente</span><strong>Esp. Leticia Toledo</strong></figcaption></figure></li>
+      <li><figure class="prof"><div class="prof-ph"><span class="prof-ini" aria-hidden="true">BM</span><div class="prof-img pf-bm" role="img" aria-label="Dra. Bruna Massaroto"></div></div><figcaption data-pendente="Minibio a preencher"><span class="prof-role">Docente</span><strong>Dra. Bruna Massaroto</strong></figcaption></figure></li>
+      <li><figure class="prof"><div class="prof-ph"><span class="prof-ini" aria-hidden="true">LC</span><div class="prof-img pf-lc" role="img" aria-label="Dr. Luiz Carnevali"></div></div><figcaption data-pendente="Minibio a preencher"><span class="prof-role">Docente</span><strong>Dr. Luiz Carnevali</strong></figcaption></figure></li>
+      <li><figure class="prof prof--nasm" data-pendente="Confirmar: docente CPT NASM"><div class="prof-ph"><span class="prof-ini" aria-hidden="true">NASM</span><span class="prof-tag">Certified Personal Trainer</span></div><figcaption><span class="prof-role">NASM</span><strong>CPT NASM</strong></figcaption></figure></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec auth" id="autoridade" aria-labelledby="h-auth">
+  <div class="wrap">
+    <p class="kicker"><span>13</span>Autoridade institucional</p>
+    <h2 class="d-l" id="h-auth" data-rv="lines">
+      <span class="ln"><span>Os três pilares</span></span>
+      <span class="ln"><span>da <span class="red">formação.</span></span></span>
+    </h2>
+    <ol class="auth-list" data-auth>
+      <li>
+        <div class="auth-mark"><span class="lg"><img data-logo="phorte" src="https://posphorte.com.br/wp-content/uploads/2024/08/logo-faculdade.webp" alt="" width="188" height="106" loading="lazy"></span></div>
+        <span class="mono">01</span>
+        <h3>Faculdade Phorte</h3>
+        <p data-pendente="Validar redação regulatória (MEC / diploma)">Instituição de Ensino Superior credenciada pelo MEC, responsável pela emissão do diploma de Pós-Graduação Lato Sensu.</p>
+      </li>
+      <li>
+        <div class="auth-mark"><span class="lg fl" data-logo="fitnesslink" data-pendente="Logo oficial da FITNESS LINK"><span class="lg-word" aria-hidden="true"><span>Fitness</span><span>Link</span></span></span></div>
+        <span class="mono">02</span>
+        <h3>FITNESS LINK</h3>
+        <p>Rede de conexão, negócios e gestão de carreira do mercado fitness, com foco em posicionamento e monetização profissional.</p>
+      </li>
+      <li>
+        <div class="auth-mark"><span class="lg nasm" data-logo="nasm" data-pendente="Logo NASM — versão Partner International"><span class="lg-word nasm" aria-hidden="true"><span>NASM</span><span>Partner International</span></span></span></div>
+        <span class="mono">03</span>
+        <h3>NASM</h3>
+        <p>National Academy of Sports Medicine, instituição internacional ligada às ciências do exercício e à metodologia Optimum Performance Training (OPT™).</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="facts" id="informacoes" aria-labelledby="h-facts">
+  <div class="wrap">
+    <p class="kicker"><span>14</span>Informações</p>
+    <h2 class="sr-only" id="h-facts">Informações do curso</h2>
+    <ul class="facts-grid">
+      <li data-rv><span class="facts-v"><span data-count="360">360</span>H</span><span class="facts-l">Carga horária</span></li>
+      <li data-rv data-d="1"><span class="facts-v">EAD</span><span class="facts-l">Modalidade</span></li>
+      <li data-rv data-d="2"><span class="facts-v sm">Aulas<br>ao vivo</span><span class="facts-l">Experiências síncronas e práticas</span></li>
+      <li data-rv data-d="3"><span class="facts-v sm">Modelo<br>OPT<span class="tm">™</span></span><span class="facts-l">Metodologia presente na formação</span></li>
+    </ul>
+    <ul class="facts-grid facts-inv" aria-label="Início e investimento">
+      <li data-rv><span class="facts-v sm">13/03</span><span class="facts-l">Data de início</span></li>
+      <li data-rv data-d="1"><span class="facts-v sm">R$ 150,00</span><span class="facts-l">Inscrição</span></li>
+      <li data-rv data-d="2"><span class="facts-v sm"><small>18 x</small> R$ 450,00</span><span class="facts-l">Mensalidades</span></li>
+    </ul>
+    <div class="facts-cta" data-rv>
+      <a class="btn btn-red" href="https://inscricao.posphorte.com.br/inscricao/pre-cadastro/personal-internacional-parceria-com-nasm/4881/6" target="_blank" rel="noopener" data-inscricao>Garantir Minha Vaga com Chancela Internacional
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CUPOM RASPADINHA (Black Phorte) — bloco independente; edite só o CONFIG dentro dele. Some sozinho depois de 30/11/2026 ===== -->
+<section id="cupomRaspadinha" class="cpr" aria-labelledby="cpr-titulo">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<style>
+/* ===== Cupom raspadinha — bloco independente, tudo escopado em #cupomRaspadinha ===== */
+#cupomRaspadinha{
+  --cpr-k:#101010;--cpr-r:#DA0418;--cpr-r2:#B80314;--cpr-w:#FFFFFF;--cpr-g1:#E9E9E9;--cpr-g2:#929292;--cpr-ink2:#4A4A4A;--cpr-ll:rgba(16,16,16,.16);
+  --cpr-ft:'Space Grotesk',system-ui,sans-serif;--cpr-fb:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;--cpr-fm:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;
+  --cpr-pad:clamp(20px,5vw,72px);
+  position:relative;display:block;width:100%;margin:0;background:var(--cpr-r);color:var(--cpr-w);
+  padding:clamp(80px,10vw,160px) 0;overflow:hidden;isolation:isolate;text-align:left;
+  font-family:var(--cpr-fb);font-size:16px;line-height:1.6;font-weight:400;-webkit-font-smoothing:antialiased;
+}
+#cupomRaspadinha *,#cupomRaspadinha *::before,#cupomRaspadinha *::after{box-sizing:border-box}
+#cupomRaspadinha :where(h2,h3,p,ol,li,div,span,small,b,strong,s,code,canvas){margin:0;padding:0;border:0;background:none;color:inherit;font:inherit;letter-spacing:inherit;text-transform:inherit;text-align:inherit;font-style:normal;box-shadow:none}
+#cupomRaspadinha :where(h2)::before,#cupomRaspadinha :where(h2)::after{content:none}
+#cupomRaspadinha ol,#cupomRaspadinha li{list-style:none}
+#cupomRaspadinha a{color:inherit;text-decoration:none;box-shadow:none}
+#cupomRaspadinha button{font:inherit;color:inherit;background:none;border:0;margin:0;padding:0;cursor:pointer;text-transform:none;letter-spacing:inherit;border-radius:0;box-shadow:none;line-height:inherit;white-space:normal;min-height:0;width:auto}
+#cupomRaspadinha svg{display:block;overflow:visible}
+#cupomRaspadinha :focus-visible{outline:2px solid var(--cpr-k);outline-offset:4px}
+#cupomRaspadinha [hidden]{display:none!important}
+#cupomRaspadinha:not(.cpr-js){display:none}
+#cupomRaspadinha .cpr-sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;margin:-1px;padding:0;border:0}
+#cupomRaspadinha .cpr-wrap{width:100%;max-width:1360px;margin:0 auto;padding-left:var(--cpr-pad);padding-right:var(--cpr-pad)}
+#cupomRaspadinha .cpr-mono{font-family:var(--cpr-fm);font-size:12px;line-height:1.5;letter-spacing:.08em;text-transform:uppercase}
+
+#cupomRaspadinha .cpr-kicker{display:flex;align-items:center;gap:14px;font-family:var(--cpr-fm);font-size:12px;line-height:1.4;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.88);margin-bottom:clamp(22px,3vw,36px)}
+#cupomRaspadinha .cpr-kicker::before{content:"";display:inline-block;width:28px;height:1px;background:currentColor;flex:none}
+#cupomRaspadinha .cpr-head{display:grid;gap:40px}
+#cupomRaspadinha .cpr-h{font-family:var(--cpr-ft);font-weight:700;font-size:clamp(30px,4.4vw,64px);line-height:.98;letter-spacing:-.04em;text-transform:uppercase;max-width:20ch;text-wrap:balance}
+#cupomRaspadinha .cpr-lead{margin-top:22px;font-size:clamp(17px,1.35vw,20px);line-height:1.6;max-width:40ch}
+#cupomRaspadinha .cpr-clock{border-top:1px solid rgba(255,255,255,.45);padding-top:16px}
+#cupomRaspadinha .cpr-clock .cpr-mono{color:rgba(255,255,255,.88)}
+#cupomRaspadinha .cpr-units{display:flex;gap:clamp(16px,2.4vw,32px);margin-top:14px}
+#cupomRaspadinha .cpr-u{display:flex;flex-direction:column;gap:6px}
+#cupomRaspadinha .cpr-u b{font-family:var(--cpr-ft);font-weight:600;font-size:clamp(36px,4.2vw,60px);line-height:.9;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+#cupomRaspadinha .cpr-u span{font-family:var(--cpr-fm);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.88)}
+
+#cupomRaspadinha .cpr-ticket{position:relative;display:grid;margin-top:clamp(44px,6vw,88px);background:var(--cpr-w);color:var(--cpr-k);box-shadow:0 34px 70px -34px rgba(0,0,0,.55)}
+#cupomRaspadinha .cpr-stub{display:flex;flex-direction:column;align-items:center;padding:28px 16px 30px;background:var(--cpr-g1)}
+#cupomRaspadinha .cpr-pick{color:var(--cpr-ink2);text-align:center;margin-bottom:18px}
+#cupomRaspadinha .cpr-seals{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(10px,3vw,48px);width:100%;max-width:840px}
+#cupomRaspadinha .cpr-slot{display:flex;flex-direction:column;align-items:center;min-width:0}
+#cupomRaspadinha .cpr-seal{position:relative;width:100%;max-width:240px;aspect-ratio:1;border-radius:50%;background:var(--cpr-w);display:grid;place-items:center;text-align:center;overflow:hidden;isolation:isolate;container-type:inline-size;transition:opacity .4s,filter .4s}
+#cupomRaspadinha .cpr-seal::before{content:"";position:absolute;inset:6%;border-radius:50%;border:1px dashed rgba(16,16,16,.35)}
+#cupomRaspadinha .cpr-val{position:relative;font-family:var(--cpr-ft);font-weight:700;color:var(--cpr-r);line-height:.9;letter-spacing:-.05em}
+#cupomRaspadinha .cpr-val b{display:block;font-weight:700;font-size:30cqw}
+#cupomRaspadinha .cpr-val small{display:block;font-family:var(--cpr-fm);font-weight:500;font-size:max(9px,5.4cqw);letter-spacing:.1em;text-transform:uppercase;color:var(--cpr-k);margin-top:8%}
+#cupomRaspadinha .cpr-canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;cursor:grab;transition:opacity .6s;z-index:2}
+#cupomRaspadinha .cpr-canvas.is-down{cursor:grabbing}
+#cupomRaspadinha .cpr-canvas.is-gone{opacity:0;pointer-events:none}
+#cupomRaspadinha .cpr-n{margin-top:12px;color:var(--cpr-ink2);font-size:11px;white-space:nowrap}
+#cupomRaspadinha .cpr-slot.is-locked .cpr-seal{opacity:.38;filter:grayscale(1)}
+#cupomRaspadinha .cpr-slot.is-locked .cpr-val{visibility:hidden}
+#cupomRaspadinha .cpr-slot.is-locked .cpr-canvas{pointer-events:none;cursor:not-allowed}
+#cupomRaspadinha .cpr-slot.is-win .cpr-n{color:var(--cpr-r)}
+
+#cupomRaspadinha .cpr-body{position:relative;padding:26px 22px 32px;border-top:2px dashed rgba(16,16,16,.22)}
+#cupomRaspadinha .cpr-body::before,#cupomRaspadinha .cpr-body::after{content:"";position:absolute;top:-12px;width:22px;height:22px;border-radius:50%;background:var(--cpr-r)}
+#cupomRaspadinha .cpr-body::before{left:-11px}
+#cupomRaspadinha .cpr-body::after{right:-11px}
+#cupomRaspadinha .cpr-bar{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 18px;font-family:var(--cpr-fm);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--cpr-ink2);padding-bottom:14px;border-bottom:1px solid var(--cpr-ll);margin-bottom:24px}
+#cupomRaspadinha .cpr-lbl{color:var(--cpr-r);margin-bottom:14px}
+#cupomRaspadinha .cpr-steps{border-top:1px solid var(--cpr-k)}
+#cupomRaspadinha .cpr-steps li{position:relative;display:block;padding:14px 0 14px 40px;border-bottom:1px solid var(--cpr-ll);font-family:var(--cpr-ft);font-weight:500;font-size:clamp(18px,1.6vw,22px);line-height:1.2;letter-spacing:-.015em}
+#cupomRaspadinha .cpr-steps li>span:first-child{position:absolute;left:0;top:19px;font-family:var(--cpr-fm);font-size:12px;font-weight:500;letter-spacing:.08em;color:var(--cpr-r)}
+#cupomRaspadinha .cpr-reveal{margin-top:22px;font-family:var(--cpr-fm);font-size:12px;letter-spacing:.1em;text-transform:uppercase;text-decoration:underline;text-underline-offset:4px;color:var(--cpr-ink2);padding:8px 0}
+#cupomRaspadinha .cpr-reveal:hover{color:var(--cpr-r)}
+#cupomRaspadinha .cpr-res:focus{outline:none}
+#cupomRaspadinha .cpr-win{font-family:var(--cpr-ft);font-weight:600;font-size:clamp(26px,2.7vw,42px);line-height:1.05;letter-spacing:-.03em;max-width:18ch}
+#cupomRaspadinha .cpr-win b{color:var(--cpr-r);font-weight:700}
+#cupomRaspadinha .cpr-new{margin-top:16px;font-size:17px;line-height:1.4}
+#cupomRaspadinha .cpr-new s{color:var(--cpr-g2);margin-right:8px;text-decoration:line-through}
+#cupomRaspadinha .cpr-new strong{font-weight:600}
+#cupomRaspadinha .cpr-res>div+div{margin-top:24px;padding-top:22px;border-top:1px solid var(--cpr-ll)}
+#cupomRaspadinha .cpr-use{font-family:var(--cpr-ft);font-weight:500;font-size:clamp(19px,1.7vw,24px);line-height:1.3;letter-spacing:-.015em;max-width:30ch}
+#cupomRaspadinha .cpr-use strong{font-weight:700;color:var(--cpr-r);letter-spacing:.02em;overflow-wrap:anywhere}
+#cupomRaspadinha .cpr-code{display:flex;align-items:stretch;margin-top:18px;border:1px solid var(--cpr-k);max-width:440px}
+#cupomRaspadinha .cpr-code code{flex:1;display:flex;align-items:center;min-width:0;font-family:var(--cpr-fm);font-size:clamp(15px,1.4vw,19px);font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:12px 16px;color:var(--cpr-k);overflow-wrap:anywhere}
+#cupomRaspadinha .cpr-copy{position:relative;flex:none;background:var(--cpr-k);color:var(--cpr-w);font-family:var(--cpr-fm);font-size:12px;letter-spacing:.1em;text-transform:uppercase;padding:0 20px;min-height:54px;transition:background-color .25s}
+#cupomRaspadinha .cpr-copy:hover{background:var(--cpr-r)}
+#cupomRaspadinha .cpr-note{margin-top:14px;font-size:14px;line-height:1.55;color:var(--cpr-ink2);max-width:46ch}
+#cupomRaspadinha .cpr-cta{margin-top:26px}
+#cupomRaspadinha .cpr-btn{position:relative;display:inline-flex;align-items:center;justify-content:space-between;gap:22px;min-height:58px;padding:16px 22px 16px 26px;background:var(--cpr-r);color:var(--cpr-w);font-family:var(--cpr-ft);font-weight:600;font-size:15px;letter-spacing:.07em;text-transform:uppercase;line-height:1.2;border:1px solid var(--cpr-r);transition:background-color .25s,border-color .25s}
+#cupomRaspadinha .cpr-btn:hover{background:var(--cpr-r2);border-color:var(--cpr-r2);color:var(--cpr-w)}
+#cupomRaspadinha .cpr-btn svg{width:22px;height:12px;flex:none;transition:translate .3s}
+#cupomRaspadinha .cpr-btn:hover svg{translate:5px 0}
+#cupomRaspadinha .cpr-btn[data-cpr-pendente]::after{content:"link pendente";position:absolute;top:-9px;right:10px;font-family:var(--cpr-fm);font-size:10px;letter-spacing:.08em;background:#FFD400;color:#101010;padding:2px 6px;line-height:1.3}
+#cupomRaspadinha .cpr-toast{position:fixed;left:50%;bottom:32px;z-index:9999;transform:translate(-50%,16px);opacity:0;pointer-events:none;background:var(--cpr-w);color:var(--cpr-k);font-family:var(--cpr-fm);font-size:12px;letter-spacing:.04em;line-height:1.45;padding:12px 16px;border-left:3px solid var(--cpr-r);max-width:min(92vw,420px);box-shadow:0 10px 30px rgba(0,0,0,.25);transition:opacity .3s,transform .3s}
+#cupomRaspadinha .cpr-toast.is-on{opacity:1;transform:translate(-50%,0)}
+
+@media (min-width:768px){
+  #cupomRaspadinha .cpr-stub{padding:40px 32px 36px}
+  #cupomRaspadinha .cpr-body{padding:32px 32px 38px}
+  #cupomRaspadinha .cpr-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 28px;border-top:0}
+  #cupomRaspadinha .cpr-steps li{border-top:1px solid var(--cpr-k);border-bottom:0;padding-right:8px}
+}
+@media (min-width:1080px){
+  #cupomRaspadinha .cpr-head{grid-template-columns:7fr 5fr;gap:clamp(40px,6vw,104px);align-items:end}
+  #cupomRaspadinha .cpr-stub{padding:52px 48px 44px}
+  #cupomRaspadinha .cpr-body{padding:40px clamp(36px,4vw,64px) 48px}
+  #cupomRaspadinha .cpr-res>div+div{margin-top:0;padding-top:0;border-top:0}
+  #cupomRaspadinha .cpr-res{display:grid;grid-template-columns:6fr 5fr;gap:24px clamp(40px,5vw,80px);align-items:start}
+}
+@media (prefers-reduced-motion:reduce){
+  #cupomRaspadinha *,#cupomRaspadinha *::before,#cupomRaspadinha *::after{animation:none!important;transition-duration:.01ms!important}
+}
+</style>
+
+<div class="cpr-wrap">
+  <div class="cpr-head">
+    <div>
+      <h2 class="cpr-h" id="cpr-titulo">Na sua carreira e na Black Phorte, quem constrói sua sorte é você!</h2>
+      <p class="cpr-lead">Raspe um selo e descubra o desconto que você terá em todas as mensalidades da sua pós-graduação.</p>
+    </div>
+    <div class="cpr-clock">
+      <p class="cpr-mono" data-cpr="clock">A promoção termina em</p>
+      <div class="cpr-units" aria-hidden="true">
+        <span class="cpr-u"><b data-cpr-u="d">00</b><span>dias</span></span>
+        <span class="cpr-u"><b data-cpr-u="h">00</b><span>horas</span></span>
+        <span class="cpr-u"><b data-cpr-u="m">00</b><span>min</span></span>
+        <span class="cpr-u"><b data-cpr-u="s">00</b><span>seg</span></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="cpr-ticket">
+    <div class="cpr-stub">
+      <p class="cpr-mono cpr-pick">Escolha um dos três selos</p>
+      <div class="cpr-seals">
+        <div class="cpr-slot">
+          <div class="cpr-seal"><p class="cpr-val" aria-hidden="true"><b></b><small>de desconto</small></p><canvas class="cpr-canvas" aria-hidden="true"></canvas></div>
+          <span class="cpr-mono cpr-n">Selo 01</span>
+        </div>
+        <div class="cpr-slot">
+          <div class="cpr-seal"><p class="cpr-val" aria-hidden="true"><b></b><small>de desconto</small></p><canvas class="cpr-canvas" aria-hidden="true"></canvas></div>
+          <span class="cpr-mono cpr-n">Selo 02</span>
+        </div>
+        <div class="cpr-slot">
+          <div class="cpr-seal"><p class="cpr-val" aria-hidden="true"><b></b><small>de desconto</small></p><canvas class="cpr-canvas" aria-hidden="true"></canvas></div>
+          <span class="cpr-mono cpr-n">Selo 03</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cpr-body">
+      <p class="cpr-bar"><span data-cpr="curso"></span><span>Válido até <span data-cpr-data>30/11/2026</span></span></p>
+      <div class="cpr-how">
+        <p class="cpr-mono cpr-lbl">Como funciona</p>
+        <ol class="cpr-steps">
+          <li><span>01</span>Escolha um dos três selos e raspe com o dedo ou o mouse.</li>
+          <li><span>02</span>Copie o código do seu cupom.</li>
+          <li><span>03</span>Use o cupom no pré-cadastro até <span data-cpr-data>30/11/2026</span>.</li>
+        </ol>
+        <button class="cpr-reveal" type="button">Revelar sem raspar</button>
+      </div>
+      <div class="cpr-res" tabindex="-1" hidden>
+        <div>
+          <p class="cpr-mono cpr-lbl">Seu desconto</p>
+          <p class="cpr-win">Você ganhou <b data-cpr="pct"></b> de desconto em todas as mensalidades.</p>
+          <p class="cpr-new" data-cpr="parcela" hidden><s></s><strong></strong></p>
+        </div>
+        <div>
+          <p class="cpr-use">Utilize o cupom <strong data-cpr="cupom"></strong> na hora de se inscrever no curso.</p>
+          <div class="cpr-code"><code data-cpr="codigo"></code><button class="cpr-copy" type="button">Copiar</button></div>
+          <p class="cpr-note">Informe o cupom no pré-cadastro até <span data-cpr-data>30/11/2026</span>. A taxa de inscrição de <span data-cpr="taxa">R$ 150,00</span> não tem desconto.</p>
+          <div class="cpr-cta"><a class="cpr-btn" href="#" data-cpr="inscricao">Usar meu cupom<svg viewBox="0 0 22 12" aria-hidden="true"><path d="M0 6h20M15 1l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="cpr-sr" aria-live="polite" data-cpr="live"></p>
+</div>
+<div class="cpr-toast" role="status" aria-live="polite"></div>
+
+<script>
+(function () {
+  'use strict';
+  /* =====================================================================
+     CONFIGURAÇÃO — em cada página, edite só este bloco.
+     ===================================================================== */
+  var CONFIG = {
+    curso: '',              /* nome do curso, em letra pequena no bilhete. Vazio = não aparece nada */
+    urlInscricao: 'https://inscricao.posphorte.com.br/inscricao/pre-cadastro/personal-internacional-parceria-com-nasm/4881/6',
+    validade: '2026-11-30T23:59:59-03:00', /* depois disso o bloco some sozinho (horário de Brasília) */
+    descontos: [            /* chance = peso do sorteio */
+      { pct: 20, chance: 40, cupom: 'YUQOBDO' },
+      { pct: 25, chance: 40, cupom: 'QONDOW' },
+      { pct: 30, chance: 20, cupom: 'BRIEUBF' }
+    ],
+    mensalidade: 0,         /* ex.: 199.00 — mostra "18x de R$ 199,00 → com desconto". 0 = esconde a linha */
+    parcelas: 18,
+    taxaInscricao: 'R$ 150,00'
+  };
+  /* ===================================================================== */
+
+  var root = document.getElementById('cupomRaspadinha');
+  if (!root || root.getAttribute('data-cpr-ok')) return;
+  root.setAttribute('data-cpr-ok', '1');
+
+  var fim = Date.parse(CONFIG.validade || '');
+  if (fim && Date.now() > fim) { root.parentNode.removeChild(root); return; }
+  root.classList.add('cpr-js');
+
+  var $ = function (s, c) { return (c || root).querySelector(s); };
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || root).querySelectorAll(s)); };
+  var pad2 = function (i) { return (i < 10 ? '0' : '') + i; };
+  var reduz = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var DESC = (CONFIG.descontos || []).filter(function (d) { return d && +d.pct > 0; });
+  var KEY = 'phorte-cupom-raspadinha-v1';
+  var slots = $$('.cpr-slot'), how = $('.cpr-how'), res = $('.cpr-res'), live = $('[data-cpr="live"]');
+  var copyBtn = $('.cpr-copy'), state = null, revelado = false, code = '';
+
+  /* aviso */
+  var toast = $('.cpr-toast'), toastT;
+  function aviso(msg) { toast.textContent = msg; toast.classList.add('is-on'); clearTimeout(toastT); toastT = setTimeout(function () { toast.classList.remove('is-on'); }, 3600); }
+  var dinheiro = function (v) { return 'R$ ' + v.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); };
+  function achar(p) { for (var i = 0; i < DESC.length; i++) if (+DESC[i].pct === p) return DESC[i]; return null; }
+
+  /* textos que vêm do CONFIG */
+  if (CONFIG.curso) $('[data-cpr="curso"]').textContent = CONFIG.curso;
+  if (CONFIG.taxaInscricao) $('[data-cpr="taxa"]').textContent = CONFIG.taxaInscricao;
+  if (fim) {
+    var dt = '';
+    try { dt = new Date(fim).toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo' }); } catch (e) {}
+    if (dt) $$('[data-cpr-data]').forEach(function (el) { el.textContent = dt; });
+  }
+  var btn = $('[data-cpr="inscricao"]'), url = (CONFIG.urlInscricao || '').trim();
+  if (url) { btn.setAttribute('href', url); btn.setAttribute('target', '_blank'); btn.setAttribute('rel', 'noopener'); }
+  else {
+    btn.setAttribute('data-cpr-pendente', '1');
+    btn.addEventListener('click', function (e) { e.preventDefault(); aviso('O link de inscrição ainda não foi configurado.'); });
+  }
+
+  /* resultado guardado no navegador (vale para todas as páginas que usam este bloco) */
+  try { var o = JSON.parse(localStorage.getItem(KEY) || 'null'); if (o && achar(o.p) && o.s >= 0 && o.s < slots.length) state = o; } catch (e) {}
+  function salvar() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
+
+  function sortear() {
+    var tot = 0, w = DESC.map(function (d) { var v = Math.max(0, +d.chance || 0); tot += v; return v; });
+    if (!tot) { w = DESC.map(function () { return 1; }); tot = DESC.length; }
+    var r;
+    try { var u = new Uint32Array(1); window.crypto.getRandomValues(u); r = u[0] / 4294967296; } catch (e) { r = Math.random(); }
+    r *= tot;
+    for (var i = 0; i < DESC.length; i++) { r -= w[i]; if (r < 0) return +DESC[i].pct; }
+    return +DESC[DESC.length - 1].pct;
+  }
+  /* o sorteio acontece quando a pessoa escolhe o selo; os outros dois ficam bloqueados */
+  function escolher(i) {
+    if (!state) { state = { p: sortear(), r: 0, s: i }; salvar(); }
+    slots.forEach(function (sl, k) {
+      sl.classList.toggle('is-locked', k !== state.s);
+      if (k === state.s) $('.cpr-val b', sl).textContent = state.p + '%';
+    });
+    return state.s === i;
+  }
+  function preencher() {
+    var d = achar(state.p) || {};
+    code = String(d.cupom || '').trim();
+    $('[data-cpr="pct"]').textContent = state.p + '%';
+    $('[data-cpr="cupom"]').textContent = code;
+    $('[data-cpr="codigo"]').textContent = code;
+    var m = +CONFIG.mensalidade || 0, n = +CONFIG.parcelas || 0, linha = $('[data-cpr="parcela"]');
+    if (m && n) {
+      $('s', linha).textContent = n + 'x de ' + dinheiro(m);
+      $('strong', linha).textContent = n + 'x de ' + dinheiro(Math.round(m * (100 - state.p)) / 100);
+      linha.hidden = false;
+    }
+  }
+  function revelar(anim, foco) {
+    if (revelado) return;
+    revelado = true;
+    escolher(state ? state.s : 0);
+    state.r = 1; salvar();
+    preencher();
+    var sl = slots[state.s], cv = $('.cpr-canvas', sl);
+    sl.classList.add('is-win');
+    $('.cpr-n', sl).textContent = 'Seu selo';
+    if (cv) {
+      if (anim && !reduz) { cv.classList.add('is-gone'); setTimeout(function () { if (cv.parentNode) cv.parentNode.removeChild(cv); }, 700); }
+      else cv.parentNode.removeChild(cv);
+    }
+    how.hidden = true;
+    res.hidden = false;
+    if (foco) res.focus({ preventScroll: true });
+    live.textContent = 'Você ganhou ' + state.p + '% de desconto em todas as mensalidades. Utilize o cupom ' + code + ' na hora de se inscrever no curso.';
+  }
+
+  copyBtn.addEventListener('click', function () {
+    if (!code) return;
+    function ok() { copyBtn.textContent = 'Copiado'; aviso('Cupom ' + code + ' copiado.'); setTimeout(function () { copyBtn.textContent = 'Copiar'; }, 2200); }
+    function manual() {
+      var t = document.createElement('textarea');
+      t.value = code; t.setAttribute('readonly', ''); t.style.position = 'fixed'; t.style.opacity = '0';
+      document.body.appendChild(t); t.select();
+      var feito = false; try { feito = document.execCommand('copy'); } catch (e) {}
+      document.body.removeChild(t);
+      if (feito) ok(); else aviso('Copie o código: ' + code);
+    }
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(code).then(ok, manual); else manual();
+  });
+  $('.cpr-reveal').addEventListener('click', function () { revelar(true, true); });
+
+  /* contagem regressiva */
+  var uEls = {};
+  $$('[data-cpr-u]').forEach(function (el) { uEls[el.getAttribute('data-cpr-u')] = el; });
+  if (fim) {
+    var clockT, tick = function () {
+      var d = Math.max(0, fim - Date.now()), t = Math.floor(d / 1000);
+      uEls.d.textContent = pad2(Math.floor(t / 86400));
+      uEls.h.textContent = pad2(Math.floor(t % 86400 / 3600));
+      uEls.m.textContent = pad2(Math.floor(t % 3600 / 60));
+      uEls.s.textContent = pad2(t % 60);
+      if (!d) { clearInterval(clockT); $('[data-cpr="clock"]').textContent = 'Promoção encerrada'; }
+    };
+    tick();
+    clockT = setInterval(tick, 1000);
+  } else { $('.cpr-clock').hidden = true; }
+
+  /* camada para raspar, uma por selo. Antes da escolha, os descontos vão trocando de selo (só efeito visual: quem decide é o sorteio) */
+  var rot = 0, mexeuAlgum = false, pintores = [];
+  slots.forEach(function (sl, idx) {
+    var cv = $('.cpr-canvas', sl), seal = $('.cpr-seal', sl);
+    if (!cv || !cv.getContext) return;
+    var ctx = cv.getContext('2d'), mexeu = false, riscando = false, ultimo = null, passos = 0, dpr = 1;
+    function desenhar(prog) {
+      prog = prog == null ? 1 : prog;
+      var r = seal.getBoundingClientRect();
+      dpr = Math.min(2, window.devicePixelRatio || 1);
+      var w = Math.max(10, Math.round(r.width * dpr)), c = w / 2, css = w / dpr;
+      cv.width = w; cv.height = w;
+      ctx.globalCompositeOperation = 'source-over';
+      ctx.fillStyle = '#181818'; ctx.fillRect(0, 0, w, w);
+      ctx.lineWidth = Math.max(1, w * .004);
+      for (var i = 0; i < 4; i++) {
+        ctx.strokeStyle = 'rgba(255,255,255,' + (i === 3 ? .3 : .1) + ')';
+        ctx.beginPath(); ctx.arc(c, c, w * (.2 + i * .085), 0, Math.PI * 2); ctx.stroke();
+      }
+      ctx.strokeStyle = '#DA0418'; ctx.lineWidth = Math.max(2, w * .014);
+      var ini = -Math.PI / 2 + idx * Math.PI * 2 / 3;
+      ctx.beginPath(); ctx.arc(c, c, w * .455, ini, ini + Math.PI * 1.55); ctx.stroke();
+      ctx.fillStyle = '#FFFFFF'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.font = '700 ' + Math.round(w * .15) + 'px "Space Grotesk", system-ui, sans-serif';
+      ctx.fillText('RASPE', c, c - w * .07);
+      ctx.fillText('AQUI', c, c + w * .07);
+      var n = DESC.length;
+      if (n) {
+        var fs = Math.round(w * .12), yb = c + w * .275, passo = fs * 1.25;
+        var atual = DESC[(idx + rot) % n].pct + '%', antes = DESC[(idx + rot - 1 + n) % n].pct + '%';
+        ctx.save();
+        ctx.beginPath(); ctx.rect(0, yb - fs * .7, w, fs * 1.4); ctx.clip();
+        ctx.fillStyle = '#DA0418';
+        ctx.font = '700 ' + fs + 'px "Space Grotesk", system-ui, sans-serif';
+        if (prog < 1) {
+          ctx.globalAlpha = 1 - prog; ctx.fillText(antes, c, yb - passo * prog);
+          ctx.globalAlpha = prog; ctx.fillText(atual, c, yb + passo * (1 - prog));
+        } else ctx.fillText(atual, c, yb);
+        ctx.restore();
+      }
+    }
+    pintores.push(function (p) { if (!mexeu && cv.parentNode) desenhar(p); });
+    desenhar();
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { if (!mexeu && cv.parentNode) desenhar(); });
+    window.addEventListener('resize', function () { if (!mexeu && cv.parentNode) desenhar(); });
+
+    function ponto(e) { var r = cv.getBoundingClientRect(); return [(e.clientX - r.left) * cv.width / r.width, (e.clientY - r.top) * cv.height / r.height]; }
+    function raspar(a, b) {
+      ctx.globalCompositeOperation = 'destination-out';
+      ctx.lineWidth = Math.max(cv.width * .17, 24 * dpr); ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+      ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0] + .01, b[1]); ctx.stroke();
+    }
+    function conferir() {
+      var w = cv.width, d = ctx.getImageData(0, 0, w, w).data, c = w / 2, R2 = c * c, tot = 0, lim = 0, st = Math.max(2, Math.round(w / 90));
+      for (var y = 0; y < w; y += st) for (var x = 0; x < w; x += st) {
+        var dx = x - c, dy = y - c;
+        if (dx * dx + dy * dy > R2) continue;
+        tot++; if (d[(y * w + x) * 4 + 3] < 40) lim++;
+      }
+      if (tot && lim / tot > .5) revelar(true, false);
+    }
+    cv.addEventListener('pointerdown', function (e) {
+      if (revelado || !escolher(idx)) return;
+      e.preventDefault();
+      mexeu = true; mexeuAlgum = true; parar(); riscando = true; cv.classList.add('is-down');
+      try { cv.setPointerCapture(e.pointerId); } catch (er) {}
+      ultimo = ponto(e); raspar(ultimo, ultimo);
+    });
+    cv.addEventListener('pointermove', function (e) {
+      if (!riscando || revelado) return;
+      var p = ponto(e); raspar(ultimo, p); ultimo = p;
+      if (++passos % 14 === 0) conferir();
+    });
+    function soltar() { if (!riscando) return; riscando = false; cv.classList.remove('is-down'); if (!revelado) conferir(); }
+    cv.addEventListener('pointerup', soltar);
+    cv.addEventListener('pointercancel', soltar);
+  });
+  if (state) escolher(state.s);
+  if (state && state.r) revelar(false, false);
+
+  /* roleta: troca os descontos de selo a cada ~1 s enquanto ninguém escolheu (pausa fora da tela) */
+  var timer = null;
+  function parar() { clearInterval(timer); timer = null; }
+  function girar() {
+    if (mexeuAlgum || revelado || state) { parar(); return; }
+    rot++;
+    var t0 = performance.now();
+    (function quadro(agora) {
+      var p = Math.min(1, (agora - t0) / 380), e = 1 - Math.pow(1 - p, 3);
+      if (mexeuAlgum) return;
+      pintores.forEach(function (fn) { fn(e); });
+      if (p < 1) requestAnimationFrame(quadro);
+    })(t0);
+  }
+  function iniciar() { if (!timer && !reduz && !state && DESC.length > 1) timer = setInterval(girar, 1100); }
+  if ('IntersectionObserver' in window) new IntersectionObserver(function (en) { if (en[0].isIntersecting) iniciar(); else parar(); }).observe(root);
+  else iniciar();
+})();
+</script>
+</section>
+
+<section class="sec final" id="proximo-nivel" aria-labelledby="h-final">
+  <div class="wrap">
+    <p class="kicker"><span>15</span>Próximo passo</p>
+    <h2 class="d-l final-title" id="h-final" data-rv="lines">
+      <span class="ln"><span>Seu próximo nível</span></span>
+      <span class="ln"><span>não é apenas físico.</span></span>
+    </h2>
+    <ul class="final-words" data-rv aria-label="É técnico, profissional, estratégico e internacional">
+      <li>É técnico.</li><li>Profissional.</li><li>Estratégico.</li><li>Internacional.</li>
+    </ul>
+
+    <div class="final-grid">
+      <div class="final-course" data-rv>
+        <span class="mono">Pós-graduação em</span>
+        <p class="final-name">Personal Trainer <span>Internacional</span></p>
+        <div class="lockup" role="img" aria-label="Faculdade Phorte, FITNESS LINK e NASM">
+          <span class="lg"><img data-logo="phorte" src="https://posphorte.com.br/wp-content/uploads/2024/08/logo-faculdade.webp" alt="" width="188" height="106" loading="lazy"></span>
+          <i aria-hidden="true"></i>
+          <span class="lg fl" data-logo="fitnesslink" data-pendente="Logo oficial da FITNESS LINK"><span class="lg-word" aria-hidden="true"><span>Fitness</span><span>Link</span></span></span>
+          <i aria-hidden="true"></i>
+          <span class="lg nasm" data-logo="nasm" data-pendente="Logo NASM — versão Partner International"><span class="lg-word nasm" aria-hidden="true"><span>NASM</span><span>Partner International</span></span></span>
+        </div>
+        <p class="realiza">Realização: <b>FITNESS LINK &amp; Faculdade Phorte</b><i aria-hidden="true">|</i><span class="sr-only"> | </span>Partner International: <b>NASM</b></p>
+        <ul class="final-facts"><li>360h</li><li>EAD</li><li>Aulas ao vivo</li><li>Modelo OPT™</li><li>Início 13/03</li><li>Inscrição R$ 150,00</li><li>18 x R$ 450,00</li></ul>
+        <a class="btn btn-red final-btn" href="https://inscricao.posphorte.com.br/inscricao/pre-cadastro/personal-internacional-parceria-com-nasm/4881/6" target="_blank" rel="noopener" data-inscricao>Garantir Minha Vaga com Chancela Internacional
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+
+      <div class="form-card" id="inscricao" data-rv data-d="1">
+        <h3>Fale com nossos consultores de carreira</h3>
+        <p>Preencha seus dados e receba todas as informações da pós.</p>
+
+        <div id="form-embed"></div>
+
+        <form id="form-inscricao" method="post" action="#" novalidate>
+          <input type="hidden" name="curso" value="Pós-Graduação em Personal Trainer Internacional">
+          <div class="field-f"><label for="f-nome">Nome completo</label><input id="f-nome" name="nome" type="text" autocomplete="name" required placeholder="Seu nome"></div>
+          <div class="field-row">
+            <div class="field-f"><label for="f-email">E-mail</label><input id="f-email" name="email" type="email" autocomplete="email" required placeholder="voce@email.com"></div>
+            <div class="field-f"><label for="f-tel">WhatsApp</label><input id="f-tel" name="whatsapp" type="tel" autocomplete="tel" inputmode="tel" required placeholder="(11) 90000-0000"></div>
+          </div>
+          <div class="field-f"><label for="f-form">Sua graduação</label>
+            <select id="f-form" name="graduacao" required>
+              <option value="" selected disabled>Selecione</option>
+              <option>Educação Física</option>
+              <option>Outra área da Saúde</option>
+              <option>Ciências do Esporte</option>
+              <option>Ainda estou me graduando</option>
+              <option>Outra</option>
+            </select>
+          </div>
+          <label class="check"><input type="checkbox" name="consentimento" required><span>Concordo em receber contato da Faculdade Phorte sobre a pós-graduação, conforme a <a id="link-privacidade" href="#" data-pendente="Link da política">Política de Privacidade</a>.</span></label>
+          <button class="btn btn-red" type="submit">Quero dar o próximo passo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <a href="#topo" class="lockup" aria-label="Faculdade Phorte, FITNESS LINK e NASM — voltar ao topo">
+      <span class="lg"><img data-logo="phorte" src="https://posphorte.com.br/wp-content/uploads/2024/08/logo-faculdade.webp" alt="" width="188" height="106" loading="lazy"></span>
+      <i aria-hidden="true"></i>
+      <span class="lg fl" data-logo="fitnesslink" data-pendente="Logo oficial da FITNESS LINK"><span class="lg-word" aria-hidden="true"><span>Fitness</span><span>Link</span></span></span>
+      <i aria-hidden="true"></i>
+      <span class="lg nasm" data-logo="nasm" data-pendente="Logo NASM — versão Partner International"><span class="lg-word nasm" aria-hidden="true"><span>NASM</span><span>Partner International</span></span></span>
+    </a>
+    <div class="foot-txt">
+      <span>Pós-Graduação em Personal Trainer Internacional</span>
+      <span class="realiza">Realização: <b>FITNESS LINK &amp; Faculdade Phorte</b><i aria-hidden="true">|</i><span class="sr-only"> | </span>Partner International: <b>NASM</b></span>
+    </div>
+    <nav aria-label="Rodapé"><a href="#matriz">Matriz</a><a href="https://inscricao.posphorte.com.br/inscricao/pre-cadastro/personal-internacional-parceria-com-nasm/4881/6" target="_blank" rel="noopener" data-inscricao>Inscrição</a><a id="link-privacidade-rodape" href="#">Política de Privacidade</a></nav>
+  </div>
+</footer>
+
+<div class="mcta" data-mcta><a class="btn btn-red" href="https://inscricao.posphorte.com.br/inscricao/pre-cadastro/personal-internacional-parceria-com-nasm/4881/6" target="_blank" rel="noopener" data-inscricao>Garantir Minha Vaga com Chancela Internacional
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+
+<div class="modal" id="modal-matriz" data-modal hidden>
+  <div class="modal-bg" data-modal-close></div>
+  <div class="modal-box form-card" role="dialog" aria-modal="true" aria-labelledby="h-modal" tabindex="-1">
+    <button class="modal-x" type="button" data-modal-close aria-label="Fechar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <h3 id="h-modal">Baixar Matriz Curricular Completa (PDF)</h3>
+    <div id="form-embed-matriz"></div>
+    <form id="form-matriz" method="post" action="#" novalidate>
+      <input type="hidden" name="curso" value="Pós-Graduação em Personal Trainer Internacional">
+      <input type="hidden" name="interesse" value="Matriz curricular completa (PDF)">
+      <div class="field-f"><label for="m-nome">Nome</label><input id="m-nome" name="nome" type="text" autocomplete="name" required placeholder="Seu nome"></div>
+      <div class="field-f"><label for="m-email">E-mail</label><input id="m-email" name="email" type="email" autocomplete="email" required placeholder="voce@email.com"></div>
+      <div class="field-f"><label for="m-tel">WhatsApp</label><input id="m-tel" name="whatsapp" type="tel" autocomplete="tel" inputmode="tel" required placeholder="(11) 90000-0000" data-tel></div>
+      <label class="check"><input type="checkbox" name="consentimento" required><span>Concordo em receber contato da Faculdade Phorte sobre a pós-graduação, conforme a <a id="link-privacidade-modal" href="#" data-pendente="Link da política">Política de Privacidade</a>.</span></label>
+      <button class="btn btn-red" type="submit">Baixar Matriz Curricular Completa (PDF)
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"/></svg></button>
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </form>
+    <div class="modal-done" data-matriz-done hidden>
+      <a class="btn btn-red" data-matriz-pdf href="#" target="_blank" rel="noopener">Baixar Matriz Curricular Completa (PDF)
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"/></svg></a>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+(function(){
+  'use strict';
+
+  /* =========================================================
+     CONFIG — edite aqui
+     "COLE_AQUI_..." = pendente (o formulário não envia, só mostra aviso)
+     ========================================================= */
+  var CONFIG = {
+    formEndpoint: "COLE_AQUI_URL_DO_FORMULARIO",   // action do formulário oficial (RD Station, CRM, etc.)
+    // modal "Baixar Matriz Curricular Completa (PDF)": os dados vão para o endpoint da ferramenta de
+    // captação e, só depois do envio, o botão de download aparece com o link do PDF
+    matriz: {
+      endpoint: "COLE_AQUI_URL_DE_CAPTACAO_DA_MATRIZ",
+      pdf: "COLE_AQUI_URL_DO_PDF_DA_MATRIZ"
+    },
+    // logos em versão clara (ficam sobre fundo escuro). NASM: usar a versão Partner International.
+    logos: {
+      phorte: "https://posphorte.com.br/wp-content/uploads/2024/08/logo-faculdade.webp",
+      fitnessLink: "COLE_AQUI_URL_DO_LOGO_FITNESS_LINK",
+      nasm: "COLE_AQUI_URL_DO_LOGO_NASM_PARTNER_INTERNATIONAL"
+    },
+    links: {
+      "link-privacidade": "COLE_AQUI_URL_DA_POLITICA",
+      "link-privacidade-rodape": "COLE_AQUI_URL_DA_POLITICA",
+      "link-privacidade-modal": "COLE_AQUI_URL_DA_POLITICA"
+    },
+    abrirEmNovaAba: true,
+    revisao: false        // true = contorna em amarelo tudo que está pendente (fotos, logo NASM...)
+  };
+
+  var doc = document.documentElement;
+  var $ = function(s,c){return (c||document).querySelector(s)};
+  var $$ = function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+  var clamp = function(v,a,b){return Math.min(b,Math.max(a,v))};
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  var mqWide = window.matchMedia('(min-width: 900px)');
+  var mqOpt = window.matchMedia('(min-width: 1000px) and (min-height: 640px)');
+  var pending = function(v){return !v || /^COLE_AQUI/.test(v)};
+  var SVGNS = 'http://www.w3.org/2000/svg';
+  function svgEl(tag, attrs, parent){
+    var el = document.createElementNS(SVGNS, tag);
+    for (var k in attrs) el.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(el);
+    return el;
+  }
+
+  if (CONFIG.revisao) doc.classList.add('review');
+
+  /* ---------- links configuráveis ---------- */
+  Object.keys(CONFIG.links).forEach(function(id){
+    var el = document.getElementById(id), url = CONFIG.links[id];
+    if (!el || pending(url)) return;
+    el.href = url; el.removeAttribute('data-pendente');
+    if (CONFIG.abrirEmNovaAba && /^https?:/i.test(url)) { el.target = '_blank'; el.rel = 'noopener'; }
+  });
+
+  /* ---------- logos (Phorte, FITNESS LINK, NASM) ---------- */
+  if (!pending(CONFIG.logos.phorte)) $$('img[data-logo="phorte"]').forEach(function(im){ im.src = CONFIG.logos.phorte; });
+  [['fitnesslink', CONFIG.logos.fitnessLink, 'FITNESS LINK'], ['nasm', CONFIG.logos.nasm, 'NASM — Partner International']].forEach(function(l){
+    if (pending(l[1])) return;
+    $$('[data-logo="' + l[0] + '"]').forEach(function(slot){
+      var deco = !!slot.parentNode.closest('[role="img"],a[aria-label]'), im = document.createElement('img');
+      im.src = l[1]; im.alt = deco ? '' : l[2]; im.decoding = 'async';
+      slot.textContent = ''; slot.appendChild(im); slot.removeAttribute('data-pendente');
+    });
+  });
+
+  /* ---------- revelação no scroll ---------- */
+  var revealIO = ('IntersectionObserver' in window) ? new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      // revela o que está na tela ou o que já ficou para trás (recarregar no meio da página, links âncora)
+      if (!e.isIntersecting && e.boundingClientRect.top > 0) return;
+      e.target.classList.add('is-in');
+      revealIO.unobserve(e.target);
+    });
+  }, {rootMargin:'0px 0px -10% 0px', threshold:0.12}) : null;
+  $$('[data-rv],[data-journey],[data-biz-map],[data-nasm-card],[data-w-cards],[data-auth]').forEach(function(el){
+    if (revealIO && !reduce) revealIO.observe(el); else el.classList.add('is-in');
+  });
+
+  /* ---------- contadores ---------- */
+  $$('[data-count]').forEach(function(el){
+    var end = +el.getAttribute('data-count');
+    if (reduce || !revealIO) return;
+    el.textContent = '0';
+    var io = new IntersectionObserver(function(es){
+      if (!es[0].isIntersecting) return;
+      io.disconnect();
+      var t0 = performance.now(), dur = 1600;
+      (function step(t){
+        var p = clamp((t - t0) / dur, 0, 1), e = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(end * e);
+        if (p < 1) requestAnimationFrame(step);
+      })(t0);
+    }, {threshold:.6});
+    io.observe(el);
+  });
+
+  /* ---------- 03. pilha de camadas ---------- */
+  (function(){
+    var svg = $('[data-stack]'), list = $('[data-layers]');
+    if (!svg || !list) return;
+    var items = $$('.layer', list), planes = [];
+    var numEl = $('[data-layer-num]'), nameEl = $('[data-layer-name]');
+    var cx = 300, hw = 230, hh = 92, gap = 62, base = 500;
+    items.forEach(function(item, i){
+      var cy = base - i * gap;
+      var g = svgEl('g', {'class':'stack-plane'}, svg);
+      svgEl('polygon', {points:(cx-hw)+','+cy+' '+cx+','+(cy-hh)+' '+(cx+hw)+','+cy+' '+cx+','+(cy+hh)}, g);
+      for (var k = 1; k < 4; k++){
+        var f = k / 4;
+        svgEl('line', {'class':'grid', x1:cx-hw+hw*f, y1:cy-hh*f, x2:cx+hw*f, y2:cy+hh-hh*f}, g);
+        svgEl('line', {'class':'grid', x1:cx-hw+hw*f, y1:cy+hh*f, x2:cx+hw*f, y2:cy-hh+hh*f}, g);
+      }
+      var t = svgEl('text', {x:cx+hw+16, y:cy+5}, g);
+      t.textContent = ('0' + (i + 1)).slice(-2);
+      planes.push(g);
+    });
+    var openIdx = 0;
+    // a pilha reage ao hover (prévia); o painel só abre no clique — evita saltos de layout sob o cursor
+    function showStack(idx){
+      planes.forEach(function(g, i){
+        g.classList.toggle('is-active', i === idx);
+        g.style.transform = i > idx ? 'translateY(-48px)' : (i === idx ? 'translateY(-14px)' : 'none');
+      });
+      numEl.textContent = ('0' + (idx + 1)).slice(-2);
+      nameEl.textContent = $('.layer-t', items[idx]).textContent;
+    }
+    function open(idx){
+      openIdx = idx;
+      items.forEach(function(item, i){
+        item.classList.toggle('is-open', i === idx);
+        $('.layer-btn', item).setAttribute('aria-expanded', i === idx);
+      });
+      showStack(idx);
+    }
+    items.forEach(function(item, i){
+      var btn = $('.layer-btn', item);
+      btn.addEventListener('click', function(){ open(i); });
+      if (finePointer) btn.addEventListener('mouseenter', function(){ showStack(i); });
+    });
+    if (finePointer) list.addEventListener('mouseleave', function(){ showStack(openIdx); });
+    open(0);
+  })();
+
+  /* ---------- 04. Modelo OPT ---------- */
+  var opt = (function(){
+    var sec = $('[data-opt]');
+    if (!sec) return null;
+    var prog = $('[data-opt-prog]', sec), glow = $('[data-opt-glow]', sec);
+    var groups = $$('[data-opt-g]', sec), steps = $$('[data-opt-steps] li', sec);
+    var comps = $$('[data-opt-comps] li', sec), vis = $('[data-opt-vis]', sec);
+    var nodePos = [[225,560],[405,420],[580,280]];
+    // progresso do scroll (P) → fração do caminho desenhado (T): cada nó acende quando o estágio muda
+    var P = [0, .34, .67, 1], T = [.116, .506, .89, 1];
+    var full = false, lastStage = -1;
+
+    // componentes orbitando a estrutura (desktop) / chips (mobile)
+    function layoutRing(){
+      var ring = mqWide.matches;
+      vis.classList.toggle('opt-ring', ring);
+      comps.forEach(function(li, i){
+        if (!ring){ li.style.left = li.style.top = ''; return; }
+        var a = (-78 + i * (360 / comps.length)) * Math.PI / 180;   // -78°: nenhum rótulo cai sobre as pontas da escada
+        li.style.left = (50 + 41.25 * Math.cos(a)) + '%';
+        li.style.top = (50 + 41.25 * Math.sin(a)) + '%';
+      });
+    }
+    function interp(p){
+      for (var i = 1; i < P.length; i++) if (p <= P[i]) return T[i-1] + (T[i]-T[i-1]) * (p - P[i-1]) / (P[i]-P[i-1]);
+      return 1;
+    }
+    function set(p){
+      p = clamp(p, 0, 1);
+      prog.style.strokeDashoffset = 1 - interp(p);
+      var s = p < P[1] ? 0 : (p < P[2] ? 1 : 2);
+      var local = clamp((p - P[s]) / (P[s+1] - P[s]), 0, 1);
+      if (s !== lastStage){
+        groups.forEach(function(g, i){
+          g.classList.toggle('is-on', i <= s);
+          g.classList.toggle('is-active', i === s);
+          var node = $('.opt-node', g);
+          node.classList.toggle('is-on', i <= s);
+          node.classList.toggle('is-active', i === s);
+        });
+        steps.forEach(function(li, i){
+          li.classList.toggle('is-active', i === s);
+          li.classList.toggle('is-done', i < s);
+        });
+        glow.setAttribute('cx', nodePos[s][0]); glow.setAttribute('cy', nodePos[s][1]);
+        lastStage = s;
+      }
+      steps.forEach(function(li, i){
+        $('.opt-bar', li).style.transform = 'scaleX(' + (i < s ? 1 : i === s ? local : 0) + ')';
+      });
+      comps.forEach(function(li, i){ li.classList.toggle('is-on', p > .03 + i * .055); });
+    }
+    function mode(){
+      full = mqOpt.matches && !reduce;
+      doc.classList.toggle('opt-full', full);
+      layoutRing();
+    }
+    function onScroll(vh){
+      if (!full) return;
+      var r = sec.getBoundingClientRect();
+      if (r.bottom < 0 || r.top > vh) return;
+      set(-r.top / (r.height - vh));
+    }
+    // modo leve (mobile / tela baixa): anima uma vez ao entrar na tela
+    var tween = null;
+    function animateTo(target, dur){
+      if (reduce){ set(target); return; }
+      cancelAnimationFrame(tween);
+      var from = currentP, t0 = performance.now();
+      (function step(t){
+        var k = clamp((t - t0) / dur, 0, 1), e = k < .5 ? 2*k*k : 1 - Math.pow(-2*k + 2, 2) / 2;
+        currentP = from + (target - from) * e; set(currentP);
+        if (k < 1) tween = requestAnimationFrame(step);
+      })(t0);
+    }
+    var currentP = 0;
+    if ('IntersectionObserver' in window){
+      var io = new IntersectionObserver(function(es){
+        if (!es[0].isIntersecting || full) return;
+        io.disconnect(); animateTo(1, 3600);
+      }, {threshold:.35});
+      io.observe(vis);
+    } else set(1);
+
+    steps.forEach(function(li, i){
+      $('button', li).addEventListener('click', function(){
+        var target = [.17, .5, .9][i];
+        if (full){
+          var r = sec.getBoundingClientRect(), top = window.scrollY + r.top;
+          window.scrollTo({top: top + target * (r.height - window.innerHeight), behavior: reduce ? 'auto' : 'smooth'});
+        } else animateTo(target, 900);
+      });
+    });
+
+    mode(); set(full ? 0 : (reduce ? 1 : 0));
+    return {mode:mode, onScroll:onScroll};
+  })();
+
+  /* ---------- 06. mapa de posicionamento ---------- */
+  (function(){
+    var svg = $('[data-route]');
+    if (!svg) return;
+    var gridG = $('[data-route-grid]', svg), ptsG = $('[data-route-pts]', svg);
+    for (var x = 100; x <= 520; x += 40) for (var y = 40; y <= 420; y += 40) svgEl('circle', {'class':'route-grid', cx:x, cy:y, r:1.4}, gridG);
+    var path = $('[data-route-path]', svg), len = path.getTotalLength();
+    var list = $$('[data-biz-list] li'), pts = [];
+    [.14, .4, .66, .93].forEach(function(f, i){
+      var p = path.getPointAtLength(len * f);
+      var g = svgEl('g', {'class':'route-pt'}, ptsG);
+      svgEl('circle', {cx:p.x, cy:p.y, r:9}, g);
+      var t = svgEl('text', {x:p.x + 18, y:p.y + 5}, g); t.textContent = '0' + (i + 1);
+      pts.push(g);
+    });
+    function hot(i){
+      list.forEach(function(li, k){ li.classList.toggle('is-hot', k === i); });
+      pts.forEach(function(g, k){ g.classList.toggle('is-hot', k === i); });
+    }
+    list.forEach(function(li, i){
+      li.addEventListener('mouseenter', function(){ hot(i); });
+      li.addEventListener('mouseleave', function(){ hot(-1); });
+    });
+  })();
+
+  /* ---------- 07. mapa-múndi em pontos ---------- */
+  (function(){
+    var fig = $('[data-map]');
+    if (!fig) return;
+    // máscara de terra 144x54 (células de 2,5°, lat 78°N → 57°S), gerada a partir do Natural Earth 110m
+    var COLS = 144, ROWS = 54, B64 = "AAABiP+P//8AAAAAMAD4AAAAAAADgCAAf/8AAAACAD/wAAAAAAAD/K/AP/4AAAAMH///8/AAA//////////////////+AAAQHgAAAAHh4D//+ATgBAAAAAAAIf////58HwHAD3/////////+B////+BgDgAAPv/////////8AfD//8ByAAAAPn////////yAAKAf//h+AAAGFv///////gOAAAAP//7/gAANE////////wMAAAAH////wAALf////////wIAAAAH///+YAAB/////////0AAAAAD///8IAAB///3/////gAAAAAD///8AAAB++Xv/////EAAAAAD///wAAAPlORn////8AAAAAAD///AAAAPEr/3////oIAAAAAB///AAAAOcB//////swAAAAAA//+AAAAH8AP/////LgAAAAAAf/8AAAAP/MP/////iAAAAAAAH9EAAAAP///v////gAAAAAAAL4GAAAA///v3////AAAAAAAAF4AAAAA///36H//+gAAAAAAAA4GAAAB/////D/f4AAAAAEAAA4gQAAB///7+B8fQAAAAAAAAAPgAAAB///98B4PggAAAAAAAAB4AAAB///9wAwHwgAAAAAAAAAYQAAB///+AAwFwAAAAAAAAAAI/AAA////wAwEhAAAAAAAAAAB/gAAf///wAIAAYAAAAAAAAAB/4AAIP//gAAKCAAAAAAAAAAD/8AAAD//AAAHOAAAAAAAAAAD/+AAAD/+AAACOAAAAAAAAAAD//wAAD/8AAADPl4gAAAAAAAH//8AAB/8AAABAAcgAAAAAAAD//8AAB/8AAAAcAeEAAAAAAAB//8AAB/8AAAAAQBCAAAAAAAB//4AAB/8QAAAADgAAAAAAAAA//wAAB/8QAAAAPEAAAAAAAAAf/wAAB/5wAAAAf8AAAAAAAAAP/wAAB/wgAAAB/+AAAAAAAAAP/gAAA/xgAAAH//AAAAAAAAAP+AAAA/ggAAAH//gAAAAAAAAP+AAAA/gAAAAD//gAAAAAAAAf8AAAAfAAAAAD//gAAAAAAAAf4AAAAeAAAAADx/gAAAAAAAAfgAAAAAAAAAACAfAEAAAAAAA/gAAAAAAAAAAAAPAAAAAAAAA+AAAAAAAAAAAAAAACAAAAAAA+AAAAAAAAAAAAACAIAAAAAAA8AAAAAAAAAAAAAAAQAAAAAAA8AAAAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAAA";
+    var bin = atob(B64), d = '';
+    for (var r = 0; r < ROWS; r++) for (var k = 0; k < COLS; k++){
+      var i = r * COLS + k;
+      if (bin.charCodeAt(i >> 3) & (128 >> (i & 7))) d += 'M' + (k * 10 + 5) + ' ' + (r * 10 + 5) + 'h0';
+    }
+    $('[data-dots]', fig).setAttribute('d', d);
+
+    var proj = function(lon, lat){ return [(lon + 180) / 2.5 * 10, (78 - lat) / 2.5 * 10]; };
+    var home = proj(-46.63, -23.55);
+    var layers = $('[data-map-layers]', fig);
+    // pontos ilustrativos: alcance regional (Brasil) e global
+    var regional = [[-47.88,-15.79],[-38.5,-12.97],[-51.23,-30.03],[-34.88,-8.05],[-60.02,-3.12],[-43.94,-19.92]];
+    var global = [['Lisboa',-9.14,38.72],['Londres',-.13,51.5],['Miami',-80.19,25.76],['Toronto',-79.38,43.65],['Dubai',55.27,25.2],['Tóquio',139.69,35.69],['Sydney',151.2,-33.87]];
+
+    var l3 = svgEl('g', {'class':'wm-lvl3'}, layers);
+    var l2 = svgEl('g', {'class':'wm-lvl2'}, layers);
+    svgEl('circle', {'class':'wm-ring r2', cx:home[0], cy:home[1], r:92}, l2);
+    regional.forEach(function(c, i){
+      var p = proj(c[0], c[1]);
+      svgEl('path', {'class':'wm-link', pathLength:1, d:'M'+home[0]+' '+home[1]+'L'+p[0]+' '+p[1], style:'transition-delay:'+(i*.08)+'s'}, l2);
+      svgEl('circle', {'class':'wm-city', cx:p[0], cy:p[1], r:4.5, style:'transition-delay:'+(.3+i*.08)+'s'}, l2);
+    });
+    global.forEach(function(c, i){
+      var p = proj(c[1], c[2]), dx = p[0]-home[0], dy = p[1]-home[1], dist = Math.sqrt(dx*dx+dy*dy);
+      var qx = (home[0]+p[0])/2, qy = Math.min(home[1], p[1]) - dist * .28;
+      svgEl('path', {'class':'wm-arc', pathLength:1, d:'M'+home[0]+' '+home[1]+'Q'+qx+' '+qy+' '+p[0]+' '+p[1], style:'transition-delay:'+(i*.12)+'s'}, l3);
+      svgEl('circle', {'class':'wm-city', cx:p[0], cy:p[1], r:5, style:'transition-delay:'+(.9+i*.12)+'s'}, l3);
+      var t = svgEl('text', {'class':'wm-name', x:p[0] + 10, y:p[1] - 10}, l3); t.textContent = c[0];
+    });
+    var h = svgEl('g', {'class':'wm-home'}, layers);
+    svgEl('circle', {'class':'wm-ring', cx:home[0], cy:home[1], r:26}, h);
+    svgEl('circle', {'class':'wm-pulse', cx:home[0], cy:home[1], r:14}, h);
+    svgEl('circle', {cx:home[0], cy:home[1], r:7}, h);
+
+    var btns = $$('[data-world-ctrl] button'), reach = $('[data-reach]');
+    var labels = {local:'Local · mesma cidade', regional:'Regional · presencial + remoto', global:'Global · diferentes mercados'};
+    var timers = [];
+    function setMode(m){
+      fig.setAttribute('data-mode', m);
+      btns.forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-mode') === m); });
+      reach.textContent = labels[m];
+    }
+    btns.forEach(function(b){
+      b.addEventListener('click', function(){ timers.forEach(clearTimeout); timers = []; setMode(b.getAttribute('data-mode')); });
+    });
+    setMode('local');
+    // sequência automática uma única vez, ao entrar na tela (o usuário pode trocar a qualquer momento)
+    if (reduce || !('IntersectionObserver' in window)) { setMode('global'); return; }
+    var io = new IntersectionObserver(function(es){
+      if (!es[0].isIntersecting) return;
+      io.disconnect();
+      timers.push(setTimeout(function(){ setMode('regional'); }, 1300));
+      timers.push(setTimeout(function(){ setMode('global'); }, 3000));
+    }, {threshold:.45});
+    io.observe(fig);
+  })();
+
+  /* ---------- 09. campo de atuação (abas) ---------- */
+  (function(){
+    var root = $('[data-field]');
+    if (!root) return;
+    var tabs = $$('[role="tab"]', root), tablist = $('[role="tablist"]', root), imgs = $$('.field-imgs .ph', root), current = 0;
+    function syncOrientation(){ tablist.setAttribute('aria-orientation', mqWide.matches ? 'vertical' : 'horizontal'); }
+    syncOrientation();
+    if (mqWide.addEventListener) mqWide.addEventListener('change', syncOrientation);
+    else if (mqWide.addListener) mqWide.addListener(syncOrientation);
+    function select(i, focus){
+      if (i === current) return;
+      imgs.forEach(function(img, k){ img.classList.toggle('was-on', k === current); img.classList.toggle('is-on', k === i); });
+      tabs.forEach(function(t, k){
+        var on = k === i;
+        t.setAttribute('aria-selected', on); t.tabIndex = on ? 0 : -1;
+        document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+      });
+      if (focus) tabs[i].focus();
+      if (!mqWide.matches) tabs[i].scrollIntoView({block:'nearest', inline:'nearest', behavior: reduce ? 'auto' : 'smooth'});
+      current = i;
+    }
+    tabs.forEach(function(t, i){
+      t.addEventListener('click', function(){ select(i); });
+      if (finePointer) t.addEventListener('mouseenter', function(){ select(i); });
+      t.addEventListener('keydown', function(e){
+        var vertical = tablist.getAttribute('aria-orientation') === 'vertical';
+        var n = vertical ? ({ArrowDown:1, ArrowUp:-1}[e.key]) : ({ArrowRight:1, ArrowLeft:-1}[e.key]);
+        if (n){ e.preventDefault(); select((i + n + tabs.length) % tabs.length, true); }
+        else if (e.key === 'Home'){ e.preventDefault(); select(0, true); }
+        else if (e.key === 'End'){ e.preventDefault(); select(tabs.length - 1, true); }
+      });
+    });
+  })();
+
+  /* ---------- 10. acordeões da matriz ---------- */
+  $$('[data-acc] .acc-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.parentNode, open = !item.classList.contains('is-open');
+      item.classList.toggle('is-open', open);
+      btn.setAttribute('aria-expanded', open);
+    });
+  });
+
+  /* ---------- 12. trilho de professores ---------- */
+  (function(){
+    var rail = $('[data-rail]'), nav = $$('[data-rail-nav] button');
+    if (!rail) return;
+    function update(){
+      nav[0].disabled = rail.scrollLeft < 8;
+      nav[1].disabled = rail.scrollLeft + rail.clientWidth > rail.scrollWidth - 8;
+    }
+    nav.forEach(function(b){
+      b.addEventListener('click', function(){
+        var card = rail.firstElementChild, step = card ? card.getBoundingClientRect().width + 20 : 300;
+        rail.scrollBy({left: step * +b.getAttribute('data-dir') * (mqWide.matches ? 2 : 1), behavior: reduce ? 'auto' : 'smooth'});
+      });
+    });
+    rail.addEventListener('scroll', update, {passive:true});
+    window.addEventListener('resize', update);
+    update();
+  })();
+
+  /* ---------- máscara de WhatsApp (formulário final e modal) ---------- */
+  $$('#f-tel,[data-tel]').forEach(function(tel){
+    tel.addEventListener('input', function(){
+      var v = tel.value.replace(/\D/g, '').slice(0, 11), out = v;
+      if (v.length > 2) out = '(' + v.slice(0,2) + ') ' + v.slice(2);
+      if (v.length > 7) out = '(' + v.slice(0,2) + ') ' + v.slice(2, v.length - 4) + '-' + v.slice(-4);
+      tel.value = out;
+    });
+  });
+
+  /* ---------- modal: matriz curricular completa (PDF) ---------- */
+  (function(){
+    var modal = $('[data-modal]');
+    if (!modal) return;
+    var box = $('.modal-box', modal), last = null;
+    function focusables(){ return $$('a[href],button:not([disabled]),input:not([type="hidden"]),select,textarea', box).filter(function(el){ return el.offsetParent !== null; }); }
+    function openM(){
+      last = document.activeElement;
+      modal.hidden = false; doc.style.overflow = 'hidden';
+      setTimeout(function(){ box.focus(); }, 30);
+    }
+    function closeM(){
+      modal.hidden = true; doc.style.overflow = '';
+      if (last && last.focus) last.focus();
+    }
+    $$('[data-matriz-open]').forEach(function(b){ b.addEventListener('click', openM); });
+    $$('[data-modal-close]', modal).forEach(function(b){ b.addEventListener('click', closeM); });
+    modal.addEventListener('keydown', function(e){
+      if (e.key === 'Escape'){ e.preventDefault(); closeM(); return; }
+      if (e.key !== 'Tab') return;
+      var f = focusables(); if (!f.length) return;
+      var a = f[0], z = f[f.length - 1];
+      if (e.shiftKey && (document.activeElement === a || document.activeElement === box)){ e.preventDefault(); z.focus(); }
+      else if (!e.shiftKey && document.activeElement === z){ e.preventDefault(); a.focus(); }
+    });
+
+    var form = $('#form-matriz', modal), embed = $('#form-embed-matriz', modal);
+    var done = $('[data-matriz-done]', modal), pdf = $('[data-matriz-pdf]', modal);
+    if (!form) return;
+    if (embed && embed.children.length){ form.hidden = true; return; }
+    var status = $('.form-status', form), send = $('button[type="submit"]', form);
+    // sem endpoint real, nada é enviado nem baixado: só aparece o aviso de pré-visualização
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      status.className = 'form-status';
+      if (!form.checkValidity()){
+        var bad = form.querySelector(':invalid');
+        status.textContent = 'Confira os campos destacados para continuar.'; status.classList.add('err');
+        if (bad) bad.focus();
+        return;
+      }
+      if (pending(CONFIG.matriz.endpoint)){
+        status.textContent = 'Pré-visualização: configure CONFIG.matriz.endpoint (ou cole o embed oficial) para enviar.';
+        return;
+      }
+      send.disabled = true; status.textContent = 'Enviando…';
+      fetch(CONFIG.matriz.endpoint, {method:'POST', body:new FormData(form), mode:'no-cors'}).then(function(){
+        send.disabled = false;
+        if (pending(CONFIG.matriz.pdf)){ status.textContent = 'Dados enviados. Configure CONFIG.matriz.pdf para liberar o download.'; return; }
+        pdf.href = CONFIG.matriz.pdf;
+        form.hidden = true; done.hidden = false; pdf.focus();
+      }).catch(function(){
+        send.disabled = false;
+        status.textContent = 'Não foi possível enviar agora. Tente novamente.'; status.classList.add('err');
+      });
+    });
+  })();
+
+  /* ---------- formulário ---------- */
+  (function(){
+    var form = $('#form-inscricao'), embed = $('#form-embed');
+    if (!form) return;
+    if (embed && embed.children.length){ form.hidden = true; return; }
+    if (!pending(CONFIG.formEndpoint)) form.action = CONFIG.formEndpoint;
+    var status = $('.form-status', form);
+    form.addEventListener('submit', function(e){
+      status.className = 'form-status';
+      if (!form.checkValidity()){
+        e.preventDefault();
+        var bad = form.querySelector(':invalid');
+        status.textContent = 'Confira os campos destacados para continuar.'; status.classList.add('err');
+        if (bad) bad.focus();
+        return;
+      }
+      if (pending(CONFIG.formEndpoint)){
+        e.preventDefault();
+        status.textContent = 'Pré-visualização: configure CONFIG.formEndpoint (ou cole o embed oficial) para enviar.';
+      }
+    });
+  })();
+
+  /* ---------- loop de scroll (parallax, palavras, OPT, competências, CTA mobile) ---------- */
+  var mcta = $('[data-mcta]'), par = $('[data-par]'), hero = $('#topo');
+  var verbs = $$('[data-verbs] li'), verbsBox = $('[data-verbs]');
+  var ready = $('[data-ready]'), readyItems = $$('[data-ready] li'), readyN = $('[data-ready-n]'), readyBar = $('[data-ready-bar]');
+  var formCard = $('#inscricao'), factsCta = $('.facts-cta');
+  var readyFocus = false, ticking = false;
+
+  function update(){
+    ticking = false;
+    var y = window.scrollY, vh = window.innerHeight;
+
+    // parallax sutil na foto do hero (só desktop)
+    if (par && !reduce && mqWide.matches && y < vh * 1.2) par.style.transform = 'translate3d(0,' + (y * .14).toFixed(1) + 'px,0)';
+
+    // 02. palavras que se preenchem conforme passam pelo centro da tela
+    if (verbsBox){
+      var vb = verbsBox.getBoundingClientRect();
+      if (vb.top < vh && vb.bottom > 0){
+        var cur = -1;
+        verbs.forEach(function(li, i){ if (li.getBoundingClientRect().top < vh * .62) cur = i; });
+        verbs.forEach(function(li, i){ li.classList.toggle('is-on', i <= cur); li.classList.toggle('is-cur', i === cur); });
+      }
+    }
+
+    if (opt) opt.onScroll(vh);
+
+    // 08. competência em foco + contador (desktop)
+    if (ready && mqWide.matches && !reduce){
+      if (!readyFocus){ doc.querySelector('.ready').classList.add('ready-focus'); readyFocus = true; }
+      var rb = ready.getBoundingClientRect();
+      if (rb.top < vh && rb.bottom > 0){
+        var c = 0;
+        readyItems.forEach(function(li, i){ if (li.getBoundingClientRect().top < vh * .5) c = i; });
+        readyItems.forEach(function(li, i){ li.classList.toggle('is-cur', i === c); });
+        readyN.textContent = ('0' + (c + 1)).slice(-2);
+        readyBar.style.transform = 'scaleX(' + ((c + 1) / readyItems.length) + ')';
+      }
+    } else if (readyFocus){ doc.querySelector('.ready').classList.remove('ready-focus'); readyFocus = false; }
+
+    // CTA fixo mobile: aparece depois do hero e some quando o formulário está na tela
+    if (mcta){
+      var heroEnd = hero.offsetTop + hero.offsetHeight - vh * .3;
+      // também some quando o botão de inscrição do bloco 14 (valores) já está na tela
+      var onScreen = function(el){ if (!el) return false; var r = el.getBoundingClientRect(); return r.top < vh && r.bottom > 0; };
+      mcta.classList.toggle('is-show', y > heroEnd && !onScreen(formCard) && !onScreen(factsCta));
+    }
+  }
+  function onScroll(){ if (!ticking){ ticking = true; requestAnimationFrame(update); } }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', function(){
+    if (opt) opt.mode();
+    if (!mqWide.matches && par) par.style.transform = '';
+    onScroll();
+  });
+  update();
+})();
+</script>
+</body>
+</html>
